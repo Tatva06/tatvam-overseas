@@ -285,7 +285,7 @@ const products = [
         phys: { "Density": "7.80 g/cm³" },
         specs: { standards: ["ASTM A276"], range: "Stock" },
         pros: "Excellent wear resistance.",
-        cons: "-"
+        cons: "Lower corrosion resistance than 304; brittle if not tempered properly."
     },
     {
         id: "ss-430",
@@ -313,7 +313,7 @@ const products = [
         phys: { "Density": "7.80 g/cm³" },
         specs: { standards: ["ASTM A276"], range: "Stock" },
         pros: "High toughness.",
-        cons: "-"
+        cons: "Difficult to weld; prone to temper embrittlement."
     },
     {
         id: "ss-446",
@@ -341,7 +341,7 @@ const products = [
         phys: { "Density": "7.80 g/cm³" },
         specs: { standards: ["ASTM A564"], range: "Stock" },
         pros: "Aerospace standard.",
-        cons: "-"
+        cons: "High pricing; susceptible to stress corrosion cracking if under-aged."
     },
     {
         id: "ss-15-5ph",
@@ -355,7 +355,7 @@ const products = [
         phys: { "Density": "7.80 g/cm³" },
         specs: { standards: ["ASTM A564", "AMS 5659"], range: "Custom" },
         pros: "Uniform structure.",
-        cons: "-"
+        cons: "Higher material cost; requires precise age-hardening heat treatments."
     },
 
     // =========================================================================
@@ -415,7 +415,7 @@ const products = [
         phys: { "Density": "7.80 g/cm³" },
         specs: { standards: ["ASTM A790"], range: "Custom" },
         pros: "High critical pitting temp.",
-        cons: "-"
+        cons: "Strict temperature control needed during multi-pass welding to prevent sigma phases."
     },
 
     // =========================================================================
@@ -461,7 +461,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["API 5L PSL1/PSL2"], range: "Stock" },
         pros: "High pressure lines.",
-        cons: "-"
+        cons: "Prone to atmospheric corrosion; requires rust-inhibitive coatings."
     },
     {
         id: "cs-a333-6",
@@ -475,7 +475,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["ASTM A333"], range: "Stock" },
         pros: "Cryogenic use.",
-        cons: "-"
+        cons: "Requires proper protective lagging to avoid corrosion under insulation (CUI)."
     },
     {
         id: "cs-a105",
@@ -489,7 +489,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["ASTM A105"], range: "Full Range" },
         pros: "Universal flange material.",
-        cons: "-"
+        cons: "Not suitable for low-temperature service or marine atmosphere without zinc coating."
     },
     {
         id: "cs-lf2",
@@ -503,7 +503,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["ASTM A350"], range: "Stock" },
         pros: "Good notch toughness.",
-        cons: "-"
+        cons: "Susceptible to general rust; requires surface primer/galvanizing."
     },
     {
         id: "cs-is2062",
@@ -517,7 +517,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["IS 2062"], range: "Full Range" },
         pros: "Available and cheap.",
-        cons: "-"
+        cons: "Low corrosion resistance; must be painted or hot-dip galvanized."
     },
     {
         id: "st-52-3",
@@ -531,7 +531,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["DIN 17100"], range: "Stock" },
         pros: "Good weldability.",
-        cons: "-"
+        cons: "No native corrosion resistance; requires external protection."
     },
 
     // =========================================================================
@@ -577,7 +577,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["BS 970"], range: "Stock" },
         pros: "Good tensile strength.",
-        cons: "-"
+        cons: "Poor through-hardenability in heavy diameters; lacks corrosion resistance."
     },
     {
         id: "en-9",
@@ -591,7 +591,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["BS 970"], range: "Stock" },
         pros: "Wear resistance.",
-        cons: "-"
+        cons: "Very low weldability; cracking likely if preheating is ignored."
     },
     {
         id: "en-19",
@@ -605,7 +605,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["BS 970"], range: "Stock" },
         pros: "Good shock resistance.",
-        cons: "-"
+        cons: "Temper embrittlement risk if slow-cooled between 500-600°C."
     },
     {
         id: "en-24",
@@ -619,7 +619,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["BS 970"], range: "Stock" },
         pros: "Deep hardenability.",
-        cons: "-"
+        cons: "Excellent strength makes machining highly difficult and expensive post-heat treat."
     },
     {
         id: "en-31",
@@ -633,7 +633,7 @@ const products = [
         phys: { "Density": "7.81 g/cm³" },
         specs: { standards: ["BS 970"], range: "Stock" },
         pros: "Extreme hardness (60-66 HRC).",
-        cons: "-"
+        cons: "Low impact toughness; susceptible to chipping if subjected to heavy shock."
     },
     {
         id: "aisi-4130",
@@ -647,7 +647,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["AISI 4130"], range: "Stock" },
         pros: "Motorsports standard.",
-        cons: "-"
+        cons: "Lower corrosion resistance than stainless grades; requires plating/coating."
     },
     {
         id: "tool-steel-d2",
@@ -661,7 +661,7 @@ const products = [
         phys: { "Density": "7.70 g/cm³" },
         specs: { standards: ["ASTM A681"], range: "Stock" },
         pros: "Maximum wear resistance.",
-        cons: "-"
+        cons: "Prone to edge chipping; difficult to grind and heat treat."
     },
     {
         id: "tool-steel-d3",
@@ -675,7 +675,7 @@ const products = [
         phys: { "Density": "7.70 g/cm³" },
         specs: { standards: ["ASTM A681"], range: "Stock" },
         pros: "High compressive strength.",
-        cons: "-"
+        cons: "High risk of cracking during rapid oil quenching; very brittle."
     },
 
     // =========================================================================
@@ -693,7 +693,7 @@ const products = [
         phys: { "Density": "8.47 g/cm³" },
         specs: { standards: ["ASTM B167"], range: "Custom" },
         pros: "Immune to chloride stress corrosion.",
-        cons: "-"
+        cons: "Extremely high cost; difficult to machine, causing rapid tool wear."
     },
     {
         id: "inconel-601",
@@ -707,7 +707,7 @@ const products = [
         phys: { "Density": "8.11 g/cm³" },
         specs: { standards: ["ASTM B167"], range: "Imported" },
         pros: "Best for furnaces.",
-        cons: "-"
+        cons: "Prone to rapid sulfur embrittlement in reducing sulfurous atmospheres."
     },
     {
         id: "inconel-625",
@@ -749,7 +749,7 @@ const products = [
         phys: { "Density": "7.94 g/cm³" },
         specs: { standards: ["ASTM B407"], range: "Stock" },
         pros: "Stable structure at high temp.",
-        cons: "-"
+        cons: "Prone to sigma phase precipitation under long heat exposure below 700°C."
     },
     {
         id: "incoloy-825",
@@ -763,7 +763,7 @@ const products = [
         phys: { "Density": "8.14 g/cm³" },
         specs: { standards: ["ASTM B423"], range: "Custom" },
         pros: "Acid resistance.",
-        cons: "-"
+        cons: "High price; inferior pitting resistance to super duplex steels."
     },
     {
         id: "monel-400",
@@ -847,7 +847,7 @@ const products = [
         phys: { "Density": "8.08 g/cm³" },
         specs: { standards: ["ASTM B729"], range: "Stock" },
         pros: "Resists acid attack.",
-        cons: "-"
+        cons: "Prone to intergranular corrosion in the heat-affected zone of heavy weldments unless stabilized."
     },
     {
         id: "alloy-a286",
@@ -861,7 +861,7 @@ const products = [
         phys: { "Density": "7.92 g/cm³" },
         specs: { standards: ["AMS 5737"], range: "Rods" },
         pros: "Jet engine fasteners.",
-        cons: "-"
+        cons: "Requires precise solution treatment and precipitation hardening to achieve full mechanical properties."
     },
 
     // =========================================================================
@@ -879,7 +879,7 @@ const products = [
         phys: { "Density": "4.51 g/cm³" },
         specs: { standards: ["ASTM B338"], range: "Stock" },
         pros: "Standard chemical industry grade.",
-        cons: "-"
+        cons: "Lacks structural strength of Grade 5 alloy; highly reactive with oxygen at high temperatures."
     },
     {
         id: "ti-gr5",
@@ -907,7 +907,7 @@ const products = [
         phys: { "Density": "8.89 g/cm³" },
         specs: { standards: ["IS 191"], range: "Stock" },
         pros: "Highest conductivity.",
-        cons: "-"
+        cons: "Low structural tensile strength; prone to hydrogen embrittlement if annealed in reducing gas."
     },
     {
         id: "brass-c360",
@@ -921,7 +921,7 @@ const products = [
         phys: { "Density": "8.50 g/cm³" },
         specs: { standards: ["ASTM B16"], range: "Stock" },
         pros: "Easiest to machine.",
-        cons: "-"
+        cons: "Lead content (2.5-3.7%) restricts its use in modern drinking water applications."
     },
     {
         id: "cuni-9010",
@@ -935,7 +935,7 @@ const products = [
         phys: { "Density": "8.94 g/cm³" },
         specs: { standards: ["EEMUA 144"], range: "Stock" },
         pros: "Resists biofouling.",
-        cons: "-"
+        cons: "High susceptibility to shear erosion if seawater flow rate exceeds 3.5 m/s."
     },
     {
         id: "cuni-7030",
@@ -949,7 +949,7 @@ const products = [
         phys: { "Density": "8.94 g/cm³" },
         specs: { standards: ["ASTM B466"], range: "Custom" },
         pros: "High velocity seawater.",
-        cons: "-"
+        cons: "Significantly higher cost than 90/10; requires careful biofilm management."
     },
     {
         id: "alum-6061",
@@ -963,7 +963,7 @@ const products = [
         phys: { "Density": "2.70 g/cm³" },
         specs: { standards: ["ASTM B209"], range: "Stock" },
         pros: "Good weldability.",
-        cons: "-"
+        cons: "Welding reduces localized strength at the heat-affected zone (HAZ) by 30-40%."
     },
     {
         id: "alum-5083",
@@ -977,7 +977,7 @@ const products = [
         phys: { "Density": "2.66 g/cm³" },
         specs: { standards: ["ASTM B209"], range: "Plates" },
         pros: "Saltwater resistance.",
-        cons: "-"
+        cons: "Vulnerable to stress corrosion cracking if operated continuously above 65°C."
     },
     {
         id: "pb-bronze",
@@ -991,7 +991,7 @@ const products = [
         phys: { "Density": "8.86 g/cm³" },
         specs: { standards: ["B139"], range: "Stock" },
         pros: "Wear resistance.",
-        cons: "-"
+        cons: "High raw material cost; lower electrical conductivity than pure copper."
     },
     {
         id: "tantalum",
@@ -1023,7 +1023,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["ASTM A403", "A234"], range: "Stock" },
         pros: "Standard piping connectors.",
-        cons: "-"
+        cons: "Requires professional radiography testing and skilled fit-up/welding."
     },
     {
         id: "forged-fittings",
@@ -1037,7 +1037,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["ASTM A105", "A182"], range: "Stock" },
         pros: "High pressure.",
-        cons: "-"
+        cons: "Creates higher pressure drops than swept bends; increases pipeline weight."
     },
     {
         id: "flange-all",
@@ -1051,7 +1051,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["ASTM A105", "A182"], range: "150# to 2500#" },
         pros: "Critical pipe connections.",
-        cons: "-"
+        cons: "Prone to gasket leaks if bolts are torque-tensioned unevenly."
     },
     {
         id: "fastener-ni-alloy",
@@ -1065,7 +1065,7 @@ const products = [
         phys: { "Density": "8.44 g/cm³" },
         specs: { standards: ["ASTM F467", "DIN 933"], range: "M3-M56" },
         pros: "High temp & corrosion resistant.",
-        cons: "-"
+        cons: "Very high unit cost; prone to thread galling/seizing during assembly."
     },
     {
         id: "fastener-ss",
@@ -1079,7 +1079,7 @@ const products = [
         phys: { "Density": "7.93 g/cm³" },
         specs: { standards: ["DIN 933", "DIN 934"], range: "M6-M64" },
         pros: "Corrosion free.",
-        cons: "-"
+        cons: "Subject to severe thread galling; lower shear strength than grade 8.8 carbon fasteners."
     },
     {
         id: "stud-b7",
@@ -1093,7 +1093,7 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["ASTM A193"], range: "Stock" },
         pros: "Oil & Gas standard.",
-        cons: "-"
+        cons: "Susceptible to hydrogen embrittlement if plated or coated improperly."
     },
 
     // =========================================================================
@@ -1139,6 +1139,6 @@ const products = [
         phys: { "Density": "7.85 g/cm³" },
         specs: { standards: ["ASTM A242"], range: "Stock" },
         pros: "No painting needed.",
-        cons: "-"
+        cons: "Rust water runoff will bleed and stain adjacent concrete, sidewalks, and masonry."
     }
 ];
