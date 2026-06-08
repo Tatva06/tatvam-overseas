@@ -318,10 +318,15 @@ class ExitIntentCapture {
                     <div class="inline-block p-4 bg-emerald-500/20 rounded-full mb-4">
                         <i data-lucide="check-circle" class="w-16 h-16 text-emerald-400"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-2">Check Your Email! 📧</h3>
-                    <p class="text-slate-300">We've sent the price list to your inbox. It should arrive within 2 minutes.</p>
-                    <button onclick="this.closest('#exit-intent-modal').remove()" 
-                            class="mt-6 bg-slate-700 hover:bg-slate-600 px-6 py-2 rounded-lg">Close</button>
+                    <h3 class="text-2xl font-bold mb-2">Inquiry Received</h3>
+                    <p class="text-slate-300 text-sm mb-4">Our sales team will compile and email you a customized price list shortly.</p>
+                    <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                        <a href="assets/Tatvam_Catalog_2025.pdf" download class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-lg text-sm transition-all flex items-center justify-center gap-2 shadow-lg">
+                            <i data-lucide="download" class="w-4 h-4"></i> Download Full Catalog
+                        </a>
+                        <button onclick="this.closest('#exit-intent-modal').remove()" 
+                                class="w-full sm:w-auto bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-lg text-sm transition-all">Close</button>
+                    </div>
                 </div>
             </div>
         `;

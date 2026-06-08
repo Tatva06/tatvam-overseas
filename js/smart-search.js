@@ -15,7 +15,7 @@ function initSmartSearch() {
         text: `${p.grade} ${p.description} ${p.category} ${p.department}`.toLowerCase(),
         grade: p.grade,
         category: p.category,
-        image: p.image
+        image: typeof getProductImage === 'function' ? getProductImage(p) : p.image
     }));
     
     let debounceTimer;

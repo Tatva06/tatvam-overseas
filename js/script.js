@@ -29,6 +29,26 @@ function escapeHtml(unsafe) {
     return String(unsafe).replace(/[&<>"']/g, m => map[m]);
 }
 
+function getProductImage(product) {
+    if (product.image && !product.image.includes('placehold.co')) {
+        return product.image;
+    }
+    const category = (product.category || "").toLowerCase();
+    if (category.includes('pipe') || category.includes('tube')) {
+        return "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&auto=format&fit=crop&q=80";
+    }
+    if (category.includes('flat') || category.includes('plate') || category.includes('sheet') || category.includes('coil')) {
+        return "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&auto=format&fit=crop&q=80";
+    }
+    if (category.includes('bar') || category.includes('rod') || category.includes('wire') || category.includes('patta')) {
+        return "https://images.unsplash.com/photo-1574634534894-89d7576c8259?w=600&auto=format&fit=crop&q=80";
+    }
+    if (category.includes('fitting') || category.includes('flange') || category.includes('fastener')) {
+        return "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&auto=format&fit=crop&q=80";
+    }
+    return "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&auto=format&fit=crop&q=80";
+}
+
 // 2. INITIALIZATION
 window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
@@ -67,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initChatWidget();
+    initNewsletterInterceptor();
 });
 
 // 3. NAVIGATION HIGHLIGHTING
@@ -149,7 +170,7 @@ class SmartFloatingWidget {
                     <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-emerald-600 font-bold">T</div>
                     <div>
                         <h4 class="font-bold text-xs leading-tight">Tatvam Assistant</h4>
-                        <p class="text-[9px] text-emerald-100">AI-Powered Support • Online</p>
+                        <p class="text-[9px] text-emerald-100">Typically responds within 2-4 business hours</p>
                     </div>
                 </div>
                 <button id="chat-close-btn" class="text-white/80 hover:text-white">
@@ -414,7 +435,7 @@ function renderInventory(container, data) {
     container.innerHTML = data.map(p => `
         <div class="bg-white rounded-xl border hover:border-emerald-500 hover:shadow-lg transition-all cursor-pointer overflow-hidden" onclick="openProductModal('${p.id}')">
             <div class="h-48 bg-slate-100 relative">
-                <img src="${p.image}" class="w-full h-full object-cover" loading="lazy" alt="${escapeHtml(p.grade)}">
+                <img src="${getProductImage(p)}" class="w-full h-full object-cover" loading="lazy" alt="${escapeHtml(p.grade)}">
                 <div class="absolute top-3 left-3 bg-slate-900/90 text-white text-xs font-bold px-2 py-1 rounded">${escapeHtml(p.category)}</div>
             </div>
             <div class="p-5">
@@ -486,7 +507,7 @@ function openProductModal(id) {
     body.innerHTML = `
         <div class="grid md:grid-cols-2 gap-0 h-full">
             <div class="p-6 bg-slate-50/50 flex flex-col">
-                <img src="${p.image}" class="w-full h-56 object-cover rounded-lg shadow-md mb-4">
+                <img src="${getProductImage(p)}" class="w-full h-56 object-cover rounded-lg shadow-md mb-4">
                 <h2 class="text-2xl font-black text-slate-900 mb-1">${p.grade}</h2>
                 <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-1 rounded mb-4 w-fit">${p.department}</span>
                 <p class="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">${p.description}</p>
@@ -735,7 +756,7 @@ function initSmartSearch() {
         text: `${p.grade} ${p.description} ${p.category} ${p.department}`.toLowerCase(),
         grade: p.grade,
         category: p.category,
-        image: p.image
+        image: getProductImage(p)
     }));
     
     let debounceTimer;
@@ -881,3 +902,53 @@ backToTop.classList.add('opacity-0', 'pointer-events-none');
 }
 }
 });
+
+function initNewsletterInterceptor() {
+    const form = Array.from(document.querySelectorAll('form')).find(f => 
+        f.querySelector('input[name="subject"]')?.value?.includes('Newsletter')
+    );
+    if (!form) return;
+    
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const emailInput = form.querySelector('input[type="email"]');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (!emailInput || !submitBtn) return;
+        
+        const originalText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin mx-auto"></i>';
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+        
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: new FormData(form)
+            });
+            const result = await response.json();
+            if (result.success) {
+                const successDiv = document.createElement('div');
+                successDiv.className = 'flex flex-col sm:flex-row items-center gap-4 bg-emerald-950/50 border border-emerald-800 p-4 rounded-lg text-white text-sm animate-fade w-full lg:w-1/2 justify-between';
+                successDiv.innerHTML = `
+                    <div class="flex items-center gap-2 text-emerald-400 font-bold">
+                        <i data-lucide="check-circle" class="w-5 h-5 shrink-0"></i>
+                        <span>Subscribed!</span>
+                    </div>
+                    <p class="text-xs text-slate-300 flex-1 text-center sm:text-left">We've registered your email for market updates.</p>
+                    <a href="assets/Tatvam_Catalog_2025.pdf" download class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2 rounded text-xs transition-all flex items-center gap-1.5 shadow-md w-full sm:w-auto justify-center">
+                        <i data-lucide="download" class="w-3.5 h-3.5"></i> Download Catalog
+                    </a>
+                `;
+                form.replaceWith(successDiv);
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+            } else {
+                throw new Error("Form submission unsuccessful");
+            }
+        } catch (error) {
+            alert('Something went wrong. Please try again or email us at sales@tatvamoverseas.com');
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+    });
+}

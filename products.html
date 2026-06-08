@@ -186,7 +186,7 @@
                     <meta itemprop="name" content="${p.grade}">
                     <meta itemprop="description" content="${p.description}">
                     <div class="h-48 bg-slate-100 relative">
-                        <img src="${p.image}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" alt="${p.grade}" itemprop="image">
+                        <img src="${getProductImage(p)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" alt="${p.grade}" itemprop="image">
                         <div class="absolute top-3 left-3 bg-slate-900/90 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur">${p.category}</div>
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
