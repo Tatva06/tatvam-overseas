@@ -125,7 +125,7 @@ const blogs = [
         title: "What is 17-4 PH Stainless Steel?",
         date: "June 10, 2025",
         category: "Specialty Alloys",
-        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop&q=80",
         snippet: "Combining the corrosion resistance of 304 with the hardness of tool steel. The aerospace wonder material.",
         content: `
             <p class="mb-4">17-4 PH (Precipitation Hardening) contains Copper. By heat treating it (aging), precipitates form that lock the crystal lattice, creating immense strength.</p>
@@ -199,7 +199,7 @@ const blogs = [
         title: "How to Read a Mill Test Certificate (MTC)",
         date: "Sept 28, 2025",
         category: "Quality Assurance",
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&auto=format&fit=crop&q=80",
         snippet: "The MTC is the birth certificate of your steel. Learn how to verify Heat Numbers and Chemical Analysis.",
         content: `
             <p class="mb-4">Never accept steel without an MTC. Key things to check:</p>
@@ -266,7 +266,7 @@ const blogs = [
         title: "Jindal vs. Imported: What should you buy?",
         date: "Jan 15, 2025",
         category: "Market Trends",
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&auto=format&fit=crop&q=80",
         snippet: "A frank comparison of domestic Indian mills versus imported materials from China/Indonesia.",
         content: `
             <p class="mb-4"><strong>Jindal Stainless</strong> is the gold standard for quality consistency in India. Their material usually commands a premium due to strict adherence to chemistry.</p>
@@ -293,7 +293,7 @@ const blogs = [
         title: "How to Avoid Getting Cheated: 7 Red Flags",
         date: "Nov 20, 2025",
         category: "Market Trends",
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&auto=format&fit=crop&q=80",
         snippet: "Don't pay for 304 and get 202. Learn about under-gauge scams, fake stamping, and how to spot them.",
         content: `
             <h4 class="font-bold text-lg mb-2">1. The 'Magnet' Trick</h4>
@@ -387,7 +387,7 @@ const blogs = [
         title: "Titanium Gr.2 vs Gr.5: What's the difference?",
         date: "Oct 25, 2025",
         category: "Technical Guide",
-        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=600&auto=format&fit=crop&q=80",
         snippet: "Commercially Pure (CP) vs Alloy. Why chemical plants use Gr.2 and aerospace uses Gr.5.",
         content: "<p><strong>Grade 2:</strong> 99% Pure Titanium. Excellent corrosion resistance, good formability. Used in heat exchangers.</p><p><strong>Grade 5 (Ti-6Al-4V):</strong> Alloyed with Aluminum/Vanadium. Double the strength, but harder to form. Used in aircraft parts.</p>"
     },
@@ -414,7 +414,7 @@ const blogs = [
         title: "How to Store Stainless Steel Correctly",
         date: "Oct 10, 2025",
         category: "Maintenance",
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&auto=format&fit=crop&q=80",
         snippet: "Preventing contamination in the warehouse. Why you should never store SS on bare concrete or near Carbon Steel.",
         content: "<p>Use wooden pallets. Cover with tarps. Keep away from grinding dust of MS (Mild Steel) to prevent 'rust bloom'.</p>"
     },
