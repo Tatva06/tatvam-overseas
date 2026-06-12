@@ -1,0 +1,7 @@
+node_modules
+*.log
+.git
+css/input.css
+package.json
+package-lock.json
+README.md
