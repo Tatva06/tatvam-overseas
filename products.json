@@ -1,0 +1,6421 @@
+[
+  {
+    "id": "ss-202-j1-sheet",
+    "slug": "ss-202-j1-sheets",
+    "grade": "SS 202",
+    "subGrade": "Jindal J1",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "2B",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 202 J1 Sheets | Tatvam Overseas Inc Mumbai",
+    "metaDescription": "Buy SS 202 J1 stainless steel sheets in Mumbai. Available in 2B, BA, mirror finishes. Fast delivery across India.",
+    "keywords": [
+      "SS 202 J1 sheets",
+      "202 stainless steel",
+      "J1 grade sheets",
+      "202 sheets Mumbai"
+    ],
+    "description": "Cost-effective 200-series grade for shallow drawing applications like utensils and kitchenware.",
+    "chem": {
+      "Cr": "13-15%",
+      "Ni": "0.2-0.6%",
+      "Cu": "0.5-1.0%",
+      "Mn": "8-10%",
+      "C": "≤0.15%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "275 MPa",
+      "Tensile Strength": "515 MPa",
+      "Elongation": "40%"
+    },
+    "specs": {
+      "standards": [
+        "Jindal J1",
+        "IS 6911"
+      ],
+      "thicknessRange": "0.30mm to 3.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "lengthRange": "2500mm to 5000mm",
+      "finish": [
+        "2B",
+        "BA",
+        "No.4",
+        "Mirror"
+      ]
+    },
+    "applications": [
+      "Utensils",
+      "Kitchenware",
+      "Decorative panels",
+      "Furniture"
+    ],
+    "industries": [
+      "Consumer Goods",
+      "Interior Design",
+      "Hospitality"
+    ],
+    "pros": "Very economical; widely available.",
+    "cons": "Lower corrosion resistance than J4; not for coastal use.",
+    "relatedGrades": [
+      "SS 202 J2",
+      "SS 202 J4",
+      "SS 304"
+    ],
+    "inStock": true,
+    "moq": "500 kg",
+    "tags": [
+      "202",
+      "J1",
+      "sheets",
+      "flat",
+      "200 series"
+    ]
+  },
+  {
+    "id": "ss-202-j2-sheet",
+    "slug": "ss-202-j2-sheets",
+    "grade": "SS 202",
+    "subGrade": "Jindal J2",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "2B",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 202 J2 Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 J2 stainless sheets for general fabrication. Stock available in Mumbai. Competitive pricing.",
+    "keywords": [
+      "SS 202 J2",
+      "202 J2 sheets",
+      "stainless 202 sheets"
+    ],
+    "description": "Standard 202 grade for general fabrication, cookware, and general purpose applications.",
+    "chem": {
+      "Cr": "14-16%",
+      "Ni": "0.3-0.7%",
+      "Cu": "0.5-1.0%",
+      "Mn": "8-10%",
+      "C": "≤0.15%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "275 MPa",
+      "Tensile Strength": "515 MPa",
+      "Elongation": "40%"
+    },
+    "specs": {
+      "standards": [
+        "Jindal J2",
+        "IS 6911"
+      ],
+      "thicknessRange": "0.30mm to 4.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "lengthRange": "2500mm to 5000mm",
+      "finish": [
+        "2B",
+        "BA",
+        "Mirror",
+        "Hairline"
+      ]
+    },
+    "applications": [
+      "Cookware",
+      "General fabrication",
+      "Signage",
+      "Cladding"
+    ],
+    "industries": [
+      "Consumer Goods",
+      "Construction",
+      "Retail"
+    ],
+    "pros": "Balanced price/performance ratio.",
+    "cons": "Work hardens quickly; not for marine use.",
+    "relatedGrades": [
+      "SS 202 J1",
+      "SS 202 J4",
+      "SS 304"
+    ],
+    "inStock": true,
+    "moq": "500 kg",
+    "tags": [
+      "202",
+      "J2",
+      "sheets",
+      "200 series"
+    ]
+  },
+  {
+    "id": "ss-202-j3-sheet",
+    "slug": "ss-202-j3-sheets",
+    "grade": "SS 202",
+    "subGrade": "Jindal J3",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "2B",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 202 J3 Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 J3 hard grade sheets for structural and furniture frame applications. Available ex-stock Mumbai.",
+    "keywords": [
+      "SS 202 J3",
+      "202 J3 sheets",
+      "202 structural sheets"
+    ],
+    "description": "Hard-temper grade for structural applications like furniture frames, doors, and partitions.",
+    "chem": {
+      "Cr": "13-15%",
+      "Ni": "0.1-0.4%",
+      "Mn": "9-11%",
+      "C": "≤0.15%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "310 MPa",
+      "Tensile Strength": "550 MPa",
+      "Elongation": "35%"
+    },
+    "specs": {
+      "standards": [
+        "Jindal J3",
+        "IS 6911"
+      ],
+      "thicknessRange": "0.40mm to 3.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "lengthRange": "2500mm to 5000mm",
+      "finish": [
+        "2B",
+        "Hairline",
+        "Mirror"
+      ]
+    },
+    "applications": [
+      "Furniture frames",
+      "Doors",
+      "Partitions",
+      "Structural cladding"
+    ],
+    "industries": [
+      "Furniture",
+      "Construction",
+      "Architecture"
+    ],
+    "pros": "High strength for 200 series.",
+    "cons": "Poor deep drawing capability; not for forming.",
+    "relatedGrades": [
+      "SS 202 J4",
+      "SS 430"
+    ],
+    "inStock": true,
+    "moq": "500 kg",
+    "tags": [
+      "202",
+      "J3",
+      "sheets",
+      "structural",
+      "200 series"
+    ]
+  },
+  {
+    "id": "ss-202-j4-sheet",
+    "slug": "ss-202-j4-sheets",
+    "grade": "SS 202",
+    "subGrade": "Jindal J4",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "2B",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 202 J4 Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 J4 premium deep drawing sheets. Closest 304 alternative at lower cost. Mumbai stockist.",
+    "keywords": [
+      "SS 202 J4",
+      "202 J4 sheets",
+      "deep drawing sheets",
+      "304 alternative"
+    ],
+    "description": "Premium 200-series grade with high copper content for deep drawing; closest economical alternative to 304.",
+    "chem": {
+      "Cr": "15-17%",
+      "Ni": "1.0-1.5%",
+      "Cu": "1.5-2.0%",
+      "Mn": "8-10%",
+      "C": "≤0.15%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "275 MPa",
+      "Tensile Strength": "515 MPa",
+      "Elongation": "45%"
+    },
+    "specs": {
+      "standards": [
+        "Jindal J4",
+        "IS 6911"
+      ],
+      "thicknessRange": "0.30mm to 4.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "lengthRange": "2500mm to 5000mm",
+      "finish": [
+        "2B",
+        "BA",
+        "Mirror",
+        "Hairline",
+        "Scotch Brite",
+        "Embossed",
+        "Designer"
+      ]
+    },
+    "applications": [
+      "Deep drawn vessels",
+      "Sinks",
+      "Cookware",
+      "Architectural panels"
+    ],
+    "industries": [
+      "Consumer Goods",
+      "Architecture",
+      "Hospitality",
+      "Food Processing"
+    ],
+    "pros": "Excellent deep drawability; cost-effective alternative to 304.",
+    "cons": "Not suitable for coastal/marine environments.",
+    "relatedGrades": [
+      "SS 304",
+      "SS 202 J2"
+    ],
+    "inStock": true,
+    "moq": "500 kg",
+    "tags": [
+      "202",
+      "J4",
+      "sheets",
+      "deep draw",
+      "200 series"
+    ]
+  },
+  {
+    "id": "ss-202-mirror-sheet",
+    "slug": "ss-202-mirror-finish-sheets",
+    "grade": "SS 202",
+    "subGrade": "J4",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "Mirror (8K)",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 202 Mirror Finish Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 mirror polished 8K finish sheets for decorative and architectural use. Ex-stock Mumbai.",
+    "keywords": [
+      "SS 202 mirror sheets",
+      "8K finish",
+      "mirror polished steel",
+      "decorative sheets"
+    ],
+    "description": "Mirror (8K) polished 202 sheets for decorative and architectural applications. Highly reflective surface.",
+    "chem": {
+      "Cr": "15-17%",
+      "Ni": "1.0-1.5%",
+      "Cu": "1.5-2.0%",
+      "Mn": "8-10%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Surface Roughness": "Ra ≤ 0.05 µm"
+    },
+    "specs": {
+      "standards": [
+        "Jindal J4",
+        "IS 6911"
+      ],
+      "thicknessRange": "0.40mm to 2.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "lengthRange": "2500mm to 5000mm",
+      "finish": [
+        "8K Mirror"
+      ],
+      "protective": "PVC Film on mirror side"
+    },
+    "applications": [
+      "Lift cabins",
+      "Decorative panels",
+      "Hotel interiors",
+      "Retail fixtures"
+    ],
+    "industries": [
+      "Architecture",
+      "Interior Design",
+      "Hospitality",
+      "Retail"
+    ],
+    "pros": "High gloss; premium aesthetics.",
+    "cons": "Fingerprint-prone; not for industrial use.",
+    "relatedGrades": [
+      "SS 304 Mirror",
+      "SS 316 Mirror"
+    ],
+    "inStock": true,
+    "moq": "200 kg",
+    "tags": [
+      "202",
+      "mirror",
+      "8K",
+      "decorative",
+      "sheets"
+    ]
+  },
+  {
+    "id": "ss-202-hairline-sheet",
+    "slug": "ss-202-hairline-finish-sheets",
+    "grade": "SS 202",
+    "subGrade": "J4",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "Hairline (No.4)",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 202 Hairline Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 hairline finish (No.4) sheets for elevators, cabinets and interior design. Stock available.",
+    "keywords": [
+      "SS 202 hairline sheets",
+      "No.4 finish",
+      "hairline stainless steel"
+    ],
+    "description": "Hairline (No.4) brushed finish 202 sheets. Uniform directional grain. Popular for interior fit-outs.",
+    "chem": {
+      "Cr": "15-17%",
+      "Ni": "1.0-1.5%",
+      "Cu": "1.5-2.0%",
+      "Mn": "8-10%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Surface Roughness": "Ra 0.2-0.5 µm"
+    },
+    "specs": {
+      "standards": [
+        "Jindal J4",
+        "IS 6911"
+      ],
+      "thicknessRange": "0.40mm to 2.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "lengthRange": "2500mm to 5000mm",
+      "finish": [
+        "Hairline",
+        "No.4"
+      ]
+    },
+    "applications": [
+      "Kitchen cabinets",
+      "Elevator panels",
+      "Column cladding",
+      "Commercial furniture"
+    ],
+    "industries": [
+      "Architecture",
+      "Interior Design",
+      "Hospitality"
+    ],
+    "pros": "Hides scratches well; elegant finish.",
+    "cons": "Directional finish requires alignment during installation.",
+    "relatedGrades": [
+      "SS 304 Hairline",
+      "SS 316 Hairline"
+    ],
+    "inStock": true,
+    "moq": "200 kg",
+    "tags": [
+      "202",
+      "hairline",
+      "No4",
+      "brushed",
+      "sheets"
+    ]
+  },
+  {
+    "id": "ss-202-coil",
+    "slug": "ss-202-coils",
+    "grade": "SS 202",
+    "subGrade": "J4",
+    "series": "200 Series",
+    "form": "Coils",
+    "finish": "2B",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/coils.jpg",
+    "metaTitle": "SS 202 Coils | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 stainless steel coils and slitting coils. Available in various widths and thicknesses. Mumbai.",
+    "keywords": [
+      "SS 202 coils",
+      "202 slitting coils",
+      "202 stainless coil"
+    ],
+    "description": "Hot rolled/cold rolled 202 coils for forming and slitting into desired widths. Supplied in full and half coils.",
+    "chem": {
+      "Cr": "15-17%",
+      "Ni": "1.0-1.5%",
+      "Cu": "1.5-2.0%",
+      "Mn": "8-10%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Coil Weight": "3-10 MT",
+      "Inner Diameter": "508mm / 610mm"
+    },
+    "specs": {
+      "standards": [
+        "Jindal J4",
+        "IS 6911"
+      ],
+      "thicknessRange": "0.30mm to 4.0mm",
+      "widthRange": "Slitting: 10mm to 1500mm",
+      "finish": [
+        "2B",
+        "BA",
+        "HR"
+      ]
+    },
+    "applications": [
+      "Tube mills",
+      "Roll forming",
+      "Slitting for patti/strips"
+    ],
+    "industries": [
+      "Tube Manufacturing",
+      "Roll Forming",
+      "Fabrication"
+    ],
+    "pros": "Ideal for high-volume tube and strip production.",
+    "cons": "Min order quantity usually 1 coil.",
+    "relatedGrades": [
+      "SS 304 Coil",
+      "SS 201 Coil"
+    ],
+    "inStock": true,
+    "moq": "1 Coil (~3 MT)",
+    "tags": [
+      "202",
+      "coils",
+      "HR",
+      "CR",
+      "slitting"
+    ]
+  },
+  {
+    "id": "ss-202-pipes",
+    "slug": "ss-202-welded-pipes",
+    "grade": "SS 202",
+    "subGrade": "J4",
+    "series": "200 Series",
+    "form": "Pipes",
+    "finish": "Mill Finish",
+    "department": "Stainless Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "SS 202 Pipes | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 welded pipes in round, square and rectangular sections. ERW and DOM available. Mumbai.",
+    "keywords": [
+      "SS 202 pipes",
+      "202 stainless steel pipe",
+      "202 ERW pipe",
+      "202 square pipe"
+    ],
+    "description": "Electric Resistance Welded (ERW) 202 pipes for decorative, structural and general purpose applications.",
+    "chem": {
+      "Cr": "15-17%",
+      "Ni": "1.0-1.5%",
+      "Cu": "1.5-2.0%",
+      "Mn": "8-10%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A554",
+        "IS 6913"
+      ],
+      "ODRange": "1/4\" to 12\" NB",
+      "thicknessRange": "0.5mm to 6.0mm",
+      "lengthRange": "6m",
+      "sections": [
+        "Round",
+        "Square",
+        "Rectangular"
+      ],
+      "finish": [
+        "Mill",
+        "Hairline",
+        "Mirror",
+        "Satin"
+      ]
+    },
+    "applications": [
+      "Handrails",
+      "Grills",
+      "Gates",
+      "Furniture frames",
+      "Structural supports"
+    ],
+    "industries": [
+      "Construction",
+      "Furniture",
+      "Architecture",
+      "Retail"
+    ],
+    "pros": "Economical; easy to fabricate and weld.",
+    "cons": "Not for corrosive/marine environments.",
+    "relatedGrades": [
+      "SS 304 Pipes",
+      "SS 201 Pipes"
+    ],
+    "inStock": true,
+    "moq": "100 kg",
+    "tags": [
+      "202",
+      "pipes",
+      "ERW",
+      "square",
+      "rectangular",
+      "tube"
+    ]
+  },
+  {
+    "id": "ss-202-round-bar",
+    "slug": "ss-202-round-bars",
+    "grade": "SS 202",
+    "subGrade": "J4",
+    "series": "200 Series",
+    "form": "Round Bars",
+    "finish": "Bright / Black",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 202 Round Bars | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 round bars in bright and black finish. Available 6mm to 200mm diameter. Mumbai stockist.",
+    "keywords": [
+      "SS 202 round bar",
+      "202 stainless bar",
+      "202 bright bar"
+    ],
+    "description": "202 round bars in bright-drawn (polished) and black (hot rolled) finish for machining and fabrication.",
+    "chem": {
+      "Cr": "15-17%",
+      "Ni": "1.0-1.5%",
+      "Cu": "1.5-2.0%",
+      "Mn": "8-10%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Hardness": "≤ 217 HB"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276",
+        "IS 6528"
+      ],
+      "diameterRange": "6mm to 200mm",
+      "lengthRange": "3m to 6m",
+      "finish": [
+        "Bright Drawn",
+        "Hot Rolled Black",
+        "Centreless Ground"
+      ]
+    },
+    "applications": [
+      "Shafts",
+      "Fasteners",
+      "Machined components",
+      "Turning"
+    ],
+    "industries": [
+      "Engineering",
+      "Fabrication",
+      "General Industry"
+    ],
+    "pros": "Good surface finish on bright bars; easy to machine.",
+    "cons": "Not for corrosive environments.",
+    "relatedGrades": [
+      "SS 304 Bars",
+      "SS 410 Bars"
+    ],
+    "inStock": true,
+    "moq": "100 kg",
+    "tags": [
+      "202",
+      "round bar",
+      "bright bar",
+      "rods"
+    ]
+  },
+  {
+    "id": "ss-201-decorative-sheet",
+    "slug": "ss-201-decorative-sheets",
+    "grade": "SS 201",
+    "subGrade": "JT",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "Mirror / Hairline",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 201 Decorative Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 201 decorative mirror and hairline sheets for interior design and lift panels. Stock in Mumbai.",
+    "keywords": [
+      "SS 201 decorative sheets",
+      "201 mirror sheets",
+      "201 hairline sheets"
+    ],
+    "description": "High-manganese 201 grade in mirror and hairline finishes for architectural and decorative applications.",
+    "chem": {
+      "Cr": "16-18%",
+      "Ni": "0.5-1.0%",
+      "Mn": "5.5-7.5%",
+      "N": "0.05-0.25%"
+    },
+    "phys": {
+      "Density": "7.86 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240"
+      ],
+      "thicknessRange": "0.40mm to 2.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "finish": [
+        "Mirror 8K",
+        "Hairline No.4",
+        "Etched",
+        "Designer",
+        "Color PVD"
+      ]
+    },
+    "applications": [
+      "Lift cabins",
+      "Hotel lobbies",
+      "Reception desks",
+      "Feature walls"
+    ],
+    "industries": [
+      "Architecture",
+      "Interior Design",
+      "Hospitality"
+    ],
+    "pros": "Excellent yield strength; premium decorative quality.",
+    "cons": "Not suitable for outdoor or wet environments.",
+    "relatedGrades": [
+      "SS 202 Mirror",
+      "SS 304 Mirror"
+    ],
+    "inStock": true,
+    "moq": "200 kg",
+    "tags": [
+      "201",
+      "decorative",
+      "mirror",
+      "hairline",
+      "sheets"
+    ]
+  },
+  {
+    "id": "ss-201-pipes",
+    "slug": "ss-201-pipes-tubes",
+    "grade": "SS 201",
+    "subGrade": "JT",
+    "series": "200 Series",
+    "form": "Pipes",
+    "finish": "Satin / Mirror",
+    "department": "Stainless Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "SS 201 Pipes & Tubes | Tatvam Overseas Inc",
+    "metaDescription": "SS 201 decorative pipes for railings and furniture. Round, square, and rectangular. Mumbai.",
+    "keywords": [
+      "SS 201 pipes",
+      "201 decorative pipe",
+      "201 round pipe",
+      "201 square tube"
+    ],
+    "description": "201 welded decorative pipes for handrails, balustrades, and furniture structural use.",
+    "chem": {
+      "Cr": "16-18%",
+      "Ni": "0.5-1.0%",
+      "Mn": "5.5-7.5%"
+    },
+    "phys": {
+      "Density": "7.86 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A554"
+      ],
+      "ODRange": "12.7mm to 101.6mm",
+      "thicknessRange": "0.8mm to 3.0mm",
+      "sections": [
+        "Round",
+        "Square",
+        "Rectangular",
+        "Oval"
+      ]
+    },
+    "applications": [
+      "Handrails",
+      "Balustrades",
+      "Furniture legs",
+      "Shopfitting"
+    ],
+    "industries": [
+      "Construction",
+      "Furniture",
+      "Retail",
+      "Architecture"
+    ],
+    "pros": "Good strength; economical decorative solution.",
+    "cons": "Can develop rust spots in high-humidity/coastal areas.",
+    "relatedGrades": [
+      "SS 202 Pipes",
+      "SS 304 Pipes"
+    ],
+    "inStock": true,
+    "moq": "100 kg",
+    "tags": [
+      "201",
+      "pipes",
+      "decorative",
+      "handrail",
+      "tubes"
+    ]
+  },
+  {
+    "id": "ss-304-hr-sheet",
+    "slug": "ss-304-hot-rolled-sheets",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Sheets",
+    "finish": "No.1 (Hot Rolled Annealed Pickled)",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 304 HR Sheets | Tatvam Overseas Inc Mumbai",
+    "metaDescription": "SS 304 hot rolled annealed pickled (No.1 finish) sheets for industrial and pressure vessel use.",
+    "keywords": [
+      "SS 304 HR sheets",
+      "304 HRAP sheets",
+      "304 No.1 finish",
+      "304 hot rolled"
+    ],
+    "description": "Hot Rolled, Annealed and Pickled (HRAP) 304/304L sheets conforming to ASTM A240. For heavy industrial fabrication.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08% (304) / ≤0.03% (304L)",
+      "Mn": "≤2.0%",
+      "Si": "≤0.75%",
+      "P": "≤0.045%",
+      "S": "≤0.030%",
+      "N": "≤0.10%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³",
+      "Yield Strength": "205 MPa",
+      "Tensile Strength": "515 MPa",
+      "Elongation": "40%",
+      "Hardness": "≤ 201 HB"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "EN 10028-7",
+        "IS 6911"
+      ],
+      "thicknessRange": "3.0mm to 100mm",
+      "widthRange": "1000mm to 2500mm",
+      "lengthRange": "2000mm to 12000mm",
+      "finish": [
+        "No.1",
+        "2D"
+      ]
+    },
+    "applications": [
+      "Pressure vessels",
+      "Heat exchangers",
+      "Chemical tanks",
+      "Structural fabrication"
+    ],
+    "industries": [
+      "Chemical",
+      "Pharmaceutical",
+      "Oil & Gas",
+      "Power"
+    ],
+    "pros": "Heavy gauge availability; MTC provided; food-safe.",
+    "cons": "Rough surface; requires secondary polishing for aesthetics.",
+    "relatedGrades": [
+      "SS 304 CR Sheet",
+      "SS 316 Sheet",
+      "SS 321 Sheet"
+    ],
+    "inStock": true,
+    "moq": "500 kg",
+    "tags": [
+      "304",
+      "HR",
+      "No1",
+      "HRAP",
+      "sheet",
+      "plate",
+      "industrial"
+    ]
+  },
+  {
+    "id": "ss-304-cr-2b-sheet",
+    "slug": "ss-304-2b-finish-sheets",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Sheets",
+    "finish": "2B",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 304 2B Finish Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 304/304L cold rolled 2B finish sheets. Most popular grade. Thickness 0.3mm to 12mm. Ex-stock Mumbai.",
+    "keywords": [
+      "SS 304 2B sheets",
+      "304 cold rolled sheets",
+      "304 CR sheets",
+      "304 stainless steel sheet"
+    ],
+    "description": "Cold rolled, bright annealed then skin-passed (2B) 304/304L sheets. The most widely stocked stainless steel product.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08% (304) / ≤0.03% (304L)",
+      "Mn": "≤2.0%",
+      "Si": "≤0.75%",
+      "P": "≤0.045%",
+      "S": "≤0.030%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³",
+      "Yield Strength": "205 MPa",
+      "Tensile Strength": "515 MPa",
+      "Elongation": "40%",
+      "Hardness": "≤ 201 HB",
+      "Surface Roughness": "Ra 0.1-0.5 µm"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "EN 10088-2",
+        "IS 6911"
+      ],
+      "thicknessRange": "0.30mm to 12.0mm",
+      "widthRange": "1000mm to 2000mm",
+      "lengthRange": "2500mm to 6000mm",
+      "finish": [
+        "2B"
+      ]
+    },
+    "applications": [
+      "Food processing equipment",
+      "Kitchen equipment",
+      "Pharmaceutical vessels",
+      "Chemical tanks",
+      "Architectural panels"
+    ],
+    "industries": [
+      "Food & Beverage",
+      "Pharmaceutical",
+      "Chemical",
+      "Architecture",
+      "Hospitality"
+    ],
+    "pros": "Smooth finish; food-safe; excellent formability and weldability.",
+    "cons": "Susceptible to pitting in chloride-rich (marine/coastal) environments.",
+    "relatedGrades": [
+      "SS 316 2B Sheet",
+      "SS 304 BA Sheet",
+      "SS 202 J4 Sheet"
+    ],
+    "inStock": true,
+    "moq": "200 kg",
+    "tags": [
+      "304",
+      "2B",
+      "CR",
+      "sheet",
+      "flat",
+      "food grade"
+    ]
+  },
+  {
+    "id": "ss-304-ba-sheet",
+    "slug": "ss-304-ba-finish-sheets",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Sheets",
+    "finish": "BA (Bright Annealed)",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 304 BA Finish Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 bright annealed (BA) finish sheets. High reflectivity. Available in Mumbai.",
+    "keywords": [
+      "SS 304 BA sheets",
+      "bright annealed 304",
+      "304 BA finish"
+    ],
+    "description": "Bright Annealed (BA) 304 sheets offer higher reflectivity than 2B, annealed in hydrogen atmosphere.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%",
+      "Mn": "≤2.0%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³",
+      "Surface Roughness": "Ra ≤ 0.1 µm",
+      "Reflectivity": "70-80%"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "EN 10088-2"
+      ],
+      "thicknessRange": "0.30mm to 3.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "finish": [
+        "BA"
+      ]
+    },
+    "applications": [
+      "Reflective architectural panels",
+      "Appliances",
+      "Automotive trim"
+    ],
+    "industries": [
+      "Architecture",
+      "Automotive",
+      "Appliances"
+    ],
+    "pros": "Higher reflectivity than 2B; good corrosion resistance.",
+    "cons": "More expensive than 2B; limited heavy gauge availability.",
+    "relatedGrades": [
+      "SS 304 Mirror",
+      "SS 304 2B"
+    ],
+    "inStock": true,
+    "moq": "200 kg",
+    "tags": [
+      "304",
+      "BA",
+      "bright annealed",
+      "sheet",
+      "reflective"
+    ]
+  },
+  {
+    "id": "ss-304-mirror-sheet",
+    "slug": "ss-304-mirror-finish-sheets",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Sheets",
+    "finish": "Mirror (8K)",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 304 Mirror Finish Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 mirror polished 8K sheets for lift cabins, decorative panels and hotel interiors. Stock Mumbai.",
+    "keywords": [
+      "SS 304 mirror sheets",
+      "8K mirror finish",
+      "304 polished sheets",
+      "mirror stainless steel"
+    ],
+    "description": "Highly polished 8K mirror finish 304 sheets. Surface Ra ≤ 0.05 µm. PVC film protected.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³",
+      "Surface Roughness": "Ra ≤ 0.05 µm"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240"
+      ],
+      "thicknessRange": "0.40mm to 3.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "finish": [
+        "8K Mirror"
+      ],
+      "protective": "PVC film"
+    },
+    "applications": [
+      "Lift cabins",
+      "Column cladding",
+      "Hotel lobbies",
+      "Feature walls",
+      "Decorative fixtures"
+    ],
+    "industries": [
+      "Architecture",
+      "Interior Design",
+      "Hospitality",
+      "Retail"
+    ],
+    "pros": "Premium aesthetics; fully reflective; food-safe grade.",
+    "cons": "Prone to fingerprints and scratching; higher cost.",
+    "relatedGrades": [
+      "SS 304 Hairline",
+      "SS 316 Mirror",
+      "SS 202 Mirror"
+    ],
+    "inStock": true,
+    "moq": "100 kg",
+    "tags": [
+      "304",
+      "mirror",
+      "8K",
+      "polished",
+      "decorative",
+      "sheet"
+    ]
+  },
+  {
+    "id": "ss-304-hairline-sheet",
+    "slug": "ss-304-hairline-finish-sheets",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Sheets",
+    "finish": "Hairline (No.4)",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 304 Hairline Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 hairline (No.4) brushed finish sheets for kitchen, elevators and interiors. Mumbai stockist.",
+    "keywords": [
+      "SS 304 hairline sheets",
+      "No.4 finish 304",
+      "brushed 304 sheets"
+    ],
+    "description": "Directional brushed (No.4/Hairline) finish on 304 sheets. Most popular architectural finish globally.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³",
+      "Surface Roughness": "Ra 0.2-0.5 µm"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A480"
+      ],
+      "thicknessRange": "0.40mm to 4.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "finish": [
+        "No.4 Hairline"
+      ]
+    },
+    "applications": [
+      "Kitchen cabinets",
+      "Elevator doors",
+      "Handrails",
+      "Commercial interiors",
+      "Column cladding"
+    ],
+    "industries": [
+      "Architecture",
+      "Interior Design",
+      "Commercial Construction"
+    ],
+    "pros": "Hides scratches well; timeless architectural look.",
+    "cons": "Direction must be maintained during installation.",
+    "relatedGrades": [
+      "SS 304 Mirror",
+      "SS 316 Hairline",
+      "SS 202 Hairline"
+    ],
+    "inStock": true,
+    "moq": "100 kg",
+    "tags": [
+      "304",
+      "hairline",
+      "No4",
+      "brushed",
+      "sheet",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ss-304-pvd-gold-sheet",
+    "slug": "ss-304-pvd-gold-sheets",
+    "grade": "SS 304",
+    "subGrade": "304 PVD",
+    "series": "300 Series",
+    "form": "Sheets",
+    "finish": "PVD Gold",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 304 PVD Gold Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 PVD gold finish sheets for luxury interiors and decorative use. Mumbai supplier.",
+    "keywords": [
+      "PVD gold sheets",
+      "304 gold finish",
+      "stainless steel PVD",
+      "colored stainless sheets"
+    ],
+    "description": "304 sheets with Physical Vapour Deposition (PVD) gold coating. Scratch-resistant decorative finish.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³",
+      "Coating Thickness": "0.3-0.5 µm TiN"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240 substrate"
+      ],
+      "thicknessRange": "0.50mm to 2.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "finish": [
+        "PVD Gold",
+        "PVD Rose Gold",
+        "PVD Black",
+        "PVD Bronze",
+        "PVD Champagne",
+        "PVD Blue"
+      ]
+    },
+    "applications": [
+      "Hotel lobbies",
+      "Restaurant interiors",
+      "Luxury fit-outs",
+      "Decorative screens",
+      "Lift cabins"
+    ],
+    "industries": [
+      "Luxury Hospitality",
+      "Interior Design",
+      "Architecture"
+    ],
+    "pros": "Durable colour coating; scratch-resistant; premium aesthetics.",
+    "cons": "Higher price; colour matching needed for large orders.",
+    "relatedGrades": [
+      "SS 304 Mirror",
+      "SS 316 PVD"
+    ],
+    "inStock": false,
+    "moq": "5 sheets (min)",
+    "tags": [
+      "304",
+      "PVD",
+      "gold",
+      "coloured",
+      "decorative",
+      "sheet",
+      "luxury"
+    ]
+  },
+  {
+    "id": "ss-304-plate",
+    "slug": "ss-304-plates",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Plates",
+    "finish": "No.1 / 2D",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 304 Plates | Tatvam Overseas Inc",
+    "metaDescription": "SS 304/304L plates for pressure vessels and industrial fabrication. Thickness up to 100mm. Mumbai.",
+    "keywords": [
+      "SS 304 plates",
+      "304 stainless plates",
+      "304 thick plate",
+      "304 pressure vessel plate"
+    ],
+    "description": "Heavy gauge 304/304L plates for pressure vessels, tanks, and industrial construction.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%",
+      "Mn": "≤2.0%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³",
+      "Yield Strength": "205 MPa",
+      "Tensile Strength": "515 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "ASME SA240",
+        "EN 10028-7"
+      ],
+      "thicknessRange": "5mm to 100mm",
+      "widthRange": "1000mm to 2500mm",
+      "lengthRange": "2000mm to 12000mm"
+    },
+    "applications": [
+      "Pressure vessels",
+      "Chemical reactors",
+      "Storage tanks",
+      "Cryogenic equipment"
+    ],
+    "industries": [
+      "Chemical",
+      "Oil & Gas",
+      "Pharmaceutical",
+      "Power"
+    ],
+    "pros": "Heavy gauge available; dual certified 304/304L; MTC with heat number.",
+    "cons": "Requires plasma/waterjet cutting for processing; heavier transport.",
+    "relatedGrades": [
+      "SS 316 Plate",
+      "SS 321 Plate",
+      "SS 304H Plate"
+    ],
+    "inStock": true,
+    "moq": "1 MT",
+    "tags": [
+      "304",
+      "plates",
+      "thick",
+      "pressure vessel",
+      "industrial"
+    ]
+  },
+  {
+    "id": "ss-304-coil",
+    "slug": "ss-304-coils",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Coils",
+    "finish": "2B / BA / HR",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/coils.jpg",
+    "metaTitle": "SS 304 Coils | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 stainless steel coils and slitting coils in 2B and BA finish. Mumbai stockist.",
+    "keywords": [
+      "SS 304 coils",
+      "304 slitting coils",
+      "304 stainless coil",
+      "304 HR coil"
+    ],
+    "description": "304/304L coils in 2B and BA finish supplied in full-width and slit widths for tube mills and roll forming.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³",
+      "Coil Weight": "3-12 MT",
+      "Inner Diameter": "508mm / 610mm"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "JIS G4305"
+      ],
+      "thicknessRange": "0.30mm to 6.0mm",
+      "widthRange": "Slitting: 10mm to 2000mm",
+      "finish": [
+        "2B",
+        "BA",
+        "No.1",
+        "HR"
+      ]
+    },
+    "applications": [
+      "Tube mill feed",
+      "Roll forming",
+      "Slitting for strips/patti",
+      "Deep drawing"
+    ],
+    "industries": [
+      "Tube Manufacturing",
+      "Roll Forming",
+      "Stamping",
+      "Fabrication"
+    ],
+    "pros": "Consistent mechanical properties; wide width availability.",
+    "cons": "Min order typically 1 coil; requires uncoiling equipment.",
+    "relatedGrades": [
+      "SS 316 Coil",
+      "SS 202 Coil"
+    ],
+    "inStock": true,
+    "moq": "1 Coil (~3 MT)",
+    "tags": [
+      "304",
+      "coil",
+      "slitting",
+      "2B",
+      "HR",
+      "strip"
+    ]
+  },
+  {
+    "id": "ss-304-seamless-pipe",
+    "slug": "ss-304-seamless-pipes",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Seamless Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "SS 304 Seamless Pipes | Tatvam Overseas Inc",
+    "metaDescription": "SS 304/304L seamless pipes for high pressure and food-grade applications. ASTM A312. Mumbai.",
+    "keywords": [
+      "SS 304 seamless pipe",
+      "304 SMLS pipe",
+      "304 stainless pipe",
+      "A312 TP304"
+    ],
+    "description": "Hot/Cold finished seamless 304/304L pipes conforming to ASTM A312 TP304/304L for pressure and food-grade service.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08% (304) / ≤0.03% (304L)",
+      "Mn": "≤2.0%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³",
+      "Yield Strength": "205 MPa",
+      "Tensile Strength": "515 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A312",
+        "ASME SA312",
+        "EN 10216-5"
+      ],
+      "ODRange": "1/4\" to 24\" NB (6mm to 600mm)",
+      "thicknessRange": "Sch 5S to Sch XXS",
+      "lengthRange": "6m / 12m random",
+      "endFinish": [
+        "Plain End",
+        "Bevelled End"
+      ],
+      "testing": [
+        "Hydrostatic",
+        "PMI",
+        "Radiography on request"
+      ]
+    },
+    "applications": [
+      "Chemical process piping",
+      "Food processing",
+      "Pharmaceutical",
+      "Dairy",
+      "High-pressure lines"
+    ],
+    "industries": [
+      "Chemical",
+      "Food & Beverage",
+      "Pharmaceutical",
+      "Oil & Gas",
+      "Power"
+    ],
+    "pros": "No weld seam; higher pressure rating; full MTC with heat number.",
+    "cons": "More expensive than ERW; longer lead time for large diameters.",
+    "relatedGrades": [
+      "SS 316 Seamless Pipe",
+      "SS 321 Pipe",
+      "SS 304 ERW Pipe"
+    ],
+    "inStock": true,
+    "moq": "100 kg",
+    "tags": [
+      "304",
+      "seamless",
+      "SMLS",
+      "pipe",
+      "A312",
+      "pressure"
+    ]
+  },
+  {
+    "id": "ss-304-erw-pipe",
+    "slug": "ss-304-erw-welded-pipes",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "ERW Pipes",
+    "finish": "Mill / Polished",
+    "department": "Stainless Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "SS 304 ERW Welded Pipes | Tatvam Overseas Inc",
+    "metaDescription": "SS 304/304L ERW and welded pipes for structural and general purpose use. Round, square, rectangular. Mumbai.",
+    "keywords": [
+      "SS 304 ERW pipe",
+      "304 welded pipe",
+      "304 square pipe",
+      "304 rectangular pipe"
+    ],
+    "description": "Electric Resistance Welded (ERW) 304/304L pipes for structural, decorative, and general engineering.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A554",
+        "IS 6913"
+      ],
+      "ODRange": "1/2\" to 12\" NB",
+      "thicknessRange": "0.8mm to 6.0mm",
+      "sections": [
+        "Round",
+        "Square",
+        "Rectangular",
+        "Oval"
+      ],
+      "lengthRange": "6m",
+      "finish": [
+        "Mill",
+        "Hairline",
+        "Mirror",
+        "Satin"
+      ]
+    },
+    "applications": [
+      "Structural framework",
+      "Handrails",
+      "Architectural features",
+      "General engineering"
+    ],
+    "industries": [
+      "Construction",
+      "Furniture",
+      "Architecture",
+      "General Engineering"
+    ],
+    "pros": "Cost-effective; wide section availability; fast delivery.",
+    "cons": "Weld seam present; lower pressure rating than seamless.",
+    "relatedGrades": [
+      "SS 304 Seamless Pipe",
+      "SS 316 ERW Pipe",
+      "SS 202 Pipe"
+    ],
+    "inStock": true,
+    "moq": "100 kg",
+    "tags": [
+      "304",
+      "ERW",
+      "welded",
+      "pipe",
+      "square",
+      "rectangular",
+      "structural"
+    ]
+  },
+  {
+    "id": "ss-304-round-bar",
+    "slug": "ss-304-round-bars",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Round Bars",
+    "finish": "Bright / Black / Ground",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 304 Round Bars | Tatvam Overseas Inc",
+    "metaDescription": "SS 304/304L round bars in bright drawn and black finish. 6mm to 500mm. Mumbai.",
+    "keywords": [
+      "SS 304 round bar",
+      "304 stainless bar",
+      "304 bright bar",
+      "304 black bar"
+    ],
+    "description": "304/304L round bars in bright drawn (cold finished), hot rolled black, and centreless ground finish.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%",
+      "Mn": "≤2.0%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³",
+      "Hardness": "≤ 201 HB"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276",
+        "ASTM A479",
+        "EN 10088-3"
+      ],
+      "diameterRange": "6mm to 500mm",
+      "lengthRange": "3m to 6m",
+      "finish": [
+        "Bright Drawn",
+        "Hot Rolled",
+        "Centreless Ground",
+        "Peeled"
+      ]
+    },
+    "applications": [
+      "Shafts",
+      "Pump components",
+      "Fastener blanks",
+      "Machined parts",
+      "Valves"
+    ],
+    "industries": [
+      "Engineering",
+      "Oil & Gas",
+      "Chemical",
+      "Pumps & Valves"
+    ],
+    "pros": "Food-safe grade; excellent machinability; MTC provided.",
+    "cons": "Work hardens during machining; requires carbide tooling for large cuts.",
+    "relatedGrades": [
+      "SS 316 Round Bar",
+      "SS 410 Bar",
+      "SS 304 Hex Bar"
+    ],
+    "inStock": true,
+    "moq": "100 kg",
+    "tags": [
+      "304",
+      "round bar",
+      "bright bar",
+      "black bar",
+      "rods",
+      "machining"
+    ]
+  },
+  {
+    "id": "ss-304-hex-bar",
+    "slug": "ss-304-hex-bars",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Hex Bars",
+    "finish": "Bright / Black",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 304 Hex Bars | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 hexagonal bars for fastener and nut manufacturing. Bright drawn. Mumbai stockist.",
+    "keywords": [
+      "SS 304 hex bar",
+      "304 hexagonal bar",
+      "304 stainless hex"
+    ],
+    "description": "304/304L hexagonal bars for nut, bolt, and valve body manufacture.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276"
+      ],
+      "sizeRange": "5mm A/F to 100mm A/F",
+      "lengthRange": "3m to 6m",
+      "finish": [
+        "Bright Drawn",
+        "Hot Rolled"
+      ]
+    },
+    "applications": [
+      "Nut and bolt manufacture",
+      "Valve bodies",
+      "Fittings",
+      "CNC turning"
+    ],
+    "industries": [
+      "Fastener Manufacturing",
+      "Engineering",
+      "Valves"
+    ],
+    "pros": "Ready for CNC nut manufacture; accurate across-flats dimensions.",
+    "cons": "Limited stock in large sizes.",
+    "relatedGrades": [
+      "SS 304 Round Bar",
+      "SS 316 Hex Bar"
+    ],
+    "inStock": true,
+    "moq": "50 kg",
+    "tags": [
+      "304",
+      "hex bar",
+      "hexagonal",
+      "fastener",
+      "nut manufacture"
+    ]
+  },
+  {
+    "id": "ss-304-flat-bar",
+    "slug": "ss-304-flat-bars",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Flat Bars",
+    "finish": "Bright / Mill",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 304 Flat Bars | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 flat bars (patti) for fabrication, supports and architectural use. Mumbai.",
+    "keywords": [
+      "SS 304 flat bar",
+      "304 patti",
+      "304 stainless flat bar"
+    ],
+    "description": "304 flat bars (patti) in mill and bright finish for structural supports, frames, and fabrication.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276"
+      ],
+      "widthRange": "10mm to 200mm",
+      "thicknessRange": "2mm to 25mm",
+      "lengthRange": "3m to 6m"
+    },
+    "applications": [
+      "Supports",
+      "Brackets",
+      "Frames",
+      "Conveyor guides",
+      "Grating"
+    ],
+    "industries": [
+      "Fabrication",
+      "Food Processing",
+      "Architecture"
+    ],
+    "pros": "Versatile; available in a wide range of sizes.",
+    "cons": "Surface may need secondary polishing for architectural use.",
+    "relatedGrades": [
+      "SS 304 Round Bar",
+      "SS 316 Flat Bar"
+    ],
+    "inStock": true,
+    "moq": "50 kg",
+    "tags": [
+      "304",
+      "flat bar",
+      "patti",
+      "strip",
+      "structural"
+    ]
+  },
+  {
+    "id": "ss-304-angle",
+    "slug": "ss-304-angles",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Angles",
+    "finish": "Mill",
+    "department": "Stainless Steel",
+    "category": "Structural",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 304 Angles | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 equal and unequal angles for structural and architectural use. Mumbai stockist.",
+    "keywords": [
+      "SS 304 angles",
+      "304 equal angle",
+      "304 structural angle"
+    ],
+    "description": "304 equal and unequal leg angles for structural framing, supports, and corner protection.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276",
+        "IS 6528"
+      ],
+      "sizeRange": "25x25mm to 150x150mm",
+      "thicknessRange": "3mm to 15mm",
+      "lengthRange": "6m"
+    },
+    "applications": [
+      "Structural frames",
+      "Supports",
+      "Corner protection",
+      "Conveyor systems"
+    ],
+    "industries": [
+      "Construction",
+      "Food Processing",
+      "Chemical"
+    ],
+    "pros": "Structural rigidity; corrosion resistant framing solution.",
+    "cons": "Heavier than hollow sections for same load.",
+    "relatedGrades": [
+      "SS 316 Angle",
+      "SS 304 Channel"
+    ],
+    "inStock": true,
+    "moq": "100 kg",
+    "tags": [
+      "304",
+      "angle",
+      "structural",
+      "equal angle",
+      "unequal angle"
+    ]
+  },
+  {
+    "id": "ss-304-wire",
+    "slug": "ss-304-wire",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Wire",
+    "finish": "Bright / Matte",
+    "department": "Stainless Steel",
+    "category": "Wire Products",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 304 Wire | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 MIG, TIG, spring and general purpose wire. Various diameters. Mumbai.",
+    "keywords": [
+      "SS 304 wire",
+      "304 MIG wire",
+      "304 TIG wire",
+      "304 spring wire"
+    ],
+    "description": "304 stainless wire for welding (MIG/TIG), springs, mesh, and general industrial use.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "AWS A5.9",
+        "EN 12072"
+      ],
+      "diameterRange": "0.1mm to 12mm",
+      "coilWeight": "5 kg to 250 kg",
+      "finish": [
+        "Bright",
+        "Matte",
+        "Lightly Oiled"
+      ]
+    },
+    "applications": [
+      "MIG/TIG welding",
+      "Springs",
+      "Wire rope",
+      "Mesh weaving",
+      "Binding"
+    ],
+    "industries": [
+      "Welding",
+      "Spring Manufacturing",
+      "Wire Rope",
+      "Mesh"
+    ],
+    "pros": "Excellent weld pool characteristics; spatter-free.",
+    "cons": "Spring wire requires specific temper; check before ordering.",
+    "relatedGrades": [
+      "SS 316 Wire",
+      "SS 308L Wire"
+    ],
+    "inStock": true,
+    "moq": "25 kg",
+    "tags": [
+      "304",
+      "wire",
+      "MIG",
+      "TIG",
+      "spring wire",
+      "welding"
+    ]
+  },
+  {
+    "id": "ss-304-perforated-sheet",
+    "slug": "ss-304-perforated-sheets",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "300 Series",
+    "form": "Perforated Sheets",
+    "finish": "2B / Mill",
+    "department": "Stainless Steel",
+    "category": "Wire Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 304 Perforated Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 perforated sheets in round, square and slotted holes. Custom perforation available. Mumbai.",
+    "keywords": [
+      "SS 304 perforated sheets",
+      "perforated stainless steel",
+      "304 punched sheets"
+    ],
+    "description": "304 perforated sheets in round, square, slotted and decorative hole patterns for filtration, ventilation, and architecture.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240 substrate"
+      ],
+      "thicknessRange": "0.5mm to 10mm",
+      "widthRange": "1000mm to 2000mm",
+      "holePatterns": [
+        "Round",
+        "Square",
+        "Slotted",
+        "Hexagonal",
+        "Decorative"
+      ],
+      "openArea": "20% to 70%"
+    },
+    "applications": [
+      "Filtration screens",
+      "Ventilation panels",
+      "Acoustic ceilings",
+      "Architectural facades",
+      "Grills"
+    ],
+    "industries": [
+      "Architecture",
+      "HVAC",
+      "Food Processing",
+      "Mining",
+      "Water Treatment"
+    ],
+    "pros": "Custom hole sizes and patterns; food-safe grade.",
+    "cons": "Custom patterns require tooling lead time.",
+    "relatedGrades": [
+      "SS 316 Perforated",
+      "SS 304 Wire Mesh"
+    ],
+    "inStock": true,
+    "moq": "5 sheets",
+    "tags": [
+      "304",
+      "perforated",
+      "punched",
+      "filter",
+      "ventilation",
+      "sheet"
+    ]
+  },
+  {
+    "id": "ss-304h-plate",
+    "slug": "ss-304h-plates",
+    "grade": "SS 304H",
+    "subGrade": "304H",
+    "series": "300 Series",
+    "form": "Plates",
+    "finish": "No.1",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 304H Plates | Tatvam Overseas Inc",
+    "metaDescription": "SS 304H high temperature plates and pipes for boilers and heat exchangers. ASTM A240. Mumbai.",
+    "keywords": [
+      "SS 304H plates",
+      "304H high temperature",
+      "304H boiler plate"
+    ],
+    "description": "High carbon (0.04-0.10%) 304H for service above 425°C. Provides better creep strength.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "0.04-0.10%",
+      "Mn": "≤2.0%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³",
+      "Max Service Temp": "870°C"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "ASME SA240"
+      ],
+      "thicknessRange": "3mm to 50mm",
+      "widthRange": "1000mm to 2500mm"
+    },
+    "applications": [
+      "Boiler components",
+      "Furnace parts",
+      "Heat exchangers",
+      "Superheaters"
+    ],
+    "industries": [
+      "Power",
+      "Oil & Gas",
+      "Petrochemical",
+      "Chemical"
+    ],
+    "pros": "Superior creep resistance above 425°C; dual 304/304H certification possible.",
+    "cons": "Slightly lower general corrosion resistance than 304L.",
+    "relatedGrades": [
+      "SS 321",
+      "SS 347",
+      "SS 310S"
+    ],
+    "inStock": false,
+    "moq": "500 kg",
+    "tags": [
+      "304H",
+      "high temp",
+      "plate",
+      "boiler",
+      "creep"
+    ]
+  },
+  {
+    "id": "ss-316-cr-2b-sheet",
+    "slug": "ss-316-2b-finish-sheets",
+    "grade": "SS 316",
+    "subGrade": "316 / 316L",
+    "series": "300 Series",
+    "form": "Sheets",
+    "finish": "2B",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 316 2B Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 316/316L cold rolled 2B sheets. Marine grade with Molybdenum. Ex-stock Mumbai.",
+    "keywords": [
+      "SS 316 sheets",
+      "316 stainless steel sheet",
+      "316 marine grade",
+      "316L sheet"
+    ],
+    "description": "Cold rolled 2B finish 316/316L sheets. Superior chloride and pitting resistance due to 2-3% Molybdenum.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "10.0-14.0%",
+      "Mo": "2.0-3.0%",
+      "C": "≤0.08% (316) / ≤0.03% (316L)",
+      "Mn": "≤2.0%",
+      "Si": "≤0.75%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³",
+      "Yield Strength": "205 MPa",
+      "Tensile Strength": "515 MPa",
+      "Elongation": "40%"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "EN 10088-2",
+        "IS 6911"
+      ],
+      "thicknessRange": "0.30mm to 12.0mm",
+      "widthRange": "1000mm to 2000mm",
+      "finish": [
+        "2B",
+        "BA",
+        "No.1",
+        "Mirror",
+        "Hairline"
+      ]
+    },
+    "applications": [
+      "Marine equipment",
+      "Pharmaceutical vessels",
+      "Chemical tanks",
+      "Coastal architecture",
+      "Medical devices"
+    ],
+    "industries": [
+      "Marine",
+      "Pharmaceutical",
+      "Chemical",
+      "Medical",
+      "Coastal Construction"
+    ],
+    "pros": "Excellent chloride resistance; food and pharma safe; MTC with heat number.",
+    "cons": "Higher cost than 304; not needed for non-chloride environments.",
+    "relatedGrades": [
+      "SS 304 2B Sheet",
+      "SS 316 Mirror Sheet",
+      "SS 316Ti Sheet"
+    ],
+    "inStock": true,
+    "moq": "200 kg",
+    "tags": [
+      "316",
+      "2B",
+      "marine",
+      "molybdenum",
+      "sheet",
+      "pharma"
+    ]
+  },
+  {
+    "id": "ss-316-mirror-sheet",
+    "slug": "ss-316-mirror-finish-sheets",
+    "grade": "SS 316",
+    "subGrade": "316 / 316L",
+    "series": "300 Series",
+    "form": "Sheets",
+    "finish": "Mirror (8K)",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 316 Mirror Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 316 mirror polished sheets for coastal and marine architectural use. 8K finish. Mumbai.",
+    "keywords": [
+      "SS 316 mirror sheets",
+      "316 polished sheets",
+      "316 8K mirror"
+    ],
+    "description": "316/316L mirror polished (8K) sheets for coastal and marine architectural applications.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "10.0-14.0%",
+      "Mo": "2.0-3.0%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³",
+      "Surface Roughness": "Ra ≤ 0.05 µm"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240"
+      ],
+      "thicknessRange": "0.50mm to 2.0mm",
+      "finish": [
+        "8K Mirror"
+      ]
+    },
+    "applications": [
+      "Coastal architecture",
+      "Marine fittings",
+      "High-end hotel interiors",
+      "Pharmaceutical clean rooms"
+    ],
+    "industries": [
+      "Marine",
+      "Architecture",
+      "Hospitality",
+      "Pharmaceutical"
+    ],
+    "pros": "Best corrosion resistance in coastal environments with premium aesthetics.",
+    "cons": "Higher cost than 304 mirror; limited heavy gauge.",
+    "relatedGrades": [
+      "SS 304 Mirror",
+      "SS 316 Hairline"
+    ],
+    "inStock": true,
+    "moq": "100 kg",
+    "tags": [
+      "316",
+      "mirror",
+      "8K",
+      "marine",
+      "coastal",
+      "sheet"
+    ]
+  },
+  {
+    "id": "ss-316-seamless-pipe",
+    "slug": "ss-316-seamless-pipes",
+    "grade": "SS 316",
+    "subGrade": "316 / 316L",
+    "series": "300 Series",
+    "form": "Seamless Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "SS 316 Seamless Pipes | Tatvam Overseas Inc",
+    "metaDescription": "SS 316/316L seamless pipes for marine, chemical and pharmaceutical service. ASTM A312. Mumbai.",
+    "keywords": [
+      "SS 316 seamless pipe",
+      "316 SMLS pipe",
+      "A312 TP316",
+      "316 marine pipe"
+    ],
+    "description": "316/316L seamless pipes for marine, chemical, pharmaceutical and food-grade high-pressure service.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "10.0-14.0%",
+      "Mo": "2.0-3.0%",
+      "C": "≤0.08% (316) / ≤0.03% (316L)"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³",
+      "Yield Strength": "205 MPa",
+      "Tensile Strength": "515 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A312",
+        "ASME SA312"
+      ],
+      "ODRange": "1/4\" to 24\" NB",
+      "thicknessRange": "Sch 5S to Sch XXS",
+      "endFinish": [
+        "Plain End",
+        "Bevelled End"
+      ]
+    },
+    "applications": [
+      "Chemical process",
+      "Marine piping",
+      "Pharmaceutical",
+      "Offshore",
+      "Desalination"
+    ],
+    "industries": [
+      "Marine",
+      "Chemical",
+      "Pharmaceutical",
+      "Oil & Gas",
+      "Desalination"
+    ],
+    "pros": "Superior chloride resistance; weld seam-free; full MTC.",
+    "cons": "Higher cost than 304; longer lead times for uncommon sizes.",
+    "relatedGrades": [
+      "SS 304 Seamless Pipe",
+      "SS 317L Pipe",
+      "Duplex 2205 Pipe"
+    ],
+    "inStock": true,
+    "moq": "100 kg",
+    "tags": [
+      "316",
+      "seamless",
+      "pipe",
+      "marine",
+      "pharma",
+      "A312"
+    ]
+  },
+  {
+    "id": "ss-316-round-bar",
+    "slug": "ss-316-round-bars",
+    "grade": "SS 316",
+    "subGrade": "316 / 316L",
+    "series": "300 Series",
+    "form": "Round Bars",
+    "finish": "Bright / Black",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 316 Round Bars | Tatvam Overseas Inc",
+    "metaDescription": "SS 316/316L round bars for marine and chemical pump shafts. 6mm to 400mm. Mumbai stockist.",
+    "keywords": [
+      "SS 316 round bar",
+      "316 bright bar",
+      "316 marine bar"
+    ],
+    "description": "316/316L round bars for marine shafts, pump components, and chemical equipment where chloride resistance is needed.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "10.0-14.0%",
+      "Mo": "2.0-3.0%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³",
+      "Hardness": "≤ 217 HB"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276",
+        "EN 10088-3"
+      ],
+      "diameterRange": "6mm to 400mm",
+      "lengthRange": "3m to 6m",
+      "finish": [
+        "Bright Drawn",
+        "Hot Rolled",
+        "Centreless Ground"
+      ]
+    },
+    "applications": [
+      "Marine pump shafts",
+      "Chemical equipment",
+      "Medical implants",
+      "Food processing machinery"
+    ],
+    "industries": [
+      "Marine",
+      "Chemical",
+      "Medical",
+      "Food Processing"
+    ],
+    "pros": "Excellent corrosion resistance in chloride environments.",
+    "cons": "More expensive than 304; check if 316 is truly needed for your application.",
+    "relatedGrades": [
+      "SS 304 Round Bar",
+      "SS 316 Hex Bar",
+      "Duplex 2205 Bar"
+    ],
+    "inStock": true,
+    "moq": "50 kg",
+    "tags": [
+      "316",
+      "round bar",
+      "marine",
+      "bright bar",
+      "pump shaft"
+    ]
+  },
+  {
+    "id": "ss-321-pipe",
+    "slug": "ss-321-pipes",
+    "grade": "SS 321",
+    "subGrade": "321",
+    "series": "300 Series",
+    "form": "Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "SS 321 Pipes | Tatvam Overseas Inc",
+    "metaDescription": "SS 321 titanium-stabilised pipes for high temperature service. ASTM A312. Mumbai.",
+    "keywords": [
+      "SS 321 pipe",
+      "321 stabilised pipe",
+      "321 high temperature pipe"
+    ],
+    "description": "Titanium-stabilised 321 pipes prevent sensitisation during welding. For high-temperature continuous service.",
+    "chem": {
+      "Cr": "17.0-19.0%",
+      "Ni": "9.0-12.0%",
+      "Ti": "5x(C+N) to 0.70%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.92 g/cm³",
+      "Max Service Temp": "850°C"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A312"
+      ],
+      "ODRange": "1/4\" to 12\" NB",
+      "thicknessRange": "Sch 5S to Sch 80"
+    },
+    "applications": [
+      "Aircraft exhaust",
+      "Heat exchangers",
+      "Furnace components",
+      "Manifolds"
+    ],
+    "industries": [
+      "Aerospace",
+      "Chemical",
+      "Power",
+      "Oil & Gas"
+    ],
+    "pros": "Resists intergranular corrosion; stabilised against sensitisation.",
+    "cons": "Cannot be mirror polished; costlier than 304.",
+    "relatedGrades": [
+      "SS 347 Pipe",
+      "SS 304H Pipe",
+      "SS 310S Pipe"
+    ],
+    "inStock": false,
+    "moq": "100 kg",
+    "tags": [
+      "321",
+      "titanium stabilised",
+      "high temp",
+      "pipe",
+      "A312"
+    ]
+  },
+  {
+    "id": "ss-347-pipe",
+    "slug": "ss-347-pipes",
+    "grade": "SS 347",
+    "subGrade": "347",
+    "series": "300 Series",
+    "form": "Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "SS 347 Pipes | Tatvam Overseas Inc",
+    "metaDescription": "SS 347 niobium-stabilised pipes for refinery and high temperature chemical service. Mumbai.",
+    "keywords": [
+      "SS 347 pipe",
+      "347 niobium stabilised",
+      "347 refinery pipe"
+    ],
+    "description": "Niobium+Tantalum stabilised 347 pipes for refineries and high-temperature chemical processing. Superior to 321 in oxidation resistance.",
+    "chem": {
+      "Cr": "17.0-19.0%",
+      "Ni": "9.0-13.0%",
+      "Nb+Ta": "10xC to 1.10%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.96 g/cm³",
+      "Max Service Temp": "870°C"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A312"
+      ],
+      "ODRange": "1/4\" to 10\" NB",
+      "thicknessRange": "Sch 10S to Sch 80"
+    },
+    "applications": [
+      "Refineries",
+      "High-temp chemical processing",
+      "Nuclear components",
+      "Pressure vessels"
+    ],
+    "industries": [
+      "Oil & Gas",
+      "Petrochemical",
+      "Nuclear",
+      "Chemical"
+    ],
+    "pros": "Superior oxidation resistance vs 321; fully stabilised.",
+    "cons": "Expensive due to Niobium; import lead time.",
+    "relatedGrades": [
+      "SS 321 Pipe",
+      "SS 304H Pipe"
+    ],
+    "inStock": false,
+    "moq": "100 kg",
+    "tags": [
+      "347",
+      "niobium stabilised",
+      "refinery",
+      "high temp",
+      "pipe"
+    ]
+  },
+  {
+    "id": "ss-310s-plate",
+    "slug": "ss-310s-plates",
+    "grade": "SS 310S",
+    "subGrade": "310S",
+    "series": "300 Series",
+    "form": "Plates",
+    "finish": "No.1",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 310S Plates | Tatvam Overseas Inc",
+    "metaDescription": "SS 310S high temperature plates for furnaces and heat treatment equipment. ASTM A240. Mumbai.",
+    "keywords": [
+      "SS 310S plates",
+      "310S high temperature",
+      "310 furnace plate"
+    ],
+    "description": "High chromium-nickel 310S plates for service up to 1150°C. Standard furnace alloy.",
+    "chem": {
+      "Cr": "24.0-26.0%",
+      "Ni": "19.0-22.0%",
+      "C": "≤0.08%",
+      "Mn": "≤2.0%",
+      "Si": "≤1.5%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³",
+      "Max Service Temp": "1150°C"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "ASME SA240"
+      ],
+      "thicknessRange": "3mm to 100mm",
+      "widthRange": "1000mm to 2000mm"
+    },
+    "applications": [
+      "Furnace parts",
+      "Heat treatment boxes",
+      "Radiant tubes",
+      "Kiln components",
+      "Catalyst supports"
+    ],
+    "industries": [
+      "Heat Treatment",
+      "Petrochemical",
+      "Power",
+      "Ceramics"
+    ],
+    "pros": "Best oxidation resistance of all standard grades; scale-resistant.",
+    "cons": "Prone to embrittlement at 600-900°C range; not for corrosive process.",
+    "relatedGrades": [
+      "SS 321",
+      "SS 347",
+      "SS 304H"
+    ],
+    "inStock": false,
+    "moq": "500 kg",
+    "tags": [
+      "310S",
+      "high temperature",
+      "furnace",
+      "plate",
+      "oxidation"
+    ]
+  },
+  {
+    "id": "ss-904l-pipe",
+    "slug": "ss-904l-pipes",
+    "grade": "SS 904L",
+    "subGrade": "904L",
+    "series": "300 Series",
+    "form": "Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "SS 904L Pipes | Tatvam Overseas Inc",
+    "metaDescription": "SS 904L super austenitic pipes for sulphuric acid service. ASTM A312. Imported. Mumbai.",
+    "keywords": [
+      "SS 904L pipe",
+      "904L sulphuric acid",
+      "904L super austenitic"
+    ],
+    "description": "Super austenitic 904L pipes with high Mo and Cu for severe sulphuric acid and chloride service.",
+    "chem": {
+      "Cr": "19.0-23.0%",
+      "Ni": "23.0-28.0%",
+      "Mo": "4.0-5.0%",
+      "Cu": "1.0-2.0%",
+      "C": "≤0.02%"
+    },
+    "phys": {
+      "Density": "8.00 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A312"
+      ],
+      "ODRange": "1/4\" to 6\" NB",
+      "thicknessRange": "Sch 5S to Sch 40"
+    },
+    "applications": [
+      "Sulphuric acid plants",
+      "Phosphoric acid",
+      "High chloride environments",
+      "Seawater handling"
+    ],
+    "industries": [
+      "Fertilizer",
+      "Chemical",
+      "Pulp & Paper",
+      "Offshore"
+    ],
+    "pros": "Excellent sulphuric acid resistance; outperforms 316L in severe conditions.",
+    "cons": "Very expensive; long import lead time.",
+    "relatedGrades": [
+      "SMO 254",
+      "Duplex 2205"
+    ],
+    "inStock": false,
+    "moq": "100 kg",
+    "tags": [
+      "904L",
+      "super austenitic",
+      "sulphuric acid",
+      "pipe",
+      "imported"
+    ]
+  },
+  {
+    "id": "smo-254-pipe",
+    "slug": "smo-254-pipes",
+    "grade": "SMO 254",
+    "subGrade": "UNS S31254",
+    "series": "300 Series",
+    "form": "Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "SMO 254 Pipes | Tatvam Overseas Inc",
+    "metaDescription": "SMO 254 (6% Moly) pipes for seawater and aggressive chloride service. Imported. Mumbai.",
+    "keywords": [
+      "SMO 254 pipe",
+      "6% moly pipe",
+      "254 SMO",
+      "S31254 pipe"
+    ],
+    "description": "6% Molybdenum super austenitic grade. Exceptional resistance to pitting and crevice corrosion in seawater.",
+    "chem": {
+      "Cr": "19.5-20.5%",
+      "Ni": "17.5-18.5%",
+      "Mo": "6.0-6.5%",
+      "N": "0.18-0.22%"
+    },
+    "phys": {
+      "Density": "8.00 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A312"
+      ],
+      "ODRange": "1/2\" to 8\" NB",
+      "thicknessRange": "Sch 5S to Sch 40"
+    },
+    "applications": [
+      "Seawater piping",
+      "Desalination",
+      "Flue gas desulphurisation",
+      "Offshore platforms"
+    ],
+    "industries": [
+      "Offshore",
+      "Desalination",
+      "Chemical",
+      "Marine"
+    ],
+    "pros": "Titanium-replacement for many seawater uses; fully austenitic.",
+    "cons": "Extremely high cost; import only.",
+    "relatedGrades": [
+      "SS 904L",
+      "Duplex 2507"
+    ],
+    "inStock": false,
+    "moq": "100 kg",
+    "tags": [
+      "SMO 254",
+      "6 moly",
+      "seawater",
+      "super austenitic",
+      "pipe"
+    ]
+  },
+  {
+    "id": "ss-409-sheet",
+    "slug": "ss-409-sheets",
+    "grade": "SS 409",
+    "subGrade": "409 / 409M",
+    "series": "400 Series",
+    "form": "Sheets",
+    "finish": "HR Annealed",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 409 Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 409 / 409M automotive exhaust grade sheets. Lowest cost ferritic. Mumbai stockist.",
+    "keywords": [
+      "SS 409 sheets",
+      "409M sheets",
+      "automotive exhaust steel",
+      "ferritic 409"
+    ],
+    "description": "Lowest-cost ferritic stainless for automotive exhaust systems and mufflers. Excellent weldability.",
+    "chem": {
+      "Cr": "10.5-11.7%",
+      "C": "≤0.08%",
+      "Ti": "6x(C+N) to 0.50%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "175 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "IS 6911"
+      ],
+      "thicknessRange": "0.50mm to 6.0mm",
+      "widthRange": "1000mm to 1500mm"
+    },
+    "applications": [
+      "Automotive exhausts",
+      "Mufflers",
+      "Bus body panels",
+      "Agricultural equipment"
+    ],
+    "industries": [
+      "Automotive",
+      "Transportation",
+      "Agriculture"
+    ],
+    "pros": "Cheapest stainless grade; good for exhaust temperatures.",
+    "cons": "Low corrosion resistance; surface rusting in wet conditions.",
+    "relatedGrades": [
+      "SS 430",
+      "SS 410"
+    ],
+    "inStock": true,
+    "moq": "500 kg",
+    "tags": [
+      "409",
+      "409M",
+      "ferritic",
+      "exhaust",
+      "automotive",
+      "sheet"
+    ]
+  },
+  {
+    "id": "ss-430-mirror-sheet",
+    "slug": "ss-430-mirror-finish-sheets",
+    "grade": "SS 430",
+    "subGrade": "430",
+    "series": "400 Series",
+    "form": "Sheets",
+    "finish": "Mirror",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 430 Mirror Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 430 mirror finish sheets for appliances and indoor decorative use. Mumbai.",
+    "keywords": [
+      "SS 430 mirror sheets",
+      "430 ferritic mirror",
+      "430 stainless sheets"
+    ],
+    "description": "Ferritic 430 grade in mirror, hairline, and 2B finish. Magnetic. Cost-effective for indoor decorative applications.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "≤0.75%",
+      "C": "≤0.12%",
+      "Mn": "≤1.0%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "205 MPa",
+      "Magnetic": "Yes"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "IS 6911"
+      ],
+      "thicknessRange": "0.30mm to 4.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "finish": [
+        "2B",
+        "Mirror 8K",
+        "Hairline No.4",
+        "Matte",
+        "Designer"
+      ]
+    },
+    "applications": [
+      "Kitchen appliances",
+      "Dishwashers",
+      "Washing machines",
+      "Indoor decorative trim"
+    ],
+    "industries": [
+      "Appliance Manufacturing",
+      "Consumer Goods",
+      "Architecture"
+    ],
+    "pros": "Magnetic; good formability; cheaper than 304; good indoor corrosion resistance.",
+    "cons": "Not suitable for welding; not for coastal/wet environments.",
+    "relatedGrades": [
+      "SS 430 Coil",
+      "SS 409",
+      "SS 304 Mirror"
+    ],
+    "inStock": true,
+    "moq": "200 kg",
+    "tags": [
+      "430",
+      "mirror",
+      "ferritic",
+      "appliance",
+      "magnetic",
+      "sheet"
+    ]
+  },
+  {
+    "id": "ss-410-round-bar",
+    "slug": "ss-410-round-bars",
+    "grade": "SS 410",
+    "subGrade": "410",
+    "series": "400 Series",
+    "form": "Round Bars",
+    "finish": "Hot Rolled",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 410 Round Bars | Tatvam Overseas Inc",
+    "metaDescription": "SS 410 martensitic round bars for cutlery and pump shafts. Heat treatable. Mumbai.",
+    "keywords": [
+      "SS 410 bar",
+      "410 martensitic bar",
+      "410 heat treatable"
+    ],
+    "description": "Martensitic 410 bars. Can be heat treated (hardened & tempered) for high strength and hardness.",
+    "chem": {
+      "Cr": "11.5-13.5%",
+      "C": "≤0.15%",
+      "Mn": "≤1.0%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Max Hardness (annealed)": "≤ 217 HB",
+      "Max Hardness (hardened)": "≤ 36 HRC"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276"
+      ],
+      "diameterRange": "10mm to 300mm",
+      "lengthRange": "3m to 6m",
+      "heatTreatment": [
+        "Annealed",
+        "Q+T (on request)"
+      ]
+    },
+    "applications": [
+      "Pump shafts",
+      "Valve components",
+      "Cutlery blanks",
+      "Surgical instruments"
+    ],
+    "industries": [
+      "Engineering",
+      "Medical",
+      "Pumps & Valves",
+      "Cutlery"
+    ],
+    "pros": "Heat treatable to high hardness; low cost martensitic grade.",
+    "cons": "Low corrosion resistance; cannot be used in corrosive environments without coating.",
+    "relatedGrades": [
+      "SS 420",
+      "SS 431",
+      "SS 17-4PH"
+    ],
+    "inStock": true,
+    "moq": "50 kg",
+    "tags": [
+      "410",
+      "martensitic",
+      "bar",
+      "heat treatable",
+      "pump shaft"
+    ]
+  },
+  {
+    "id": "ss-420-round-bar",
+    "slug": "ss-420-round-bars",
+    "grade": "SS 420",
+    "subGrade": "420",
+    "series": "400 Series",
+    "form": "Round Bars",
+    "finish": "Hot Rolled / Annealed",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 420 Round Bars | Tatvam Overseas Inc",
+    "metaDescription": "SS 420 cutlery grade stainless bars. High hardness after heat treatment. Mumbai stockist.",
+    "keywords": [
+      "SS 420 bar",
+      "420 cutlery grade",
+      "420 martensitic bar"
+    ],
+    "description": "Cutlery grade 420 with higher carbon than 410. Achieves 50-52 HRC hardness. Used for blades and surgical tools.",
+    "chem": {
+      "Cr": "12.0-14.0%",
+      "C": "0.15% Min",
+      "Mn": "≤1.0%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Max Hardness (hardened)": "52 HRC"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276"
+      ],
+      "diameterRange": "6mm to 200mm",
+      "lengthRange": "3m to 6m"
+    },
+    "applications": [
+      "Knife blades",
+      "Surgical scissors",
+      "Gauge plates",
+      "Mold plates"
+    ],
+    "industries": [
+      "Cutlery",
+      "Medical",
+      "Tooling",
+      "Automotive"
+    ],
+    "pros": "Excellent wear resistance; takes high polish for blades.",
+    "cons": "Must be properly tempered post-hardening to avoid brittleness; limited corrosion resistance.",
+    "relatedGrades": [
+      "SS 410",
+      "SS 431",
+      "D2 Tool Steel"
+    ],
+    "inStock": true,
+    "moq": "50 kg",
+    "tags": [
+      "420",
+      "cutlery",
+      "martensitic",
+      "bar",
+      "blade",
+      "hardness"
+    ]
+  },
+  {
+    "id": "ss-17-4ph-bar",
+    "slug": "ss-17-4ph-round-bars",
+    "grade": "17-4 PH",
+    "subGrade": "UNS S17400",
+    "series": "400 Series",
+    "form": "Round Bars",
+    "finish": "Annealed / Aged",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "17-4 PH Round Bars | Tatvam Overseas Inc",
+    "metaDescription": "17-4 PH precipitation hardening stainless bars. Aerospace standard. Mumbai stockist.",
+    "keywords": [
+      "17-4 PH bar",
+      "precipitation hardening stainless",
+      "17-4 aerospace bar"
+    ],
+    "description": "Precipitation Hardening 17-4 PH delivers very high strength and hardness combined with good corrosion resistance.",
+    "chem": {
+      "Cr": "15.0-17.5%",
+      "Ni": "3.0-5.0%",
+      "Cu": "3.0-5.0%",
+      "Nb": "0.15-0.45%",
+      "C": "≤0.07%"
+    },
+    "phys": {
+      "Density": "7.78 g/cm³",
+      "Yield Strength (H900)": "1170 MPa",
+      "Tensile Strength (H900)": "1310 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A564",
+        "AMS 5643"
+      ],
+      "diameterRange": "12mm to 300mm",
+      "lengthRange": "3m to 6m",
+      "condition": [
+        "Annealed (A)",
+        "H900",
+        "H1025",
+        "H1075",
+        "H1150"
+      ]
+    },
+    "applications": [
+      "Aerospace fasteners",
+      "Pump shafts",
+      "Gears",
+      "Valve stems",
+      "Nuclear components"
+    ],
+    "industries": [
+      "Aerospace",
+      "Defense",
+      "Oil & Gas",
+      "Nuclear"
+    ],
+    "pros": "High strength without compromise on corrosion resistance; versatile heat treatment.",
+    "cons": "Stress corrosion cracking risk if under-aged; strict heat treat control required.",
+    "relatedGrades": [
+      "15-5 PH",
+      "SS 431",
+      "SS 420"
+    ],
+    "inStock": false,
+    "moq": "50 kg",
+    "tags": [
+      "17-4PH",
+      "precipitation hardening",
+      "aerospace",
+      "bar",
+      "high strength"
+    ]
+  },
+  {
+    "id": "duplex-2205-pipe",
+    "slug": "duplex-2205-seamless-pipes",
+    "grade": "Duplex 2205",
+    "subGrade": "UNS S31803 / S32205",
+    "series": "Duplex",
+    "form": "Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Duplex Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "Duplex 2205 Pipes | Tatvam Overseas Inc",
+    "metaDescription": "Duplex 2205 seamless and welded pipes for chemical and offshore applications. ASTM A790. Mumbai.",
+    "keywords": [
+      "duplex 2205 pipe",
+      "2205 duplex stainless pipe",
+      "S31803 pipe",
+      "duplex pipe"
+    ],
+    "description": "The most widely used duplex grade. Twice the yield strength of 316L. Excellent SCC resistance.",
+    "chem": {
+      "Cr": "21.0-23.0%",
+      "Ni": "4.5-6.5%",
+      "Mo": "2.5-3.5%",
+      "N": "0.08-0.20%",
+      "C": "≤0.03%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "450 MPa",
+      "Tensile Strength": "620 MPa",
+      "PREN": "34-36"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A790",
+        "ASME SA790"
+      ],
+      "ODRange": "1/2\" to 12\" NB",
+      "thicknessRange": "Sch 10S to Sch 80",
+      "endFinish": [
+        "Bevelled",
+        "Plain"
+      ],
+      "testing": [
+        "Hydrostatic",
+        "PMI",
+        "Ferrite check"
+      ]
+    },
+    "applications": [
+      "Chemical plant piping",
+      "Offshore pipelines",
+      "Desalination",
+      "Pulp & paper",
+      "Heat exchangers"
+    ],
+    "industries": [
+      "Chemical",
+      "Offshore",
+      "Desalination",
+      "Pulp & Paper"
+    ],
+    "pros": "High strength reduces wall thickness; excellent SCC resistance; good weldability.",
+    "cons": "Must not exceed 300°C service temperature; ferrite check required after welding.",
+    "relatedGrades": [
+      "Super Duplex 2507 Pipe",
+      "SS 316 Seamless Pipe",
+      "SS 317L Pipe"
+    ],
+    "inStock": true,
+    "moq": "100 kg",
+    "tags": [
+      "duplex",
+      "2205",
+      "S31803",
+      "pipe",
+      "offshore",
+      "SCC"
+    ]
+  },
+  {
+    "id": "duplex-2205-plate",
+    "slug": "duplex-2205-plates",
+    "grade": "Duplex 2205",
+    "subGrade": "UNS S31803",
+    "series": "Duplex",
+    "form": "Plates",
+    "finish": "No.1",
+    "department": "Duplex Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "Duplex 2205 Plates | Tatvam Overseas Inc",
+    "metaDescription": "Duplex 2205 plates for pressure vessels and chemical tanks. ASTM A240. Mumbai.",
+    "keywords": [
+      "duplex 2205 plates",
+      "2205 duplex plate",
+      "S31803 plate"
+    ],
+    "description": "2205 duplex plates for pressure vessels, storage tanks, and structural applications where high strength and corrosion resistance are required.",
+    "chem": {
+      "Cr": "21.0-23.0%",
+      "Ni": "4.5-6.5%",
+      "Mo": "2.5-3.5%",
+      "N": "0.08-0.20%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "450 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "EN 10028-7"
+      ],
+      "thicknessRange": "3mm to 100mm",
+      "widthRange": "1000mm to 2500mm"
+    },
+    "applications": [
+      "Pressure vessels",
+      "Storage tanks",
+      "Chemical equipment",
+      "Offshore structures"
+    ],
+    "industries": [
+      "Chemical",
+      "Offshore",
+      "Oil & Gas"
+    ],
+    "pros": "Reduced thickness due to high strength; lower Ni cost vs 316.",
+    "cons": "Temperature limited; special welding procedure required.",
+    "relatedGrades": [
+      "Duplex 2205 Pipe",
+      "SS 316 Plate",
+      "Super Duplex 2507 Plate"
+    ],
+    "inStock": true,
+    "moq": "500 kg",
+    "tags": [
+      "duplex",
+      "2205",
+      "plate",
+      "pressure vessel",
+      "chemical"
+    ]
+  },
+  {
+    "id": "duplex-2205-round-bar",
+    "slug": "duplex-2205-round-bars",
+    "grade": "Duplex 2205",
+    "subGrade": "UNS S31803",
+    "series": "Duplex",
+    "form": "Round Bars",
+    "finish": "Hot Rolled / Bright",
+    "department": "Duplex Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "Duplex 2205 Round Bars | Tatvam Overseas Inc",
+    "metaDescription": "Duplex 2205 round bars for pump shafts and valve spindles. Mumbai stockist.",
+    "keywords": [
+      "duplex 2205 bar",
+      "2205 round bar",
+      "duplex stainless bar"
+    ],
+    "description": "2205 duplex round bars for applications requiring high strength and chloride resistance.",
+    "chem": {
+      "Cr": "21.0-23.0%",
+      "Ni": "4.5-6.5%",
+      "Mo": "2.5-3.5%",
+      "N": "0.08-0.20%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "450 MPa",
+      "Hardness": "≤ 293 HB"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276"
+      ],
+      "diameterRange": "12mm to 300mm",
+      "lengthRange": "3m to 6m"
+    },
+    "applications": [
+      "Pump shafts",
+      "Valve spindles",
+      "Impellers",
+      "Offshore hardware"
+    ],
+    "industries": [
+      "Chemical",
+      "Offshore",
+      "Desalination",
+      "Marine"
+    ],
+    "pros": "High yield strength; excellent crevice corrosion resistance.",
+    "cons": "Difficult to machine; requires sharp tooling and slow feeds.",
+    "relatedGrades": [
+      "SS 316 Round Bar",
+      "Super Duplex 2507 Bar"
+    ],
+    "inStock": true,
+    "moq": "50 kg",
+    "tags": [
+      "duplex",
+      "2205",
+      "round bar",
+      "pump shaft",
+      "high strength"
+    ]
+  },
+  {
+    "id": "super-duplex-2507-pipe",
+    "slug": "super-duplex-2507-pipes",
+    "grade": "Super Duplex 2507",
+    "subGrade": "UNS S32750",
+    "series": "Super Duplex",
+    "form": "Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Duplex Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "Super Duplex 2507 Pipes | Tatvam Overseas Inc",
+    "metaDescription": "Super Duplex 2507 pipes for seawater and offshore applications. ASTM A790. Mumbai.",
+    "keywords": [
+      "super duplex 2507 pipe",
+      "S32750 pipe",
+      "2507 offshore pipe"
+    ],
+    "description": "Super Duplex 2507 for extremely corrosive service in seawater, desalination and offshore oil platforms. PREN > 40.",
+    "chem": {
+      "Cr": "24.0-26.0%",
+      "Ni": "6.0-8.0%",
+      "Mo": "3.0-5.0%",
+      "N": "0.24-0.32%",
+      "C": "≤0.03%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "550 MPa",
+      "PREN": ">40"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A790"
+      ],
+      "ODRange": "1/2\" to 8\" NB",
+      "thicknessRange": "Sch 10S to Sch 80",
+      "testing": [
+        "Ferrite check",
+        "PMI",
+        "Charpy impact"
+      ]
+    },
+    "applications": [
+      "Seawater injection",
+      "Desalination",
+      "Offshore subsea",
+      "Chemical scrubbers"
+    ],
+    "industries": [
+      "Offshore",
+      "Desalination",
+      "Petrochemical",
+      "Marine"
+    ],
+    "pros": "Highest pitting resistance index in duplex family; excellent seawater performance.",
+    "cons": "High material cost; complex welding with strict interpass temp control.",
+    "relatedGrades": [
+      "Super Duplex S32760",
+      "Duplex 2205 Pipe",
+      "SMO 254"
+    ],
+    "inStock": false,
+    "moq": "100 kg",
+    "tags": [
+      "super duplex",
+      "2507",
+      "S32750",
+      "seawater",
+      "offshore",
+      "pipe"
+    ]
+  },
+  {
+    "id": "ss-304-elbow",
+    "slug": "ss-304-pipe-elbow",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "Fittings",
+    "form": "Elbow",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Fittings",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 Pipe Elbows | Tatvam Overseas Inc",
+    "metaDescription": "SS 304/304L buttweld elbows 45° and 90° LR/SR. ASME B16.9. Mumbai stockist.",
+    "keywords": [
+      "SS 304 elbow",
+      "304 pipe elbow",
+      "304 BW elbow",
+      "ASME B16.9"
+    ],
+    "description": "304/304L buttweld elbows in 45° and 90° Long Radius (LR) and Short Radius (SR). For standard piping systems.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A403",
+        "ASME B16.9"
+      ],
+      "sizeRange": "1/2\" to 24\" NB",
+      "schedule": [
+        "Sch 10S",
+        "Sch 40S",
+        "Sch 80S"
+      ],
+      "type": [
+        "90° LR",
+        "90° SR",
+        "45° LR"
+      ]
+    },
+    "applications": [
+      "Process piping",
+      "Chemical plants",
+      "Food processing",
+      "General engineering"
+    ],
+    "industries": [
+      "Chemical",
+      "Food & Beverage",
+      "General Engineering"
+    ],
+    "pros": "Wide range in stock; MTC provided; food safe.",
+    "cons": "Welding requires certified welder; NDT may be needed for critical service.",
+    "relatedGrades": [
+      "SS 316 Elbow",
+      "CS A234 WPB Elbow"
+    ],
+    "inStock": true,
+    "moq": "10 pieces",
+    "tags": [
+      "304",
+      "elbow",
+      "fitting",
+      "BW",
+      "90°",
+      "45°",
+      "ASME B16.9"
+    ]
+  },
+  {
+    "id": "ss-304-tee",
+    "slug": "ss-304-buttweld-tee",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "Fittings",
+    "form": "Tee",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Fittings",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 Buttweld Tee | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 equal and reducing tees for piping systems. ASTM A403. Mumbai.",
+    "keywords": [
+      "SS 304 tee",
+      "304 pipe tee",
+      "304 equal tee",
+      "304 reducing tee"
+    ],
+    "description": "304/304L equal and reducing tees for piping branching in food, pharma and chemical systems.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A403",
+        "ASME B16.9"
+      ],
+      "sizeRange": "1/2\" to 24\" NB",
+      "type": [
+        "Equal Tee",
+        "Reducing Tee"
+      ]
+    },
+    "applications": [
+      "Piping branches",
+      "Process plants",
+      "Chemical systems",
+      "Food processing"
+    ],
+    "industries": [
+      "Chemical",
+      "Food & Beverage",
+      "Pharmaceutical",
+      "General Engineering"
+    ],
+    "pros": "Standard fitment; good availability.",
+    "cons": "Require full pen weld; need NDT for critical lines.",
+    "relatedGrades": [
+      "SS 316 Tee",
+      "CS A234 Tee"
+    ],
+    "inStock": true,
+    "moq": "10 pieces",
+    "tags": [
+      "304",
+      "tee",
+      "fitting",
+      "BW",
+      "piping"
+    ]
+  },
+  {
+    "id": "ss-316-elbow",
+    "slug": "ss-316-pipe-elbow",
+    "grade": "SS 316",
+    "subGrade": "316 / 316L",
+    "series": "Fittings",
+    "form": "Elbow",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Fittings",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 316 Pipe Elbows | Tatvam Overseas Inc",
+    "metaDescription": "SS 316/316L buttweld elbows for marine and chemical piping. ASTM A403. Mumbai.",
+    "keywords": [
+      "SS 316 elbow",
+      "316 pipe elbow",
+      "316 BW elbow",
+      "marine elbow"
+    ],
+    "description": "316/316L buttweld elbows for chemical, pharmaceutical and marine piping where chloride resistance is critical.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "10.0-14.0%",
+      "Mo": "2.0-3.0%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A403",
+        "ASME B16.9"
+      ],
+      "sizeRange": "1/2\" to 24\" NB",
+      "schedule": [
+        "Sch 10S",
+        "Sch 40S",
+        "Sch 80S"
+      ],
+      "type": [
+        "90° LR",
+        "90° SR",
+        "45° LR"
+      ]
+    },
+    "applications": [
+      "Chemical plant piping",
+      "Marine installations",
+      "Pharmaceutical lines",
+      "Coastal construction"
+    ],
+    "industries": [
+      "Chemical",
+      "Marine",
+      "Pharmaceutical"
+    ],
+    "pros": "Marine-grade corrosion resistance; food/pharma safe.",
+    "cons": "Higher cost than 304 fittings; longer lead time for non-stock sizes.",
+    "relatedGrades": [
+      "SS 304 Elbow",
+      "Duplex 2205 Elbow"
+    ],
+    "inStock": true,
+    "moq": "5 pieces",
+    "tags": [
+      "316",
+      "elbow",
+      "fitting",
+      "marine",
+      "pharma",
+      "ASME B16.9"
+    ]
+  },
+  {
+    "id": "ss-304-wnrf-flange",
+    "slug": "ss-304-weld-neck-flange",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "Flanges",
+    "form": "Weld Neck Flange",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Flanges",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 Weld Neck Flange | Tatvam Overseas Inc",
+    "metaDescription": "SS 304/304L weld neck raised face flanges. ASME B16.5 150# to 2500#. Mumbai stockist.",
+    "keywords": [
+      "SS 304 weld neck flange",
+      "304 WNRF flange",
+      "304 flange ASME B16.5"
+    ],
+    "description": "304/304L Weld Neck Raised Face (WNRF) flanges for high-pressure and critical piping. Full bore. ASME B16.5.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A182 F304/F304L",
+        "ASME B16.5"
+      ],
+      "sizeRange": "1/2\" to 24\" NB",
+      "pressureClass": [
+        "150#",
+        "300#",
+        "600#",
+        "900#",
+        "1500#",
+        "2500#"
+      ],
+      "facingType": [
+        "Raised Face (RF)",
+        "Ring Type Joint (RTJ)",
+        "Flat Face (FF)"
+      ]
+    },
+    "applications": [
+      "High pressure piping",
+      "Chemical process",
+      "Power plants",
+      "Refineries"
+    ],
+    "industries": [
+      "Chemical",
+      "Oil & Gas",
+      "Power",
+      "Pharmaceutical"
+    ],
+    "pros": "Full bore; smooth bore for pigging; highest integrity flange connection.",
+    "cons": "Expensive; alignment critical during welding.",
+    "relatedGrades": [
+      "SS 316 WNRF Flange",
+      "Duplex 2205 Flange"
+    ],
+    "inStock": true,
+    "moq": "1 piece",
+    "tags": [
+      "304",
+      "weld neck",
+      "WNRF",
+      "flange",
+      "ASME B16.5",
+      "pressure"
+    ]
+  },
+  {
+    "id": "ss-304-sorf-flange",
+    "slug": "ss-304-slip-on-flange",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "Flanges",
+    "form": "Slip-On Flange",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Flanges",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 Slip-On Flange | Tatvam Overseas Inc",
+    "metaDescription": "SS 304/304L slip-on raised face flanges. ASME B16.5. 150# to 1500#. Mumbai.",
+    "keywords": [
+      "SS 304 slip-on flange",
+      "304 SORF flange",
+      "304 SO flange"
+    ],
+    "description": "304/304L Slip-On Raised Face flanges. Easy to align; for moderate pressure service.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A182 F304",
+        "ASME B16.5"
+      ],
+      "sizeRange": "1/2\" to 48\" NB",
+      "pressureClass": [
+        "150#",
+        "300#",
+        "600#",
+        "900#",
+        "1500#"
+      ]
+    },
+    "applications": [
+      "General process piping",
+      "Water treatment",
+      "Chemical",
+      "HVAC"
+    ],
+    "industries": [
+      "General Engineering",
+      "Water Treatment",
+      "Chemical",
+      "HVAC"
+    ],
+    "pros": "Cheaper than WNRF; easy alignment; widely available.",
+    "cons": "Not suitable for cyclic or high-pressure service; two fillet welds required.",
+    "relatedGrades": [
+      "SS 304 WNRF",
+      "SS 316 SORF"
+    ],
+    "inStock": true,
+    "moq": "1 piece",
+    "tags": [
+      "304",
+      "slip-on",
+      "SORF",
+      "SO",
+      "flange",
+      "150#"
+    ]
+  },
+  {
+    "id": "ss-304-blind-flange",
+    "slug": "ss-304-blind-flange",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "Flanges",
+    "form": "Blind Flange",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Flanges",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 Blind Flange | Tatvam Overseas Inc",
+    "metaDescription": "SS 304/304L blind flanges for pipeline isolation. ASME B16.5. Mumbai stockist.",
+    "keywords": [
+      "SS 304 blind flange",
+      "304 BL flange",
+      "pipeline isolation flange"
+    ],
+    "description": "304/304L Blind Flanges for closing off pipe ends, vessel openings, and for pressure testing isolation.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A182 F304",
+        "ASME B16.5"
+      ],
+      "sizeRange": "1/2\" to 60\" NB",
+      "pressureClass": [
+        "150#",
+        "300#",
+        "600#",
+        "900#",
+        "1500#",
+        "2500#"
+      ]
+    },
+    "applications": [
+      "Pipe end closure",
+      "Vessel nozzle blanking",
+      "Pressure testing",
+      "Maintenance isolation"
+    ],
+    "industries": [
+      "Chemical",
+      "Oil & Gas",
+      "Power",
+      "Pharmaceutical"
+    ],
+    "pros": "Simple design; provides absolute positive isolation.",
+    "cons": "Heavy in large sizes; requires full gasket width.",
+    "relatedGrades": [
+      "SS 316 Blind Flange",
+      "CS A105 Blind Flange"
+    ],
+    "inStock": true,
+    "moq": "1 piece",
+    "tags": [
+      "304",
+      "blind",
+      "BL",
+      "flange",
+      "isolation",
+      "ASME B16.5"
+    ]
+  },
+  {
+    "id": "ss-316-wnrf-flange",
+    "slug": "ss-316-weld-neck-flange",
+    "grade": "SS 316",
+    "subGrade": "316 / 316L",
+    "series": "Flanges",
+    "form": "Weld Neck Flange",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Flanges",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 316 Weld Neck Flange | Tatvam Overseas Inc",
+    "metaDescription": "SS 316/316L weld neck flanges for marine and chemical service. ASTM A182. Mumbai.",
+    "keywords": [
+      "SS 316 weld neck flange",
+      "316 WNRF",
+      "316L flange"
+    ],
+    "description": "316/316L WNRF flanges for marine, chemical and pharmaceutical critical piping connections.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "10.0-14.0%",
+      "Mo": "2.0-3.0%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A182 F316/F316L",
+        "ASME B16.5"
+      ],
+      "sizeRange": "1/2\" to 24\" NB",
+      "pressureClass": [
+        "150#",
+        "300#",
+        "600#",
+        "900#",
+        "1500#",
+        "2500#"
+      ]
+    },
+    "applications": [
+      "Marine piping",
+      "Chemical plants",
+      "Pharmaceutical",
+      "Offshore"
+    ],
+    "industries": [
+      "Marine",
+      "Chemical",
+      "Pharmaceutical",
+      "Offshore"
+    ],
+    "pros": "Chloride resistant; food and pharma safe.",
+    "cons": "Higher cost than 304 flanges.",
+    "relatedGrades": [
+      "SS 304 WNRF",
+      "Duplex 2205 Flange"
+    ],
+    "inStock": true,
+    "moq": "1 piece",
+    "tags": [
+      "316",
+      "weld neck",
+      "WNRF",
+      "flange",
+      "marine",
+      "pharma"
+    ]
+  },
+  {
+    "id": "ss-304-hex-bolt",
+    "slug": "ss-304-hex-bolts",
+    "grade": "SS 304",
+    "subGrade": "A2-70",
+    "series": "Fasteners",
+    "form": "Hex Bolts",
+    "finish": "Bright / Passivated",
+    "department": "Stainless Steel",
+    "category": "Fasteners",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 Hex Bolts | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 (A2-70) hex bolts and nuts. M6 to M64. Full thread and partial thread. Mumbai.",
+    "keywords": [
+      "SS 304 hex bolts",
+      "A2-70 bolts",
+      "304 stainless bolts",
+      "stainless hex bolts"
+    ],
+    "description": "A2-70 (304) hex head bolts to ISO 3506. Full thread and partial thread. Passivated finish.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³",
+      "Proof Load": "A2-70: 580 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ISO 3506",
+        "DIN 933",
+        "DIN 931"
+      ],
+      "sizeRange": "M5 to M64",
+      "lengthRange": "10mm to 400mm",
+      "propertyClass": [
+        "A2-70",
+        "A2-80"
+      ]
+    },
+    "applications": [
+      "Structural connections",
+      "Equipment assembly",
+      "Pipeline flanges",
+      "General engineering"
+    ],
+    "industries": [
+      "Construction",
+      "General Engineering",
+      "Chemical",
+      "Food Processing"
+    ],
+    "pros": "Standard specification; corrosion resistant; food safe.",
+    "cons": "Thread galling tendency; use anti-seize lubricant.",
+    "relatedGrades": [
+      "SS 316 Hex Bolts",
+      "SS 304 Stud Bolts"
+    ],
+    "inStock": true,
+    "moq": "25 pieces",
+    "tags": [
+      "304",
+      "A2",
+      "hex bolt",
+      "fastener",
+      "ISO 3506",
+      "bolt"
+    ]
+  },
+  {
+    "id": "ss-316-hex-bolt",
+    "slug": "ss-316-hex-bolts",
+    "grade": "SS 316",
+    "subGrade": "A4-70",
+    "series": "Fasteners",
+    "form": "Hex Bolts",
+    "finish": "Bright / Passivated",
+    "department": "Stainless Steel",
+    "category": "Fasteners",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 316 Hex Bolts | Tatvam Overseas Inc",
+    "metaDescription": "SS 316 (A4-70) hex bolts for marine and coastal applications. M6 to M64. Mumbai.",
+    "keywords": [
+      "SS 316 hex bolts",
+      "A4-70 bolts",
+      "316 marine bolts",
+      "A4 stainless bolts"
+    ],
+    "description": "A4-70 (316) hex bolts for marine, coastal, and chemical environments requiring superior corrosion resistance.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "10.0-14.0%",
+      "Mo": "2.0-3.0%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³",
+      "Proof Load": "A4-70: 580 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ISO 3506",
+        "DIN 933"
+      ],
+      "sizeRange": "M5 to M64",
+      "propertyClass": [
+        "A4-70",
+        "A4-80"
+      ]
+    },
+    "applications": [
+      "Marine installations",
+      "Coastal structures",
+      "Chemical plants",
+      "Pharmaceutical equipment"
+    ],
+    "industries": [
+      "Marine",
+      "Chemical",
+      "Pharmaceutical",
+      "Offshore"
+    ],
+    "pros": "Excellent chloride resistance; A4 grade for marine.",
+    "cons": "Higher cost; thread galling risk.",
+    "relatedGrades": [
+      "SS 304 Hex Bolts",
+      "Duplex Bolts"
+    ],
+    "inStock": true,
+    "moq": "25 pieces",
+    "tags": [
+      "316",
+      "A4",
+      "hex bolt",
+      "marine",
+      "fastener",
+      "ISO 3506"
+    ]
+  },
+  {
+    "id": "ss-304-stud-bolt",
+    "slug": "ss-304-stud-bolts",
+    "grade": "SS 304",
+    "subGrade": "A2-70",
+    "series": "Fasteners",
+    "form": "Stud Bolts",
+    "finish": "Bright / Passivated",
+    "department": "Stainless Steel",
+    "category": "Fasteners",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 Stud Bolts | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 fully threaded stud bolts for flange connections. ASTM F593. Mumbai.",
+    "keywords": [
+      "SS 304 stud bolts",
+      "304 fully threaded stud",
+      "304 flange bolts"
+    ],
+    "description": "Fully threaded 304 stud bolts for flange and pressure vessel connections. Supplied with hex nuts.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM F593",
+        "ASME B18.31"
+      ],
+      "sizeRange": "M10 to M100 / 3/8\" to 4\"",
+      "lengthRange": "50mm to 500mm"
+    },
+    "applications": [
+      "Flange bolting",
+      "Pressure vessels",
+      "Heat exchangers",
+      "Valve bodies"
+    ],
+    "industries": [
+      "Chemical",
+      "Oil & Gas",
+      "Power",
+      "Pharmaceutical"
+    ],
+    "pros": "Standard flange bolting; corrosion resistant; supplied with nuts.",
+    "cons": "Thread galling; torque control needed.",
+    "relatedGrades": [
+      "SS 316 Stud Bolts",
+      "B7 Alloy Steel Stud Bolts"
+    ],
+    "inStock": true,
+    "moq": "10 sets",
+    "tags": [
+      "304",
+      "stud bolt",
+      "flange",
+      "fully threaded",
+      "fastener"
+    ]
+  },
+  {
+    "id": "ss-304-welded-mesh",
+    "slug": "ss-304-welded-wire-mesh",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "Wire Products",
+    "form": "Welded Wire Mesh",
+    "finish": "Bright",
+    "department": "Stainless Steel",
+    "category": "Wire Products",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 304 Welded Wire Mesh | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 welded wire mesh for industrial, architectural and safety fencing. Mumbai stockist.",
+    "keywords": [
+      "SS 304 wire mesh",
+      "304 welded mesh",
+      "stainless steel mesh",
+      "304 wire netting"
+    ],
+    "description": "304 welded wire mesh in square and rectangular apertures for industrial sieves, safety barriers, and architectural screens.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "Commercial / ASTM A580"
+      ],
+      "wireGauge": "1mm to 8mm",
+      "meshAperture": "6mm to 100mm",
+      "rollWidth": "1m to 2m",
+      "rollLength": "10m to 30m"
+    },
+    "applications": [
+      "Safety fencing",
+      "Sieves and filters",
+      "Architectural screens",
+      "Conveyor guards",
+      "Rodent proofing"
+    ],
+    "industries": [
+      "Construction",
+      "Food Processing",
+      "Architecture",
+      "Security"
+    ],
+    "pros": "Accurate aperture size; hygienic for food use; durable.",
+    "cons": "Custom sizes have lead time.",
+    "relatedGrades": [
+      "SS 316 Welded Mesh",
+      "SS 304 Woven Mesh"
+    ],
+    "inStock": true,
+    "moq": "5 sq.m.",
+    "tags": [
+      "304",
+      "welded mesh",
+      "wire mesh",
+      "screen",
+      "filter",
+      "safety fence"
+    ]
+  },
+  {
+    "id": "ss-304-woven-mesh",
+    "slug": "ss-304-woven-wire-mesh",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "Wire Products",
+    "form": "Woven Wire Mesh",
+    "finish": "Bright",
+    "department": "Stainless Steel",
+    "category": "Wire Products",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 304 Woven Wire Mesh | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 woven wire mesh for filtration and sieving. Fine to coarse apertures. Mumbai.",
+    "keywords": [
+      "SS 304 woven mesh",
+      "304 filter mesh",
+      "SS fine mesh",
+      "woven stainless mesh"
+    ],
+    "description": "Precision woven 304 wire mesh in plain weave and twill weave for filtration, sieving, and architectural screening.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ISO 9044",
+        "ASTM E2016"
+      ],
+      "wireGauge": "0.05mm to 4mm",
+      "meshCount": "1 mesh to 500 mesh",
+      "rollWidth": "0.5m to 2m",
+      "weave": [
+        "Plain",
+        "Twill",
+        "Dutch"
+      ]
+    },
+    "applications": [
+      "Filtration",
+      "Food processing sieves",
+      "Pharmaceutical screens",
+      "Laboratory sieves",
+      "Architectural mesh"
+    ],
+    "industries": [
+      "Chemical",
+      "Food & Beverage",
+      "Pharmaceutical",
+      "Architecture"
+    ],
+    "pros": "Precise filtration; wide mesh count range; food and pharma safe.",
+    "cons": "Fine mesh requires careful handling; custom weaves have MOQ.",
+    "relatedGrades": [
+      "SS 316 Woven Mesh",
+      "SS 304 Perforated Sheet"
+    ],
+    "inStock": true,
+    "moq": "5 sq.m.",
+    "tags": [
+      "304",
+      "woven mesh",
+      "filtration",
+      "sieve",
+      "fine mesh",
+      "wire"
+    ]
+  },
+  {
+    "id": "ss-317l-sheet",
+    "slug": "ss-317l-sheets",
+    "grade": "SS 317L",
+    "subGrade": "317L",
+    "series": "300 Series",
+    "form": "Sheets",
+    "finish": "2B",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 317L Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 317L high molybdenum sheets for chemical scrubbers and acid environments. Mumbai.",
+    "keywords": [
+      "SS 317L sheets",
+      "317L stainless steel",
+      "high moly stainless sheet"
+    ],
+    "description": "317L with 3-4% Mo for superior pitting resistance over 316L in sulphur acid and bleaching environments.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "11.0-15.0%",
+      "Mo": "3.0-4.0%",
+      "C": "≤0.03%",
+      "N": "≤0.10%"
+    },
+    "phys": {
+      "Density": "8.00 g/cm³",
+      "Yield Strength": "205 MPa",
+      "Tensile Strength": "515 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240"
+      ],
+      "thicknessRange": "1.5mm to 50mm",
+      "widthRange": "1000mm to 2000mm",
+      "finish": [
+        "2B",
+        "No.1"
+      ]
+    },
+    "applications": [
+      "Chemical scrubbers",
+      "Pulp and paper",
+      "Sulphuric acid handling",
+      "Flue gas desulphurisation"
+    ],
+    "industries": [
+      "Chemical",
+      "Pulp & Paper",
+      "Power",
+      "Environmental"
+    ],
+    "pros": "Better pitting resistance than 316L; good for high chloride + acidic conditions.",
+    "cons": "Higher cost than 316; specialised inventory.",
+    "relatedGrades": [
+      "SS 316L Sheet",
+      "SS 904L",
+      "Duplex 2205"
+    ],
+    "inStock": false,
+    "moq": "500 kg",
+    "tags": [
+      "317L",
+      "high moly",
+      "sheet",
+      "chemical",
+      "scrubber",
+      "acid"
+    ]
+  },
+  {
+    "id": "ss-317l-pipe",
+    "slug": "ss-317l-pipes",
+    "grade": "SS 317L",
+    "subGrade": "317L",
+    "series": "300 Series",
+    "form": "Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "SS 317L Pipes | Tatvam Overseas Inc",
+    "metaDescription": "SS 317L seamless and welded pipes for chemical and acid service. ASTM A312. Mumbai.",
+    "keywords": [
+      "SS 317L pipe",
+      "317L stainless pipe",
+      "high moly pipe"
+    ],
+    "description": "317L seamless/welded pipes for severe acid environments including flue gas desulphurisation.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "11.0-15.0%",
+      "Mo": "3.0-4.0%",
+      "C": "≤0.03%"
+    },
+    "phys": {
+      "Density": "8.00 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A312"
+      ],
+      "ODRange": "1/2\" to 12\" NB",
+      "thicknessRange": "Sch 5S to Sch 80"
+    },
+    "applications": [
+      "Flue gas desulphurisation",
+      "Pulp bleaching",
+      "Chemical scrubbers"
+    ],
+    "industries": [
+      "Power",
+      "Chemical",
+      "Pulp & Paper"
+    ],
+    "pros": "Better pitting index than 316L; good for mixed acid/chloride service.",
+    "cons": "Specialised stock; higher price.",
+    "relatedGrades": [
+      "SS 316L Pipe",
+      "Duplex 2205 Pipe"
+    ],
+    "inStock": false,
+    "moq": "100 kg",
+    "tags": [
+      "317L",
+      "pipe",
+      "high moly",
+      "acid",
+      "FGD"
+    ]
+  },
+  {
+    "id": "ss-317l-bar",
+    "slug": "ss-317l-bars",
+    "grade": "SS 317L",
+    "subGrade": "317L",
+    "series": "300 Series",
+    "form": "Round Bars",
+    "finish": "Hot Rolled",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 317L Bars | Tatvam Overseas Inc",
+    "metaDescription": "SS 317L round bars for shaft and pump applications in chemical environments. Mumbai.",
+    "keywords": [
+      "SS 317L bar",
+      "317L round bar",
+      "high moly stainless bar"
+    ],
+    "description": "317L round bars for chemical pump shafts and valve bodies in severe acid+chloride conditions.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "11.0-15.0%",
+      "Mo": "3.0-4.0%",
+      "C": "≤0.03%"
+    },
+    "phys": {
+      "Density": "8.00 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276"
+      ],
+      "diameterRange": "12mm to 150mm",
+      "lengthRange": "3m to 6m"
+    },
+    "applications": [
+      "Chemical pump shafts",
+      "Valve bodies",
+      "Agitators"
+    ],
+    "industries": [
+      "Chemical",
+      "Pharmaceutical"
+    ],
+    "pros": "High pitting resistance for shaft applications.",
+    "cons": "Import stock; long lead time.",
+    "relatedGrades": [
+      "SS 316L Bar",
+      "Duplex 2205 Bar"
+    ],
+    "inStock": false,
+    "moq": "50 kg",
+    "tags": [
+      "317L",
+      "bar",
+      "pump shaft",
+      "high moly",
+      "chemical"
+    ]
+  },
+  {
+    "id": "ss-321-plate",
+    "slug": "ss-321-plates",
+    "grade": "SS 321",
+    "subGrade": "321",
+    "series": "300 Series",
+    "form": "Plates",
+    "finish": "No.1",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 321 Plates | Tatvam Overseas Inc",
+    "metaDescription": "SS 321 Ti-stabilised plates for elevated temperature service. ASTM A240. Mumbai.",
+    "keywords": [
+      "SS 321 plates",
+      "321 high temperature plate",
+      "321 titanium stabilised"
+    ],
+    "description": "Ti-stabilised 321 plates for high-temperature service. Prevents sensitisation during extended service.",
+    "chem": {
+      "Cr": "17.0-19.0%",
+      "Ni": "9.0-12.0%",
+      "Ti": "5x(C+N) to 0.70%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.92 g/cm³",
+      "Max Service Temp": "850°C"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "ASME SA240"
+      ],
+      "thicknessRange": "3mm to 80mm",
+      "widthRange": "1000mm to 2000mm"
+    },
+    "applications": [
+      "Aircraft exhausts",
+      "Furnace components",
+      "Heat exchanger headers",
+      "Manifolds"
+    ],
+    "industries": [
+      "Aerospace",
+      "Chemical",
+      "Power",
+      "Oil & Gas"
+    ],
+    "pros": "Stabilised against intergranular corrosion; suitable for 425-850°C service.",
+    "cons": "Cannot be mirror polished; more expensive than 304.",
+    "relatedGrades": [
+      "SS 347 Plate",
+      "SS 304H Plate",
+      "SS 310S Plate"
+    ],
+    "inStock": false,
+    "moq": "500 kg",
+    "tags": [
+      "321",
+      "plate",
+      "Ti stabilised",
+      "high temperature",
+      "aerospace"
+    ]
+  },
+  {
+    "id": "ss-321-bar",
+    "slug": "ss-321-round-bars",
+    "grade": "SS 321",
+    "subGrade": "321",
+    "series": "300 Series",
+    "form": "Round Bars",
+    "finish": "Hot Rolled",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 321 Round Bars | Tatvam Overseas Inc",
+    "metaDescription": "SS 321 round bars for high temperature machined components. Mumbai.",
+    "keywords": [
+      "SS 321 bar",
+      "321 round bar",
+      "321 Ti stabilised bar"
+    ],
+    "description": "321 round bars for machined components operating at elevated temperatures where sensitisation is a concern.",
+    "chem": {
+      "Cr": "17.0-19.0%",
+      "Ni": "9.0-12.0%",
+      "Ti": "5x(C+N)"
+    },
+    "phys": {
+      "Density": "7.92 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276"
+      ],
+      "diameterRange": "12mm to 200mm",
+      "lengthRange": "3m to 6m"
+    },
+    "applications": [
+      "Flanges",
+      "Valve bodies",
+      "Turbine components",
+      "Expansion joints"
+    ],
+    "industries": [
+      "Aerospace",
+      "Chemical",
+      "Power"
+    ],
+    "pros": "Stabilised; good for welded assemblies operating above 425°C.",
+    "cons": "More expensive than 304; limited stock.",
+    "relatedGrades": [
+      "SS 347 Bar",
+      "SS 316 Bar"
+    ],
+    "inStock": false,
+    "moq": "50 kg",
+    "tags": [
+      "321",
+      "round bar",
+      "Ti stabilised",
+      "high temperature"
+    ]
+  },
+  {
+    "id": "ss-310s-pipe",
+    "slug": "ss-310s-pipes",
+    "grade": "SS 310S",
+    "subGrade": "310S",
+    "series": "300 Series",
+    "form": "Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "SS 310S Pipes | Tatvam Overseas Inc",
+    "metaDescription": "SS 310S furnace pipes for high temperature to 1150°C service. ASTM A312. Mumbai.",
+    "keywords": [
+      "SS 310S pipe",
+      "310S furnace pipe",
+      "310 high temperature pipe"
+    ],
+    "description": "310S seamless pipes for furnace components, kiln tubes, and heat treatment baskets up to 1150°C.",
+    "chem": {
+      "Cr": "24.0-26.0%",
+      "Ni": "19.0-22.0%",
+      "C": "≤0.08%",
+      "Si": "≤1.5%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³",
+      "Max Service Temp": "1150°C"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A312"
+      ],
+      "ODRange": "1/4\" to 8\" NB",
+      "thicknessRange": "Sch 10S to Sch 80"
+    },
+    "applications": [
+      "Furnace radiant tubes",
+      "Heat treatment baskets",
+      "Kiln hardware",
+      "Catalyst tubes"
+    ],
+    "industries": [
+      "Heat Treatment",
+      "Petrochemical",
+      "Chemical",
+      "Ceramics"
+    ],
+    "pros": "Best standard grade for oxidation to 1150°C.",
+    "cons": "Prone to sigma embrittlement below 900°C; not for corrosive process.",
+    "relatedGrades": [
+      "SS 321 Pipe",
+      "SS 347 Pipe"
+    ],
+    "inStock": false,
+    "moq": "50 kg",
+    "tags": [
+      "310S",
+      "furnace",
+      "pipe",
+      "high temperature",
+      "oxidation",
+      "1150C"
+    ]
+  },
+  {
+    "id": "ss-310s-bar",
+    "slug": "ss-310s-round-bars",
+    "grade": "SS 310S",
+    "subGrade": "310S",
+    "series": "300 Series",
+    "form": "Round Bars",
+    "finish": "Hot Rolled",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 310S Round Bars | Tatvam Overseas Inc",
+    "metaDescription": "SS 310S bars for furnace parts and high temperature machined components. Mumbai.",
+    "keywords": [
+      "SS 310S bar",
+      "310S round bar",
+      "310 high temperature bar"
+    ],
+    "description": "310S bars for machined furnace parts, thermocouple sheaths, and high temperature components.",
+    "chem": {
+      "Cr": "24.0-26.0%",
+      "Ni": "19.0-22.0%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276"
+      ],
+      "diameterRange": "10mm to 200mm",
+      "lengthRange": "3m to 6m"
+    },
+    "applications": [
+      "Furnace parts",
+      "Thermocouple sheaths",
+      "Heat treatment fixtures",
+      "Radiant tubes"
+    ],
+    "industries": [
+      "Heat Treatment",
+      "Petrochemical",
+      "Power"
+    ],
+    "pros": "Excellent high-temperature stability; scale resistant.",
+    "cons": "Difficult to machine; brittle after long exposure below 900°C.",
+    "relatedGrades": [
+      "SS 321 Bar",
+      "SS 347 Bar"
+    ],
+    "inStock": false,
+    "moq": "50 kg",
+    "tags": [
+      "310S",
+      "bar",
+      "furnace",
+      "high temp",
+      "heat treatment"
+    ]
+  },
+  {
+    "id": "ss-430-coil",
+    "slug": "ss-430-coils",
+    "grade": "SS 430",
+    "subGrade": "430",
+    "series": "400 Series",
+    "form": "Coils",
+    "finish": "2B / BA",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/coils.jpg",
+    "metaTitle": "SS 430 Coils | Tatvam Overseas Inc",
+    "metaDescription": "SS 430 ferritic stainless coils for appliance and tube manufacturing. Mumbai.",
+    "keywords": [
+      "SS 430 coils",
+      "430 ferritic coil",
+      "430 stainless coil"
+    ],
+    "description": "SS 430 cold rolled coils in 2B and BA finish for appliance panel stamping and tube mill feed.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "≤0.75%",
+      "C": "≤0.12%",
+      "Mn": "≤1.0%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Magnetic": "Yes",
+      "Coil Weight": "3-10 MT"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240",
+        "EN 10088-2"
+      ],
+      "thicknessRange": "0.30mm to 3.0mm",
+      "widthRange": "Slitting: 10mm to 1500mm",
+      "finish": [
+        "2B",
+        "BA"
+      ]
+    },
+    "applications": [
+      "Appliance panels",
+      "Washing machine drums",
+      "Dishwasher inner",
+      "Tube mill feed"
+    ],
+    "industries": [
+      "Appliance Manufacturing",
+      "Consumer Goods",
+      "Tube Manufacturing"
+    ],
+    "pros": "Magnetic; lower cost than 304/316; good formability.",
+    "cons": "Not weldable by conventional methods; not for wet/outdoor use.",
+    "relatedGrades": [
+      "SS 304 Coil",
+      "SS 409 Sheets"
+    ],
+    "inStock": true,
+    "moq": "1 Coil (~3 MT)",
+    "tags": [
+      "430",
+      "ferritic",
+      "coil",
+      "appliance",
+      "magnetic",
+      "slitting"
+    ]
+  },
+  {
+    "id": "ss-430-hairline-sheet",
+    "slug": "ss-430-hairline-finish-sheets",
+    "grade": "SS 430",
+    "subGrade": "430",
+    "series": "400 Series",
+    "form": "Sheets",
+    "finish": "Hairline (No.4)",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 430 Hairline Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 430 hairline finish sheets for appliances and indoor architectural applications. Mumbai.",
+    "keywords": [
+      "SS 430 hairline sheets",
+      "430 brushed finish",
+      "430 No.4 finish"
+    ],
+    "description": "SS 430 sheets in No.4 hairline finish for domestic appliances and indoor architectural cladding.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "≤0.75%",
+      "C": "≤0.12%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Magnetic": "Yes"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240"
+      ],
+      "thicknessRange": "0.40mm to 2.0mm",
+      "finish": [
+        "Hairline",
+        "No.4"
+      ]
+    },
+    "applications": [
+      "Kitchen cabinets",
+      "Refrigerators",
+      "Elevator interiors",
+      "Indoor column cladding"
+    ],
+    "industries": [
+      "Appliance Manufacturing",
+      "Architecture",
+      "Interior Design"
+    ],
+    "pros": "Magnetic; economical; good indoor aesthetics.",
+    "cons": "Not suitable for coastal or wet environments; cannot be welded conventionally.",
+    "relatedGrades": [
+      "SS 430 2B",
+      "SS 304 Hairline"
+    ],
+    "inStock": true,
+    "moq": "200 kg",
+    "tags": [
+      "430",
+      "hairline",
+      "No4",
+      "appliance",
+      "ferritic",
+      "sheet"
+    ]
+  },
+  {
+    "id": "ss-431-bar",
+    "slug": "ss-431-round-bars",
+    "grade": "SS 431",
+    "subGrade": "431",
+    "series": "400 Series",
+    "form": "Round Bars",
+    "finish": "Hot Rolled / Annealed",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 431 Round Bars | Tatvam Overseas Inc",
+    "metaDescription": "SS 431 martensitic bars with best corrosion resistance in 400 series. Mumbai stockist.",
+    "keywords": [
+      "SS 431 bar",
+      "431 martensitic bar",
+      "431 stainless round bar"
+    ],
+    "description": "431 has the best corrosion resistance of all martensitic grades due to 15-17% Cr. High toughness after Q+T.",
+    "chem": {
+      "Cr": "15.0-17.0%",
+      "Ni": "1.25-2.50%",
+      "C": "≤0.20%",
+      "Mn": "≤1.0%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength (Q+T)": "620 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276",
+        "BS 970 431S29"
+      ],
+      "diameterRange": "10mm to 300mm",
+      "lengthRange": "3m to 6m",
+      "condition": [
+        "Annealed",
+        "Quenched & Tempered"
+      ]
+    },
+    "applications": [
+      "Marine pump shafts",
+      "Aircraft hardware",
+      "Bolts",
+      "Valve stems"
+    ],
+    "industries": [
+      "Marine",
+      "Aerospace",
+      "Oil & Gas",
+      "Engineering"
+    ],
+    "pros": "Best corrosion resistance of 400 series; high toughness.",
+    "cons": "Difficult to weld; prone to temper embrittlement.",
+    "relatedGrades": [
+      "SS 17-4PH",
+      "SS 420",
+      "SS 410"
+    ],
+    "inStock": true,
+    "moq": "50 kg",
+    "tags": [
+      "431",
+      "martensitic",
+      "round bar",
+      "marine",
+      "pump shaft"
+    ]
+  },
+  {
+    "id": "ss-446-pipe",
+    "slug": "ss-446-pipes",
+    "grade": "SS 446",
+    "subGrade": "446",
+    "series": "400 Series",
+    "form": "Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "SS 446 Pipes | Tatvam Overseas Inc",
+    "metaDescription": "SS 446 high chromium ferritic pipes for sulphur gas resistance at high temperatures. Mumbai.",
+    "keywords": [
+      "SS 446 pipe",
+      "446 heat resistant pipe",
+      "446 ferritic stainless"
+    ],
+    "description": "High chromium (23-27%) ferritic 446 for sulphur gas and high temperature oxidising atmospheres.",
+    "chem": {
+      "Cr": "23.0-27.0%",
+      "C": "≤0.20%",
+      "N": "≤0.25%",
+      "Mn": "≤1.5%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Max Service Temp": "1100°C"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A268"
+      ],
+      "ODRange": "1/2\" to 6\" NB",
+      "thicknessRange": "Sch 10S to Sch 40"
+    },
+    "applications": [
+      "Sulphur gas environments",
+      "High temp furnace piping",
+      "Combustion chambers"
+    ],
+    "industries": [
+      "Chemical",
+      "Power",
+      "Cement",
+      "Steel Plants"
+    ],
+    "pros": "Resists sulphur attack at high temp; cheaper than austenitic heat-resistant grades.",
+    "cons": "Difficult to fabricate; limited availability.",
+    "relatedGrades": [
+      "SS 310S Pipe",
+      "SS 321 Pipe"
+    ],
+    "inStock": false,
+    "moq": "50 kg",
+    "tags": [
+      "446",
+      "ferritic",
+      "heat resistant",
+      "pipe",
+      "sulphur"
+    ]
+  },
+  {
+    "id": "ss-15-5ph-bar",
+    "slug": "ss-15-5ph-round-bars",
+    "grade": "15-5 PH",
+    "subGrade": "UNS S15500",
+    "series": "400 Series",
+    "form": "Round Bars",
+    "finish": "Annealed / Aged",
+    "department": "Stainless Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "15-5 PH Round Bars | Tatvam Overseas Inc",
+    "metaDescription": "15-5 PH (XM-12) precipitation hardening bars. Aerospace quality. Mumbai.",
+    "keywords": [
+      "15-5 PH bar",
+      "XM-12 bar",
+      "15-5PH stainless bar",
+      "precipitation hardening"
+    ],
+    "description": "15-5 PH offers better transverse toughness than 17-4 PH. Uniform microstructure across larger cross-sections.",
+    "chem": {
+      "Cr": "14.0-15.5%",
+      "Ni": "3.5-5.5%",
+      "Cu": "2.5-4.5%",
+      "Nb": "0.15-0.45%",
+      "C": "≤0.07%"
+    },
+    "phys": {
+      "Density": "7.78 g/cm³",
+      "Yield Strength (H900)": "1170 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A564",
+        "AMS 5659"
+      ],
+      "diameterRange": "12mm to 200mm",
+      "condition": [
+        "Annealed",
+        "H900",
+        "H1025",
+        "H1075"
+      ]
+    },
+    "applications": [
+      "Aerospace components",
+      "Helicopter shafts",
+      "Nuclear applications",
+      "Gears and couplings"
+    ],
+    "industries": [
+      "Aerospace",
+      "Defense",
+      "Nuclear",
+      "Precision Engineering"
+    ],
+    "pros": "Uniform properties; superior transverse toughness vs 17-4.",
+    "cons": "Requires precise age-hardening heat treatment.",
+    "relatedGrades": [
+      "17-4 PH Bar",
+      "SS 431 Bar"
+    ],
+    "inStock": false,
+    "moq": "50 kg",
+    "tags": [
+      "15-5PH",
+      "XM-12",
+      "precipitation hardening",
+      "aerospace",
+      "bar"
+    ]
+  },
+  {
+    "id": "lean-duplex-sheet",
+    "slug": "lean-duplex-sheets",
+    "grade": "Lean Duplex",
+    "subGrade": "UNS S32304",
+    "series": "Duplex",
+    "form": "Sheets",
+    "finish": "No.1 / 2B",
+    "department": "Duplex Steel",
+    "category": "Flat Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "Lean Duplex Sheets | Tatvam Overseas Inc",
+    "metaDescription": "Lean Duplex S32304 sheets for bridges and storage tanks. Higher strength than 316. Mumbai.",
+    "keywords": [
+      "lean duplex sheets",
+      "S32304 sheets",
+      "2304 duplex sheets"
+    ],
+    "description": "Cost-effective duplex S32304 with lower Ni content than 2205. Replaces 304/316 in structural and tank applications.",
+    "chem": {
+      "Cr": "21.5-24.5%",
+      "Ni": "3.0-5.5%",
+      "Mo": "0.05-0.60%",
+      "N": "0.05-0.20%",
+      "C": "≤0.03%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "400 MPa",
+      "PREN": "24-26"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240"
+      ],
+      "thicknessRange": "3mm to 50mm",
+      "widthRange": "1000mm to 2500mm"
+    },
+    "applications": [
+      "Bridges",
+      "Storage tanks",
+      "Structural applications",
+      "Water treatment"
+    ],
+    "industries": [
+      "Construction",
+      "Water Treatment",
+      "Storage",
+      "Infrastructure"
+    ],
+    "pros": "Higher strength than 316; lower Ni content than 2205; cost effective duplex.",
+    "cons": "Lower Mo than 2205; not for severe chloride service.",
+    "relatedGrades": [
+      "Duplex 2205",
+      "SS 316 Plate"
+    ],
+    "inStock": false,
+    "moq": "500 kg",
+    "tags": [
+      "lean duplex",
+      "S32304",
+      "2304",
+      "plate",
+      "structural",
+      "tank"
+    ]
+  },
+  {
+    "id": "lean-duplex-pipe",
+    "slug": "lean-duplex-pipes",
+    "grade": "Lean Duplex",
+    "subGrade": "UNS S32304",
+    "series": "Duplex",
+    "form": "Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Duplex Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "Lean Duplex Pipes | Tatvam Overseas Inc",
+    "metaDescription": "Lean Duplex S32304 pipes. Higher strength than 316. ASTM A790. Mumbai.",
+    "keywords": [
+      "lean duplex pipe",
+      "S32304 pipe",
+      "2304 pipe"
+    ],
+    "description": "S32304 lean duplex pipes for general process applications requiring more strength than 316 at lower cost than 2205.",
+    "chem": {
+      "Cr": "21.5-24.5%",
+      "Ni": "3.0-5.5%",
+      "N": "0.05-0.20%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "400 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A790"
+      ],
+      "ODRange": "1/2\" to 8\" NB",
+      "thicknessRange": "Sch 10S to Sch 40"
+    },
+    "applications": [
+      "Water treatment piping",
+      "Structural process piping",
+      "General chemical"
+    ],
+    "industries": [
+      "Water Treatment",
+      "Chemical",
+      "Construction"
+    ],
+    "pros": "Good strength-to-cost ratio; lower Ni premium than 2205.",
+    "cons": "Lower pitting resistance than 2205; not for severe chloride.",
+    "relatedGrades": [
+      "Duplex 2205 Pipe",
+      "SS 316 Pipe"
+    ],
+    "inStock": false,
+    "moq": "100 kg",
+    "tags": [
+      "lean duplex",
+      "S32304",
+      "2304",
+      "pipe",
+      "cost effective"
+    ]
+  },
+  {
+    "id": "s32760-pipe",
+    "slug": "super-duplex-s32760-pipes",
+    "grade": "Super Duplex 32760",
+    "subGrade": "UNS S32760 / Zeron 100",
+    "series": "Super Duplex",
+    "form": "Pipes",
+    "finish": "Annealed Pickled",
+    "department": "Duplex Steel",
+    "category": "Pipes & Tubes",
+    "image": "assets/images/products/pipes.jpg",
+    "metaTitle": "Super Duplex S32760 Pipes | Tatvam Overseas Inc",
+    "metaDescription": "Super Duplex S32760 Zeron 100 pipes with Tungsten for maximum pitting resistance. Mumbai.",
+    "keywords": [
+      "S32760 pipe",
+      "Zeron 100 pipe",
+      "super duplex 32760",
+      "32760 offshore pipe"
+    ],
+    "description": "S32760 super duplex with added Tungsten and Copper for highest critical pitting temperature in the duplex family.",
+    "chem": {
+      "Cr": "24.0-26.0%",
+      "Ni": "6.0-8.0%",
+      "Mo": "3.0-4.0%",
+      "W": "0.5-1.0%",
+      "Cu": "0.5-1.0%",
+      "N": "0.20-0.30%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "550 MPa",
+      "PREN": ">40"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A790"
+      ],
+      "ODRange": "1/2\" to 8\" NB",
+      "thicknessRange": "Sch 10S to Sch 80",
+      "testing": [
+        "Ferrite check",
+        "Charpy impact",
+        "PMI"
+      ]
+    },
+    "applications": [
+      "Seawater injection",
+      "Offshore subsea",
+      "Desalination",
+      "Chemical scrubbers"
+    ],
+    "industries": [
+      "Offshore",
+      "Desalination",
+      "Chemical",
+      "Marine"
+    ],
+    "pros": "Highest PREN in duplex family; W addition improves pitting resistance.",
+    "cons": "Very strict welding procedure; expensive and long lead time.",
+    "relatedGrades": [
+      "Super Duplex 2507 Pipe",
+      "Duplex 2205 Pipe"
+    ],
+    "inStock": false,
+    "moq": "100 kg",
+    "tags": [
+      "S32760",
+      "Zeron 100",
+      "super duplex",
+      "offshore",
+      "seawater",
+      "pipe"
+    ]
+  },
+  {
+    "id": "s32760-bar",
+    "slug": "super-duplex-s32760-bars",
+    "grade": "Super Duplex 32760",
+    "subGrade": "UNS S32760",
+    "series": "Super Duplex",
+    "form": "Round Bars",
+    "finish": "Hot Rolled",
+    "department": "Duplex Steel",
+    "category": "Bars & Rods",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "Super Duplex S32760 Bars | Tatvam Overseas Inc",
+    "metaDescription": "Super Duplex S32760 round bars for offshore fasteners and pump components. Mumbai.",
+    "keywords": [
+      "S32760 bar",
+      "32760 round bar",
+      "Zeron 100 bar",
+      "super duplex bar"
+    ],
+    "description": "S32760 bars for offshore fasteners, impellers and high-performance pump components in seawater service.",
+    "chem": {
+      "Cr": "24.0-26.0%",
+      "Ni": "6.0-8.0%",
+      "Mo": "3.0-4.0%",
+      "W": "0.5-1.0%",
+      "N": "0.20-0.30%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "550 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A276"
+      ],
+      "diameterRange": "12mm to 200mm",
+      "lengthRange": "3m to 6m"
+    },
+    "applications": [
+      "Offshore fasteners",
+      "Pump impellers",
+      "Valve bodies",
+      "Subsea components"
+    ],
+    "industries": [
+      "Offshore",
+      "Marine",
+      "Desalination"
+    ],
+    "pros": "Best in class pitting resistance; ideal for subsea hardware.",
+    "cons": "High cost; complex machining; import only.",
+    "relatedGrades": [
+      "Super Duplex 2507 Bar",
+      "Duplex 2205 Bar"
+    ],
+    "inStock": false,
+    "moq": "50 kg",
+    "tags": [
+      "S32760",
+      "Zeron 100",
+      "super duplex",
+      "bar",
+      "offshore",
+      "pump"
+    ]
+  },
+  {
+    "id": "ss-304-reducer",
+    "slug": "ss-304-buttweld-reducer",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "Fittings",
+    "form": "Reducer",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Fittings",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 Reducers | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 concentric and eccentric buttweld reducers. ASME B16.9. Mumbai.",
+    "keywords": [
+      "SS 304 reducer",
+      "304 concentric reducer",
+      "304 eccentric reducer"
+    ],
+    "description": "304/304L concentric and eccentric buttweld reducers for pipe diameter changes in process piping.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A403",
+        "ASME B16.9"
+      ],
+      "sizeRange": "3/4\" x 1/2\" to 24\" x 16\"",
+      "type": [
+        "Concentric",
+        "Eccentric"
+      ]
+    },
+    "applications": [
+      "Pipe size transitions",
+      "Process piping",
+      "Chemical plants",
+      "Food processing"
+    ],
+    "industries": [
+      "Chemical",
+      "Food & Beverage",
+      "Pharmaceutical",
+      "General Engineering"
+    ],
+    "pros": "Standard fitting; good stock availability; MTC provided.",
+    "cons": "Requires certified welding.",
+    "relatedGrades": [
+      "SS 316 Reducer",
+      "SS 304 Elbow"
+    ],
+    "inStock": true,
+    "moq": "5 pieces",
+    "tags": [
+      "304",
+      "reducer",
+      "concentric",
+      "eccentric",
+      "fitting",
+      "piping"
+    ]
+  },
+  {
+    "id": "ss-304-end-cap",
+    "slug": "ss-304-buttweld-end-cap",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "Fittings",
+    "form": "End Cap",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Fittings",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 End Caps | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 buttweld end caps for pipeline closure. ASME B16.9. Mumbai stockist.",
+    "keywords": [
+      "SS 304 end cap",
+      "304 pipe cap",
+      "304 BW cap"
+    ],
+    "description": "304/304L buttweld end caps for closing pipe ends in process piping systems.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A403",
+        "ASME B16.9"
+      ],
+      "sizeRange": "1/2\" to 24\" NB",
+      "schedule": [
+        "Sch 10S",
+        "Sch 40S",
+        "Sch 80S"
+      ]
+    },
+    "applications": [
+      "Pipe end closure",
+      "Dead leg termination",
+      "Pressure testing"
+    ],
+    "industries": [
+      "Chemical",
+      "Food & Beverage",
+      "General Engineering"
+    ],
+    "pros": "Clean pipeline termination; food safe grade.",
+    "cons": "Requires certified welding.",
+    "relatedGrades": [
+      "SS 316 End Cap"
+    ],
+    "inStock": true,
+    "moq": "10 pieces",
+    "tags": [
+      "304",
+      "end cap",
+      "cap",
+      "fitting",
+      "pipeline closure"
+    ]
+  },
+  {
+    "id": "ss-316-reducer",
+    "slug": "ss-316-buttweld-reducer",
+    "grade": "SS 316",
+    "subGrade": "316 / 316L",
+    "series": "Fittings",
+    "form": "Reducer",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Fittings",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 316 Reducers | Tatvam Overseas Inc",
+    "metaDescription": "SS 316 concentric and eccentric reducers for marine and chemical piping. Mumbai.",
+    "keywords": [
+      "SS 316 reducer",
+      "316 concentric reducer",
+      "316 marine reducer"
+    ],
+    "description": "316/316L concentric and eccentric reducers for marine and chemical process piping systems.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "10.0-14.0%",
+      "Mo": "2.0-3.0%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A403",
+        "ASME B16.9"
+      ],
+      "sizeRange": "3/4\" x 1/2\" to 24\" x 16\"",
+      "type": [
+        "Concentric",
+        "Eccentric"
+      ]
+    },
+    "applications": [
+      "Marine piping",
+      "Chemical plants",
+      "Pharmaceutical systems",
+      "Offshore"
+    ],
+    "industries": [
+      "Marine",
+      "Chemical",
+      "Pharmaceutical",
+      "Offshore"
+    ],
+    "pros": "Marine-grade corrosion resistance.",
+    "cons": "Higher cost than 304 reducers.",
+    "relatedGrades": [
+      "SS 304 Reducer",
+      "Duplex 2205 Reducer"
+    ],
+    "inStock": true,
+    "moq": "5 pieces",
+    "tags": [
+      "316",
+      "reducer",
+      "marine",
+      "fitting",
+      "piping"
+    ]
+  },
+  {
+    "id": "ss-304-swrf-flange",
+    "slug": "ss-304-socket-weld-flange",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "Flanges",
+    "form": "Socket Weld Flange",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Flanges",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 Socket Weld Flange | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 socket weld flanges for small bore piping. ASME B16.5. Mumbai.",
+    "keywords": [
+      "SS 304 socket weld flange",
+      "304 SW flange",
+      "304 SWRF flange"
+    ],
+    "description": "304/304L socket weld flanges for small bore piping (2\" and under) at high pressure.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%",
+      "C": "≤0.08%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A182 F304",
+        "ASME B16.5"
+      ],
+      "sizeRange": "1/2\" to 2\" NB",
+      "pressureClass": [
+        "150#",
+        "300#",
+        "600#",
+        "900#",
+        "1500#",
+        "2500#"
+      ]
+    },
+    "applications": [
+      "Small bore instrument piping",
+      "Hydraulic lines",
+      "High-pressure small-bore process"
+    ],
+    "industries": [
+      "Oil & Gas",
+      "Instrumentation",
+      "Chemical",
+      "Pharmaceutical"
+    ],
+    "pros": "Eliminates need for thread sealant; better than threaded for critical service.",
+    "cons": "Two fillet welds required; not suitable for cyclic service.",
+    "relatedGrades": [
+      "SS 304 WNRF",
+      "SS 316 SW Flange"
+    ],
+    "inStock": true,
+    "moq": "1 piece",
+    "tags": [
+      "304",
+      "socket weld",
+      "SW",
+      "flange",
+      "small bore",
+      "high pressure"
+    ]
+  },
+  {
+    "id": "ss-316-blind-flange",
+    "slug": "ss-316-blind-flange",
+    "grade": "SS 316",
+    "subGrade": "316 / 316L",
+    "series": "Flanges",
+    "form": "Blind Flange",
+    "finish": "Annealed Pickled",
+    "department": "Stainless Steel",
+    "category": "Flanges",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 316 Blind Flange | Tatvam Overseas Inc",
+    "metaDescription": "SS 316 blind flanges for marine and chemical pipeline isolation. ASTM A182. Mumbai.",
+    "keywords": [
+      "SS 316 blind flange",
+      "316 BL flange",
+      "marine blind flange"
+    ],
+    "description": "316/316L blind flanges for marine and chemical pipeline blanking with maximum corrosion resistance.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "10.0-14.0%",
+      "Mo": "2.0-3.0%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A182 F316",
+        "ASME B16.5"
+      ],
+      "sizeRange": "1/2\" to 60\" NB",
+      "pressureClass": [
+        "150#",
+        "300#",
+        "600#",
+        "900#",
+        "1500#",
+        "2500#"
+      ]
+    },
+    "applications": [
+      "Marine pipeline blanking",
+      "Chemical vessel nozzle blanking",
+      "Offshore isolation"
+    ],
+    "industries": [
+      "Marine",
+      "Chemical",
+      "Offshore",
+      "Pharmaceutical"
+    ],
+    "pros": "Chloride-resistant positive isolation.",
+    "cons": "Higher cost than 304 blind flanges.",
+    "relatedGrades": [
+      "SS 304 Blind",
+      "Duplex 2205 Flange"
+    ],
+    "inStock": true,
+    "moq": "1 piece",
+    "tags": [
+      "316",
+      "blind",
+      "BL",
+      "flange",
+      "marine",
+      "chemical",
+      "isolation"
+    ]
+  },
+  {
+    "id": "duplex-2205-flange",
+    "slug": "duplex-2205-flange",
+    "grade": "Duplex 2205",
+    "subGrade": "UNS S31803",
+    "series": "Flanges",
+    "form": "Weld Neck Flange",
+    "finish": "Annealed Pickled",
+    "department": "Duplex Steel",
+    "category": "Flanges",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "Duplex 2205 Flanges | Tatvam Overseas Inc",
+    "metaDescription": "Duplex 2205 weld neck flanges for offshore and chemical service. ASTM A182. Mumbai.",
+    "keywords": [
+      "duplex 2205 flange",
+      "2205 WNRF flange",
+      "duplex flange",
+      "S31803 flange"
+    ],
+    "description": "2205 duplex weld neck flanges for high-pressure chemical and offshore piping connections.",
+    "chem": {
+      "Cr": "21.0-23.0%",
+      "Ni": "4.5-6.5%",
+      "Mo": "2.5-3.5%",
+      "N": "0.08-0.20%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength": "450 MPa"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A182 F51",
+        "ASME B16.5"
+      ],
+      "sizeRange": "1/2\" to 24\" NB",
+      "pressureClass": [
+        "150#",
+        "300#",
+        "600#",
+        "900#",
+        "1500#"
+      ]
+    },
+    "applications": [
+      "Chemical process",
+      "Offshore piping",
+      "Desalination plants",
+      "Pulp & Paper"
+    ],
+    "industries": [
+      "Chemical",
+      "Offshore",
+      "Desalination",
+      "Pulp & Paper"
+    ],
+    "pros": "High strength; excellent SCC resistance; ferrite-balanced.",
+    "cons": "Strict post-weld ferrite check required.",
+    "relatedGrades": [
+      "SS 316 WNRF",
+      "Super Duplex 2507 Flange"
+    ],
+    "inStock": false,
+    "moq": "1 piece",
+    "tags": [
+      "duplex",
+      "2205",
+      "flange",
+      "WNRF",
+      "offshore",
+      "chemical"
+    ]
+  },
+  {
+    "id": "ss-304-hex-nut",
+    "slug": "ss-304-hex-nuts",
+    "grade": "SS 304",
+    "subGrade": "A2-70",
+    "series": "Fasteners",
+    "form": "Hex Nuts",
+    "finish": "Bright / Passivated",
+    "department": "Stainless Steel",
+    "category": "Fasteners",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 Hex Nuts | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 (A2) hex full nuts, thin nuts and heavy hex nuts. M5 to M100. Mumbai.",
+    "keywords": [
+      "SS 304 hex nut",
+      "304 stainless nut",
+      "A2 nut",
+      "304 full nut"
+    ],
+    "description": "A2-70 (304) hex nuts in standard, thin and heavy hex patterns. For use with SS bolts.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ISO 3506",
+        "DIN 934",
+        "ASME B18.2.2"
+      ],
+      "sizeRange": "M5 to M100 / 1/4\" to 4\"",
+      "type": [
+        "Full Hex Nut",
+        "Thin Nut (DIN 439)",
+        "Heavy Hex Nut"
+      ]
+    },
+    "applications": [
+      "Flange bolting",
+      "Equipment assembly",
+      "Structural connections"
+    ],
+    "industries": [
+      "General Engineering",
+      "Chemical",
+      "Food Processing",
+      "Construction"
+    ],
+    "pros": "Corrosion resistant; food safe; matched to A2 bolts.",
+    "cons": "Galling tendency; lubricate with copper-based anti-seize.",
+    "relatedGrades": [
+      "SS 316 Hex Nuts",
+      "SS 304 Hex Bolts"
+    ],
+    "inStock": true,
+    "moq": "25 pieces",
+    "tags": [
+      "304",
+      "A2",
+      "hex nut",
+      "fastener",
+      "nut"
+    ]
+  },
+  {
+    "id": "ss-316-stud-bolt",
+    "slug": "ss-316-stud-bolts",
+    "grade": "SS 316",
+    "subGrade": "A4-70",
+    "series": "Fasteners",
+    "form": "Stud Bolts",
+    "finish": "Bright / Passivated",
+    "department": "Stainless Steel",
+    "category": "Fasteners",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 316 Stud Bolts | Tatvam Overseas Inc",
+    "metaDescription": "SS 316 (A4) stud bolts for marine flange and pressure vessel connections. Mumbai.",
+    "keywords": [
+      "SS 316 stud bolt",
+      "316 flange bolt",
+      "A4 stud bolt",
+      "marine stud bolt"
+    ],
+    "description": "A4-70 (316) stud bolts for marine and chemical flange connections requiring maximum corrosion resistance.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "10.0-14.0%",
+      "Mo": "2.0-3.0%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM F593",
+        "ISO 3506"
+      ],
+      "sizeRange": "M10 to M100 / 3/8\" to 4\"",
+      "lengthRange": "50mm to 500mm"
+    },
+    "applications": [
+      "Marine flange bolting",
+      "Chemical vessel connections",
+      "Offshore piping"
+    ],
+    "industries": [
+      "Marine",
+      "Chemical",
+      "Offshore",
+      "Pharmaceutical"
+    ],
+    "pros": "A4 marine grade; chloride resistant.",
+    "cons": "Higher cost; galling risk.",
+    "relatedGrades": [
+      "SS 304 Stud Bolts",
+      "Inconel 625 Bolts"
+    ],
+    "inStock": true,
+    "moq": "10 sets",
+    "tags": [
+      "316",
+      "A4",
+      "stud bolt",
+      "flange",
+      "marine",
+      "fastener"
+    ]
+  },
+  {
+    "id": "ss-304-threaded-rod",
+    "slug": "ss-304-threaded-rods",
+    "grade": "SS 304",
+    "subGrade": "A2",
+    "series": "Fasteners",
+    "form": "Threaded Rods",
+    "finish": "Bright",
+    "department": "Stainless Steel",
+    "category": "Fasteners",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 Threaded Rods | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 fully threaded rods in metric and UNC/UNF. 1m and 3m lengths. Mumbai.",
+    "keywords": [
+      "SS 304 threaded rod",
+      "304 all thread rod",
+      "304 studding"
+    ],
+    "description": "SS 304 fully threaded rods (studding) for anchor bolt assemblies, clamping, and general fastening.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "DIN 976",
+        "ASTM F593"
+      ],
+      "sizeRange": "M6 to M64 / 1/4\" to 2.5\"",
+      "lengthRange": "1m / 3m / custom cut"
+    },
+    "applications": [
+      "Anchor bolt assemblies",
+      "Equipment clamping",
+      "Construction fixtures"
+    ],
+    "industries": [
+      "Construction",
+      "General Engineering",
+      "Chemical"
+    ],
+    "pros": "Versatile; can be cut to any length; food safe.",
+    "cons": "Galling at thread engagement; torque control needed.",
+    "relatedGrades": [
+      "SS 316 Threaded Rod",
+      "SS 304 Stud Bolts"
+    ],
+    "inStock": true,
+    "moq": "10 pieces",
+    "tags": [
+      "304",
+      "threaded rod",
+      "studding",
+      "all-thread",
+      "fastener"
+    ]
+  },
+  {
+    "id": "ss-304-u-bolt",
+    "slug": "ss-304-u-bolts",
+    "grade": "SS 304",
+    "subGrade": "A2",
+    "series": "Fasteners",
+    "form": "U Bolts",
+    "finish": "Bright / Passivated",
+    "department": "Stainless Steel",
+    "category": "Fasteners",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "SS 304 U-Bolts | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 U-bolts for pipe clamps and pipe supports. Custom sizes available. Mumbai.",
+    "keywords": [
+      "SS 304 U-bolt",
+      "304 pipe clamp bolt",
+      "stainless U-bolt"
+    ],
+    "description": "304 U-bolts for pipe clamping, pipe support, and anti-vibration mounts. Standard and custom sizes.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "Commercial / ASME B18.31.5"
+      ],
+      "sizeRange": "M10 to M30 / 3/8\" to 1.25\"",
+      "pipeRange": "1/2\" to 12\" NB",
+      "type": [
+        "Round Bend",
+        "Square Bend"
+      ]
+    },
+    "applications": [
+      "Pipe clamping",
+      "Pipe supports",
+      "Anti-vibration clamps",
+      "Marine cable trays"
+    ],
+    "industries": [
+      "Construction",
+      "Marine",
+      "Oil & Gas",
+      "HVAC"
+    ],
+    "pros": "Corrosion resistant pipe support; food and marine grade available.",
+    "cons": "Custom sizes need lead time.",
+    "relatedGrades": [
+      "SS 316 U-Bolts",
+      "Monel 400 U-Bolts"
+    ],
+    "inStock": true,
+    "moq": "10 pieces",
+    "tags": [
+      "304",
+      "U-bolt",
+      "pipe clamp",
+      "pipe support",
+      "fastener"
+    ]
+  },
+  {
+    "id": "ss-316-welded-mesh",
+    "slug": "ss-316-welded-wire-mesh",
+    "grade": "SS 316",
+    "subGrade": "316 / 316L",
+    "series": "Wire Products",
+    "form": "Welded Wire Mesh",
+    "finish": "Bright / Passivated",
+    "department": "Stainless Steel",
+    "category": "Wire Products",
+    "image": "assets/images/products/rods.jpg",
+    "metaTitle": "SS 316 Welded Wire Mesh | Tatvam Overseas Inc",
+    "metaDescription": "SS 316 marine-grade welded wire mesh for coastal and offshore installations. Mumbai.",
+    "keywords": [
+      "SS 316 wire mesh",
+      "316 welded mesh",
+      "marine wire mesh"
+    ],
+    "description": "316/316L welded wire mesh for coastal, marine, and chemical industry fencing and safety applications.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "10.0-14.0%",
+      "Mo": "2.0-3.0%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "Commercial"
+      ],
+      "wireGauge": "1.5mm to 8mm",
+      "meshAperture": "10mm to 100mm",
+      "rollWidth": "1m to 2m",
+      "rollLength": "10m to 30m"
+    },
+    "applications": [
+      "Coastal security fencing",
+      "Marine structures",
+      "Chemical plant safety barriers",
+      "Offshore platforms"
+    ],
+    "industries": [
+      "Marine",
+      "Chemical",
+      "Offshore",
+      "Coastal Construction"
+    ],
+    "pros": "Marine-grade chloride resistance; long service life in coastal environments.",
+    "cons": "Higher cost than 304 mesh.",
+    "relatedGrades": [
+      "SS 304 Welded Mesh",
+      "SS 316 Woven Mesh"
+    ],
+    "inStock": false,
+    "moq": "5 sq.m.",
+    "tags": [
+      "316",
+      "welded mesh",
+      "marine",
+      "coastal",
+      "wire mesh",
+      "security"
+    ]
+  },
+  {
+    "id": "ss-304-expanded-metal",
+    "slug": "ss-304-expanded-metal",
+    "grade": "SS 304",
+    "subGrade": "304 / 304L",
+    "series": "Wire Products",
+    "form": "Expanded Metal Mesh",
+    "finish": "Mill / Deformed",
+    "department": "Stainless Steel",
+    "category": "Wire Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 304 Expanded Metal | Tatvam Overseas Inc",
+    "metaDescription": "SS 304 expanded metal sheets for walkways, screens and decorative grilles. Mumbai.",
+    "keywords": [
+      "SS 304 expanded metal",
+      "304 XM mesh",
+      "stainless expanded metal"
+    ],
+    "description": "304 expanded metal sheets made by slitting and expanding solid sheets. For walkways, grating, and architectural screens.",
+    "chem": {
+      "Cr": "18.0-20.0%",
+      "Ni": "8.0-10.5%"
+    },
+    "phys": {
+      "Density": "7.93 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "BS 4363"
+      ],
+      "sheetThicknessRange": "0.5mm to 6mm",
+      "meshSize": [
+        "Micro",
+        "Mini",
+        "Standard",
+        "Heavy",
+        "Architectural"
+      ],
+      "sheetSize": "1000x2000mm"
+    },
+    "applications": [
+      "Machine guards",
+      "Anti-slip walkways",
+      "Architectural screens",
+      "Filtration",
+      "Cable trays"
+    ],
+    "industries": [
+      "Construction",
+      "Architecture",
+      "Food Processing",
+      "Engineering"
+    ],
+    "pros": "High strength to weight; good airflow and light transmission; anti-slip.",
+    "cons": "Sharp edges after expanding; requires edge trim for architectural use.",
+    "relatedGrades": [
+      "SS 304 Perforated",
+      "SS 304 Welded Mesh"
+    ],
+    "inStock": true,
+    "moq": "5 sheets",
+    "tags": [
+      "304",
+      "expanded metal",
+      "XM",
+      "walkway",
+      "screen",
+      "grating"
+    ]
+  },
+  {
+    "id": "ss-316-perforated-sheet",
+    "slug": "ss-316-perforated-sheets",
+    "grade": "SS 316",
+    "subGrade": "316 / 316L",
+    "series": "Wire Products",
+    "form": "Perforated Sheets",
+    "finish": "2B / Mill",
+    "department": "Stainless Steel",
+    "category": "Wire Products",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "SS 316 Perforated Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 316 perforated sheets for chemical filtration and coastal architectural facades. Mumbai.",
+    "keywords": [
+      "SS 316 perforated",
+      "316 perforated sheet",
+      "marine perforated stainless"
+    ],
+    "description": "316/316L perforated sheets for chemical filtration, coastal facades, and marine ventilation where 304 is insufficient.",
+    "chem": {
+      "Cr": "16.0-18.0%",
+      "Ni": "10.0-14.0%",
+      "Mo": "2.0-3.0%"
+    },
+    "phys": {
+      "Density": "7.98 g/cm³"
+    },
+    "specs": {
+      "standards": [
+        "ASTM A240 substrate"
+      ],
+      "thicknessRange": "0.5mm to 10mm",
+      "holePatterns": [
+        "Round",
+        "Square",
+        "Slotted",
+        "Hexagonal"
+      ],
+      "openArea": "20% to 70%"
+    },
+    "applications": [
+      "Chemical filtration",
+      "Coastal facade panels",
+      "Marine ventilation",
+      "Pharmaceutical screens"
+    ],
+    "industries": [
+      "Chemical",
+      "Coastal Architecture",
+      "Marine",
+      "Pharmaceutical"
+    ],
+    "pros": "Marine-grade corrosion resistance in perforated form.",
+    "cons": "Higher cost than 304 perforated; longer lead time.",
+    "relatedGrades": [
+      "SS 304 Perforated",
+      "SS 316 Welded Mesh"
+    ],
+    "inStock": false,
+    "moq": "5 sheets",
+    "tags": [
+      "316",
+      "perforated",
+      "marine",
+      "coastal",
+      "filtration",
+      "sheet"
+    ]
+  },
+  {
+    "id": "custom-laser-cut-plates",
+    "slug": "laser-cut-stainless-plates",
+    "grade": "SS 304 / 316 / 202",
+    "subGrade": "Various",
+    "series": "Custom Fabrication",
+    "form": "Laser Cut Plates",
+    "finish": "As Cut / Polished",
+    "department": "Stainless Steel",
+    "category": "Custom Fabrication",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "Laser Cut Stainless Plates | Tatvam Overseas Inc",
+    "metaDescription": "Laser cutting service for SS 304, 316 and 202 plates. Complex profiles available. Mumbai.",
+    "keywords": [
+      "laser cut stainless plate",
+      "laser cut 304",
+      "custom cut stainless steel",
+      "laser cutting service Mumbai"
+    ],
+    "description": "CNC laser cutting of stainless steel plates in 304, 316, 202 in any profile from DXF/DWG files.",
+    "chem": {
+      "Grade": "304 / 316 / 202 / 316L / Duplex"
+    },
+    "phys": {
+      "Cutting Tolerance": "±0.2mm",
+      "Max Thickness": "25mm (304)",
+      "Max Sheet": "3000x1500mm"
+    },
+    "specs": {
+      "standards": [
+        "Customer drawing"
+      ],
+      "thicknessRange": "0.5mm to 25mm",
+      "profiles": [
+        "Round",
+        "Square",
+        "Complex profiles",
+        "Holes",
+        "Slots",
+        "Contours"
+      ],
+      "files": [
+        "DXF",
+        "DWG",
+        "PDF",
+        "STEP"
+      ]
+    },
+    "applications": [
+      "Gaskets",
+      "Wear plates",
+      "Brackets",
+      "Decorative screens",
+      "Jigs and fixtures",
+      "Machine parts"
+    ],
+    "industries": [
+      "Engineering",
+      "Architecture",
+      "Food Processing",
+      "Chemical",
+      "Automotive"
+    ],
+    "pros": "No minimum order on cut pieces; complex shapes possible; fast turnaround.",
+    "cons": "Cut edge needs deburring/grinding for aesthetic applications.",
+    "relatedGrades": [
+      "SS 304 Plate",
+      "SS 316 Plate"
+    ],
+    "inStock": true,
+    "moq": "1 piece",
+    "tags": [
+      "laser cut",
+      "custom cut",
+      "304",
+      "316",
+      "plate",
+      "DXF",
+      "profile cutting"
+    ]
+  },
+  {
+    "id": "custom-circles-rings",
+    "slug": "custom-stainless-circles",
+    "grade": "SS 304 / 316 / 202",
+    "subGrade": "Various",
+    "series": "Custom Fabrication",
+    "form": "Circles & Rings",
+    "finish": "2B / Polished",
+    "department": "Stainless Steel",
+    "category": "Custom Fabrication",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "Stainless Steel Circles | Tatvam Overseas Inc",
+    "metaDescription": "SS 202, 304, 316 circles and rings for cookware and vessel manufacture. Mumbai stockist.",
+    "keywords": [
+      "SS circles",
+      "stainless steel circles",
+      "304 circles",
+      "202 circles",
+      "cookware discs"
+    ],
+    "description": "Blanked or laser-cut SS circles and rings for cookware, pressure vessel ends, and architectural applications.",
+    "chem": {
+      "Grade": "202 J4 / 304 / 316 / 430"
+    },
+    "phys": {
+      "Dimensional Tolerance": "±0.5mm on OD"
+    },
+    "specs": {
+      "standards": [
+        "IS 6911 substrate",
+        "Customer spec"
+      ],
+      "diameterRange": "50mm to 2500mm",
+      "thicknessRange": "0.5mm to 20mm",
+      "finish": [
+        "2B",
+        "Mill",
+        "Mirror",
+        "Hairline"
+      ]
+    },
+    "applications": [
+      "Cookware (pressure cookers, woks)",
+      "Vessel end plates",
+      "Manhole covers",
+      "Decorative medallions"
+    ],
+    "industries": [
+      "Cookware Manufacturing",
+      "Pressure Vessel",
+      "Architecture",
+      "Food Processing"
+    ],
+    "pros": "Ready-to-press blanks; saves sheet wastage; custom diameter.",
+    "cons": "Min batch for non-standard diameters.",
+    "relatedGrades": [
+      "SS 202 Sheets",
+      "SS 304 Sheets"
+    ],
+    "inStock": true,
+    "moq": "10 pieces",
+    "tags": [
+      "circles",
+      "rings",
+      "blanks",
+      "cookware",
+      "custom",
+      "304",
+      "202"
+    ]
+  },
+  {
+    "id": "custom-cut-to-length",
+    "slug": "cut-to-length-stainless-sheets",
+    "grade": "SS 304 / 316 / 202",
+    "subGrade": "Various",
+    "series": "Custom Fabrication",
+    "form": "Cut-to-Length Sheets",
+    "finish": "As Required",
+    "department": "Stainless Steel",
+    "category": "Custom Fabrication",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "Cut-to-Length Stainless Sheets | Tatvam Overseas Inc",
+    "metaDescription": "Stainless steel cut-to-length and slitting service for SS 202, 304, 316. Mumbai.",
+    "keywords": [
+      "cut to length stainless",
+      "slitting service",
+      "custom size stainless sheet",
+      "304 cut sheet"
+    ],
+    "description": "Cut-to-length and slitting service from coil or sheet for exact-dimension plates. Reduces material waste.",
+    "chem": {
+      "Grade": "202 / 304 / 316 / 430 / 409"
+    },
+    "phys": {
+      "Squareness Tolerance": "±1mm",
+      "Length Tolerance": "±2mm"
+    },
+    "specs": {
+      "standards": [
+        "Customer spec / IS 6911"
+      ],
+      "thicknessRange": "0.30mm to 12mm",
+      "widthRange": "10mm to 2000mm",
+      "lengthRange": "100mm to 6000mm"
+    },
+    "applications": [
+      "Appliance panels",
+      "Machine enclosures",
+      "Signage",
+      "Custom fabrication"
+    ],
+    "industries": [
+      "General Fabrication",
+      "Appliance Manufacturing",
+      "Architecture",
+      "Retail"
+    ],
+    "pros": "Exact size; no waste; fast turnaround from stock coils.",
+    "cons": "Minimum batch may apply for very small quantities.",
+    "relatedGrades": [
+      "SS 304 Coil",
+      "SS 202 Coil",
+      "SS 430 Coil"
+    ],
+    "inStock": true,
+    "moq": "10 kg",
+    "tags": [
+      "cut to length",
+      "slitting",
+      "custom size",
+      "sheet",
+      "coil processing",
+      "202",
+      "304"
+    ]
+  },
+  {
+    "id": "custom-elevator-cabin-sheets",
+    "slug": "elevator-cabin-stainless-sheets",
+    "grade": "SS 304 / 316 / 202",
+    "subGrade": "Various",
+    "series": "Custom Fabrication",
+    "form": "Elevator Cabin Sheets",
+    "finish": "Mirror / Hairline / PVD / Designer",
+    "department": "Stainless Steel",
+    "category": "Custom Fabrication",
+    "image": "assets/images/products/sheets.jpg",
+    "metaTitle": "Elevator Cabin Stainless Sheets | Tatvam Overseas Inc",
+    "metaDescription": "Stainless steel sheets for elevator cabins. Mirror, hairline, PVD and designer finishes. Mumbai.",
+    "keywords": [
+      "elevator stainless sheets",
+      "lift cabin stainless",
+      "PVD elevator panels",
+      "mirror lift panels"
+    ],
+    "description": "Premium finish stainless sheets for elevator and lift cabin interiors. Supplied in mirror, hairline, PVD gold, PVD black, embossed, and designer patterns.",
+    "chem": {
+      "Grade": "SS 202 J4 / SS 304 / SS 316"
+    },
+    "phys": {
+      "Surface Roughness": {
+        "Mirror": "Ra ≤ 0.05 µm",
+        "Hairline": "Ra 0.2-0.5 µm"
+      }
+    },
+    "specs": {
+      "standards": [
+        "EN 10088-2 substrate"
+      ],
+      "thicknessRange": "0.40mm to 1.5mm",
+      "widthRange": "Up to 1500mm",
+      "finish": [
+        "Mirror 8K",
+        "Hairline No.4",
+        "PVD Gold",
+        "PVD Rose Gold",
+        "PVD Black",
+        "PVD Bronze",
+        "Champagne",
+        "Vibration",
+        "Linen",
+        "Embossed",
+        "Designer Etched"
+      ]
+    },
+    "applications": [
+      "Elevator cabin walls",
+      "Lift doors",
+      "Hotel lobby cladding",
+      "Reception desks",
+      "Decorative feature walls"
+    ],
+    "industries": [
+      "Elevator Manufacturing",
+      "Hospitality",
+      "Architecture",
+      "Interior Design"
+    ],
+    "pros": "Wide finish range; PVC film protected; matched edge trim available.",
+    "cons": "PVD colour matching needed for reorders; lead time for embossed patterns.",
+    "relatedGrades": [
+      "SS 304 Mirror",
+      "SS 202 Mirror",
+      "SS 304 PVD Gold"
+    ],
+    "inStock": true,
+    "moq": "5 sheets",
+    "tags": [
+      "elevator",
+      "lift cabin",
+      "PVD",
+      "mirror",
+      "hairline",
+      "designer",
+      "decorative",
+      "sheet"
+    ]
+  },
+  {
+    "id": "custom-fabricated-tanks",
+    "slug": "ss-fabricated-tanks",
+    "grade": "SS 304 / 316",
+    "subGrade": "Various",
+    "series": "Custom Fabrication",
+    "form": "Fabricated Tanks",
+    "finish": "Polished / Mill",
+    "department": "Stainless Steel",
+    "category": "Custom Fabrication",
+    "image": "assets/images/products/warehouse.jpg",
+    "metaTitle": "Stainless Steel Tanks Fabrication | Tatvam Overseas Inc",
+    "metaDescription": "Custom stainless steel tanks and vessels fabricated in SS 304 and 316. Chemical and food grade. Mumbai.",
+    "keywords": [
+      "stainless steel tank fabrication",
+      "SS 304 tank",
+      "SS 316 tank",
+      "custom SS vessel",
+      "food grade tank"
+    ],
+    "description": "Custom fabricated stainless steel tanks for chemical, food and pharmaceutical storage. Made from 304/316 plate with full MTC traceability.",
+    "chem": {
+      "Grade": "SS 304 / SS 304L / SS 316 / SS 316L"
+    },
+    "phys": {
+      "Capacity": "100 L to 100,000 L",
+      "Test Pressure": "1.5x Design Pressure"
+    },
+    "specs": {
+      "standards": [
+        "ASME Section VIII",
+        "IS 2825",
+        "Customer spec"
+      ],
+      "thicknessRange": "3mm to 25mm (shell)",
+      "nozzle": "ASME B16.5 flanges",
+      "finish": [
+        "Internal: 2B or electropolished",
+        "External: Mill or polished"
+      ],
+      "testing": [
+        "Hydrostatic",
+        "Dye penetrant",
+        "Radiography"
+      ]
+    },
+    "applications": [
+      "Chemical storage",
+      "Food and dairy storage",
+      "Pharmaceutical mixing",
+      "Water treatment",
+      "Process vessels"
+    ],
+    "industries": [
+      "Chemical",
+      "Food & Beverage",
+      "Pharmaceutical",
+      "Water Treatment",
+      "Dairy"
+    ],
+    "pros": "Full design flexibility; MTC traceability; food-safe internal finish.",
+    "cons": "Lead time 4-8 weeks; requires proper site survey for delivery.",
+    "relatedGrades": [
+      "SS 304 Plate",
+      "SS 316 Plate",
+      "Duplex 2205 Plate"
+    ],
+    "inStock": false,
+    "moq": "1 unit",
+    "tags": [
+      "tank",
+      "vessel",
+      "fabricated",
+      "304",
+      "316",
+      "food grade",
+      "chemical",
+      "pharmaceutical"
+    ]
+  }
+]
