@@ -879,35 +879,89 @@ function selectSearchResult(id) {
 // initSmartSearch is called from the main DOMContentLoaded handler above
 
 function openBlogModal(id) {
-try {
-if (typeof blogs === 'undefined') return;
-const post = blogs.find(b => b.id === id);
-    if (!post) return;
-    
-    const modal = document.getElementById('common-modal');
-    const body = document.getElementById('modal-body');
-    
-    if (!modal || !body) return;
-    
-    body.innerHTML = `
-        <div class="p-8">
-            <img src="${post.image}" class="w-full h-64 object-cover rounded-lg mb-6" alt="${escapeHtml(post.title)}">
-            <div class="flex items-center gap-2 mb-4 text-sm text-slate-500">
-                <span class="text-emerald-600 font-bold">${escapeHtml(post.category)}</span> • 
-                <span>${escapeHtml(post.date)}</span>
+    try {
+        if (typeof blogs === 'undefined') return;
+        const post = blogs.find(b => b.id === id);
+        if (!post) return;
+        
+        const modal = document.getElementById('common-modal');
+        const body = document.getElementById('modal-body');
+        
+        if (!modal || !body) return;
+        
+        // Remove old width constraints if any and apply new modal styles
+        const modalContent = modal.querySelector('.modal-content');
+        if (modalContent) {
+            modalContent.className = 'modal-content relative w-[95%] max-w-4xl max-h-[90vh] flex flex-col bg-slate-50 rounded-2xl overflow-hidden shadow-2xl';
+        }
+        
+        const style = typeof getCategoryStyle === 'function' ? getCategoryStyle(post.category) : {bg: 'bg-emerald-100', text: 'text-emerald-700'};
+        const authorHtml = typeof blogAuthor === 'function' ? blogAuthor(post.date, post.readingTime || '5 min read') : '';
+        const ctaHtml = typeof blogCTA === 'function' ? blogCTA() : '';
+        const relatedHtml = typeof relatedPostsHTML === 'function' && post.relatedIds ? relatedPostsHTML(post.relatedIds) : '';
+
+        body.className = "flex flex-col h-full overflow-y-auto no-scrollbar relative";
+        
+        // Generate the TOC dynamically from content structure if applicable, or just let content handle it
+        
+        body.innerHTML = `
+            <!-- Cover Header -->
+            <div class="relative h-[250px] md:h-[400px] shrink-0 w-full overflow-hidden">
+                <img src="${post.coverImage || post.image}" class="absolute inset-0 w-full h-full object-cover" alt="${escapeHtml(post.title)}">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+
+                <div class="absolute bottom-0 left-0 w-full p-6 md:p-12 text-white">
+                    <nav class="flex text-[10px] md:text-xs font-bold uppercase tracking-wider text-emerald-400 mb-4" aria-label="Breadcrumb">
+                        <ol class="inline-flex items-center space-x-1 md:space-x-2">
+                            <li class="inline-flex items-center"><a href="blog.html" class="hover:text-white transition-colors flex items-center gap-1"><i data-lucide="home" class="w-3 h-3"></i> Knowledge Base</a></li>
+                            <li><span class="mx-1 text-slate-500">/</span></li>
+                            <li><span class="hover:text-white transition-colors cursor-pointer" onclick="closeModal(); filterBlogs('${post.category}')">${escapeHtml(post.category)}</span></li>
+                        </ol>
+                    </nav>
+                    <h1 class="text-3xl md:text-5xl font-black mb-4 leading-tight">${escapeHtml(post.title)}</h1>
+                    <div class="flex items-center gap-4 text-xs md:text-sm text-slate-300 font-medium">
+                        <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i> ${escapeHtml(post.date)}</span>
+                        <span class="w-1 h-1 rounded-full bg-slate-500"></span>
+                        <span class="flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i> ${escapeHtml(post.readingTime || '5 min read')}</span>
+                    </div>
+                </div>
             </div>
-            <h2 class="text-3xl font-black text-slate-900 mb-6">${escapeHtml(post.title)}</h2>
-            <div class="prose max-w-none">${post.content}</div>
-        </div>
-    `;
-    
-    modal.classList.remove('hidden');
-    modal.classList.add('flex');
-    setTimeout(() => modal.classList.add('active'), 10);
-    
-} catch (error) {
-    console.error('Error opening blog modal:', error);
-}
+
+            <!-- Content Area -->
+            <div class="bg-slate-50 p-6 md:p-12 flex-grow">
+                <div class="max-w-3xl mx-auto">
+                    ${authorHtml}
+                    
+                    <div class="prose prose-slate prose-emerald max-w-none 
+                        prose-headings:font-black prose-headings:tracking-tight 
+                        prose-h2:text-2xl md:prose-h2:text-3xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:text-slate-900
+                        prose-h3:text-xl md:prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-h3:text-slate-800
+                        prose-p:leading-relaxed prose-p:text-slate-600 prose-p:mb-6
+                        prose-ul:my-6 prose-li:text-slate-600
+                        prose-a:text-emerald-600 prose-a:font-bold prose-a:no-underline hover:prose-a:underline
+                        prose-strong:text-slate-900
+                        prose-table:overflow-x-auto prose-table:block md:prose-table:table prose-table:w-full prose-table:border-collapse
+                        prose-th:bg-slate-900 prose-th:text-white prose-th:p-3 prose-th:text-left prose-th:text-sm
+                        prose-td:p-3 prose-td:border-b prose-td:border-slate-200 prose-td:text-sm prose-td:text-slate-700
+                        marker:text-emerald-500 prose-blockquote:border-l-4 prose-blockquote:border-emerald-500 prose-blockquote:bg-emerald-50/50 prose-blockquote:p-4 prose-blockquote:italic">
+                        ${post.content}
+                    </div>
+                    
+                    ${ctaHtml}
+                    ${relatedHtml}
+                </div>
+            </div>
+        `;
+        
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        setTimeout(() => modal.classList.add('active'), 10);
+        
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+        
+    } catch (error) {
+        console.error('Error opening blog modal:', error);
+    }
 }
 function closeModal() {
 const modal = document.getElementById('common-modal');
