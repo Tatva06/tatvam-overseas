@@ -1,5 +1,5 @@
 // ============================================================================
-// TATVAM OVERSEAS - CORE SCRIPT (CORRECTED & CONSOLIDATED)
+// TATVAM OVERSEAS INC - CORE SCRIPT (CORRECTED & CONSOLIDATED)
 // ============================================================================
 
 // Configuration
@@ -128,6 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initChatWidget();
     initNewsletterInterceptor();
+    initSmartSearch();
 });
 
 // 3. NAVIGATION HIGHLIGHTING
@@ -260,7 +261,7 @@ class SmartFloatingWidget {
                 <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white"><i data-lucide="file-check" class="w-4 h-4"></i></div>
             </a>
             <!-- WhatsApp -->
-            <a href="https://wa.me/919869607960" target="_blank" class="flex items-center gap-3 bg-white text-slate-800 p-3 rounded-full shadow-xl hover:bg-slate-50 border border-slate-100 transition-all">
+            <a href="https://wa.me/919082834775" target="_blank" class="flex items-center gap-3 bg-white text-slate-800 p-3 rounded-full shadow-xl hover:bg-slate-50 border border-slate-100 transition-all">
                 <span class="text-xs font-bold mr-1">WhatsApp</span>
                 <div class="w-8 h-8 bg-[#25D366] rounded-full flex items-center justify-center text-white"><i data-lucide="message-circle" class="w-4 h-4"></i></div>
             </a>
@@ -443,7 +444,7 @@ class SmartFloatingWidget {
             return "✅ All material comes with Mill Test Certificate (MTC) per EN 10204 3.1. We also provide:\n• Heat number traceability\n• TPI inspection (on request)\n• NABL lab reports";
         }
         
-        return "For the fastest response, feel free to:\n\n1️⃣ WhatsApp us: +91 9869607960\n2️⃣ Call: +91 9869607960\n3️⃣ Email: sales@tatvamoverseas.com\n\nWhat other questions can I answer for you?";
+        return "For the fastest response, feel free to:\n\n1️⃣ WhatsApp us: +91 9082834775\n2️⃣ Call: +91 9082834775\n3️⃣ Email: sales@tatvamoverseasinc.com\n\nWhat other questions can I answer for you?";
     }
     
     handleQuickReply(action) {
@@ -458,7 +459,7 @@ class SmartFloatingWidget {
                 window.location.href = 'contact.html';
                 break;
             case 'email':
-                window.location.href = 'mailto:sales@tatvamoverseas.com';
+                window.location.href = 'mailto:sales@tatvamoverseasinc.com';
                 break;
         }
     }
@@ -553,7 +554,7 @@ function openProductModal(id) {
                 <p class="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">${p.description}</p>
                 <div class="flex gap-3 mt-auto">
                     <a href="contact.html" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded text-center transition-colors text-sm shadow-md">Get Quote</a>
-                    <a href="https://wa.me/919869607960?text=Inquiry%20for%20${p.grade}" target="_blank" class="flex-1 bg-white border border-slate-300 text-slate-700 font-bold py-3 rounded text-center transition-colors text-sm flex items-center justify-center gap-2"><i data-lucide="message-circle" class="w-4 h-4 text-green-500"></i> WhatsApp</a>
+                    <a href="https://wa.me/919082834775?text=Inquiry%20for%20${p.grade}" target="_blank" class="flex-1 bg-white border border-slate-300 text-slate-700 font-bold py-3 rounded text-center transition-colors text-sm flex items-center justify-center gap-2"><i data-lucide="message-circle" class="w-4 h-4 text-green-500"></i> WhatsApp</a>
                 </div>
             </div>
 
@@ -671,7 +672,7 @@ function switchTab(mode) {
 }
 
 // Calculation Logic
-const calcHistory = [];
+const calcHistory = []; // Capped at 10 entries
 
 function runCalc() {
     let weight = 0;
@@ -729,6 +730,7 @@ function runCalc() {
         if (oldBtn) oldBtn.remove();
         
         if (weight > 0) {
+            if (calcHistory.length >= 10) calcHistory.shift();
             calcHistory.push({
                 timestamp: new Date().toLocaleString(),
                 params,
@@ -751,7 +753,7 @@ function exportCalcResult() {
     if (!last) return;
     
     const text = `
-TATVAM OVERSEAS - Weight Calculation
+TATVAM OVERSEAS INC - Weight Calculation
 =====================================
 Date: ${last.timestamp}
 Type: ${last.params.type}
@@ -763,7 +765,7 @@ Parameters:
 ${JSON.stringify(last.params, null, 2)}
 
 ---
-Contact: sales@tatvamoverseas.com | +91 9869607960
+Contact: sales@tatvamoverseasinc.com | +91 9082834775
     `.trim();
     
     navigator.clipboard.writeText(text).then(() => {
@@ -874,8 +876,7 @@ function selectSearchResult(id) {
     openProductModal(id);
 }
 
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', initSmartSearch);
+// initSmartSearch is called from the main DOMContentLoaded handler above
 
 function openBlogModal(id) {
 try {
@@ -923,13 +924,19 @@ if (e.target === document.getElementById('common-modal')) {
 closeModal();
 }
 });
-// Mobile menu toggle
-document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
-const menu = document.getElementById('mobile-menu');
-if (menu) {
-menu.classList.toggle('hidden');
-this.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
-}
+// Note: Mobile menu toggle is handled by js/components.js renderHeader()
+// If pages use static HTML header instead, this is a fallback:
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileBtn = document.getElementById('mobile-menu-button');
+    if (mobileBtn && !mobileBtn._componentsBound) {
+        mobileBtn.addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu) {
+                menu.classList.toggle('hidden');
+                this.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
+            }
+        });
+    }
 });
 // Back to top button
 window.addEventListener('scroll', function() {
@@ -944,51 +951,114 @@ backToTop.classList.add('opacity-0', 'pointer-events-none');
 });
 
 function initNewsletterInterceptor() {
-    const form = Array.from(document.querySelectorAll('form')).find(f => 
-        f.querySelector('input[name="subject"]')?.value?.includes('Newsletter')
-    );
-    if (!form) return;
-    
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const emailInput = form.querySelector('input[type="email"]');
-        const submitBtn = form.querySelector('button[type="submit"]');
-        if (!emailInput || !submitBtn) return;
-        
-        const originalText = submitBtn.innerHTML;
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin mx-auto"></i>';
-        if (typeof lucide !== 'undefined') lucide.createIcons();
-        
-        try {
-            const response = await fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                body: new FormData(form)
-            });
-            const result = await response.json();
-            if (result.success) {
-                const successDiv = document.createElement('div');
-                successDiv.className = 'flex flex-col sm:flex-row items-center gap-4 bg-emerald-950/50 border border-emerald-800 p-4 rounded-lg text-white text-sm animate-fade w-full lg:w-1/2 justify-between';
-                successDiv.innerHTML = `
-                    <div class="flex items-center gap-2 text-emerald-400 font-bold">
-                        <i data-lucide="check-circle" class="w-5 h-5 shrink-0"></i>
-                        <span>Subscribed!</span>
-                    </div>
-                    <p class="text-xs text-slate-300 flex-1 text-center sm:text-left">We've registered your email for market updates.</p>
-                    <a href="assets/Tatvam_Catalog_2025.pdf" download class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2 rounded text-xs transition-all flex items-center gap-1.5 shadow-md w-full sm:w-auto justify-center">
-                        <i data-lucide="download" class="w-3.5 h-3.5"></i> Download Catalog
-                    </a>
-                `;
-                form.replaceWith(successDiv);
-                if (typeof lucide !== 'undefined') lucide.createIcons();
-            } else {
-                throw new Error("Form submission unsuccessful");
-            }
-        } catch (error) {
-            alert('Something went wrong. Please try again or email us at sales@tatvamoverseas.com');
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = originalText;
-            if (typeof lucide !== 'undefined') lucide.createIcons();
-        }
-    });
+    // Newsletter form is now handled by components.js via #newsletter-form ID.
+    // This function is kept as a no-op for backward compatibility.
 }
+
+// ============================================================================
+// EXIT INTENT CAPTURE — initialized with 5s delay on homepage
+// ============================================================================
+class ExitIntentCapture {
+    constructor() {
+        this.triggered = false;
+        this.init();
+    }
+
+    init() {
+        if (sessionStorage.getItem('exitIntentShown')) return;
+        if (window.innerWidth < 768) return;
+
+        document.addEventListener('mouseleave', (e) => {
+            if (e.clientY <= 0 && !this.triggered) this.show();
+        });
+        window.addEventListener('popstate', () => {
+            if (!this.triggered) this.show();
+        });
+    }
+
+    show() {
+        this.triggered = true;
+        sessionStorage.setItem('exitIntentShown', 'true');
+
+        const overlay = document.createElement('div');
+        overlay.id = 'exit-intent-modal';
+        overlay.className = 'fixed inset-0 bg-black/80 backdrop-blur-sm z-[99999] flex items-center justify-center';
+        overlay.innerHTML = `
+            <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8 relative border-2 border-emerald-500">
+                <button onclick="this.closest('#exit-intent-modal').remove()"
+                        class="absolute top-4 right-4 text-slate-400 hover:text-white text-2xl">&times;</button>
+                <div class="text-center mb-6">
+                    <div class="inline-block p-4 bg-emerald-500/20 rounded-full mb-4">
+                        <i data-lucide="alert-circle" class="w-12 h-12 text-emerald-400"></i>
+                    </div>
+                    <h2 class="text-3xl font-black mb-2">Wait! Don't Leave Empty-Handed</h2>
+                    <p class="text-slate-300 text-lg">Get instant access to our <strong>2025 Steel Price List</strong> + <strong>Grade Selection Guide</strong></p>
+                </div>
+                <div class="bg-slate-800/50 rounded-xl p-6 mb-6">
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Live Pricing:</strong> Updated SS 304/316/Inconel rates</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Grade Comparison Chart:</strong> Which steel for your application?</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Weight Calculator Excel:</strong> Automated calculation tool</span></li>
+                    </ul>
+                </div>
+                <form id="exit-form" class="space-y-4">
+                    <input type="hidden" name="access_key" value="e65ddd09-27a6-4380-aef9-4f4465c4449f">
+                    <input type="hidden" name="subject" value="Exit Intent - Price List Request">
+                    <input type="checkbox" name="botcheck" class="hidden">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" name="name" required placeholder="Your Name" class="bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none w-full">
+                        <input type="email" name="email" required placeholder="Work Email" class="bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none w-full">
+                    </div>
+                    <input type="tel" name="phone" placeholder="Phone (Optional)" class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none">
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2">
+                        <i data-lucide="download" class="w-5 h-5"></i> Send Me The Price List (FREE)
+                    </button>
+                    <p class="text-xs text-slate-400 text-center">No spam. Unsubscribe anytime.</p>
+                </form>
+                <div id="exit-success" class="hidden text-center py-8">
+                    <div class="inline-block p-4 bg-emerald-500/20 rounded-full mb-4">
+                        <i data-lucide="check-circle" class="w-16 h-16 text-emerald-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Inquiry Received</h3>
+                    <p class="text-slate-300 text-sm mb-4">Our sales team will email you a customized price list shortly.</p>
+                    <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                        <a href="assets/TatvamOverseasInc_Catalog_2025.pdf" download class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-lg text-sm transition-all flex items-center justify-center gap-2 shadow-lg">
+                            <i data-lucide="download" class="w-4 h-4"></i> Download Full Catalog
+                        </a>
+                        <button onclick="this.closest('#exit-intent-modal').remove()" class="w-full sm:w-auto bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-lg text-sm transition-all">Close</button>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        document.body.appendChild(overlay);
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+
+        const form = document.getElementById('exit-form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            btn.disabled = true;
+            btn.innerHTML = '<i data-lucide="loader-2" class="w-5 h-5 animate-spin mx-auto"></i>';
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+            try {
+                const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(form) });
+                if (res.ok) {
+                    form.classList.add('hidden');
+                    document.getElementById('exit-success').classList.remove('hidden');
+                    if (typeof lucide !== 'undefined') lucide.createIcons();
+                    if (typeof gtag !== 'undefined') gtag('event', 'lead_capture', { event_category: 'Exit Intent', event_label: 'Price List Download' });
+                }
+            } catch {
+                alert('Something went wrong. Please email us at sales@tatvamoverseasinc.com');
+            }
+        });
+
+        overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+    }
+}
+
+function initExitIntent() {
+    setTimeout(() => new ExitIntentCapture(), 5000);
+}
+

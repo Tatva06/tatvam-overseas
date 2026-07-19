@@ -5,4 +5,4 @@ Disallow: /package.json
 Disallow: /package-lock.json
 Allow: /
 
-Sitemap: https://tatvamoverseas.com/sitemap.xml
+Sitemap: https://tatvamoverseasinc.com/sitemap.xml
