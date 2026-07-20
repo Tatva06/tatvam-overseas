@@ -254,7 +254,13 @@ document.addEventListener('DOMContentLoaded', () => {
     </footer>
 
     <div id="common-modal" class="modal-overlay"><div class="modal-content relative"><button onclick="closeModal()" class="absolute top-4 right-4 z-50 text-slate-600 hover:text-slate-900 bg-white/90 backdrop-blur shadow-md hover:shadow-lg p-2 rounded-full transition-all border border-slate-200"><i data-lucide="x" class="w-6 h-6"></i></button><div id="modal-body" class="w-full h-full"></div></div></div>
-    
+
+    <!-- Load data scripts FIRST, then init logic -->
+    <script src="js/components.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/blog-data.js"></script>
+    <script src="js/script.js"></script>
+
     <script>
         // Inline logic for Blog Page Only (Initialization)
         document.addEventListener('DOMContentLoaded', () => {
@@ -380,11 +386,5 @@ document.addEventListener('DOMContentLoaded', () => {
             renderBlogCards(filtered);
         }
     </script>
-    <script src="js/components.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/blog-data.js"></script>
-
-
-    <script src="js/script.js"></script>
 </body>
 </html>

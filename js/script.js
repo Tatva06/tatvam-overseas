@@ -30,25 +30,35 @@ function escapeHtml(unsafe) {
 }
 
 const IMAGES = {
-    pipes: [
-        "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=600&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&auto=format&fit=crop&q=80"
+    sheets: [
+        "assets/images/products/sheets.jpg"
     ],
-    flats: [
-        "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=600&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&auto=format&fit=crop&q=80"
+    pipes: [
+        "assets/images/products/pipes.jpg"
+    ],
+    tubes: [
+        "assets/images/blog/tubes.jpg"
     ],
     bars: [
-        "https://images.unsplash.com/photo-1574634534894-89d7576c8259?w=600&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?w=600&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop&q=80"
+        "assets/images/products/rods.jpg"
+    ],
+    coils: [
+        "assets/images/products/coils.jpg"
+    ],
+    circles: [
+        "assets/images/blog/circles.jpg"
+    ],
+    plates: [
+        "assets/images/blog/plates.jpg"
+    ],
+    flats: [
+        "assets/images/products/sheets.jpg"
     ],
     fittings: [
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&auto=format&fit=crop&q=80"
+        "assets/images/products/pipes.jpg"
     ],
     general: [
-        "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&auto=format&fit=crop&q=80"
+        "assets/images/products/warehouse.jpg"
     ]
 };
 
@@ -56,37 +66,21 @@ function getProductImage(product) {
     if (product.image && !product.image.includes('placehold.co')) {
         return product.image;
     }
-    
-    // Simple hash algorithm
-    let hash = 0;
-    const str = product.id || "";
-    for (let i = 0; i < str.length; i++) {
-        hash = (hash << 5) - hash + str.charCodeAt(i);
-        hash |= 0;
-    }
-    const idx = Math.abs(hash);
 
     const category = (product.category || "").toLowerCase();
-    
-    if (category.includes('pipe') || category.includes('tube')) {
-        const list = IMAGES.pipes;
-        return list[idx % list.length];
-    }
-    if (category.includes('flat') || category.includes('plate') || category.includes('sheet') || category.includes('coil') || category.includes('specialty')) {
-        const list = IMAGES.flats;
-        return list[idx % list.length];
-    }
-    if (category.includes('bar') || category.includes('rod') || category.includes('wire') || category.includes('patta')) {
-        const list = IMAGES.bars;
-        return list[idx % list.length];
-    }
-    if (category.includes('fitting') || category.includes('flange') || category.includes('fastener')) {
-        const list = IMAGES.fittings;
-        return list[idx % list.length];
-    }
-    
-    const list = IMAGES.general;
-    return list[idx % list.length];
+
+    if (category.includes('pipe')) return IMAGES.pipes[0];
+    if (category.includes('tube') && category.includes('instrument')) return IMAGES.tubes[0];
+    if (category.includes('tube')) return IMAGES.tubes[0];
+    if (category.includes('coil') || category.includes('slitting')) return IMAGES.coils[0];
+    if (category.includes('circle') || category.includes('ring')) return IMAGES.circles[0];
+    if (category.includes('plate')) return IMAGES.plates[0];
+    if (category.includes('sheet') || category.includes('specialty')) return IMAGES.sheets[0];
+    if (category.includes('flat') || category.includes('patti')) return IMAGES.flats[0];
+    if (category.includes('bar') || category.includes('rod') || category.includes('wire')) return IMAGES.bars[0];
+    if (category.includes('fitting') || category.includes('flange') || category.includes('fastener')) return IMAGES.fittings[0];
+
+    return IMAGES.general[0];
 }
 
 // 2. INITIALIZATION
