@@ -370,6 +370,6 @@ function resetWizard() {
 }
 
 // Auto-initialize on page load
-if (document.getElementById('grade-wizard')) {
+if (document.getElementById('wizard-question-container')) {
     document.addEventListener('DOMContentLoaded', initGradeWizard);
 }

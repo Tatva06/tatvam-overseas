@@ -1140,5 +1140,51 @@ const products = [
         specs: { standards: ["ASTM A242"], range: "Stock" },
         pros: "No painting needed.",
         cons: "Rust water runoff will bleed and stain adjacent concrete, sidewalks, and masonry."
+    },
+
+    // =========================================================================
+    // 10. STRUCTURALS & SHAPES (NEW)
+    // =========================================================================
+    {
+        id: "ss-circles",
+        department: "Stainless Steel",
+        grade: "SS Circles & Rings",
+        image: "assets/images/products/circles_new.jpg",
+        category: "Flat Products",
+        forms: ["Circles", "Rings"],
+        description: "Precision-cut stainless steel circles and forged rings for various industrial applications.",
+        chem: { "Grades": "304, 316L, 202" },
+        phys: { "Custom": "Available" },
+        specs: { standards: ["ASTM A240"], range: "As per requirement" },
+        pros: "Ready to use, saves machining time.",
+        cons: "Scrap generated during cutting can be costly."
+    },
+    {
+        id: "ss-angles",
+        department: "Stainless Steel",
+        grade: "SS Angles",
+        image: "assets/images/products/angles.jpg",
+        category: "Bars & Rods",
+        forms: ["Angles"],
+        description: "Hot rolled and laser fused stainless steel angles for structural support.",
+        chem: { "Grades": "304, 316L, 202" },
+        phys: { "Shape": "L-Shape" },
+        specs: { standards: ["ASTM A276"], range: "Equal & Unequal" },
+        pros: "High strength and excellent corrosion resistance.",
+        cons: "Limited load bearing compared to channels."
+    },
+    {
+        id: "ss-channels",
+        department: "Stainless Steel",
+        grade: "SS Channels",
+        image: "assets/images/products/channels.jpg",
+        category: "Bars & Rods",
+        forms: ["Channels", "U-Channels"],
+        description: "C-shaped and U-shaped structural channels for construction and architectural use.",
+        chem: { "Grades": "304, 316L" },
+        phys: { "Shape": "U-Shape" },
+        specs: { standards: ["ASTM A276"], range: "Various dimensions" },
+        pros: "Ideal for structural applications in corrosive environments.",
+        cons: "Higher cost than carbon steel structural."
     }
 ];

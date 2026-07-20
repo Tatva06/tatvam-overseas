@@ -156,7 +156,6 @@ function renderFooter() {
                         <li><a href="about.html" class="hover:text-emerald-400 transition-colors block">About Tatvam Overseas Inc</a></li>
                         <li><a href="products.html" class="hover:text-emerald-400 transition-colors block">Complete Inventory</a></li>
                         <li><a href="blog.html" class="hover:text-emerald-400 transition-colors block">Technical Knowledge Hub</a></li>
-                        <li><a href="mtc.html" class="hover:text-emerald-400 transition-colors block">Quality &amp; MTC Verify</a></li>
                         <li><a href="contact.html" class="hover:text-emerald-400 transition-colors block">Contact &amp; Locations</a></li>
                         <li><a href="privacypolicy.html" class="hover:text-emerald-400 transition-colors block">Privacy Policy</a></li>
                         <li><a href="terms.html" class="hover:text-emerald-400 transition-colors block">Terms &amp; Conditions</a></li>
