@@ -84,19 +84,48 @@ function getProductImage(product) {
 }
 
 // 2. INITIALIZATION
-window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
-    if (preloader) {
-        preloader.classList.add('opacity-0');
-        setTimeout(() => preloader.style.display = 'none', 500);
-    }
-    
-    highlightActiveNav();
-});
+// Preloader with animated progress bar
+(function() {
+    const bar = document.getElementById('preloader-bar');
+    const status = document.getElementById('preloader-status');
+    if (!bar) return;
+
+    const steps = [
+        { pct: 20, label: 'Loading inventory...' },
+        { pct: 45, label: 'Initialising components...' },
+        { pct: 70, label: 'Preparing catalog...' },
+        { pct: 90, label: 'Almost ready...' },
+    ];
+    let i = 0;
+    const tick = setInterval(() => {
+        if (i < steps.length) {
+            bar.style.width = steps[i].pct + '%';
+            if (status) status.textContent = steps[i].label;
+            i++;
+        }
+    }, 280);
+
+    window.addEventListener('load', () => {
+        clearInterval(tick);
+        bar.style.width = '100%';
+        if (status) status.textContent = 'Welcome!';
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+            setTimeout(() => {
+                preloader.classList.add('opacity-0');
+                setTimeout(() => preloader.style.display = 'none', 700);
+            }, 300);
+        }
+    });
+})();
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     if (typeof lucide !== 'undefined') lucide.createIcons();
     if (typeof AOS !== 'undefined') AOS.init({ duration: 800, offset: 50, once: true });
+    highlightActiveNav();
+
 
     // Hero Slider
     const slides = document.querySelectorAll('.slide');
