@@ -31,34 +31,34 @@ function escapeHtml(unsafe) {
 
 const IMAGES = {
     sheets: [
-        "assets/images/products/sheets.jpg"
+        "assets/images/pool/sheets_prod.jpg"
     ],
     pipes: [
-        "assets/images/products/pipes.jpg"
+        "assets/images/pool/pipes.jpg"
     ],
     tubes: [
-        "assets/images/blog/tubes.jpg"
+        "assets/images/pool/tubes.jpg"
     ],
     bars: [
-        "assets/images/products/rods.jpg"
+        "assets/images/pool/rods.jpg"
     ],
     coils: [
-        "assets/images/products/coils.jpg"
+        "assets/images/pool/coils.jpg"
     ],
     circles: [
-        "assets/images/blog/circles.jpg"
+        "assets/images/pool/circles.jpg"
     ],
     plates: [
-        "assets/images/blog/plates.jpg"
+        "assets/images/pool/plates.jpg"
     ],
     flats: [
-        "assets/images/products/sheets.jpg"
+        "assets/images/pool/sheets_prod.jpg"
     ],
     fittings: [
-        "assets/images/products/pipes.jpg"
+        "assets/images/pool/pipes.jpg"
     ],
     general: [
-        "assets/images/products/warehouse.jpg"
+        "assets/images/pool/warehouse.jpg"
     ]
 };
 
@@ -249,11 +249,7 @@ class SmartFloatingWidget {
                 <span class="text-xs font-bold mr-1">Language</span>
                 <div class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white"><i data-lucide="languages" class="w-4 h-4"></i></div>
             </button>
-            <!-- Verify MTC -->
-            <a href="mtc.html" class="flex items-center gap-3 bg-white text-slate-800 p-3 rounded-full shadow-xl hover:bg-slate-50 border border-slate-100 transition-all">
-                <span class="text-xs font-bold mr-1">Verify MTC</span>
-                <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white"><i data-lucide="file-check" class="w-4 h-4"></i></div>
-            </a>
+
             <!-- WhatsApp -->
             <a href="https://wa.me/919082834775" target="_blank" class="flex items-center gap-3 bg-white text-slate-800 p-3 rounded-full shadow-xl hover:bg-slate-50 border border-slate-100 transition-all">
                 <span class="text-xs font-bold mr-1">WhatsApp</span>
@@ -294,18 +290,17 @@ class SmartFloatingWidget {
         this.menuOpen = show !== undefined ? show : !this.menuOpen;
         const options = document.getElementById('chat-options');
         const toggle = document.getElementById('chat-toggle');
-        const icon = toggle.querySelector('i');
         
         if (this.menuOpen) {
             options.classList.remove('hidden', 'scale-0', 'opacity-0');
             options.classList.add('flex', 'scale-100', 'opacity-100');
-            icon.setAttribute('data-lucide', 'x');
+            toggle.innerHTML = `<i data-lucide="x" class="w-6 h-6 transition-transform group-hover:rotate-90"></i>`;
             toggle.classList.replace('bg-emerald-600', 'bg-slate-800');
         } else {
             options.classList.remove('scale-100', 'opacity-100');
             options.classList.add('scale-0', 'opacity-0');
             setTimeout(() => options.classList.add('hidden'), 200);
-            icon.setAttribute('data-lucide', 'plus');
+            toggle.innerHTML = `<i data-lucide="plus" class="w-6 h-6 transition-transform group-hover:rotate-90"></i>`;
             toggle.classList.replace('bg-slate-800', 'bg-emerald-600');
             
             // Auto close chat/translate if open

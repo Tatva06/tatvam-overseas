@@ -336,7 +336,7 @@
                     <!-- Stainless Steel -->
                     <article
                         class="group relative overflow-hidden rounded-2xl shadow-lg border border-slate-100 cursor-pointer transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-                        onclick="window.location.href='products.html'" data-aos="fade-up" data-aos-delay="0"
+                        onclick="window.location.href='products.html?dept=Stainless+Steel'" data-aos="fade-up" data-aos-delay="0"
                         aria-label="Stainless Steel Products">
                         <div class="h-64 bg-slate-200 relative overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop"
@@ -378,7 +378,7 @@
                     <!-- Carbon & Alloy Steel -->
                     <article
                         class="group relative overflow-hidden rounded-2xl shadow-lg border border-slate-100 cursor-pointer transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-                        onclick="window.location.href='products.html'" data-aos="fade-up" data-aos-delay="100"
+                        onclick="window.location.href='products.html?dept=Carbon+Steel'" data-aos="fade-up" data-aos-delay="100"
                         aria-label="Carbon and Alloy Steel Products">
                         <div class="h-64 bg-slate-200 relative overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&auto=format&fit=crop"
@@ -420,7 +420,7 @@
                     <!-- Nickel Alloys -->
                     <article
                         class="group relative overflow-hidden rounded-2xl shadow-lg border border-slate-100 cursor-pointer transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-                        onclick="window.location.href='products.html'" data-aos="fade-up" data-aos-delay="200"
+                        onclick="window.location.href='products.html?dept=Nickel+Alloys'" data-aos="fade-up" data-aos-delay="200"
                         aria-label="Nickel Super Alloys Products">
                         <div class="h-64 bg-slate-200 relative overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop"
@@ -642,24 +642,30 @@
         <!-- ══════════════════════════════════════════════ -->
         <!-- QUICK STATS -->
         <!-- ══════════════════════════════════════════════ -->
-        <section class="py-16 bg-emerald-600 text-white" aria-label="Company statistics">
-            <div class="container mx-auto px-6">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center" data-aos="fade-up">
-                    <div class="p-6">
-                        <div class="text-4xl font-black mb-2">700+</div>
-                        <div class="text-sm font-bold uppercase tracking-wide text-emerald-100">Tons in Stock</div>
+        <section class="py-20 relative bg-slate-900 overflow-hidden" aria-label="Company statistics">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1600&auto=format&fit=crop" alt="Industrial Metal Background" class="w-full h-full object-cover opacity-20" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-emerald-900/80"></div>
+            </div>
+            
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center" data-aos="fade-up">
+                    <div class="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+                        <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">700+</div>
+                        <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Tons in Stock</div>
                     </div>
-                    <div class="p-6">
-                        <div class="text-4xl font-black mb-2">150+</div>
-                        <div class="text-sm font-bold uppercase tracking-wide text-emerald-100">Product Grades</div>
+                    <div class="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+                        <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">150+</div>
+                        <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Product Grades</div>
                     </div>
-                    <div class="p-6">
-                        <div class="text-4xl font-black mb-2">5000+</div>
-                        <div class="text-sm font-bold uppercase tracking-wide text-emerald-100">Satisfied Clients</div>
+                    <div class="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+                        <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">5000+</div>
+                        <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Satisfied Clients</div>
                     </div>
-                    <div class="p-6">
-                        <div class="text-4xl font-black mb-2">24-48hr</div>
-                        <div class="text-sm font-bold uppercase tracking-wide text-emerald-100">Dispatch Time</div>
+                    <div class="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+                        <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">24-48h</div>
+                        <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Dispatch Time</div>
                     </div>
                 </div>
             </div>
@@ -857,7 +863,7 @@
                     <div class="relative" data-aos="fade-left">
                         <div class="absolute -top-4 -right-4 w-full h-full border-4 border-emerald-500/20 rounded-2xl">
                         </div>
-                        <img src="https://images.unsplash.com/photo-1590674899484-d564198279f1?w=800&auto=format&fit=crop"
+                        <img src="assets/images/pool/warehouse.jpg"
                             alt="Tatvam Overseas Warehouse Stainless Steel Stock Mumbai Kalbadevi"
                             class="rounded-2xl shadow-2xl relative z-10 w-full" loading="lazy" decoding="async">
                         <div
