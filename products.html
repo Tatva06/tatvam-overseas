@@ -174,14 +174,14 @@
             }
 
             grid.innerHTML = filtered.map(p => `
-                <div class="bg-white rounded-xl border border-slate-200 hover:border-emerald-500 hover:shadow-lg transition-all group cursor-pointer overflow-hidden flex flex-col h-full relative" onclick="openProductModal('${p.id}')" itemscope itemtype="https://schema.org/Product">
+                <div class="bg-white rounded-xl border border-slate-200 hover:border-emerald-500 hover:shadow-lg transition-all group cursor-pointer overflow-hidden flex flex-col relative h-max" onclick="openProductModal('${p.id}')" itemscope itemtype="https://schema.org/Product">
                     <meta itemprop="name" content="${p.grade}">
                     <meta itemprop="description" content="${p.description}">
                     <div class="h-48 bg-slate-100 relative">
                         <img src="${getProductImage(p)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" alt="${p.grade}" itemprop="image">
                         <div class="absolute top-3 left-3 bg-slate-900/90 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur">${p.category}</div>
                     </div>
-                    <div class="p-5 flex flex-col flex-grow">
+                    <div class="p-5 flex flex-col">
                         <div class="mb-3">
                             <h3 class="text-lg font-bold text-slate-900 leading-tight group-hover:text-emerald-700 transition-colors">${p.grade}</h3>
                             <div class="flex flex-wrap gap-2 mt-2">
@@ -190,7 +190,7 @@
                             </div>
                         </div>
                         <p class="text-sm text-slate-500 line-clamp-2 mb-4">${p.description}</p>
-                        <div class="mt-auto border-t border-slate-100 pt-3 flex justify-between items-center">
+                        <div class="border-t border-slate-100 pt-3 flex justify-between items-center">
                             <span class="text-xs font-bold text-slate-400 uppercase">Details</span>
                             <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-all"><i data-lucide="arrow-right" class="w-4 h-4"></i></div>
                         </div>

@@ -196,7 +196,7 @@ function renderFooter() {
         <!-- Copyright -->
         <div class="bg-black py-5 border-t border-slate-800">
             <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-slate-600 uppercase tracking-wider">
-                <p>&copy; ${year} Tatvam Overseas Inc. All Rights Reserved. Designed with excellence.</p>
+                <p>&copy; ${year} Tatvam Overseas Inc. All Rights Reserved. Designed with excellence by <strong>Tatvam Studios</strong>.</p>
                 <div class="flex gap-6">
                     <a href="privacypolicy.html" class="hover:text-white transition-colors">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>

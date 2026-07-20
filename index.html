@@ -805,9 +805,41 @@
                                     <div class="text-emerald-400 font-black text-xl">🇿🇦</div>
                                     <div class="text-white text-xs font-bold mt-1">South Africa</div>
                                 </div>
-                                <div
-                                    class="bg-emerald-600/20 rounded-xl p-3 border border-emerald-600/40 flex items-center justify-center">
-                                    <div class="text-emerald-400 font-black text-sm">+7 more</div>
+                                <button id="show-more-countries" onclick="toggleMoreCountries()"
+                                    class="bg-emerald-600/20 rounded-xl p-3 border border-emerald-600/40 flex items-center justify-center cursor-pointer hover:bg-emerald-600/40 transition-all group" aria-expanded="false">
+                                    <div class="text-emerald-400 font-black text-sm group-hover:scale-110 transition-transform" id="more-label">+7 more</div>
+                                </button>
+                            </div>
+
+                            <!-- Hidden extra countries (revealed on click) -->
+                            <div id="extra-countries" class="grid grid-cols-3 gap-3 text-center overflow-hidden transition-all duration-500" style="max-height:0; opacity:0; margin-top:0;">
+                                <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
+                                    <div class="text-xl">🇧🇭</div>
+                                    <div class="text-white text-xs font-bold mt-1">Bahrain</div>
+                                </div>
+                                <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
+                                    <div class="text-xl">🇶🇦</div>
+                                    <div class="text-white text-xs font-bold mt-1">Qatar</div>
+                                </div>
+                                <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
+                                    <div class="text-xl">🇰🇼</div>
+                                    <div class="text-white text-xs font-bold mt-1">Kuwait</div>
+                                </div>
+                                <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
+                                    <div class="text-xl">🇹🇿</div>
+                                    <div class="text-white text-xs font-bold mt-1">Tanzania</div>
+                                </div>
+                                <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
+                                    <div class="text-xl">🇸🇬</div>
+                                    <div class="text-white text-xs font-bold mt-1">Singapore</div>
+                                </div>
+                                <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
+                                    <div class="text-xl">🇦🇺</div>
+                                    <div class="text-white text-xs font-bold mt-1">Australia</div>
+                                </div>
+                                <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
+                                    <div class="text-xl">🇮🇩</div>
+                                    <div class="text-white text-xs font-bold mt-1">Indonesia</div>
                                 </div>
                             </div>
                         </div>
@@ -1154,6 +1186,32 @@
             if (typeof lucide !== 'undefined') lucide.createIcons();
             if (typeof initExitIntent === 'function') initExitIntent();
         });
+
+        // Toggle extra export countries
+        function toggleMoreCountries() {
+            const panel = document.getElementById('extra-countries');
+            const btn = document.getElementById('show-more-countries');
+            const label = document.getElementById('more-label');
+            const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+            if (isOpen) {
+                panel.style.maxHeight = '0';
+                panel.style.opacity = '0';
+                panel.style.marginTop = '0';
+                btn.setAttribute('aria-expanded', 'false');
+                label.textContent = '+7 more';
+                btn.classList.remove('bg-emerald-600/40', 'border-emerald-500');
+                btn.classList.add('bg-emerald-600/20', 'border-emerald-600/40');
+            } else {
+                panel.style.maxHeight = '500px';
+                panel.style.opacity = '1';
+                panel.style.marginTop = '12px';
+                btn.setAttribute('aria-expanded', 'true');
+                label.textContent = 'Show less';
+                btn.classList.remove('bg-emerald-600/20', 'border-emerald-600/40');
+                btn.classList.add('bg-emerald-600/40', 'border-emerald-500');
+            }
+        }
     </script>
 </body>
 
