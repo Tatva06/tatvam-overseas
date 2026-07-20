@@ -26,7 +26,7 @@ function renderHeader() {
 
     const navLinks = [
         { href: 'index.html', label: 'Home' },
-        { href: 'about.html', label: 'Company' },
+        { href: 'about.html', label: 'Our Firm' },
         { href: 'products.html', label: 'Inventory' },
         { href: 'blog.html', label: 'Knowledge' },
     ];
@@ -151,7 +151,7 @@ function renderFooter() {
 
                 <!-- Company -->
                 <div>
-                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Company</h4>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Our Firm</h4>
                     <ul class="space-y-3">
                         <li><a href="about.html" class="hover:text-emerald-400 transition-colors block">About Tatvam Overseas Inc</a></li>
                         <li><a href="products.html" class="hover:text-emerald-400 transition-colors block">Complete Inventory</a></li>

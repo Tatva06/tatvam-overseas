@@ -186,7 +186,7 @@ class SmartFloatingWidget {
     createWidgetDOM() {
         const container = document.createElement('div');
         container.id = 'floating-widgets';
-        container.className = 'fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end font-sans';
+        container.className = 'fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col gap-3 items-end font-sans';
         
         // Google Translate Element
         const langDiv = document.createElement('div');
@@ -197,7 +197,7 @@ class SmartFloatingWidget {
         // Chat Window
         const chatWindow = document.createElement('div');
         chatWindow.id = 'chat-window';
-        chatWindow.className = 'hidden flex-col bg-white rounded-2xl shadow-2xl border border-slate-200 w-80 max-w-sm h-[480px] mb-2 overflow-hidden transition-all duration-300 origin-bottom-right scale-95 opacity-0';
+        chatWindow.className = 'hidden flex-col bg-white rounded-2xl shadow-2xl border border-slate-200 w-[calc(100vw-2rem)] sm:w-80 max-w-sm h-[65vh] sm:h-[480px] mb-2 overflow-hidden transition-all duration-300 origin-bottom-right scale-95 opacity-0';
         chatWindow.innerHTML = `
             <!-- Chat Header -->
             <div class="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white p-4 flex justify-between items-center shrink-0">

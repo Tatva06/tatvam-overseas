@@ -39,7 +39,7 @@
             </a>
             <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
                 <a href="index.html" class="hover:text-white transition-colors">Home</a>
-                <a href="about.html" class="hover:text-white transition-colors">Company</a>
+                <a href="about.html" class="hover:text-white transition-colors">Our Firm</a>
                 <a href="products.html" class="hover:text-white transition-colors">Inventory</a>
                 <a href="contact.html" class="bg-white text-emerald-800 px-5 py-2 rounded-full font-bold hover:bg-emerald-50">Get Quote</a>
             </div>
@@ -137,14 +137,18 @@
                             </div>
                         </div>
                         
-                        <div class="border-b pb-4">
-                            <h3 class="font-bold text-sm text-slate-600 mb-2">CHEMICAL COMPOSITION (%)</h3>
-                            <table class="w-full text-xs" id="chem-table"></table>
+                        <div class="border-b pb-4 overflow-x-auto">
+                            <h3 class="font-bold text-sm text-slate-600 mb-2 sticky left-0">CHEMICAL COMPOSITION (%)</h3>
+                            <div class="min-w-[600px]">
+                                <table class="w-full text-xs" id="chem-table"></table>
+                            </div>
                         </div>
                         
-                        <div>
-                            <h3 class="font-bold text-sm text-slate-600 mb-2">MECHANICAL PROPERTIES</h3>
-                            <table class="w-full text-xs" id="mech-table"></table>
+                        <div class="overflow-x-auto">
+                            <h3 class="font-bold text-sm text-slate-600 mb-2 sticky left-0">MECHANICAL PROPERTIES</h3>
+                            <div class="min-w-[400px]">
+                                <table class="w-full text-xs" id="mech-table"></table>
+                            </div>
                         </div>
                         
                         <div class="bg-emerald-50 border-l-4 border-emerald-600 p-3 text-xs">
@@ -233,9 +237,9 @@
                     </ul>
                 </div>
 
-                <!-- Company -->
+                <!-- Firm -->
                 <div>
-                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Company</h4>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Our Firm</h4>
                     <ul class="space-y-3">
                         <li><a href="about.html" class="hover:text-emerald-400 transition-colors block">About Tatvam Overseas Inc</a></li>
                         <li><a href="products.html" class="hover:text-emerald-400 transition-colors block">Complete Inventory</a></li>
@@ -299,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </footer>
 
     <script src="js/components.js"></script>
-    <script src="js/data.js"></script>
+    <!-- <script src="js/data.js"></script> -->
     <script src="js/script.js"></script>
 
     <script>
