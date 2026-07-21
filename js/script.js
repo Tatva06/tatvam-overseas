@@ -409,12 +409,44 @@ class SmartFloatingWidget {
     sendMessage(text) {
         this.addUserMessage(text);
         
+        // Show realistic typing animation
+        this.showTypingIndicator();
+        
         setTimeout(() => {
+            this.hideTypingIndicator();
             const response = this.generateResponse(text);
             this.addBotMessage(response);
-        }, 800);
+        }, 1100);
     }
     
+    showTypingIndicator() {
+        const container = document.getElementById('chat-messages');
+        if (!container) return;
+        
+        // Prevent duplicates
+        if (document.getElementById('chat-typing-indicator')) return;
+        
+        const indicator = document.createElement('div');
+        indicator.id = 'chat-typing-indicator';
+        indicator.className = 'flex justify-start';
+        indicator.innerHTML = `
+            <div class="bg-white border border-slate-200 rounded-2xl rounded-bl-none px-4 py-3 shadow-sm max-w-[70px] flex items-center justify-center gap-1.5">
+                <span class="w-1.5 h-1.5 bg-emerald-600 rounded-full animate-bounce" style="animation-duration: 0.8s; animation-delay: 0.1s"></span>
+                <span class="w-1.5 h-1.5 bg-emerald-600 rounded-full animate-bounce" style="animation-duration: 0.8s; animation-delay: 0.2s"></span>
+                <span class="w-1.5 h-1.5 bg-emerald-600 rounded-full animate-bounce" style="animation-duration: 0.8s; animation-delay: 0.3s"></span>
+            </div>
+        `;
+        container.appendChild(indicator);
+        container.scrollTop = container.scrollHeight;
+    }
+    
+    hideTypingIndicator() {
+        const indicator = document.getElementById('chat-typing-indicator');
+        if (indicator) {
+            indicator.remove();
+        }
+    }
+
     addUserMessage(text) {
         this.messages.push({ type: 'user', text, time: new Date() });
         this.renderMessages();
@@ -429,40 +461,119 @@ class SmartFloatingWidget {
         const container = document.getElementById('chat-messages');
         if (!container) return;
         
-        container.innerHTML = this.messages.map(m => `
-            <div class="flex ${m.type === 'user' ? 'justify-end' : 'justify-start'}">
-                <div class="max-w-[85%] ${m.type === 'user' ? 'bg-emerald-600 text-white rounded-br-none' : 'bg-white border border-slate-200 text-slate-800 rounded-bl-none'} rounded-2xl px-3 py-2 shadow-sm text-xs leading-normal">
-                    <p>${m.text.replace(/\n/g, '<br>')}</p>
-                    <span class="text-[8px] ${m.type === 'user' ? 'text-emerald-100' : 'text-slate-400'} block mt-1 text-right">
-                        ${m.time.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
-                    </span>
+        container.innerHTML = this.messages.map(m => {
+            // Simple markdown-style formatter: **bold** and *italic*
+            let formattedText = m.text
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                .replace(/\n/g, '<br>');
+            
+            return `
+                <div class="flex ${m.type === 'user' ? 'justify-end' : 'justify-start'}">
+                    <div class="max-w-[85%] ${m.type === 'user' ? 'bg-emerald-600 text-white rounded-br-none' : 'bg-white border border-slate-200 text-slate-800 rounded-bl-none'} rounded-2xl px-3.5 py-2.5 shadow-sm text-[11px] leading-relaxed">
+                        <p>${formattedText}</p>
+                        <span class="text-[8px] ${m.type === 'user' ? 'text-emerald-100' : 'text-slate-400'} block mt-1.5 text-right">
+                            ${m.time.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
+                        </span>
+                    </div>
                 </div>
-            </div>
-        `).join('');
+            `;
+        }).join('');
         
         container.scrollTop = container.scrollHeight;
     }
     
     generateResponse(input) {
-        const lower = input.toLowerCase();
+        const lower = input.toLowerCase().trim();
         
-        if (lower.includes('price') || lower.includes('cost') || lower.includes('rate')) {
-            return "I'll gladly connect you with our sales team for current pricing. What grade are you interested in? (e.g., SS 304, SS 316, Inconel 625)";
-        }
-        if (lower.includes('304') || lower.includes('316') || lower.includes('steel')) {
-            return "Great choice! SS 304/316 are our most popular grades. Would you like sheets, pipes, or bars? Also, what quantity do you need?";
-        }
-        if (lower.includes('stock') || lower.includes('available')) {
-            return "We maintain 7000+ tons of ready stock in Mumbai. For specific availability, please share: Grade, Form (Sheet/Pipe), Size, and Quantity.";
-        }
-        if (lower.includes('delivery') || lower.includes('shipping')) {
-            return "📦 Delivery timelines:\n• Mumbai: Same day\n• Maharashtra: 2-3 days\n• Pan-India: 4-7 days\n• Export: 15-30 days\n\nWhere should we deliver?";
-        }
-        if (lower.includes('certificate') || lower.includes('mtc') || lower.includes('test')) {
-            return "✅ All material comes with Mill Test Certificate (MTC) per EN 10204 3.1. We also provide:\n• Heat number traceability\n• TPI inspection (on request)\n• NABL lab reports";
-        }
+        // Check for phone number or email capture first
+        const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+        const phoneRegex = /(\+?\d{1,4}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/g;
+        const hasEmail = emailRegex.test(lower);
+        const hasPhone = phoneRegex.test(lower);
         
-        return "For the fastest response, feel free to:\n\n1️⃣ WhatsApp us: +91 9082834775\n2️⃣ Call: +91 9082834775\n3️⃣ Email: sales@tatvamoverseasinc.com\n\nWhat other questions can I answer for you?";
+        if (hasEmail || hasPhone) {
+            return `Thank you for sharing your contact details! 📝 I will forward them immediately to Mr. Kapil Jain and Mr. Tatva Jain in our Sales Department. They will connect with you via email/phone shortly to discuss your requirements.`;
+        }
+
+        // Greetings
+        if (/^(hi|hello|hey|g'day|yo|hola|greetings|good\s*morning|good\s*afternoon|good\s*evening)/i.test(lower)) {
+            return `👋 Hello! Welcome to **Tatvam Overseas Inc**.\n\nI am your virtual metals assistant. I can help you with:\n• Grades & technical specs (e.g., SS 304, SS 316, Inconel 625)\n• Warehouse stock & delivery timelines\n• MTC certifications & verification\n• Fast price quotes\n\nWhat can I help you find today?`;
+        }
+
+        // Specific grade responses
+        if (lower.includes('304')) {
+            return `🧬 **SS 304 / 304L (UNS S30400 / S30403)**:\nOur most popular austenitic stainless steel. Excellent corrosion resistance, formability, and weldability.\n• **Stocked Forms**: Sheets, Plates, Seamless Pipes, Tubes, Round Bars, and Coils.\n• **Applications**: Food processing, dairy, chemical tanks, and domestic appliances.\n\n*Would you like a quote or size chart for SS 304?*`;
+        }
+        if (lower.includes('316')) {
+            return `🧬 **SS 316 / 316L (UNS S31600 / S31603)**:\nPremium Marine Grade. The addition of 2-3% Molybdenum increases resistance to chlorides (salts) and pitting.\n• **Stocked Forms**: Marine Plates, Seamless Pipes, Instrumentation Tubes, Round/Hex Bars, Flanges.\n• **Applications**: Pharmaceutical equipment, chemical processing, marine structures, and oil/gas.\n\n*Would you like a quote or size chart for SS 316?*`;
+        }
+        if (lower.includes('202') || lower.includes('201')) {
+            return `🧬 **SS 202 / SS 201**:\nChromium-nickel-manganese alloy. A cost-effective alternative to SS 304 for moderate environments.\n• **Stocked Forms**: Decorative sheets, flats, rods, and coils.\n• **Applications**: Architectural trims, handrails, indoor fabrication, and kitchenware.\n\n*Would you like a quote or size chart for SS 202?*`;
+        }
+        if (lower.includes('904l') || lower.includes('904')) {
+            return `🧬 **SS 904L (UNS N08904)**:\nSuper-austenitic stainless steel with low carbon and high alloy. Superior resistance to sulfuric, phosphoric, and acetic acids.\n• **Stocked Forms**: Plates, seamless tubes, and round bars.\n• **Applications**: Acid processing plants, heat exchangers, and seawater equipment.`;
+        }
+        if (lower.includes('2205') || lower.includes('duplex')) {
+            return `🧬 **Duplex 2205 (UNS S32205 / S31803)**:\nA nitrogen-enhanced duplex stainless steel. Offers double the yield strength of standard austenitic grades and high resistance to stress corrosion cracking.\n• **Stocked Forms**: Plates, pipes, fittings, and flanges.\n• **Applications**: Oil & gas piping, chemical cargo tanks, and flue gas scrubbers.`;
+        }
+        if (lower.includes('625') || lower.includes('inconel 625')) {
+            return `🚀 **Inconel 625 (UNS N06625)**:\nA nickel-chromium-molybdenum alloy. Renowned for its high strength, temperature resistance, and outstanding corrosion/oxidation resistance.\n• **Stocked Forms**: Seamless pipes, heat exchanger tubes, plates, round bars.\n• **Applications**: Exhaust systems, chemical processing, offshore oil & gas, marine engineering.`;
+        }
+        if (lower.includes('monel')) {
+            return `🚀 **Monel 400 (UNS N04400)**:\nA nickel-copper alloy with high strength and excellent resistance to marine environments, hydrofluoric acid, and alkalis.\n• **Stocked Forms**: Round bars, pipes, and plates.\n• **Applications**: Marine fixtures, chemical valves, and electrical components.`;
+        }
+        if (lower.includes('hastelloy')) {
+            return `🚀 **Hastelloy C276 (UNS N10276)**:\nA nickel-molybdenum-chromium alloy. Outstanding resistance to pitting, crevice corrosion, and strong reducing/oxidizing agents.\n• **Stocked Forms**: Plates, seamless tubes, round bars, and fittings.\n• **Applications**: Pollution control stack liners, chemical scrubbers, and pharmaceutical equipment.`;
+        }
+        if (lower.includes('p11') || lower.includes('p22') || lower.includes('p91') || lower.includes('chrome-moly') || lower.includes('alloy steel')) {
+            return `⚙️ **Alloy Steel (ASTM A335 P11 / P22 / P91)**:\nChrome-Molybdenum alloy pipes engineered for high-temperature and high-pressure steam service.\n• **Stocked Forms**: Schedule seamless pipes, butt-weld fittings, and high-pressure forged flanges.\n• **Applications**: Power generation plants, boiler pipes, petroleum refineries.`;
+        }
+        if (lower.includes('grade') || lower.includes('product') || lower.includes('range') || lower.includes('sell') || lower.includes('stockist')) {
+            return `📦 **Our Full Product Range**:\nWe stock and export a wide variety of materials:\n\n• **Stainless Steel**: SS 304, 304L, 316, 316L, 321, 310S, 317L, 904L, Duplex 2205, Super Duplex 2507.\n• **Nickel Alloys**: Inconel 600/625/718, Monel 400/K500, Hastelloy C276/B2, Alloy 20.\n• **Carbon & Alloy Steel**: ASTM A106 Gr. B, A335 P11/P22/P91, Low Temp A333 Gr. 6.\n\n• **Available Forms**: Sheets, plates, coils, slitting coils, seamless & welded pipes, instrumentation tubes, round/flat bars, flanges, and fittings.\n\n*Which material or form can we assist you with?*`;
+        }
+
+        // Pricing / quotes
+        if (lower.includes('price') || lower.includes('cost') || lower.includes('rate') || lower.includes('quote') || lower.includes('quotation')) {
+            return `💰 **Get a Fast Quotation**:\nPrices fluctuate daily based on LME raw metal rates (nickel, molybdenum, chrome). To get an accurate quote within 2 hours, please let me know:\n\n1. **Material Grade** (e.g., SS 316L)\n2. **Product Form** (e.g., Seamless Pipe)\n3. **Dimensions** (e.g., 2" NB, Sch 40)\n4. **Quantity** (e.g., 500 Meters)\n\nAlternatively, you can submit your RFQ sheet on our [Contact page](contact.html) or WhatsApp it to +91 90828 34775.`;
+        }
+
+        // Stock availability
+        if (lower.includes('stock') || lower.includes('availab') || lower.includes('ready') || lower.includes('warehouse')) {
+            return `🏢 **Ready Stock in Mumbai**:\nWe maintain over **7,000 tons** of traceable inventory at our Kalbadevi warehouse, ready for immediate dispatch.\n\n• **Processing**: Custom cutting, shearing, slitting, and mirror-polishing available.\n• **Dispatch**: Same-day local dispatch in Mumbai. 2-5 days across India.\n\nWhat size/grade and quantity do you need to check?`;
+        }
+
+        // Delivery / shipping
+        if (lower.includes('delivery') || lower.includes('ship') || lower.includes('transit') || lower.includes('lead time') || lower.includes('time')) {
+            return `📦 **Delivery & Logistics Timelines**:\n• **Mumbai / Thane**: Same day or next business day.\n• **Maharashtra**: 1–2 business days.\n• **Pan-India**: 3–6 business days via trusted transport (TCI, VRL, etc.).\n• **Global Exports**: 15–30 days depending on port destination. We support CIF, FOB, CFR, and Ex-Works terms.`;
+        }
+
+        // MTC / Certification / Third Party Inspection
+        if (lower.includes('certificate') || lower.includes('mtc') || lower.includes('tc') || lower.includes('test') || lower.includes('tpi') || lower.includes('inspect') || lower.includes('trace')) {
+            return `✅ **100% Traceability & Certifications**:\n• All materials are supplied with original **Mill Test Certificates (MTC)** matching EN 10204 3.1.\n• We perform regular PMI (Positive Material Identification) tests before dispatch.\n• We gladly support **Third Party Inspection (TPI)** by agencies like SGS, Bureau Veritas, TUV, DNV, Lloyds, or IRS.\n• Need to verify an MTC? Visit our [MTC Verification page](mtc.html) to check authenticity!`;
+        }
+
+        // Contact info / WhatsApp / address
+        if (lower.includes('phone') || lower.includes('number') || lower.includes('whatsapp') || lower.includes('call') || lower.includes('contact') || lower.includes('address') || lower.includes('location') || lower.includes('office') || lower.includes('email') || lower.includes('write')) {
+            return `📞 **Contact Our Sales Desk**:\n\n• **Mr. Kamlesh Jain** (Managing Director): [+91 98195 90580](tel:+919819590580)\n• **Mr. Kapil Jain** (Director): [+91 99303 03118](tel:+919930303118)\n• **Mr. Tatva Jain** (Director): [+91 90828 34775](tel:+919082834775)\n\n• **Main Office**: 39/41, Kamal Building, 1st Kumbharwada Lane, Kalbadevi, Mumbai - 400004.\n• **Email**: sales@tatvamoverseasinc.com\n\n*Click any phone number above to call, or click the WhatsApp button in the widget options to start chatting on WhatsApp!*`;
+        }
+
+        // Calculator
+        if (lower.includes('calc') || lower.includes('weight') || lower.includes('formula') || lower.includes('density') || lower.includes('thick')) {
+            return `🧮 **Weight Calculator**:\nYou can calculate the weight of sheets, plates, seamless pipes, and round bars instantly!\n\nSimply go to our [Inventory Page](products.html), click on any product card, and use the **Smart Calculator** tab. It uses exact material densities (e.g. 7.93 for SS 304, 8.44 for Inconel) to give you accurate weights.`;
+        }
+
+        // General info
+        if (lower.includes('about') || lower.includes('who are you') || lower.includes('firm') || lower.includes('history') || lower.includes('proprietor') || lower.includes('established') || lower.includes('iso')) {
+            return `🏢 **About Tatvam Overseas Inc**:\nEstablished in **1992** (formerly Nagmani Metal Corporation), we are an ISO 9001:2015 certified stockist and exporter of stainless steel and alloy piping systems.\n\nLed by Mr. Champalal Jain and family, we have been bridging the gap between top global steel mills and key industrial projects for over **32 years** with a clean reputation for quality.`;
+        }
+
+        // Thanks
+        if (lower.includes('thank') || lower.includes('thanks') || lower.includes('ok') || lower.includes('okay') || lower.includes('great') || lower.includes('clear')) {
+            return `👍 You are very welcome! If you need specific steel dimensions, pricing, or custom dispatch, please feel free to drop an inquiry on our contact form or contact us via WhatsApp.\n\nIs there anything else I can assist you with?`;
+        }
+
+        return `Thank you for your message. 📝\n\nTo help you best, could you please specify:\n1. **Material Grade** (e.g., SS 304, SS 316)\n2. **Product Form** (e.g., Sheet, Seamless Pipe)\n3. **Dimensions / Sizes**\n\nOr contact our directors directly: Mr. Kapil Jain (+91 99303 03118) or Mr. Tatva Jain (+91 90828 34775).`;
     }
     
     handleQuickReply(action) {
