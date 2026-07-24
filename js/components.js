@@ -42,7 +42,7 @@ function renderHeader() {
 
     headerEl.innerHTML = `
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Main Navigation">
-            <a href="index.html" class="text-2xl font-black text-white flex items-center gap-2 group">
+            <a href="index.html" class="text-2xl font-black text-white flex items-center gap-2 group outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded">
                 <div class="w-8 h-8 bg-emerald-600 rounded flex items-center justify-center text-white font-bold group-hover:rotate-12 transition-transform shrink-0">T</div>
                 <span class="whitespace-nowrap">TATVAM <span class="text-emerald-500">OVERSEAS INC</span></span>
             </a>

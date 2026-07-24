@@ -1124,19 +1124,7 @@ closeModal();
 }
 });
 // Note: Mobile menu toggle is handled by js/components.js renderHeader()
-// If pages use static HTML header instead, this is a fallback:
-document.addEventListener('DOMContentLoaded', () => {
-    const mobileBtn = document.getElementById('mobile-menu-button');
-    if (mobileBtn && !mobileBtn._componentsBound) {
-        mobileBtn.addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            if (menu) {
-                menu.classList.toggle('hidden');
-                this.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
-            }
-        });
-    }
-});
+// Fallback removed to prevent double-toggling.
 // Back to top button
 window.addEventListener('scroll', function() {
 const backToTop = document.getElementById('backToTop');
