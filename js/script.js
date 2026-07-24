@@ -659,11 +659,32 @@ function openProductModal(id) {
     const densityStr = p.phys?.Density || "7.85";
     currentDensity = parseFloat(densityStr.match(/[\d\.]+/)?.[0] || 7.85);
 
-    // 2. Determine Default Tab based on Category
-    const cat = p.category.toLowerCase();
-    if (cat.includes('pipe') || cat.includes('tube')) currentCalcMode = 'pipe';
-    else if (cat.includes('bar') || cat.includes('rod')) currentCalcMode = 'bar';
-    else currentCalcMode = 'sheet';
+    // 2. Determine which calculator tabs are relevant for this product
+    const cat = (p.category || '').toLowerCase();
+    const forms = (p.forms || []).map(f => f.toLowerCase());
+
+    // Map category → calc mode, defaulting to 'sheet'
+    let relevantModes = [];
+    if (cat.includes('pipe') || cat.includes('tube') ||
+        forms.some(f => f.includes('pipe') || f.includes('tube'))) {
+        relevantModes.push('pipe');
+    }
+    if (cat.includes('bar') || cat.includes('rod') || cat.includes('wire') ||
+        forms.some(f => f.includes('bar') || f.includes('rod') || f.includes('wire'))) {
+        relevantModes.push('bar');
+    }
+    if (cat.includes('coil') || cat.includes('slitting') ||
+        forms.some(f => f.includes('coil') || f.includes('strip'))) {
+        relevantModes.push('coil');
+    }
+    // Sheets/Plates/Circles/Flats/Flanges/Fittings/everything else → sheet calc
+    if (relevantModes.length === 0 || cat.includes('sheet') || cat.includes('plate') ||
+        cat.includes('circle') || cat.includes('flat') || cat.includes('flange') ||
+        cat.includes('fitting') || cat.includes('specialty')) {
+        if (!relevantModes.includes('sheet')) relevantModes.unshift('sheet');
+    }
+
+    currentCalcMode = relevantModes[0]; // default to first relevant tab
 
     const modal = document.getElementById('common-modal');
     const body = document.getElementById('modal-body');
@@ -695,12 +716,14 @@ function openProductModal(id) {
                         <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-emerald-400 font-mono border border-slate-600">Density: ${currentDensity}</span>
                     </div>
 
+                    ${ relevantModes.length > 1 ? `
                     <div class="flex gap-1 mb-4 bg-slate-800 p-1 rounded-lg">
-                        <button onclick="switchTab('sheet')" class="calc-tab flex-1 py-1 text-xs font-bold rounded ${currentCalcMode === 'sheet' ? 'bg-emerald-600 text-white' : 'text-slate-400 hover:text-white'}">Sheet</button>
-                        <button onclick="switchTab('pipe')" class="calc-tab flex-1 py-1 text-xs font-bold rounded ${currentCalcMode === 'pipe' ? 'bg-emerald-600 text-white' : 'text-slate-400 hover:text-white'}">Pipe</button>
-                        <button onclick="switchTab('bar')" class="calc-tab flex-1 py-1 text-xs font-bold rounded ${currentCalcMode === 'bar' ? 'bg-emerald-600 text-white' : 'text-slate-400 hover:text-white'}">Bar</button>
-                        <button onclick="switchTab('coil')" class="calc-tab flex-1 py-1 text-xs font-bold rounded ${currentCalcMode === 'coil' ? 'bg-emerald-600 text-white' : 'text-slate-400 hover:text-white'}">Coil</button>
-                    </div>
+                        ${ relevantModes.map(m => `
+                        <button onclick="switchTab('${m}')" class="calc-tab flex-1 py-1 text-xs font-bold rounded capitalize ${
+                            m === currentCalcMode ? 'bg-emerald-600 text-white' : 'text-slate-400 hover:text-white'
+                        }">${m}</button>`).join('') }
+                    </div>` : '' }
+
 
                     <div id="calc-inputs" class="space-y-3">
                         </div>

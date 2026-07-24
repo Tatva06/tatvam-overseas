@@ -109,12 +109,12 @@ function renderFooter() {
 
         <!-- Main Footer -->
         <div class="container mx-auto px-6 py-16">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-sm">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 text-sm">
                 <!-- Company Info -->
                 <div class="space-y-6">
                     <a href="index.html" class="text-2xl font-black text-white flex items-center gap-2">
                         <div class="w-8 h-8 bg-emerald-600 rounded flex items-center justify-center text-white font-bold shrink-0">T</div>
-                        <span class="whitespace-nowrap">TATVAM <span class="text-emerald-500">OVERSEAS INC</span></span>
+                        <span>TATVAM <span class="text-emerald-500">OVERSEAS INC</span></span>
                     </a>
                     <p class="leading-relaxed text-xs text-slate-400">
                         ISO 9001:2015 certified stockist and exporter of stainless steel, carbon steel, and high nickel alloys. Serving global industries since 1992 with complete traceability and MTC certification.
