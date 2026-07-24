@@ -1,4 +1,4 @@
-// Tatvam Overseas — Unified Tailwind Configuration
+// Tatvam Overseas Inc — Unified Tailwind Configuration
 // Shared design tokens from STEELCORP template
 tailwind.config = {
   darkMode: "class",

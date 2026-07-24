@@ -106,7 +106,7 @@
 
 
     <!-- Footer (rendered by components.js) -->
-    <footer id="site-footer" class="bg-slate-900 text-slate-400 font-sans border-t-4 border-emerald-600" role="contentinfo"></footer>
+    <footer id="site-footer" class="bg-slate-900 text-slate-400 font-sans border-t-4 border-emerald-600 mt-20"></footer>
 
     <div id="common-modal" class="modal-overlay">
         <div class="modal-content relative"><button onclick="closeModal()"
@@ -118,14 +118,14 @@
 
     <!-- Load data scripts FIRST, then init logic -->
     <script src="js/components.js"></script>
-    <!-- <script src="js/data.js"></script> -->
+    <script src="js/data.js"></script>
     <script src="js/blog-data.js"></script>
     <script src="js/script.js"></script>
 
     <script>
         // Inline logic for Blog Page Only (Initialization)
-        document.addEventListener('DOMContentLoaded', () => {
-            if (typeof blogs !== 'undefined') {
+        window.addEventListener('load', () => {
+            if (typeof blogs !== 'undefined' && blogs.length > 0) {
                 // 1. Render Featured Post
                 const featured = blogs.find(b => b.featured) || blogs[0];
                 const featContainer = document.getElementById('featured-post-container');

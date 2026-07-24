@@ -381,7 +381,7 @@
             document.getElementById('r-total').textContent=calcKg>0?calcKg.toFixed(3)+' kg':'—';
         }
         const grade=GRADES.find(g=>g.id===currentGrade)?.label||'Steel';
-        const msg=encodeURIComponent(`Hi Tatvam Overseas,\n\nWeight Calculation Result:\nMaterial: ${grade} (${currentDensity} g/cm³)\nForm: ${FORM_LABELS[currentForm]}\nDimensions: ${dims||'—'}\nQty: ${qty||1} pcs\nEstimated Weight: ${calcKg.toFixed(3)} kg\n\nPlease send a quote.`);
+        const msg=encodeURIComponent(`Hi Tatvam Overseas Inc,\n\nWeight Calculation Result:\nMaterial: ${grade} (${currentDensity} g/cm³)\nForm: ${FORM_LABELS[currentForm]}\nDimensions: ${dims||'—'}\nQty: ${qty||1} pcs\nEstimated Weight: ${calcKg.toFixed(3)} kg\n\nPlease send a quote.`);
         document.getElementById('wa-cta').href=`https://wa.me/919082834775?text=${msg}`;
         if(calcKg>0){const el=document.getElementById('result-val');el.parentElement.classList.remove('result-pulse');void el.parentElement.offsetWidth;el.parentElement.classList.add('result-pulse');}
     }

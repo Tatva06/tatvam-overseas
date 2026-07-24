@@ -28,6 +28,7 @@ function renderHeader() {
         { href: 'index.html', label: 'Home' },
         { href: 'about.html', label: 'Our Firm' },
         { href: 'products.html', label: 'Inventory' },
+        { href: 'calculator.html', label: 'Calculator' },
         { href: 'blog.html', label: 'Knowledge' },
     ];
 
@@ -119,17 +120,6 @@ function renderFooter() {
                     <p class="leading-relaxed text-xs text-slate-400">
                         ISO 9001:2015 certified stockist and exporter of stainless steel, carbon steel, and high nickel alloys. Serving global industries since 1992 with complete traceability and MTC certification.
                     </p>
-                    <div class="flex gap-3">
-                        <a href="${SITE_CONFIG.linkedin}" target="_blank" rel="noopener" class="w-9 h-9 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-emerald-600 hover:text-white transition-all" aria-label="LinkedIn">
-                            <i data-lucide="linkedin" class="w-4 h-4"></i>
-                        </a>
-                        <a href="${SITE_CONFIG.facebook}" target="_blank" rel="noopener" class="w-9 h-9 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-emerald-600 hover:text-white transition-all" aria-label="Facebook">
-                            <i data-lucide="facebook" class="w-4 h-4"></i>
-                        </a>
-                        <a href="${SITE_CONFIG.instagram}" target="_blank" rel="noopener" class="w-9 h-9 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-emerald-600 hover:text-white transition-all" aria-label="Instagram">
-                            <i data-lucide="instagram" class="w-4 h-4"></i>
-                        </a>
-                    </div>
                 </div>
 
                 <!-- Products -->

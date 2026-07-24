@@ -710,29 +710,22 @@ function openProductModal(id) {
 
             <div class="p-6 overflow-y-auto max-h-[80vh] no-scrollbar">
                 
-                <div class="bg-slate-900 text-white p-5 rounded-xl shadow-lg border border-slate-700 mb-6">
-                    <div class="flex justify-between items-center mb-4">
-                        <h4 class="font-bold flex items-center gap-2"><i data-lucide="calculator" class="w-4 h-4 text-emerald-400"></i> Weight Calc</h4>
-                        <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-emerald-400 font-mono border border-slate-600">Density: ${currentDensity}</span>
+
+                <!-- Calculator CTA -->
+                <div class="bg-slate-900 text-white p-4 rounded-xl shadow-lg border border-slate-700 mb-6 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center shrink-0">
+                        <i data-lucide="calculator" class="w-5 h-5 text-white"></i>
                     </div>
-
-                    ${ relevantModes.length > 1 ? `
-                    <div class="flex gap-1 mb-4 bg-slate-800 p-1 rounded-lg">
-                        ${ relevantModes.map(m => `
-                        <button onclick="switchTab('${m}')" class="calc-tab flex-1 py-1 text-xs font-bold rounded capitalize ${
-                            m === currentCalcMode ? 'bg-emerald-600 text-white' : 'text-slate-400 hover:text-white'
-                        }">${m}</button>`).join('') }
-                    </div>` : '' }
-
-
-                    <div id="calc-inputs" class="space-y-3">
-                        </div>
-
-                    <div class="flex justify-between items-end border-t border-slate-700 pt-3 mt-3">
-                        <span class="text-slate-400 text-xs" id="calc-formula">Formula: L x W x T x Density</span>
-                        <span id="calc-output" class="text-2xl font-bold text-emerald-400">0.00 kg</span>
+                    <div class="flex-1 min-w-0">
+                        <div class="font-bold text-sm text-white">Weight Calculator</div>
+                        <div class="text-xs text-slate-400">Calculate exact weight for this material grade</div>
                     </div>
+                    <a href="calculator.html" target="_blank"
+                       class="shrink-0 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2 rounded-lg text-xs transition-all flex items-center gap-1.5 whitespace-nowrap">
+                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Open Tool
+                    </a>
                 </div>
+
 
                 <div class="space-y-4">
                     <div>

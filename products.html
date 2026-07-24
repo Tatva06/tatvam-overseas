@@ -111,8 +111,11 @@
 
     <script>
         // Initialize Filters
-        document.addEventListener('DOMContentLoaded', () => {
-            if(typeof products === 'undefined') return;
+        window.addEventListener('load', () => {
+            if(typeof products === 'undefined') {
+                console.error("products data is undefined!");
+                return;
+            }
             
             // Unique Departments
             const depts = ['All', ...new Set(products.map(p => p.department))];
@@ -208,7 +211,7 @@
     <footer id="site-footer" class="bg-slate-900 text-slate-400 font-sans border-t-4 border-emerald-600"></footer>
     <script src="js/components.js"></script>
     <script src="js/data.js"></script>
-    <!-- <script src="js/blog-data.js"></script> -->
+    <script src="js/blog-data.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

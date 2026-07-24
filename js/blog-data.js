@@ -46,7 +46,7 @@ function blogAuthor(date, readingTime) {
     <div class="flex items-center gap-4 py-4 border-y border-slate-200 my-6">
       <div class="w-11 h-11 rounded-full bg-gradient-to-br from-emerald-600 to-slate-800 flex items-center justify-center text-white font-black text-lg shadow-md">T</div>
       <div>
-        <p class="font-bold text-slate-900 text-sm">Tatvam Overseas Technical Team</p>
+        <p class="font-bold text-slate-900 text-sm">Tatvam Overseas Inc Technical Team</p>
         <p class="text-xs text-slate-500">Published: ${date} &nbsp;·&nbsp; Last Updated: July 19, 2026 &nbsp;·&nbsp; <span class="text-emerald-600 font-semibold">${readingTime}</span></p>
       </div>
     </div>`;
@@ -89,7 +89,7 @@ const blogs = [
     image: "assets/images/pool/sheets_blog.jpg",
     coverImage: "assets/images/pool/sheets_blog.jpg",
     readingTime: "8 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "SS 304 vs SS 316 Stainless Steel: Complete Comparison Guide | Tatvam Overseas Inc",
     seoDescription: "Detailed comparison of SS 304 and SS 316 stainless steel — chemical composition, PREN, cost, corrosion resistance, and when to choose which grade.",
@@ -167,7 +167,7 @@ const blogs = [
       <p class="mb-4 text-slate-600 text-sm"><strong>Note:</strong> Both grades have identical mechanical properties. The specification premium for 316 is purely about corrosion performance, not strength.</p>
 
       <h2 id="cost" class="text-2xl font-black text-slate-900 mt-8 mb-3">Cost & Availability</h2>
-      <p class="mb-4 text-slate-700 leading-relaxed">SS 316 typically costs <strong>20–30% more</strong> than SS 304 in the Mumbai market, primarily due to higher Nickel content (10–14% vs 8–10.5%) and the addition of Molybdenum. Both grades are ex-stock at Tatvam Overseas in sheets, pipes, bars, and flanges.</p>
+      <p class="mb-4 text-slate-700 leading-relaxed">SS 316 typically costs <strong>20–30% more</strong> than SS 304 in the Mumbai market, primarily due to higher Nickel content (10–14% vs 8–10.5%) and the addition of Molybdenum. Both grades are ex-stock at Tatvam Overseas Inc in sheets, pipes, bars, and flanges.</p>
       <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-xl mb-6">
         <p class="font-bold text-amber-800 text-sm">💡 Procurement Tip</p>
         <p class="text-amber-700 text-sm mt-1">If your environment is not coastal or chemically aggressive, specifying 316 where 304 is sufficient wastes 20–30% of your material budget. Consult our technical team to confirm grade suitability before procurement.</p>
@@ -254,7 +254,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/factory.jpg",
     readingTime: "5 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Why Stainless Steel is Magnetic — Ferritic vs Austenitic Explained | Tatvam Overseas Inc",
     seoDescription: "Busting the magnet test myth. Understand why SS 430, SS 409 are magnetic and how cold working makes SS 304 mildly magnetic. Technical guide.",
@@ -319,7 +319,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/pipes.jpg",
     readingTime: "6 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Pipe vs Tube — What's the Difference? NB, OD, Schedule Explained | Tatvam Overseas Inc",
     seoDescription: "In the steel industry, pipe and tube are NOT interchangeable. Learn how NB (Nominal Bore) vs OD (Outer Diameter) and Schedule vs Gauge affect your specification.",
@@ -410,7 +410,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/hairline.jpg",
     readingTime: "7 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Stainless Steel Surface Finishes: 2B vs BA vs Mirror vs Hairline vs PVD | Tatvam Overseas Inc",
     seoDescription: "Complete guide to stainless steel surface finishes — 2B, BA, No.1, No.4, 8K Mirror, Hairline, Scotch Brite, PVD, Etched, Embossed. When to use each.",
@@ -484,7 +484,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/rust.jpg",
     readingTime: "6 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Pitting Corrosion in Stainless Steel — Causes, PREN, and Prevention | Tatvam Overseas Inc",
     seoDescription: "Pitting corrosion is the most dangerous form of localised corrosion in stainless steel. Learn about PREN numbers, chloride attack, and how to choose the right grade.",
@@ -547,7 +547,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/factory.jpg",
     readingTime: "5 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "SS 400 Series Ferritic Stainless Steel — SS 409, 410, 430 Guide | Tatvam Overseas Inc",
     seoDescription: "Ferritic stainless steels (SS 409, 430) contain no Nickel — making them price-stable and ideal for automotive exhaust, appliances, and cookware.",
@@ -600,7 +600,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/market.jpg",
     readingTime: "5 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Why Nickel Prices Drive Stainless Steel Cost — LME, Surcharge Explained | Tatvam Overseas Inc",
     seoDescription: "Nickel is the most volatile raw material in stainless steel. Understand how LME Nickel prices translate to stainless steel alloy surcharges and procurement timing.",
@@ -656,7 +656,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/pipes.jpg",
     readingTime: "6 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Duplex 2205 Stainless Steel — Properties, PREN, Applications | Tatvam Overseas Inc",
     seoDescription: "Duplex 2205 offers 450 MPa yield strength (double SS 316) with PREN 35. Find out when and why Oil & Gas and chemical plants specify duplex over austenitic grades.",
@@ -719,7 +719,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/lab.jpg",
     readingTime: "7 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "How to Read a Mill Test Certificate (MTC) for Stainless Steel | Tatvam Overseas Inc",
     seoDescription: "A Mill Test Certificate is the birth certificate of your steel. Learn to verify heat numbers, chemical composition, mechanical properties, and detect fake or mismatched MTCs.",
@@ -762,7 +762,7 @@ const blogs = [
 
       <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-xl mb-6">
         <p class="font-bold text-red-800 text-sm">🚨 Common Fraud Alert</p>
-        <p class="text-red-700 text-sm mt-1">Some traders issue their own "MTC" on their letterhead — this is NOT a mill certificate. A genuine MTC must be on the originating mill's letterhead with the mill's stamp. If in doubt, contact the mill directly with the heat number to verify. Tatvam Overseas supplies only genuine mill-certified material with verifiable heat numbers.</p>
+        <p class="text-red-700 text-sm mt-1">Some traders issue their own "MTC" on their letterhead — this is NOT a mill certificate. A genuine MTC must be on the originating mill's letterhead with the mill's stamp. If in doubt, contact the mill directly with the heat number to verify. Tatvam Overseas Inc supplies only genuine mill-certified material with verifiable heat numbers.</p>
       </div>
 
       <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-8">
@@ -772,7 +772,7 @@ const blogs = [
           <li>Verify the <strong>Heat Number</strong> is physically stamped on every piece.</li>
           <li>Cross-check Ni% for 304 (must be 8–10.5%) — this is the easiest fraud to catch.</li>
           <li>For critical applications, use <strong>XRF (PMI gun)</strong> to verify chemistry in field.</li>
-          <li>Tatvam Overseas maintains an <a href="mtc.html" class="text-emerald-600 underline">online MTC verification portal</a> for all supplied material.</li>
+          <li>Tatvam Overseas Inc maintains an <a href="mtc.html" class="text-emerald-600 underline">online MTC verification portal</a> for all supplied material.</li>
         </ul>
       </div>`
   },
@@ -788,7 +788,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/factory.jpg",
     readingTime: "6 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "7 Red Flags When Buying Stainless Steel — Avoid Fraud | Tatvam Overseas Inc",
     seoDescription: "Under-gauge material, fake stamping, and grade substitution are common scams in the Indian steel market. Learn to protect yourself with these 7 red flags.",
@@ -824,7 +824,7 @@ const blogs = [
             <span class="bg-red-100 text-red-700 font-black text-sm px-3 py-1 rounded-full mt-0.5 flex-shrink-0">03</span>
             <div>
               <h3 class="font-bold text-slate-900 mb-1">Fake or Re-used Stamping</h3>
-              <p class="text-sm text-slate-600">Any printer can print "JSPL 304" on a packing label or stamp it on a coil edge. Always <strong>cross-reference the heat number</strong> directly with the mill (Jindal's website has a heat number verification portal). Tatvam Overseas provides genuine mill-issued MTCs only.</p>
+              <p class="text-sm text-slate-600">Any printer can print "JSPL 304" on a packing label or stamp it on a coil edge. Always <strong>cross-reference the heat number</strong> directly with the mill (Jindal's website has a heat number verification portal). Tatvam Overseas Inc provides genuine mill-issued MTCs only.</p>
             </div>
           </div>
         </div>
@@ -889,7 +889,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/welding.jpg",
     readingTime: "7 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Welding Stainless Steel SS 316L — Sensitisation, Filler Wire, Pickling | Tatvam Overseas Inc",
     seoDescription: "Complete guide to welding SS 316L stainless steel. Prevent sensitisation (weld decay) with correct filler wire selection, interpass temperature control, and post-weld pickling.",
@@ -959,7 +959,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/etched.jpg",
     readingTime: "5 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "PVD Coating on Stainless Steel — Gold, Rose Gold, Black Finish | Tatvam Overseas Inc",
     seoDescription: "Physical Vapour Deposition (PVD) creates scratch-resistant coloured stainless steel. Learn about PVD Gold, Rose Gold, Black, Bronze, and Champagne finishes.",
@@ -1001,7 +1001,7 @@ const blogs = [
 
       <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-xl mb-6">
         <p class="font-bold text-amber-800 text-sm">💡 Colour Matching Note</p>
-        <p class="text-amber-700 text-sm mt-1">PVD colour consistency can vary between production batches. For large architectural projects, specify all sheets from a single batch. Tatvam Overseas maintains batch records for colour-matched reorders.</p>
+        <p class="text-amber-700 text-sm mt-1">PVD colour consistency can vary between production batches. For large architectural projects, specify all sheets from a single batch. Tatvam Overseas Inc maintains batch records for colour-matched reorders.</p>
       </div>
 
       <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-8">
@@ -1026,7 +1026,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/rust.jpg",
     readingTime: "6 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "5 Types of Stainless Steel Corrosion — Galvanic, Crevice, Pitting, SCC | Tatvam Overseas Inc",
     seoDescription: "Understand galvanic, crevice, pitting, intergranular, and stress corrosion cracking in stainless steel. Engineering design tips to prevent each type.",
@@ -1090,7 +1090,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/plates.jpg",
     readingTime: "5 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Stainless Steel Weight Calculator — Sheets, Pipes, Bars Formula | Tatvam Overseas Inc",
     seoDescription: "Step-by-step formulas for calculating stainless steel weight for sheets, plates, round pipes, round bars, and flat bars. With density values for all grades.",
@@ -1161,7 +1161,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/plates.jpg",
     readingTime: "4 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Stainless Steel Sheet vs Plate vs Coil — Thickness & Finish Differences | Tatvam Overseas Inc",
     seoDescription: "What's the difference between a stainless steel sheet and a plate? Where does a sheet end and a plate begin? And what is a coil? Clear definitions with industry standards.",
@@ -1213,7 +1213,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/factory.jpg",
     readingTime: "5 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Best Stainless Steel Grade for Railings — SS 202 vs 304 vs 316 | Tatvam Overseas Inc",
     seoDescription: "Choosing the wrong grade for railings is the most common and costly mistake. SS 202 for indoor, SS 304 for outdoor, SS 316 for coastal. Detailed breakdown.",
@@ -1266,7 +1266,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/lab.jpg",
     readingTime: "5 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Food Grade Stainless Steel — SS 304 vs SS 316 for Food Processing | Tatvam Overseas Inc",
     seoDescription: "Is SS 202 food safe? What grade is required for HACCP compliance? Difference between SS 304 and SS 316 in food and pharmaceutical applications.",
@@ -1323,7 +1323,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/welding.jpg",
     readingTime: "5 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Plasma Cutting vs Laser Cutting Stainless Steel — Comparison Guide | Tatvam Overseas Inc",
     seoDescription: "Fiber laser cutting offers precision and no dross up to 25mm. Plasma cutting is more economical for thick plates above 25mm. Complete comparison for fabricators.",
@@ -1398,7 +1398,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/rust.jpg",
     readingTime: "5 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Why SS 304 Stainless Steel Railing is Rusting — Causes & Fixes | Tatvam Overseas Inc",
     seoDescription: "SS 304 railings can show rust spots even in indoor environments due to iron contamination, acid exposure, or grade substitution. Here's how to diagnose and fix it.",
@@ -1455,7 +1455,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/market.jpg",
     readingTime: "5 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Why Stainless Steel Prices Fluctuate — LME Nickel, Alloy Surcharge | Tatvam Overseas Inc",
     seoDescription: "Stainless steel pricing is driven by LME Nickel, Chromium, and Molybdenum commodity prices. Learn how alloy surcharges are calculated and how to time your purchases.",
@@ -1523,7 +1523,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/market.jpg",
     readingTime: "5 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Jindal vs Imported Stainless Steel — Which is Better? | Tatvam Overseas Inc",
     seoDescription: "Honest comparison of Jindal Stainless vs imported Chinese/Indonesian stainless steel. When to pay the Jindal premium and when imported is acceptable.",
@@ -1576,7 +1576,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/sheets_blog.jpg",
     readingTime: "5 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "SS 202 vs SS 304 — When to Use SS 202 as an Alternative | Tatvam Overseas Inc",
     seoDescription: "With rising Nickel prices, many buyers switch to SS 202. When is it a viable alternative to 304 and when is it a false economy? Honest technical comparison.",
@@ -1648,7 +1648,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/factory.jpg",
     readingTime: "4 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Stainless Steel Storage Guide — Preventing Rust and Contamination | Tatvam Overseas Inc",
     seoDescription: "Proper stainless steel storage prevents rust bloom, iron contamination, and surface damage. Essential guidelines for godowns and fabrication shops.",
@@ -1721,7 +1721,7 @@ const blogs = [
     featured: false,
     image: "assets/images/pool/factory.jpg",
     readingTime: "4 min read",
-    author: "Tatvam Overseas Technical Team",
+    author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-07-19",
     seoTitle: "Is Stainless Steel Sustainable? Recyclability, Lifecycle, Carbon Footprint | Tatvam Overseas Inc",
     seoDescription: "Stainless steel is 100% recyclable with 60% recycled content in new production. Compare its lifecycle carbon footprint against painted carbon steel and plastic alternatives.",

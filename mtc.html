@@ -108,12 +108,16 @@
                     </form>
                 </div>
 
-                <div id="mtc-preview" class="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200">
+                <div id="mtc-preview" class="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200 relative">
+                    <!-- WATERMARK -->
+                    <div class="absolute inset-0 pointer-events-none flex items-center justify-center z-50 overflow-hidden opacity-10">
+                        <div class="text-[80px] font-black text-red-600 -rotate-45 whitespace-nowrap tracking-widest border-y-8 border-red-600 py-4 px-20">SAMPLE — NOT VALID</div>
+                    </div>
                     <div class="bg-slate-900 text-white p-4">
                         <div class="flex justify-between items-center">
                             <div>
                                 <h2 class="text-xl font-black">TATVAM OVERSEAS INC</h2>
-                                <p class="text-xs text-slate-400">ISO 9001:2015 Certified</p>
+                                <p class="text-xs text-slate-300">SAMPLE MTC PREVIEW FORMAT</p>
                             </div>
                             <div class="text-right text-xs">
                                 <p>MTC No: TO/2025/0123</p>
@@ -151,18 +155,14 @@
                             </div>
                         </div>
                         
-                        <div class="bg-emerald-50 border-l-4 border-emerald-600 p-3 text-xs">
-                            <p class="font-bold text-emerald-900">✓ CERTIFIED</p>
-                            <p class="text-slate-600">This material conforms to the specified requirements.</p>
+                        <div class="bg-red-50 border-l-4 border-red-600 p-4 text-xs">
+                            <p class="font-bold text-red-900">SAMPLE DOCUMENT ONLY</p>
+                            <p class="text-slate-600 mt-1">This is a format preview. It is not a valid certificate and cannot be used for compliance, shipping, or verification purposes. Official MTCs are only issued with actual dispatch documents.</p>
                         </div>
                         
-                        <div class="flex justify-between items-end text-xs text-slate-600">
-                            <div>
-                                <p class="mb-1">______________________</p>
-                                <p class="font-bold">Quality Manager</p>
-                            </div>
-                            <button onclick="downloadMTC()" class="bg-slate-900 text-white px-4 py-2 rounded font-bold hover:bg-slate-800">
-                                📥 Download PDF
+                        <div class="flex justify-end items-end text-xs text-slate-600">
+                            <button onclick="downloadMTC()" class="bg-slate-900 text-white px-4 py-2 rounded font-bold hover:bg-slate-800 relative z-50">
+                                📥 Download PDF Preview
                             </button>
                         </div>
                     </div>
