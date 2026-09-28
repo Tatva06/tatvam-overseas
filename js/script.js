@@ -217,12 +217,6 @@ class SmartFloatingWidget {
         container.id = 'floating-widgets';
         container.className = 'fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col gap-3 items-end font-sans';
         
-        // Google Translate Element
-        const langDiv = document.createElement('div');
-        langDiv.id = 'google_translate_element';
-        langDiv.className = 'bg-white p-2 rounded-lg shadow-xl border border-slate-200 hidden mb-2';
-        container.appendChild(langDiv);
-        
         // Chat Window
         const chatWindow = document.createElement('div');
         chatWindow.id = 'chat-window';
@@ -351,11 +345,6 @@ class SmartFloatingWidget {
             chatWindow.classList.add('scale-95', 'opacity-0');
             setTimeout(() => { chatWindow.style.display = 'none'; }, 300);
         }
-    }
-    
-    toggleTranslate() {
-        const el = document.getElementById('google_translate_element');
-        if (el) el.classList.toggle('hidden');
     }
     
     showWelcomeNotification() {
