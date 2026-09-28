@@ -226,7 +226,8 @@ class SmartFloatingWidget {
         // Chat Window
         const chatWindow = document.createElement('div');
         chatWindow.id = 'chat-window';
-        chatWindow.className = 'hidden flex-col bg-white rounded-2xl shadow-2xl border border-slate-200 w-[calc(100vw-2rem)] sm:w-80 max-w-sm h-[65vh] sm:h-[480px] mb-2 overflow-hidden transition-all duration-300 origin-bottom-right scale-95 opacity-0';
+        chatWindow.className = 'flex-col bg-white rounded-2xl shadow-2xl border border-slate-200 w-[calc(100vw-2rem)] sm:w-80 max-w-sm h-[65vh] sm:h-[480px] mb-2 overflow-hidden transition-all duration-300 origin-bottom-right scale-95 opacity-0';
+        chatWindow.style.display = 'none';
         chatWindow.innerHTML = `
             <!-- Chat Header -->
             <div class="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white p-4 flex justify-between items-center shrink-0">
@@ -273,11 +274,6 @@ class SmartFloatingWidget {
                     <span id="chat-badge" class="hidden absolute -top-1 -right-1 bg-red-500 text-white text-[8px] font-bold w-4 h-4 rounded-full flex items-center justify-center">1</span>
                 </div>
             </button>
-            <!-- Change Language -->
-            <button id="btn-toggle-lang" class="flex items-center gap-3 bg-white text-slate-800 p-3 rounded-full shadow-xl hover:bg-slate-50 border border-slate-100 transition-all">
-                <span class="text-xs font-bold mr-1">Language</span>
-                <div class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white"><i data-lucide="languages" class="w-4 h-4"></i></div>
-            </button>
 
             <!-- WhatsApp -->
             <a href="https://wa.me/919082834775" target="_blank" class="flex items-center gap-3 bg-white text-slate-800 p-3 rounded-full shadow-xl hover:bg-slate-50 border border-slate-100 transition-all">
@@ -299,18 +295,7 @@ class SmartFloatingWidget {
         
         // Internal Button Listeners
         document.getElementById('btn-open-chat').addEventListener('click', () => this.toggleChat());
-        document.getElementById('btn-toggle-lang').addEventListener('click', () => this.toggleTranslate());
         document.getElementById('chat-close-btn').addEventListener('click', () => this.toggleChat(false));
-        
-        // Google translate callback initializer
-        window.googleTranslateElementInit = function() {
-            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-        }
-        
-        // Inject Google Translate script dynamically
-        const script = document.createElement('script');
-        script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-        document.body.appendChild(script);
         
         if (typeof lucide !== 'undefined') lucide.createIcons();
     }
@@ -332,10 +317,8 @@ class SmartFloatingWidget {
             toggle.innerHTML = `<i data-lucide="plus" class="w-6 h-6 transition-transform group-hover:rotate-90"></i>`;
             toggle.classList.replace('bg-slate-800', 'bg-emerald-600');
             
-            // Auto close chat/translate if open
+            // Auto close chat if open
             if (this.chatOpen) this.toggleChat(false);
-            const trans = document.getElementById('google_translate_element');
-            if (trans) trans.classList.add('hidden');
         }
         if (typeof lucide !== 'undefined') lucide.createIcons();
     }
@@ -347,7 +330,7 @@ class SmartFloatingWidget {
         
         if (this.chatOpen) {
             if (badge) badge.classList.add('hidden');
-            chatWindow.classList.remove('hidden');
+            chatWindow.style.display = 'flex';
             setTimeout(() => {
                 chatWindow.classList.remove('scale-95', 'opacity-0');
                 chatWindow.classList.add('scale-100', 'opacity-100');
@@ -358,10 +341,15 @@ class SmartFloatingWidget {
                     this.addBotMessage("👋 Hello! I'm your Tatvam Assistant. I can recommend grades, check stock guidelines, or help you contact sales. What are you looking for today?");
                 }, 400);
             }
+            // Scroll to bottom after opening
+            setTimeout(() => {
+                const msgs = document.getElementById('chat-messages');
+                if (msgs) msgs.scrollTop = msgs.scrollHeight;
+            }, 450);
         } else {
             chatWindow.classList.remove('scale-100', 'opacity-100');
             chatWindow.classList.add('scale-95', 'opacity-0');
-            setTimeout(() => chatWindow.classList.add('hidden'), 300);
+            setTimeout(() => { chatWindow.style.display = 'none'; }, 300);
         }
     }
     

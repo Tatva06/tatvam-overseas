@@ -13,9 +13,10 @@ const SITE_CONFIG = {
     address: '39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Kalbadevi, Mumbai - 400004',
     mapsUrl: 'https://maps.google.com/?q=39+41+Kamal+Building+Kumbharwada+Lane+Mumbai+400004',
     catalogUrl: 'assets/TatvamOverseasInc_Catalog_2025.pdf',
-    linkedin: '#',   // TODO: Replace with real LinkedIn URL
-    facebook: '#',   // TODO: Replace with real Facebook URL
-    instagram: '#',  // TODO: Replace with real Instagram URL
+    // Social media: add URLs here when pages are created
+    // linkedin: 'https://www.linkedin.com/company/YOUR-PAGE',
+    // facebook: 'https://www.facebook.com/YOUR-PAGE',
+    // instagram: 'https://www.instagram.com/YOUR-PAGE',
 };
 
 function renderHeader() {
@@ -28,7 +29,6 @@ function renderHeader() {
         { href: 'index.html', label: 'Home' },
         { href: 'about.html', label: 'Our Firm' },
         { href: 'products.html', label: 'Inventory' },
-        { href: 'calculator.html', label: 'Calculator' },
         { href: 'blog.html', label: 'Knowledge' },
     ];
 
@@ -49,13 +49,30 @@ function renderHeader() {
 
             <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
                 ${desktopLinks}
+                <!-- Language Toggle -->
+                <button id="header-lang-btn" onclick="toggleHeaderTranslate()" title="Change Language" class="flex items-center gap-1.5 text-slate-400 hover:text-white transition-colors p-1.5 rounded-lg hover:bg-slate-700/50" aria-label="Change Language">
+                    <i data-lucide="globe" class="w-4 h-4"></i>
+                    <span class="text-xs font-medium">Language</span>
+                </button>
                 <a href="contact.html" class="nav-link-btn bg-white text-emerald-900 px-5 py-2 rounded-full font-bold hover:bg-emerald-50 transition-all shadow-lg transform hover:-translate-y-0.5">Get Quote</a>
             </div>
 
-            <button id="mobile-menu-button" class="md:hidden text-white p-2 focus:outline-none" aria-label="Open Menu" aria-expanded="false">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
+            <div class="flex items-center gap-2 md:hidden">
+                <!-- Mobile Language Toggle -->
+                <button onclick="toggleHeaderTranslate()" title="Change Language" class="text-slate-400 hover:text-white p-2" aria-label="Change Language">
+                    <i data-lucide="globe" class="w-5 h-5"></i>
+                </button>
+                <button id="mobile-menu-button" class="text-white p-2 focus:outline-none" aria-label="Open Menu" aria-expanded="false">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
         </nav>
+
+        <!-- Header Translate Dropdown -->
+        <div id="header-translate-panel" class="hidden absolute right-4 top-[68px] z-[60] bg-white rounded-xl shadow-2xl border border-slate-200 p-3" style="min-width:220px">
+            <p class="text-[10px] text-slate-400 uppercase tracking-widest font-bold mb-2 px-1">Select Language</p>
+            <div id="google_translate_element_header" class="translate-widget-header"></div>
+        </div>
 
         <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700 p-4 space-y-4 absolute w-full left-0 z-50 shadow-2xl origin-top">
             ${mobileLinks}
@@ -73,6 +90,41 @@ function renderHeader() {
             btn.setAttribute('aria-expanded', String(!isOpen));
         });
     }
+
+    // Translate panel toggle (accessible globally)
+    window.toggleHeaderTranslate = function() {
+        const panel = document.getElementById('header-translate-panel');
+        if (!panel) return;
+        panel.classList.toggle('hidden');
+        // Initialize Google Translate once
+        if (!window._translateHeaderInit) {
+            window._translateHeaderInit = true;
+            window.googleTranslateElementInit2 = function() {
+                new google.translate.TranslateElement(
+                    { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                    'google_translate_element_header'
+                );
+            };
+            const s = document.createElement('script');
+            s.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2';
+            document.body.appendChild(s);
+        }
+    };
+
+    // Close translate panel when clicking outside
+    document.addEventListener('click', function(e) {
+        const panel = document.getElementById('header-translate-panel');
+        const btn = document.getElementById('header-lang-btn');
+        if (panel && !panel.classList.contains('hidden')) {
+            if (!panel.contains(e.target) && (!btn || !btn.contains(e.target))) {
+                // Check mobile button too
+                const mobileGlobeBtns = document.querySelectorAll('[onclick="toggleHeaderTranslate()"]');
+                let clickedMobileBtn = false;
+                mobileGlobeBtns.forEach(b => { if (b.contains(e.target)) clickedMobileBtn = true; });
+                if (!clickedMobileBtn) panel.classList.add('hidden');
+            }
+        }
+    });
 }
 
 function renderFooter() {
@@ -187,10 +239,11 @@ function renderFooter() {
         <div class="bg-black py-5 border-t border-slate-800">
             <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-slate-600 uppercase tracking-wider">
                 <p>&copy; ${year} Tatvam Overseas Inc. All Rights Reserved. Designed with excellence by <strong>Tatvam Studios</strong>.</p>
-                <div class="flex gap-6">
+                <div class="flex items-center gap-6">
                     <a href="privacypolicy.html" class="hover:text-white transition-colors">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
                     <a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
+                    <a href="https://wa.me/919082834775" target="_blank" rel="noopener" title="WhatsApp" class="hover:text-white transition-colors flex items-center gap-1"><i data-lucide="message-circle" class="w-3 h-3"></i> WhatsApp</a>
                 </div>
             </div>
         </div>
