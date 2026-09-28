@@ -256,7 +256,7 @@ html_content = f"""<!DOCTYPE html>
         </div>
         <div class="header-right">
             <strong>GOVT OF INDIA REGISTERED EXPORTER</strong><br>
-            GSTIN: 27AHIPJ6958M1ZK | IEC: AHIPJ6958M<br>
+            GSTIN: 27AHIPJ6958M1ZK | IEC: AHIPJ6958M | UDYAM: UDYAM-MH-19-0338145<br>
             ISO 9001:2015 Certified | Mumbai, India
         </div>
     </div>
@@ -877,7 +877,7 @@ html_content = f"""<!DOCTYPE html>
 
     <div class="footer-bar">
         <span>Tatvam Overseas Inc | Comprehensive Technical Catalog 2025-2026</span>
-        <span>GSTIN: 27AHIPJ6958M1ZK | IEC: AHIPJ6958M | Page 6 of 6</span>
+        <span>GSTIN: 27AHIPJ6958M1ZK | IEC: AHIPJ6958M | UDYAM: UDYAM-MH-19-0338145 | Page 6 of 6</span>
     </div>
 </div>
 
