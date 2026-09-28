@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel — Tatvam Overseas Inc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --bg: #0f172a; --surface: #1e293b; --surface2: #334155;
+            --border: #334155; --emerald: #10b981; --emerald-dark: #059669;
+            --red: #ef4444; --amber: #f59e0b; --text: #f1f5f9; --text-muted: #94a3b8;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+        #login-screen { display:flex; align-items:center; justify-content:center; min-height:100vh; background:radial-gradient(ellipse at top, #1a3a2a 0%, #0f172a 60%); }
+        .login-card { background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:48px 40px; width:100%; max-width:400px; box-shadow:0 25px 50px rgba(0,0,0,0.5); }
+        .login-logo { width:56px; height:56px; background:var(--emerald); border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:28px; font-weight:900; color:white; margin:0 auto 24px; }
+        h1 { font-size:22px; font-weight:800; text-align:center; margin-bottom:6px; }
+        .login-sub { color:var(--text-muted); font-size:13px; text-align:center; margin-bottom:32px; }
+        label { display:block; font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; margin-bottom:6px; margin-top:16px; }
+        input, textarea, select { width:100%; background:var(--bg); border:1px solid var(--border); border-radius:8px; color:var(--text); font-family:'Inter',sans-serif; font-size:14px; padding:10px 14px; outline:none; transition:border-color 0.2s; }
+        input:focus, textarea:focus, select:focus { border-color:var(--emerald); box-shadow:0 0 0 3px rgba(16,185,129,0.1); }
+        textarea { resize:vertical; min-height:70px; }
+        select option { background:#1e293b; }
+        .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:11px 24px; border-radius:8px; font-size:14px; font-weight:700; border:none; cursor:pointer; transition:all 0.2s; }
+        .btn-primary { background:var(--emerald); color:white; }
+        .btn-primary:hover { background:var(--emerald-dark); transform:translateY(-1px); }
+        .btn-ghost { background:var(--surface2); color:var(--text-muted); }
+        .btn-ghost:hover { background:var(--border); color:var(--text); }
+        .btn-full { width:100%; margin-top:12px; }
+        #admin-screen { display:none; }
+        .admin-header { background:var(--surface); border-bottom:1px solid var(--border); padding:0 32px; display:flex; align-items:center; justify-content:space-between; height:64px; position:sticky; top:0; z-index:50; }
+        .admin-logo { display:flex; align-items:center; gap:12px; font-weight:800; font-size:16px; }
+        .admin-logo-icon { width:36px; height:36px; background:var(--emerald); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:900; color:white; }
+        .admin-tabs { display:flex; gap:4px; background:var(--bg); padding:4px; border-radius:10px; }
+        .tab-btn { padding:8px 20px; border-radius:7px; font-size:13px; font-weight:600; border:none; cursor:pointer; background:transparent; color:var(--text-muted); transition:all 0.2s; }
+        .tab-btn.active { background:var(--emerald); color:white; }
+        .admin-content { padding:32px; max-width:1100px; margin:0 auto; }
+        .panel { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:28px; margin-bottom:24px; }
+        .panel-title { font-size:16px; font-weight:800; margin-bottom:6px; }
+        .panel-sub { font-size:13px; color:var(--text-muted); margin-bottom:20px; padding-bottom:16px; border-bottom:1px solid var(--border); }
+        .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+        .grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
+        .output-box { background:#020617; border:1px solid var(--border); border-radius:8px; padding:20px; font-family:'Courier New',monospace; font-size:12px; line-height:1.7; color:#a3e635; white-space:pre-wrap; word-break:break-all; max-height:400px; overflow-y:auto; margin-top:16px; }
+        .alert { padding:12px 16px; border-radius:8px; font-size:13px; margin-top:12px; }
+        .alert-emerald { background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); color:#6ee7b7; }
+        .alert-amber { background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.3); color:#fcd34d; }
+        .alert-red { background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.3); color:#fca5a5; display:none; }
+        .section-tab { display:none; }
+        .section-tab.active { display:block; }
+        .sep { height:1px; background:var(--border); margin:20px 0; }
+        .copy-row { display:flex; align-items:center; justify-content:space-between; margin-top:12px; }
+        .copy-hint { font-size:12px; color:var(--text-muted); }
+        code { background:var(--bg); border:1px solid var(--border); border-radius:4px; padding:1px 6px; font-size:12px; color:var(--emerald); }
+        .step { display:flex; align-items:flex-start; gap:12px; margin-bottom:12px; font-size:13px; line-height:1.6; }
+        .step-badge { display:inline-flex; align-items:center; justify-content:center; width:24px; height:24px; background:var(--emerald); border-radius:50%; font-size:11px; font-weight:800; color:white; flex-shrink:0; }
+        .item-card { background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:12px 16px; display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:8px; }
+        .item-card-title { font-weight:700; font-size:13px; }
+        .item-card-sub { color:var(--text-muted); font-size:11px; margin-top:2px; }
+        .badge { display:inline-block; padding:2px 8px; border-radius:20px; font-size:10px; font-weight:700; text-transform:uppercase; }
+        .badge-emerald { background:rgba(16,185,129,0.15); color:var(--emerald); }
+        @media(max-width:700px){ .grid-2,.grid-3{grid-template-columns:1fr;} .admin-content{padding:16px;} .admin-header{padding:0 16px;} }
+    </style>
+</head>
+<body>
+
+<div id="login-screen">
+    <div class="login-card">
+        <div class="login-logo">T</div>
+        <h1>Admin Panel</h1>
+        <p class="login-sub">Tatvam Overseas Inc — Content Manager</p>
+        <label for="login-pass">Password</label>
+        <input type="password" id="login-pass" placeholder="Enter admin password" onkeydown="if(event.key==='Enter') doLogin()">
+        <div class="alert alert-red" id="login-error">Wrong password. Try again.</div>
+        <button class="btn btn-primary btn-full" onclick="doLogin()">Sign In →</button>
+        <p style="text-align:center;margin-top:20px;font-size:12px;color:var(--text-muted);">Default: <strong style="color:var(--emerald)">tatvam2026</strong></p>
+    </div>
+</div>
+
+<div id="admin-screen">
+    <header class="admin-header">
+        <div class="admin-logo"><div class="admin-logo-icon">T</div><span>TATVAM <span style="color:var(--emerald)">ADMIN</span></span></div>
+        <div class="admin-tabs">
+            <button class="tab-btn active" onclick="showTab('products',this)">📦 Products</button>
+            <button class="tab-btn" onclick="showTab('blogs',this)">📝 Blogs</button>
+            <button class="tab-btn" onclick="showTab('guide',this)">📖 Guide</button>
+        </div>
+        <button class="btn btn-ghost" onclick="doLogout()" style="font-size:12px;padding:8px 16px;">Sign Out</button>
+    </header>
+
+    <div class="admin-content">
+
+        <!-- PRODUCTS TAB -->
+        <div id="tab-products" class="section-tab active">
+            <div class="panel">
+                <div class="panel-title">➕ Add New Product</div>
+                <div class="panel-sub">Fill in the form → Generate Code → paste into <code>js/data.js</code></div>
+                <div class="grid-2">
+                    <div><label>Product ID (unique, no spaces)</label><input id="p-id" placeholder="e.g. ss-316l-seamless-pipe"></div>
+                    <div><label>Department</label>
+                        <select id="p-dept">
+                            <option>Stainless Steel 200</option><option>Stainless Steel 300</option>
+                            <option>Stainless Steel 400</option><option>Duplex &amp; Super Duplex</option>
+                            <option>High Nickel Alloys</option><option>Carbon Steel</option>
+                            <option>Alloy Steel</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div><label>Grade / Product Name</label><input id="p-grade" placeholder="e.g. SS 316L Seamless Pipe"></div>
+                    <div><label>Category</label>
+                        <select id="p-category">
+                            <option>Flat Products</option><option>Pipes &amp; Tubes</option>
+                            <option>Bars &amp; Rods</option><option>Fittings</option>
+                            <option>Flanges</option><option>Wire &amp; Mesh</option>
+                        </select>
+                    </div>
+                </div>
+                <div><label>Description</label><textarea id="p-desc" placeholder="Brief product description (1-2 sentences)"></textarea></div>
+                <div class="grid-2">
+                    <div><label>Available Forms (comma separated)</label><input id="p-forms" placeholder="e.g. Sheets, Plates, Coils"></div>
+                    <div><label>Image</label>
+                        <select id="p-image">
+                            <option value="assets/images/pool/sheets_2b.png">Sheets (2B Finish)</option>
+                            <option value="assets/images/pool/sheets_mirror.png">Sheets (Mirror)</option>
+                            <option value="assets/images/pool/pipes_round.png">Pipes (Round)</option>
+                            <option value="assets/images/pool/pipes_square.png">Pipes (Square)</option>
+                            <option value="assets/images/pool/rods_round.png">Rods (Round)</option>
+                            <option value="assets/images/pool/flanges.png">Flanges</option>
+                            <option value="assets/images/pool/fittings.png">Fittings</option>
+                            <option value="assets/images/pool/coils.png">Coils</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-3">
+                    <div><label>Standards</label><input id="p-standards" placeholder="e.g. ASTM A312, IS 6911"></div>
+                    <div><label>Size / Range</label><input id="p-range" placeholder="e.g. 0.5mm to 50mm"></div>
+                    <div><label>Density</label><input id="p-density" placeholder="e.g. 7.98 g/cm³"></div>
+                </div>
+                <div class="grid-2">
+                    <div><label>Pros / Advantage</label><input id="p-pros" placeholder="e.g. Excellent corrosion resistance"></div>
+                    <div><label>Cons / Limitation</label><input id="p-cons" placeholder="e.g. Higher cost than 304"></div>
+                </div>
+                <div class="sep"></div>
+                <p style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">Chemical Composition (fill only what applies)</p>
+                <div class="grid-3">
+                    <div><label>Cr %</label><input id="p-cr" placeholder="e.g. 16-18%"></div>
+                    <div><label>Ni %</label><input id="p-ni" placeholder="e.g. 10-14%"></div>
+                    <div><label>Mo %</label><input id="p-mo" placeholder="e.g. 2-3%"></div>
+                    <div><label>Mn %</label><input id="p-mn" placeholder="Optional"></div>
+                    <div><label>C %</label><input id="p-c" placeholder="Optional"></div>
+                    <div><label>Si %</label><input id="p-si" placeholder="Optional"></div>
+                </div>
+                <button class="btn btn-primary" style="margin-top:24px" onclick="generateProduct()">⚡ Generate Product Code</button>
+                <div id="product-output-area" style="display:none">
+                    <div class="copy-row">
+                        <span class="copy-hint">📋 Paste this into <code>js/data.js</code> before the closing <code>];</code></span>
+                        <button class="btn btn-ghost" onclick="copyOutput('product-output')" style="font-size:12px;padding:6px 14px">📋 Copy</button>
+                    </div>
+                    <div class="output-box" id="product-output"></div>
+                    <div class="alert alert-amber">⚠️ After pasting → <code>git add -A && git commit -m "Add product" && git push</code> → Vercel deploys in 30 sec ✅</div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-title">📋 Existing Product IDs</div>
+                <div class="panel-sub">To delete — open <code>js/data.js</code>, find the ID, delete the full <code>{...},</code> block, save &amp; push</div>
+                <div id="product-id-list"></div>
+            </div>
+        </div>
+
+        <!-- BLOGS TAB -->
+        <div id="tab-blogs" class="section-tab">
+            <div class="panel">
+                <div class="panel-title">✍️ Add New Blog Post</div>
+                <div class="panel-sub">Fill in the form → Generate Code → paste at top of <code>js/blog-data.js</code> (after <code>const blogs = [</code>)</div>
+                <div class="grid-2">
+                    <div><label>Blog ID (unique, no spaces)</label><input id="b-id" placeholder="e.g. ss-316-vs-317-comparison"></div>
+                    <div><label>Category</label>
+                        <select id="b-category">
+                            <option>Technical Guide</option><option>Market Trends</option>
+                            <option>Corrosion Science</option><option>Fabrication</option>
+                            <option>Aesthetics</option><option>Quality Assurance</option>
+                            <option>Material Science</option><option>Specialty Alloys</option>
+                            <option>Industry Focus</option><option>Basics</option>
+                            <option>Maintenance</option><option>Environment</option>
+                            <option>Architecture</option><option>Utility</option>
+                        </select>
+                    </div>
+                </div>
+                <div><label>Title</label><input id="b-title" placeholder="e.g. SS 316 vs SS 317: Which is Better for Chemical Plants?"></div>
+                <div><label>Snippet (shown on card — 2-3 sentences)</label><textarea id="b-snippet" placeholder="Brief summary of the article..."></textarea></div>
+                <div class="grid-3">
+                    <div><label>Date</label><input id="b-date" placeholder="e.g. September 28, 2026"></div>
+                    <div><label>Reading Time</label><input id="b-time" placeholder="e.g. 6 min read"></div>
+                    <div><label>Featured?</label>
+                        <select id="b-featured"><option value="false">No</option><option value="true">Yes</option></select>
+                    </div>
+                </div>
+                <div><label>Image URL</label><input id="b-image" placeholder="https://images.unsplash.com/photo-... (leave blank for default)"></div>
+                <div><label>Keywords (comma separated)</label><input id="b-keywords" placeholder="e.g. SS 316, chemical plant, corrosion"></div>
+                <div class="sep"></div>
+                <p style="font-size:13px;font-weight:700;margin-bottom:12px">Article Content</p>
+                <div><label>Introduction</label><textarea id="b-intro" rows="3" placeholder="Opening paragraph..."></textarea></div>
+                <div><label>Section 1 — Heading</label><input id="b-s1-head" placeholder="e.g. What Makes SS 316 Different?"></div>
+                <div><label>Section 1 — Body</label><textarea id="b-s1-body" rows="3" placeholder="Content..."></textarea></div>
+                <div><label>Section 2 — Heading</label><input id="b-s2-head" placeholder="e.g. Key Applications"></div>
+                <div><label>Section 2 — Body</label><textarea id="b-s2-body" rows="3" placeholder="Content..."></textarea></div>
+                <div><label>Section 3 — Heading (optional)</label><input id="b-s3-head" placeholder="e.g. Conclusion"></div>
+                <div><label>Section 3 — Body (optional)</label><textarea id="b-s3-body" rows="2" placeholder="Closing..."></textarea></div>
+                <button class="btn btn-primary" style="margin-top:24px" onclick="generateBlog()">⚡ Generate Blog Code</button>
+                <div id="blog-output-area" style="display:none">
+                    <div class="copy-row">
+                        <span class="copy-hint">📋 Paste after <code>const blogs = [</code> in <code>js/blog-data.js</code></span>
+                        <button class="btn btn-ghost" onclick="copyOutput('blog-output')" style="font-size:12px;padding:6px 14px">📋 Copy</button>
+                    </div>
+                    <div class="output-box" id="blog-output"></div>
+                    <div class="alert alert-amber">⚠️ After pasting → <code>git add -A && git commit -m "Add blog" && git push</code> → live in 30 sec ✅</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GUIDE TAB -->
+        <div id="tab-guide" class="section-tab">
+            <div class="panel">
+                <div class="panel-title">📖 How to Use This Panel</div>
+                <div class="panel-sub">Step-by-step workflow for managing website content</div>
+
+                <p style="font-size:14px;font-weight:700;color:var(--emerald);margin-bottom:12px">Adding a Product</p>
+                <div class="step"><span class="step-badge">1</span>Go to <strong>Products tab</strong> → fill all fields → click "Generate Product Code"</div>
+                <div class="step"><span class="step-badge">2</span>Click "Copy" → open <code>js/data.js</code> in VS Code</div>
+                <div class="step"><span class="step-badge">3</span>Scroll to bottom → find <code>];</code> → paste your block just before it</div>
+                <div class="step"><span class="step-badge">4</span>Save → Terminal: <code>git add -A && git commit -m "Add product" && git push</code></div>
+                <div class="step"><span class="step-badge">5</span>Vercel auto-deploys in ~30 seconds ✅</div>
+
+                <div class="sep"></div>
+                <p style="font-size:14px;font-weight:700;color:var(--emerald);margin-bottom:12px">Deleting a Product</p>
+                <div class="step"><span class="step-badge">1</span>Open <code>js/data.js</code> → Ctrl+F → search the product ID</div>
+                <div class="step"><span class="step-badge">2</span>Select the entire <code>{ ... },</code> block → delete → save → push</div>
+
+                <div class="sep"></div>
+                <p style="font-size:14px;font-weight:700;color:var(--emerald);margin-bottom:12px">Adding a Blog</p>
+                <div class="step"><span class="step-badge">1</span>Go to <strong>Blogs tab</strong> → fill details → click "Generate Blog Code"</div>
+                <div class="step"><span class="step-badge">2</span>Copy → open <code>js/blog-data.js</code> → paste right after line: <code>const blogs = [</code></div>
+                <div class="step"><span class="step-badge">3</span>Save → push to GitHub → live in 30 sec ✅</div>
+
+                <div class="sep"></div>
+                <p style="font-size:14px;font-weight:700;color:var(--emerald);margin-bottom:12px">After Domain Purchase</p>
+                <div class="step"><span class="step-badge">1</span>Get GA4 ID from <a href="https://analytics.google.com" target="_blank" style="color:var(--emerald)">analytics.google.com</a></div>
+                <div class="step"><span class="step-badge">2</span>Tell me: "Replace GA ID with G-XXXXXXXX" → I'll update all pages automatically</div>
+                <div class="step"><span class="step-badge">3</span>Point domain DNS to Vercel → add custom domain in Vercel dashboard</div>
+
+                <div class="sep"></div>
+                <div class="alert alert-emerald">🔐 <strong>Security:</strong> This file is in <code>.vercelignore</code> — it will NEVER be deployed to your live website. Only use it locally.</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+const ADMIN_PASS = 'tatvam2026';
+
+function doLogin() {
+    if (document.getElementById('login-pass').value === ADMIN_PASS) {
+        document.getElementById('login-screen').style.display = 'none';
+        document.getElementById('admin-screen').style.display = 'block';
+        loadProductIds();
+    } else {
+        document.getElementById('login-error').style.display = 'block';
+    }
+}
+function doLogout() {
+    document.getElementById('login-screen').style.display = 'flex';
+    document.getElementById('admin-screen').style.display = 'none';
+    document.getElementById('login-pass').value = '';
+}
+function showTab(name, btn) {
+    document.querySelectorAll('.section-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + name).classList.add('active');
+    btn.classList.add('active');
+}
+function loadProductIds() {
+    const c = document.getElementById('product-id-list');
+    if (typeof products !== 'undefined') {
+        c.innerHTML = products.map(p => `
+            <div class="item-card">
+                <div><div class="item-card-title">${p.grade}</div><div class="item-card-sub">ID: ${p.id} &nbsp;·&nbsp; ${p.department}</div></div>
+                <span class="badge badge-emerald">${p.category}</span>
+            </div>`).join('');
+    } else {
+        c.innerHTML = '<div class="alert alert-amber">Run via VS Code Live Server to see the product list here.</div>';
+    }
+}
+function esc(s) { return s ? s.replace(/"/g, '\\"') : ''; }
+function generateProduct() {
+    const id = document.getElementById('p-id').value.trim();
+    const grade = document.getElementById('p-grade').value.trim();
+    const desc = document.getElementById('p-desc').value.trim();
+    if (!id || !grade || !desc) { alert('Fill in: ID, Grade, and Description at minimum.'); return; }
+    const forms = document.getElementById('p-forms').value.trim().split(',').map(f => `"${f.trim()}"`).join(', ');
+    const stds = document.getElementById('p-standards').value.trim().split(',').map(s => `"${s.trim()}"`).join(', ');
+    const chemParts = [];
+    const fields = {Cr:'p-cr',Ni:'p-ni',Mo:'p-mo',Mn:'p-mn',C:'p-c',Si:'p-si'};
+    for (const [k,v] of Object.entries(fields)) { const val = document.getElementById(v).value.trim(); if(val) chemParts.push(`"${k}": "${val}"`); }
+    const code = `    {\n        id: "${id}",\n        department: "${document.getElementById('p-dept').value}",\n        grade: "${esc(grade)}",\n        image: "${document.getElementById('p-image').value}",\n        category: "${document.getElementById('p-category').value}",\n        forms: [${forms || '"Stock"'}],\n        description: "${esc(desc)}",\n        chem: { ${chemParts.join(', ')} },\n        phys: { "Density": "${document.getElementById('p-density').value.trim() || '7.90 g/cm³'}" },\n        specs: { standards: [${stds || '"Stock"'}], range: "${document.getElementById('p-range').value.trim() || 'On Request'}" },\n        pros: "${esc(document.getElementById('p-pros').value.trim())}",\n        cons: "${esc(document.getElementById('p-cons').value.trim())}"\n    },`;
+    document.getElementById('product-output').textContent = code;
+    document.getElementById('product-output-area').style.display = 'block';
+    document.getElementById('product-output-area').scrollIntoView({behavior:'smooth'});
+}
+function generateBlog() {
+    const id = document.getElementById('b-id').value.trim();
+    const title = document.getElementById('b-title').value.trim();
+    const snippet = document.getElementById('b-snippet').value.trim();
+    if (!id || !title || !snippet) { alert('Fill in: ID, Title, and Snippet at minimum.'); return; }
+    const kw = document.getElementById('b-keywords').value.trim().split(',').map(k => `"${k.trim()}"`).join(', ');
+    const img = document.getElementById('b-image').value.trim() || 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80';
+    const intro = document.getElementById('b-intro').value.trim();
+    const s1h = document.getElementById('b-s1-head').value.trim();
+    const s1b = document.getElementById('b-s1-body').value.trim();
+    const s2h = document.getElementById('b-s2-head').value.trim();
+    const s2b = document.getElementById('b-s2-body').value.trim();
+    const s3h = document.getElementById('b-s3-head').value.trim();
+    const s3b = document.getElementById('b-s3-body').value.trim();
+    let content = `<p class="text-slate-700 leading-relaxed mb-6">${intro}</p>`;
+    if(s1h) content += `<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4">${s1h}</h2><p class="text-slate-700 leading-relaxed mb-4">${s1b}</p>`;
+    if(s2h) content += `<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4">${s2h}</h2><p class="text-slate-700 leading-relaxed mb-4">${s2b}</p>`;
+    if(s3h) content += `<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4">${s3h}</h2><p class="text-slate-700 leading-relaxed mb-4">${s3b}</p>`;
+    content += '${blogCTA()}';
+    const code = `  {\n    id: "${id}",\n    category: "${document.getElementById('b-category').value}",\n    title: "${esc(title)}",\n    snippet: "${esc(snippet)}",\n    date: "${document.getElementById('b-date').value.trim() || 'September 28, 2026'}",\n    readingTime: "${document.getElementById('b-time').value.trim() || '5 min read'}",\n    featured: ${document.getElementById('b-featured').value},\n    image: "${img}",\n    keywords: [${kw || '"stainless steel"'}],\n    content: \`\n      ${content.replace(/`/g,'\\`')}\n    \`\n  },`;
+    document.getElementById('blog-output').textContent = code;
+    document.getElementById('blog-output-area').style.display = 'block';
+    document.getElementById('blog-output-area').scrollIntoView({behavior:'smooth'});
+}
+function copyOutput(id) {
+    navigator.clipboard.writeText(document.getElementById(id).textContent).then(() => {
+        const btn = event.target; const orig = btn.textContent;
+        btn.textContent = '✅ Copied!'; btn.style.color = 'var(--emerald)';
+        setTimeout(() => { btn.textContent = orig; btn.style.color = ''; }, 2000);
+    });
+}
+</script>
+</body>
+</html>
