@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 130" width="350" height="130" fill="none">
+    <defs>
+        <!-- Crimson Gradient for T & I -->
+        <linearGradient id="crimsonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f87171"/>
+            <stop offset="50%" stop-color="#ef4444"/>
+            <stop offset="100%" stop-color="#b91c1c"/>
+        </linearGradient>
+        <!-- Platinum Steel Gradient for O -->
+        <linearGradient id="steelGradCrimson" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#e2e8f0"/>
+        </linearGradient>
+        <filter id="crimsonShadow" x="-10%" y="-10%" width="125%" height="125%">
+            <feDropShadow dx="3" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.45"/>
+        </filter>
+    </defs>
+
+    <!-- T - Top Horizontal Bar -->
+    <rect x="2" y="2" width="116" height="42" rx="4" fill="url(#crimsonGrad)" filter="url(#crimsonShadow)" stroke="#7f1d1d" stroke-width="1.5"/>
+    
+    <!-- T - Bottom Vertical Stem -->
+    <rect x="36" y="52" width="48" height="74" rx="4" fill="url(#crimsonGrad)" filter="url(#crimsonShadow)" stroke="#7f1d1d" stroke-width="1.5"/>
+
+    <!-- O - Top Cap -->
+    <path d="M 126 44 L 126 22 A 22 22 0 0 1 148 2 L 272 2 A 22 22 0 0 1 294 22 L 294 44 Z" 
+          fill="url(#steelGradCrimson)" filter="url(#crimsonShadow)" stroke="#0f172a" stroke-width="2"/>
+
+    <!-- O - Bottom Trough -->
+    <path d="M 126 52 L 126 106 A 22 22 0 0 0 148 128 L 272 128 A 22 22 0 0 0 294 106 L 294 52 L 254 52 L 254 96 A 10 10 0 0 1 244 106 L 176 106 A 10 10 0 0 1 166 96 L 166 52 Z" 
+          fill="url(#steelGradCrimson)" filter="url(#crimsonShadow)" stroke="#0f172a" stroke-width="2"/>
+
+    <!-- I - Top Block -->
+    <rect x="302" y="2" width="46" height="42" rx="4" fill="url(#crimsonGrad)" filter="url(#crimsonShadow)" stroke="#7f1d1d" stroke-width="1.5"/>
+
+    <!-- I - Bottom Vertical Stem -->
+    <rect x="302" y="52" width="46" height="74" rx="4" fill="url(#crimsonGrad)" filter="url(#crimsonShadow)" stroke="#7f1d1d" stroke-width="1.5"/>
+</svg>
