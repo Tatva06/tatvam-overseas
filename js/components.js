@@ -42,9 +42,9 @@ function renderHeader() {
 
     headerEl.innerHTML = `
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Main Navigation">
-            <a href="index.html" class="text-2xl font-black text-white flex items-center gap-2 group outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded">
-                <div class="w-8 h-8 bg-emerald-600 rounded flex items-center justify-center text-white font-bold group-hover:rotate-12 transition-transform shrink-0">T</div>
-                <span class="whitespace-nowrap">TATVAM <span class="text-emerald-500">OVERSEAS INC</span></span>
+            <a href="index.html" class="text-2xl font-black text-white flex items-center gap-3 group outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded">
+                <img src="assets/images/tatvam-logo.png" alt="Tatvam Overseas Inc Logo" class="h-8 w-auto bg-white px-1.5 py-0.5 rounded shadow group-hover:scale-105 transition-transform shrink-0">
+                <span class="whitespace-nowrap tracking-tight">TATVAM <span class="text-emerald-500">OVERSEAS INC</span></span>
             </a>
 
             <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
@@ -165,13 +165,17 @@ function renderFooter() {
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 text-sm">
                 <!-- Company Info -->
                 <div class="space-y-6">
-                    <a href="index.html" class="text-2xl font-black text-white flex items-center gap-2">
-                        <div class="w-8 h-8 bg-emerald-600 rounded flex items-center justify-center text-white font-bold shrink-0">T</div>
-                        <span>TATVAM <span class="text-emerald-500">OVERSEAS INC</span></span>
+                    <a href="index.html" class="text-2xl font-black text-white flex items-center gap-3">
+                        <img src="assets/images/tatvam-logo.png" alt="Tatvam Overseas Inc Logo" class="h-8 w-auto bg-white px-1.5 py-0.5 rounded shadow shrink-0">
+                        <span class="tracking-tight">TATVAM <span class="text-emerald-500">OVERSEAS INC</span></span>
                     </a>
                     <p class="leading-relaxed text-xs text-slate-400">
                         ISO 9001:2015 certified stockist and exporter of stainless steel, carbon steel, and high nickel alloys. Serving global industries since 1992 with complete traceability and MTC certification.
                     </p>
+                    <div class="pt-2 text-[11px] text-slate-500 space-y-1">
+                        <div><strong class="text-slate-400">GSTIN:</strong> 27AHIPJ6958M1ZK</div>
+                        <div><strong class="text-slate-400">IEC:</strong> AHIPJ6958M (DGFT Govt of India)</div>
+                    </div>
                 </div>
 
                 <!-- Products -->
