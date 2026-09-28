@@ -94,6 +94,41 @@ function initHiddenGoogleTranslate() {
                 background-color: transparent !important;
                 box-shadow: none !important;
             }
+            /* Clean Guaranteed Navigation Spacing */
+            .toi-nav-links {
+                display: flex !important;
+                align-items: center !important;
+                gap: 2rem !important; /* 32px separation */
+            }
+            .toi-nav-link {
+                color: #cbd5e1 !important;
+                font-size: 0.875rem !important;
+                font-weight: 500 !important;
+                padding-bottom: 0.25rem !important;
+                border-bottom: 2px solid transparent !important;
+                transition: color 0.2s, border-color 0.2s !important;
+                text-decoration: none !important;
+                white-space: nowrap !important;
+            }
+            .toi-nav-link:hover {
+                color: #ffffff !important;
+                border-bottom-color: rgba(16, 185, 129, 0.6) !important;
+            }
+            .toi-nav-link.active {
+                color: #ffffff !important;
+                font-weight: 700 !important;
+                border-bottom-color: #10b981 !important;
+            }
+            .toi-nav-actions {
+                display: flex !important;
+                align-items: center !important;
+                gap: 1.25rem !important;
+            }
+            @media (max-width: 1024px) {
+                .toi-nav-links {
+                    gap: 1.25rem !important;
+                }
+            }
         `;
         document.head.appendChild(style);
 
@@ -185,7 +220,7 @@ function renderHeader() {
     ];
 
     const desktopLinks = navLinks.map(l => `
-        <a href="${l.href}" class="nav-link hover:text-white transition-colors pb-1 border-b-2 border-transparent hover:border-emerald-500/50 ${currentPage === l.href ? 'text-white border-emerald-500 font-bold' : ''}">${l.label}</a>
+        <a href="${l.href}" class="toi-nav-link ${currentPage === l.href ? 'active' : ''}">${l.label}</a>
     `).join('');
 
     const mobileLinks = navLinks.map(l => `
@@ -220,7 +255,8 @@ function renderHeader() {
 
     headerEl.innerHTML = `
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Main Navigation">
-            <a href="index.html" class="flex items-center gap-3.5 group outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3.5 group outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded shrink-0">
                 <img src="assets/images/tatvam-logo.svg" alt="Tatvam Overseas Inc Logo" class="h-9 w-auto group-hover:scale-105 transition-transform shrink-0 drop-shadow">
                 <div class="flex flex-col leading-none">
                     <span class="text-xl font-black text-white tracking-wider">TATVAM</span>
@@ -228,14 +264,18 @@ function renderHeader() {
                 </div>
             </a>
 
-            <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
+            <!-- Center Navigation Links (With Guaranteed 32px Gap) -->
+            <div class="hidden md:flex toi-nav-links">
                 ${desktopLinks}
+            </div>
 
+            <!-- Right Actions: Language Selector + Get Quote Button -->
+            <div class="hidden md:flex toi-nav-actions">
                 <!-- Premium Language Picker Dropdown -->
                 <div class="relative" id="header-lang-wrapper">
-                    <button id="header-lang-btn" onclick="toggleHeaderTranslate(event)" title="Change Language" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/90 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700/70 text-xs font-medium transition-all shadow-sm cursor-pointer" aria-label="Change Language" aria-expanded="false" aria-haspopup="true">
+                    <button id="header-lang-btn" onclick="toggleHeaderTranslate(event)" type="button" title="Change Language" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/90 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 text-xs font-semibold transition-all shadow-sm cursor-pointer" aria-label="Change Language" aria-expanded="false" aria-haspopup="true">
                         <span id="header-active-flag" class="text-sm leading-none">${currentLang.flag}</span>
-                        <span id="header-active-label" class="font-semibold">${currentLang.native}</span>
+                        <span id="header-active-label" class="text-xs font-semibold">${currentLang.native}</span>
                         <i data-lucide="chevron-down" class="w-3 h-3 text-slate-400"></i>
                     </button>
 
@@ -247,18 +287,18 @@ function renderHeader() {
                             </span>
                             <span class="text-[10px] text-emerald-400 font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">Global Exporter</span>
                         </div>
-                        <div class="py-1 max-h-72 overflow-y-auto space-y-0.5" id="desktop-lang-list">
+                        <div class="py-1 max-h-72 overflow-y-auto space-y-0.5">
                             ${desktopLangOptions}
                         </div>
                     </div>
                 </div>
 
-                <a href="contact.html" class="nav-link-btn bg-white text-emerald-900 px-5 py-2 rounded-full font-bold hover:bg-emerald-50 transition-all shadow-lg transform hover:-translate-y-0.5">Get Quote</a>
+                <a href="contact.html" class="nav-link-btn bg-white text-emerald-900 px-5 py-2 rounded-full font-bold hover:bg-emerald-50 transition-all shadow-lg transform hover:-translate-y-0.5 text-sm whitespace-nowrap">Get Quote</a>
             </div>
 
+            <!-- Mobile Trigger & Globe -->
             <div class="flex items-center gap-2 md:hidden">
-                <!-- Mobile Language Toggle Button -->
-                <button id="header-lang-btn-mobile" onclick="toggleHeaderTranslate(event)" title="Change Language" class="flex items-center gap-1.5 text-slate-300 hover:text-white p-2 rounded-lg bg-slate-800/80 border border-slate-700/60" aria-label="Change Language">
+                <button id="header-lang-btn-mobile" onclick="toggleHeaderTranslate(event)" type="button" title="Change Language" class="flex items-center gap-1.5 text-slate-300 hover:text-white p-2 rounded-lg bg-slate-800/80 border border-slate-700/60" aria-label="Change Language">
                     <span class="text-sm">${currentLang.flag}</span>
                     <i data-lucide="globe" class="w-4 h-4 text-emerald-400"></i>
                 </button>
