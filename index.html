@@ -164,43 +164,7 @@
     <!-- Skip Navigation -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Preloader -->
-    <div id="preloader"
-        class="fixed inset-0 z-[9999] flex items-center justify-center transition-opacity duration-700"
-        style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0f2417 100%);"
-        aria-hidden="true">
-        <!-- Animated background grid -->
-        <div class="absolute inset-0 overflow-hidden opacity-10" aria-hidden="true">
-            <div style="background-image: linear-gradient(#10b981 1px, transparent 1px), linear-gradient(90deg, #10b981 1px, transparent 1px); background-size: 40px 40px; width:100%; height:100%; animation: gridPan 8s linear infinite;"></div>
-        </div>
 
-        <div class="text-center relative z-10 px-8">
-            <!-- Logo mark -->
-            <div class="flex items-center justify-center gap-3 mb-6" style="animation: fadeSlideUp 0.5s ease both;">
-                <div class="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-2xl" style="animation: pulse 2s ease-in-out infinite;">T</div>
-                <div class="text-left">
-                    <div class="text-white font-black text-2xl tracking-tight leading-none">TATVAM</div>
-                    <div class="text-emerald-400 font-black text-2xl tracking-tight leading-none">OVERSEAS INC</div>
-                </div>
-            </div>
-
-            <!-- Tagline -->
-            <p class="text-slate-400 text-sm tracking-widest uppercase mb-8" style="animation: fadeSlideUp 0.5s 0.2s ease both; opacity:0;">ISO 9001:2015 · Since 1992 · Mumbai</p>
-
-            <!-- Steel bar progress animation -->
-            <div class="w-64 mx-auto">
-                <div class="h-1 bg-slate-700 rounded-full overflow-hidden">
-                    <div id="preloader-bar" class="h-full bg-emerald-500 rounded-full" style="width:0%; transition: width 0.1s linear; box-shadow: 0 0 12px #10b981;"></div>
-                </div>
-                <p class="text-emerald-500/60 text-[10px] font-bold uppercase tracking-widest mt-3" id="preloader-status">Loading inventory...</p>
-            </div>
-        </div>
-
-        <style>
-            @keyframes gridPan { from { transform: translate(0,0); } to { transform: translate(40px, 40px); } }
-            @keyframes fadeSlideUp { from { opacity:0; transform: translateY(12px); } to { opacity:1; transform: translateY(0); } }
-        </style>
-    </div>
 
     <!-- Header (rendered by components.js) -->
     <header id="site-header" class="sticky top-0 z-50 bg-slate-900 shadow-xl transition-all duration-300" role="banner">
@@ -212,19 +176,7 @@
         <!-- HERO SECTION -->
         <!-- ══════════════════════════════════════════════ -->
         <section class="hero-slider relative h-[85vh] lg:h-[90vh] overflow-hidden bg-slate-900" aria-label="Hero">
-            <!-- Animated floating particles -->
-            <div class="absolute inset-0 z-[1] pointer-events-none overflow-hidden" aria-hidden="true">
-                <span class="absolute w-2 h-2 rounded-full bg-emerald-500/40 animate-ping"
-                    style="top:15%;left:10%;animation-delay:0s;animation-duration:3s"></span>
-                <span class="absolute w-1 h-1 rounded-full bg-teal-400/30 animate-ping"
-                    style="top:35%;left:25%;animation-delay:1s;animation-duration:4s"></span>
-                <span class="absolute w-2 h-2 rounded-full bg-emerald-400/20 animate-ping"
-                    style="top:60%;left:75%;animation-delay:2s;animation-duration:5s"></span>
-                <span class="absolute w-1 h-1 rounded-full bg-cyan-300/30 animate-ping"
-                    style="top:80%;left:50%;animation-delay:0.5s;animation-duration:3.5s"></span>
-                <span class="absolute w-2 h-2 rounded-full bg-emerald-500/20 animate-ping"
-                    style="top:25%;left:85%;animation-delay:1.5s;animation-duration:4.5s"></span>
-            </div>
+
 
             <div class="slide active"
                 style="background-image: url('images/tatvamoverseasinc-warehouse-stock.jpg?v=2'); background-size:cover; background-position:center;">
@@ -264,20 +216,18 @@
                             </a>
                         </div>
 
-                        <!-- Trust icons below CTAs -->
+                        <!-- Trust indicators -->
                         <div class="flex flex-wrap items-center gap-6 pt-2 text-slate-400 text-xs font-semibold"
                             data-aos="fade-up" data-aos-delay="200">
                             <span class="flex items-center gap-1.5"><i data-lucide="shield-check"
                                     class="w-4 h-4 text-emerald-400"></i> ISO 9001:2015</span>
                             <span class="flex items-center gap-1.5"><i data-lucide="file-check"
-                                    class="w-4 h-4 text-emerald-400"></i> MTC Guaranteed</span>
+                                    class="w-4 h-4 text-emerald-400"></i> MTC EN 10204 3.1</span>
                             <span class="flex items-center gap-1.5"><i data-lucide="globe"
-                                    class="w-4 h-4 text-emerald-400"></i> 15+ Countries</span>
-                            <span class="flex items-center gap-1.5"><i data-lucide="users"
-                                    class="w-4 h-4 text-emerald-400"></i> 500+ Industrial Buyers</span>
+                                    class="w-4 h-4 text-emerald-400"></i> Export to 15+ Countries</span>
+                            <span class="flex items-center gap-1.5"><i data-lucide="calendar"
+                                    class="w-4 h-4 text-emerald-400"></i> Est. 1992</span>
                         </div>
-                        <p class="text-slate-500 text-xs font-medium tracking-wider uppercase" data-aos="fade-up"
-                            data-aos-delay="250">Trusted by Industrial Buyers Worldwide</p>
                     </div>
                 </div>
             </div>
@@ -679,19 +629,19 @@
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center" data-aos="fade-up">
                     <div class="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
                         <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">700+</div>
-                        <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Tons in Stock</div>
+                        <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Tons Ready Stock</div>
                     </div>
                     <div class="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
                         <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">150+</div>
                         <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Product Grades</div>
                     </div>
                     <div class="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-                        <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">5000+</div>
-                        <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Satisfied Clients</div>
+                        <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">32+</div>
+                        <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Years in Business</div>
                     </div>
                     <div class="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-                        <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">24-48h</div>
-                        <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Dispatch Time</div>
+                        <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">Same Day</div>
+                        <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Dispatch Available</div>
                     </div>
                 </div>
             </div>
@@ -800,72 +750,51 @@
                             </div>
                             <div class="grid grid-cols-3 gap-3 text-center">
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-emerald-400 font-black text-xl">🇦🇪</div>
-                                    <div class="text-white text-xs font-bold mt-1">UAE</div>
+                                    <div class="text-white text-xs font-bold">UAE</div>
                                 </div>
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-emerald-400 font-black text-xl">🇸🇦</div>
-                                    <div class="text-white text-xs font-bold mt-1">Saudi Arabia</div>
+                                    <div class="text-white text-xs font-bold">Saudi Arabia</div>
                                 </div>
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-emerald-400 font-black text-xl">🇴🇲</div>
-                                    <div class="text-white text-xs font-bold mt-1">Oman</div>
+                                    <div class="text-white text-xs font-bold">Oman</div>
                                 </div>
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-emerald-400 font-black text-xl">🇰🇪</div>
-                                    <div class="text-white text-xs font-bold mt-1">Kenya</div>
+                                    <div class="text-white text-xs font-bold">Kenya</div>
                                 </div>
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-emerald-400 font-black text-xl">🇳🇬</div>
-                                    <div class="text-white text-xs font-bold mt-1">Nigeria</div>
+                                    <div class="text-white text-xs font-bold">Nigeria</div>
                                 </div>
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-emerald-400 font-black text-xl">🇻🇳</div>
-                                    <div class="text-white text-xs font-bold mt-1">Vietnam</div>
+                                    <div class="text-white text-xs font-bold">Vietnam</div>
                                 </div>
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-emerald-400 font-black text-xl">🇲🇾</div>
-                                    <div class="text-white text-xs font-bold mt-1">Malaysia</div>
+                                    <div class="text-white text-xs font-bold">Malaysia</div>
                                 </div>
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-emerald-400 font-black text-xl">🇿🇦</div>
-                                    <div class="text-white text-xs font-bold mt-1">South Africa</div>
+                                    <div class="text-white text-xs font-bold">South Africa</div>
                                 </div>
-                                <button id="show-more-countries" onclick="toggleMoreCountries()"
-                                    class="bg-emerald-600/20 rounded-xl p-3 border border-emerald-600/40 flex items-center justify-center cursor-pointer hover:bg-emerald-600/40 transition-all group" aria-expanded="false">
-                                    <div class="text-emerald-400 font-black text-sm group-hover:scale-110 transition-transform" id="more-label">+7 more</div>
-                                </button>
+                                <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
+                                    <div class="text-white text-xs font-bold">Qatar</div>
+                                </div>
                             </div>
-
-                            <!-- Hidden extra countries (revealed on click) -->
-                            <div id="extra-countries" class="grid grid-cols-3 gap-3 text-center overflow-hidden transition-all duration-500" style="max-height:0; opacity:0; margin-top:0;">
+                            <div class="grid grid-cols-3 gap-3 text-center mt-3">
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-xl">🇧🇭</div>
-                                    <div class="text-white text-xs font-bold mt-1">Bahrain</div>
+                                    <div class="text-white text-xs font-bold">Bahrain</div>
                                 </div>
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-xl">🇶🇦</div>
-                                    <div class="text-white text-xs font-bold mt-1">Qatar</div>
+                                    <div class="text-white text-xs font-bold">Kuwait</div>
                                 </div>
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-xl">🇰🇼</div>
-                                    <div class="text-white text-xs font-bold mt-1">Kuwait</div>
+                                    <div class="text-white text-xs font-bold">Tanzania</div>
                                 </div>
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-xl">🇹🇿</div>
-                                    <div class="text-white text-xs font-bold mt-1">Tanzania</div>
+                                    <div class="text-white text-xs font-bold">Singapore</div>
                                 </div>
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-xl">🇸🇬</div>
-                                    <div class="text-white text-xs font-bold mt-1">Singapore</div>
+                                    <div class="text-white text-xs font-bold">Australia</div>
                                 </div>
                                 <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-xl">🇦🇺</div>
-                                    <div class="text-white text-xs font-bold mt-1">Australia</div>
-                                </div>
-                                <div class="bg-slate-800 rounded-xl p-3 border border-slate-700">
-                                    <div class="text-xl">🇮🇩</div>
-                                    <div class="text-white text-xs font-bold mt-1">Indonesia</div>
+                                    <div class="text-white text-xs font-bold">Indonesia</div>
                                 </div>
                             </div>
                         </div>
@@ -884,28 +813,28 @@
                         <span class="text-emerald-600 font-bold tracking-widest text-xs uppercase">Since 1992</span>
                         <h2 id="about-heading"
                             class="text-3xl md:text-4xl font-black text-slate-900 mt-2 mb-6 leading-tight">
-                            Built on Integrity.<br>
-                            <span class="text-emerald-600">Forged in Steel.</span>
+                            Three Generations.<br>
+                            <span class="text-emerald-600">One Commitment to Quality.</span>
                         </h2>
                         <p class="text-slate-600 leading-relaxed mb-4">
                             Established in <strong>1992</strong> (formerly Nagmani Metal Corporation), <strong>Tatvam
-                                Overseas Inc</strong> is a 3rd-generation family business led by <strong>Mr. Champalal
-                                Jain</strong>. For over three decades, we've been bridging the gap between premium
-                            global mills and Indian industries.
+                                Overseas Inc</strong> is a family business led by <strong>Mr. Champalal
+                                Jain</strong>. For over three decades, we have supplied stainless steel and specialty
+                            alloys to industries across India and abroad.
                         </p>
                         <p class="text-slate-600 leading-relaxed mb-6">
-                            From our 10,000 sq ft warehouse in Mumbai's industrial heart (Kalbadevi), we serve oil
-                            refineries, pharmaceutical plants, chemical processors, food factories, and construction
-                            companies across India and 15+ export destinations.
+                            We operate from a warehouse in Kalbadevi, Mumbai, supplying oil refineries, pharmaceutical
+                            plants, chemical processors, food manufacturers, and construction companies across
+                            India and 15+ export destinations.
                         </p>
                         <div class="grid grid-cols-3 gap-6 mb-8">
                             <div>
                                 <h4 class="text-4xl font-black text-emerald-600 mb-1">32+</h4>
-                                <p class="text-xs font-bold uppercase text-slate-500 tracking-wide">Years Experience</p>
+                                <p class="text-xs font-bold uppercase text-slate-500 tracking-wide">Years in Business</p>
                             </div>
                             <div>
-                                <h4 class="text-4xl font-black text-emerald-600 mb-1">5000+</h4>
-                                <p class="text-xs font-bold uppercase text-slate-500 tracking-wide">Tons Traded/Year</p>
+                                <h4 class="text-4xl font-black text-emerald-600 mb-1">700+</h4>
+                                <p class="text-xs font-bold uppercase text-slate-500 tracking-wide">Tons Ready Stock</p>
                             </div>
                             <div>
                                 <h4 class="text-4xl font-black text-emerald-600 mb-1">100%</h4>
@@ -1210,7 +1139,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             if (typeof AOS !== 'undefined') AOS.init({ duration: 700, offset: 40, once: true });
             if (typeof lucide !== 'undefined') lucide.createIcons();
-            if (typeof initExitIntent === 'function') initExitIntent();
+            // Exit intent removed — dark pattern
         });
 
         // Toggle extra export countries
