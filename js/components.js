@@ -102,11 +102,11 @@ function initHiddenGoogleTranslate() {
             .toi-nav-link {
                 display: flex !important;
                 align-items: center !important;
-                padding: 0 1.1rem !important;
-                color: #94a3b8 !important;
-                font-size: 0.875rem !important;
-                font-weight: 500 !important;
-                letter-spacing: 0.03em !important;
+                padding: 0 1.25rem !important;
+                color: #cbd5e1 !important;
+                font-size: 0.95rem !important;
+                font-weight: 600 !important;
+                letter-spacing: 0.04em !important;
                 border-bottom: 3px solid transparent !important;
                 border-top: 3px solid transparent !important;
                 transition: color 0.18s, border-color 0.18s, background-color 0.15s !important;
@@ -257,7 +257,7 @@ function renderHeader() {
         <!-- ═══════════════════════════════════════════════════ -->
         <!-- TOP BAR: White — Logo + Company Name + Contact     -->
         <!-- ═══════════════════════════════════════════════════ -->
-        <div class="bg-white border-b border-slate-100">
+        <div class="bg-white border-b border-slate-100 relative z-20">
             <div class="container mx-auto px-6 py-3 flex items-center justify-between gap-4">
 
                 <!-- Brand: Original Logo + Name -->
@@ -278,33 +278,59 @@ function renderHeader() {
                     </div>
                 </a>
 
-                <!-- Desktop contact info -->
-                <div class="hidden lg:flex items-center divide-x divide-slate-200 shrink-0">
-                    <a href="tel:+919082834775"
-                       class="flex items-center gap-2.5 pr-6 group hover:opacity-75 transition-opacity">
-                        <div class="w-8 h-8 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 group-hover:bg-emerald-500 group-hover:border-emerald-500 transition-colors">
-                            <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-600 group-hover:text-white transition-colors"></i>
+                <!-- Desktop contact info & Language -->
+                <div class="hidden lg:flex items-center gap-8 shrink-0">
+                    
+                    <!-- Language Globe moved to white bar -->
+                    <div class="relative" id="header-lang-wrapper">
+                        <button id="header-lang-btn" onclick="toggleHeaderTranslate(event)" type="button"
+                            class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-600 hover:text-slate-900 border border-slate-200 text-sm font-bold transition-all cursor-pointer shadow-sm"
+                            aria-label="Change Language" aria-expanded="false" aria-haspopup="true" translate="no">
+                            <span id="header-active-flag" class="text-base leading-none" translate="no">${currentLang.flag}</span>
+                            <i data-lucide="globe" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                        </button>
+                        <!-- Language Dropdown -->
+                        <div id="header-translate-panel" class="hidden absolute right-0 top-full mt-2 w-72 bg-slate-900/98 backdrop-blur-xl border border-slate-700/80 shadow-2xl rounded-2xl p-2 z-[100] ring-1 ring-black/50">
+                            <div class="px-3 py-2 border-b border-slate-800 flex items-center justify-between">
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                                    <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400"></i> Select Language
+                                </span>
+                                <span class="text-[10px] text-emerald-400 font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">Global Exporter</span>
+                            </div>
+                            <div class="py-1 max-h-72 overflow-y-auto space-y-0.5">
+                                ${desktopLangOptions}
+                            </div>
                         </div>
-                        <div>
-                            <div class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold leading-none mb-0.5">Call / WhatsApp</div>
-                            <div class="text-sm font-bold text-slate-700 leading-none">+91 90828 34775</div>
-                        </div>
-                    </a>
-                    <a href="mailto:sales@tatvamoverseasinc.com"
-                       class="flex items-center gap-2.5 pl-6 group hover:opacity-75 transition-opacity">
-                        <div class="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0 group-hover:bg-slate-700 group-hover:border-slate-700 transition-colors">
-                            <i data-lucide="mail" class="w-3.5 h-3.5 text-slate-500 group-hover:text-white transition-colors"></i>
-                        </div>
-                        <div>
-                            <div class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold leading-none mb-0.5">Email</div>
-                            <div class="text-sm font-bold text-slate-700 leading-none">sales@tatvamoverseasinc.com</div>
-                        </div>
-                    </a>
+                    </div>
+
+                    <!-- Contact details -->
+                    <div class="flex items-center gap-6 pl-6 border-l border-slate-200">
+                        <a href="https://wa.me/919082834775" target="_blank" rel="noopener"
+                           class="flex items-center gap-2.5 group hover:opacity-80 transition-opacity">
+                            <div class="w-10 h-10 rounded-full bg-green-50 border border-green-100 flex items-center justify-center shrink-0 group-hover:bg-green-500 group-hover:border-green-500 transition-colors">
+                                <i data-lucide="message-circle" class="w-4 h-4 text-green-600 group-hover:text-white transition-colors"></i>
+                            </div>
+                            <div>
+                                <div class="text-[10px] text-slate-500 uppercase tracking-widest font-bold leading-none mb-1">WhatsApp</div>
+                                <div class="text-sm font-black text-slate-800 leading-none tracking-wide">+91 90828 34775</div>
+                            </div>
+                        </a>
+                        <a href="tel:+919082834775"
+                           class="flex items-center gap-2.5 group hover:opacity-80 transition-opacity">
+                            <div class="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 group-hover:bg-emerald-600 group-hover:border-emerald-600 transition-colors">
+                                <i data-lucide="phone-call" class="w-4 h-4 text-emerald-600 group-hover:text-white transition-colors"></i>
+                            </div>
+                            <div>
+                                <div class="text-[10px] text-slate-500 uppercase tracking-widest font-bold leading-none mb-1">Call Us</div>
+                                <div class="text-sm font-black text-slate-800 leading-none tracking-wide">+91 90828 34775</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Mobile: quick call link -->
-                <a href="tel:+919082834775" class="lg:hidden flex items-center gap-1.5 text-emerald-600 font-bold text-xs shrink-0">
-                    <i data-lucide="phone" class="w-3.5 h-3.5"></i> Call Us
+                <a href="https://wa.me/919082834775" target="_blank" class="lg:hidden flex items-center gap-1.5 text-green-600 font-bold text-sm shrink-0 bg-green-50 px-3 py-1.5 rounded-full border border-green-100">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
                 </a>
             </div>
         </div>
@@ -312,59 +338,37 @@ function renderHeader() {
         <!-- ═══════════════════════════════════════════════════ -->
         <!-- BOTTOM NAV BAR: Dark — Navigation Links + CTA      -->
         <!-- ═══════════════════════════════════════════════════ -->
-        <nav class="bg-slate-900 border-t border-slate-800" aria-label="Main Navigation">
-            <div class="container mx-auto px-6">
-                <div class="flex items-stretch h-12">
+        <nav class="bg-slate-900 border-t border-slate-800 shadow-lg relative z-10" aria-label="Main Navigation">
+            <div class="container mx-auto px-0 md:px-6"> <!-- Full bleed on desktop for the slanted edge -->
+                <div class="flex items-stretch h-14 md:h-16 w-full"> <!-- Increased height to h-16 (64px) on desktop -->
 
-                    <!-- Desktop Nav Links — uppercase, full-height, emerald underline -->
-                    <div class="hidden md:flex toi-nav-bar" translate="no">
+                    <!-- Mobile: Hamburger Menu (Left) -->
+                    <div class="flex items-center md:hidden px-4">
+                        <button id="mobile-menu-button" class="text-white p-2 focus:outline-none bg-slate-800 rounded border border-slate-700" aria-label="Open Menu" aria-expanded="false">
+                            <i data-lucide="menu" class="w-6 h-6"></i>
+                        </button>
+                    </div>
+
+                    <!-- Desktop Nav Links — pushed to the right via ml-auto -->
+                    <div class="hidden md:flex toi-nav-bar ml-auto pr-8" translate="no">
                         ${desktopLinks}
                     </div>
 
-                    <!-- Right side: Language + Get Quote CTA -->
-                    <div class="hidden md:flex items-center gap-2 ml-auto">
-
-                        <!-- Language Globe -->
-                        <div class="relative" id="header-lang-wrapper">
-                            <button id="header-lang-btn" onclick="toggleHeaderTranslate(event)" type="button"
-                                class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white border border-slate-700 text-xs transition-all cursor-pointer"
-                                aria-label="Change Language" aria-expanded="false" aria-haspopup="true" translate="no">
-                                <span id="header-active-flag" class="text-sm leading-none" translate="no">${currentLang.flag}</span>
-                                <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                            </button>
-                            <!-- Language Dropdown -->
-                            <div id="header-translate-panel" class="hidden absolute right-0 top-full mt-2 w-72 bg-slate-900/98 backdrop-blur-xl border border-slate-700/80 shadow-2xl rounded-2xl p-2 z-[100] ring-1 ring-black/50">
-                                <div class="px-3 py-2 border-b border-slate-800 flex items-center justify-between">
-                                    <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-                                        <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400"></i> Select Language
-                                    </span>
-                                    <span class="text-[10px] text-emerald-400 font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">Global Exporter</span>
-                                </div>
-                                <div class="py-1 max-h-72 overflow-y-auto space-y-0.5">
-                                    ${desktopLangOptions}
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Get Quote — spans full nav bar height -->
+                    <!-- Get Quote CTA (Slanted cut style) -->
+                    <div class="hidden md:flex items-stretch">
                         <a href="contact.html" translate="no"
-                           class="self-stretch flex items-center gap-2 px-7 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm tracking-wide uppercase transition-all whitespace-nowrap border-l border-emerald-700">
+                           class="self-stretch flex items-center gap-2.5 px-10 bg-emerald-600 hover:bg-emerald-500 text-white font-black text-[15px] tracking-[0.1em] uppercase transition-colors"
+                           style="clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%); margin-left: -20px;">
                             Get Quote
-                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
-
-                    <!-- Mobile: Globe + Hamburger -->
-                    <div class="flex items-center gap-2 md:hidden w-full justify-end">
-                        <button id="header-lang-btn-mobile" onclick="toggleHeaderTranslate(event)" type="button"
-                            class="flex items-center gap-1 text-slate-400 hover:text-white p-2 rounded-lg bg-slate-800 border border-slate-700"
-                            aria-label="Change Language" translate="no">
-                            <span class="text-sm" translate="no">${currentLang.flag}</span>
-                            <i data-lucide="globe" class="w-4 h-4 text-emerald-400"></i>
-                        </button>
-                        <button id="mobile-menu-button" class="text-white p-2 focus:outline-none" aria-label="Open Menu" aria-expanded="false">
-                            <i data-lucide="menu" class="w-6 h-6"></i>
-                        </button>
+                    
+                    <!-- Mobile: Get Quote -->
+                    <div class="flex items-center md:hidden ml-auto">
+                         <a href="contact.html" translate="no" class="self-stretch flex items-center bg-emerald-600 text-white font-bold px-6 text-sm uppercase tracking-wider" style="clip-path: polygon(15px 0, 100% 0, 100% 100%, 0 100%);">
+                            Get Quote
+                         </a>
                     </div>
 
                 </div>
