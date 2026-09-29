@@ -220,11 +220,11 @@ function renderHeader() {
     ];
 
     const desktopLinks = navLinks.map(l => `
-        <a href="${l.href}" class="toi-nav-link ${currentPage === l.href ? 'active' : ''}">${l.label}</a>
+        <a href="${l.href}" class="toi-nav-link ${currentPage === l.href ? 'active' : ''}" translate="no">${l.label}</a>
     `).join('');
 
     const mobileLinks = navLinks.map(l => `
-        <a href="${l.href}" class="mobile-link block text-slate-300 hover:text-white hover:bg-slate-700 px-3 py-2 rounded transition-colors ${currentPage === l.href ? 'text-white bg-slate-700 font-bold border-l-4 border-emerald-500' : ''}">${l.label}</a>
+        <a href="${l.href}" class="mobile-link block text-slate-300 hover:text-white hover:bg-slate-700 px-3 py-2 rounded transition-colors ${currentPage === l.href ? 'text-white bg-slate-700 font-bold border-l-4 border-emerald-500' : ''}" translate="no">${l.label}</a>
     `).join('');
 
     const desktopLangOptions = SUPPORTED_LANGUAGES.map(l => {
@@ -254,32 +254,36 @@ function renderHeader() {
     }).join('');
 
     headerEl.innerHTML = `
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Main Navigation">
-            <!-- Brand Logo -->
-            <a href="index.html" class="flex items-center gap-3.5 group outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded shrink-0">
-                <img src="assets/images/tatvam-logo.svg" alt="Tatvam Overseas Inc Logo" class="h-9 w-auto group-hover:scale-105 transition-transform shrink-0 drop-shadow">
-                <div class="flex flex-col leading-none">
-                    <span class="text-xl font-black text-white tracking-wider">TATVAM</span>
-                    <span class="text-[10px] font-extrabold text-emerald-400 tracking-[0.24em] uppercase mt-1">OVERSEAS INC</span>
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between" aria-label="Main Navigation">
+
+            <!-- LEFT: Brand Logo — never translate brand identity -->
+            <a href="index.html" translate="no" class="flex items-center gap-3 group outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded shrink-0" aria-label="Tatvam Overseas Inc Home">
+                <img src="assets/images/tatvam-logo.svg" alt="Tatvam Overseas Inc Logo" class="h-9 w-auto group-hover:scale-105 transition-transform shrink-0 drop-shadow" translate="no">
+                <div class="flex flex-col leading-none" translate="no">
+                    <span class="text-xl font-black text-white tracking-wider" translate="no">TATVAM</span>
+                    <span class="text-[10px] font-extrabold text-emerald-400 tracking-[0.24em] uppercase mt-1" translate="no">OVERSEAS INC</span>
                 </div>
             </a>
 
-            <!-- Center Navigation Links (With Guaranteed 32px Gap) -->
-            <div class="hidden md:flex toi-nav-links">
+            <!-- CENTER: Nav Links (desktop only) — never translate nav labels -->
+            <div class="hidden md:flex toi-nav-links" translate="no">
                 ${desktopLinks}
             </div>
 
-            <!-- Right Actions: Language Selector + Get Quote Button -->
-            <div class="hidden md:flex toi-nav-actions">
-                <!-- Premium Language Picker Dropdown -->
+            <!-- RIGHT: Get Quote CTA + Language Selector (desktop) -->
+            <div class="hidden md:flex items-center gap-3 shrink-0">
+                <a href="contact.html" class="bg-white text-emerald-900 px-5 py-2 rounded-full font-bold hover:bg-emerald-50 transition-all shadow-lg transform hover:-translate-y-0.5 text-sm whitespace-nowrap" translate="no">Get Quote</a>
+
+                <!-- Language Picker — far right corner -->
                 <div class="relative" id="header-lang-wrapper">
-                    <button id="header-lang-btn" onclick="toggleHeaderTranslate(event)" type="button" title="Change Language" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/90 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 text-xs font-semibold transition-all shadow-sm cursor-pointer" aria-label="Change Language" aria-expanded="false" aria-haspopup="true">
-                        <span id="header-active-flag" class="text-sm leading-none">${currentLang.flag}</span>
-                        <span id="header-active-label" class="text-xs font-semibold">${currentLang.native}</span>
-                        <i data-lucide="chevron-down" class="w-3 h-3 text-slate-400"></i>
+                    <button id="header-lang-btn" onclick="toggleHeaderTranslate(event)" type="button"
+                        class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700/80 text-xs transition-all cursor-pointer"
+                        aria-label="Change Language" aria-expanded="false" aria-haspopup="true" translate="no">
+                        <span id="header-active-flag" class="text-sm leading-none" translate="no">${currentLang.flag}</span>
+                        <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
                     </button>
 
-                    <!-- Dropdown Panel (Positioned pixel-perfectly under button) -->
+                    <!-- Language Dropdown Panel -->
                     <div id="header-translate-panel" class="hidden absolute right-0 top-full mt-2 w-72 bg-slate-900/98 backdrop-blur-xl border border-slate-700/80 shadow-2xl rounded-2xl p-2 z-[100] ring-1 ring-black/50">
                         <div class="px-3 py-2 border-b border-slate-800 flex items-center justify-between">
                             <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
@@ -292,14 +296,14 @@ function renderHeader() {
                         </div>
                     </div>
                 </div>
-
-                <a href="contact.html" class="nav-link-btn bg-white text-emerald-900 px-5 py-2 rounded-full font-bold hover:bg-emerald-50 transition-all shadow-lg transform hover:-translate-y-0.5 text-sm whitespace-nowrap">Get Quote</a>
             </div>
 
-            <!-- Mobile Trigger & Globe -->
+            <!-- MOBILE: Globe + Hamburger -->
             <div class="flex items-center gap-2 md:hidden">
-                <button id="header-lang-btn-mobile" onclick="toggleHeaderTranslate(event)" type="button" title="Change Language" class="flex items-center gap-1.5 text-slate-300 hover:text-white p-2 rounded-lg bg-slate-800/80 border border-slate-700/60" aria-label="Change Language">
-                    <span class="text-sm">${currentLang.flag}</span>
+                <button id="header-lang-btn-mobile" onclick="toggleHeaderTranslate(event)" type="button"
+                    class="flex items-center gap-1 text-slate-300 hover:text-white p-2 rounded-lg bg-slate-800/80 border border-slate-700/60"
+                    aria-label="Change Language" translate="no">
+                    <span class="text-sm" translate="no">${currentLang.flag}</span>
                     <i data-lucide="globe" class="w-4 h-4 text-emerald-400"></i>
                 </button>
                 <button id="mobile-menu-button" class="text-white p-2 focus:outline-none" aria-label="Open Menu" aria-expanded="false">
