@@ -94,40 +94,36 @@ function initHiddenGoogleTranslate() {
                 background-color: transparent !important;
                 box-shadow: none !important;
             }
-            /* Clean Guaranteed Navigation Spacing */
-            .toi-nav-links {
+            /* ── Two-Tier Header Nav Styles ── */
+            .toi-nav-bar {
                 display: flex !important;
-                align-items: center !important;
-                gap: 2rem !important; /* 32px separation */
+                align-items: stretch !important;
             }
             .toi-nav-link {
-                color: #cbd5e1 !important;
+                display: flex !important;
+                align-items: center !important;
+                padding: 0 1.1rem !important;
+                color: #94a3b8 !important;
                 font-size: 0.875rem !important;
                 font-weight: 500 !important;
-                padding-bottom: 0.25rem !important;
-                border-bottom: 2px solid transparent !important;
-                transition: color 0.2s, border-color 0.2s !important;
+                letter-spacing: 0.03em !important;
+                border-bottom: 3px solid transparent !important;
+                border-top: 3px solid transparent !important;
+                transition: color 0.18s, border-color 0.18s, background-color 0.15s !important;
                 text-decoration: none !important;
                 white-space: nowrap !important;
+                text-transform: uppercase !important;
             }
             .toi-nav-link:hover {
-                color: #ffffff !important;
-                border-bottom-color: rgba(16, 185, 129, 0.6) !important;
+                color: #f1f5f9 !important;
+                border-bottom-color: rgba(16, 185, 129, 0.55) !important;
+                background-color: rgba(255,255,255,0.04) !important;
             }
             .toi-nav-link.active {
                 color: #ffffff !important;
                 font-weight: 700 !important;
                 border-bottom-color: #10b981 !important;
-            }
-            .toi-nav-actions {
-                display: flex !important;
-                align-items: center !important;
-                gap: 1.25rem !important;
-            }
-            @media (max-width: 1024px) {
-                .toi-nav-links {
-                    gap: 1.25rem !important;
-                }
+                background-color: rgba(16, 185, 129, 0.07) !important;
             }
         `;
         document.head.appendChild(style);
@@ -208,6 +204,8 @@ window.selectSiteLanguage = function(langCode, langName, flag) {
 function renderHeader() {
     const headerEl = document.getElementById('site-header');
     if (!headerEl) return;
+    // Override header bg so white top-bar shows correctly
+    headerEl.style.background = 'transparent';
 
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const currentLang = getSavedLanguage();
@@ -217,14 +215,16 @@ function renderHeader() {
         { href: 'about.html', label: 'Our Firm' },
         { href: 'products.html', label: 'Inventory' },
         { href: 'blog.html', label: 'Knowledge' },
+        { href: 'contact.html', label: 'Contact' },
     ];
 
     const desktopLinks = navLinks.map(l => `
-        <a href="${l.href}" class="toi-nav-link ${currentPage === l.href ? 'active' : ''}" translate="no">${l.label}</a>
+        <a href="${l.href}" class="toi-nav-link${currentPage === l.href ? ' active' : ''}" translate="no">${l.label}</a>
     `).join('');
 
     const mobileLinks = navLinks.map(l => `
-        <a href="${l.href}" class="mobile-link block text-slate-300 hover:text-white hover:bg-slate-700 px-3 py-2 rounded transition-colors ${currentPage === l.href ? 'text-white bg-slate-700 font-bold border-l-4 border-emerald-500' : ''}" translate="no">${l.label}</a>
+        <a href="${l.href}" translate="no"
+           class="block px-4 py-3 text-sm font-medium uppercase tracking-wide transition-colors border-l-2 ${currentPage === l.href ? 'text-white border-emerald-500 bg-slate-800/60 font-bold' : 'text-slate-300 border-transparent hover:text-white hover:border-emerald-400/50 hover:bg-slate-800/40'}">${l.label}</a>
     `).join('');
 
     const desktopLangOptions = SUPPORTED_LANGUAGES.map(l => {
@@ -254,82 +254,143 @@ function renderHeader() {
     }).join('');
 
     headerEl.innerHTML = `
-        <nav class="container mx-auto px-6 py-4 flex items-center justify-between" aria-label="Main Navigation">
+        <!-- ═══════════════════════════════════════════════════ -->
+        <!-- TOP BAR: White — Logo + Company Name + Contact     -->
+        <!-- ═══════════════════════════════════════════════════ -->
+        <div class="bg-white border-b border-slate-100">
+            <div class="container mx-auto px-6 py-3 flex items-center justify-between gap-4">
 
-            <!-- LEFT: Brand Logo — never translate brand identity -->
-            <a href="index.html" translate="no" class="flex items-center gap-3 group outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded shrink-0" aria-label="Tatvam Overseas Inc Home">
-                <img src="assets/images/tatvam-logo.svg" alt="Tatvam Overseas Inc Logo" class="h-9 w-auto group-hover:scale-105 transition-transform shrink-0 drop-shadow" translate="no">
-                <div class="flex flex-col leading-none" translate="no">
-                    <span class="text-xl font-black text-white tracking-wider" translate="no">TATVAM</span>
-                    <span class="text-[10px] font-extrabold text-emerald-400 tracking-[0.24em] uppercase mt-1" translate="no">OVERSEAS INC</span>
-                </div>
-            </a>
-
-            <!-- CENTER: Nav Links (desktop only) — never translate nav labels -->
-            <div class="hidden md:flex toi-nav-links" translate="no">
-                ${desktopLinks}
-            </div>
-
-            <!-- RIGHT: Get Quote CTA + Language Selector (desktop) -->
-            <div class="hidden md:flex items-center gap-3 shrink-0">
-                <a href="contact.html" class="bg-white text-emerald-900 px-5 py-2 rounded-full font-bold hover:bg-emerald-50 transition-all shadow-lg transform hover:-translate-y-0.5 text-sm whitespace-nowrap" translate="no">Get Quote</a>
-
-                <!-- Language Picker — far right corner -->
-                <div class="relative" id="header-lang-wrapper">
-                    <button id="header-lang-btn" onclick="toggleHeaderTranslate(event)" type="button"
-                        class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700/80 text-xs transition-all cursor-pointer"
-                        aria-label="Change Language" aria-expanded="false" aria-haspopup="true" translate="no">
-                        <span id="header-active-flag" class="text-sm leading-none" translate="no">${currentLang.flag}</span>
-                        <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                    </button>
-
-                    <!-- Language Dropdown Panel -->
-                    <div id="header-translate-panel" class="hidden absolute right-0 top-full mt-2 w-72 bg-slate-900/98 backdrop-blur-xl border border-slate-700/80 shadow-2xl rounded-2xl p-2 z-[100] ring-1 ring-black/50">
-                        <div class="px-3 py-2 border-b border-slate-800 flex items-center justify-between">
-                            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-                                <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400"></i> Select Language
-                            </span>
-                            <span class="text-[10px] text-emerald-400 font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">Global Exporter</span>
-                        </div>
-                        <div class="py-1 max-h-72 overflow-y-auto space-y-0.5">
-                            ${desktopLangOptions}
+                <!-- Brand: Original Logo + Name -->
+                <a href="index.html" translate="no" class="flex items-center gap-3.5 group shrink-0" aria-label="Tatvam Overseas Inc">
+                    <!-- Logo card: subtle border gives the red logo a clean frame -->
+                    <div class="bg-white rounded-lg border border-slate-150 shadow-sm p-1.5 shrink-0 group-hover:shadow-md transition-shadow">
+                        <img src="assets/TATVAM LOGO.jpg" alt="TOI – Tatvam Overseas Inc Logo"
+                             class="h-10 w-auto object-contain block" translate="no" loading="eager">
+                    </div>
+                    <!-- Brand text -->
+                    <div class="leading-tight" translate="no">
+                        <div class="text-[15px] font-black text-slate-800 tracking-widest leading-none" translate="no">TATVAM OVERSEAS INC</div>
+                        <div class="text-[9px] text-slate-400 tracking-[0.22em] uppercase mt-1 font-semibold flex items-center gap-1.5" translate="no">
+                            <span class="inline-block w-3 h-px bg-emerald-400"></span>
+                            Mumbai &nbsp;&middot;&nbsp; Est. 1992 &nbsp;&middot;&nbsp; ISO 9001:2015
+                            <span class="inline-block w-3 h-px bg-emerald-400"></span>
                         </div>
                     </div>
-                </div>
-            </div>
+                </a>
 
-            <!-- MOBILE: Globe + Hamburger -->
-            <div class="flex items-center gap-2 md:hidden">
-                <button id="header-lang-btn-mobile" onclick="toggleHeaderTranslate(event)" type="button"
-                    class="flex items-center gap-1 text-slate-300 hover:text-white p-2 rounded-lg bg-slate-800/80 border border-slate-700/60"
-                    aria-label="Change Language" translate="no">
-                    <span class="text-sm" translate="no">${currentLang.flag}</span>
-                    <i data-lucide="globe" class="w-4 h-4 text-emerald-400"></i>
-                </button>
-                <button id="mobile-menu-button" class="text-white p-2 focus:outline-none" aria-label="Open Menu" aria-expanded="false">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
-                </button>
+                <!-- Desktop contact info -->
+                <div class="hidden lg:flex items-center divide-x divide-slate-200 shrink-0">
+                    <a href="tel:+919082834775"
+                       class="flex items-center gap-2.5 pr-6 group hover:opacity-75 transition-opacity">
+                        <div class="w-8 h-8 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 group-hover:bg-emerald-500 group-hover:border-emerald-500 transition-colors">
+                            <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <div class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold leading-none mb-0.5">Call / WhatsApp</div>
+                            <div class="text-sm font-bold text-slate-700 leading-none">+91 90828 34775</div>
+                        </div>
+                    </a>
+                    <a href="mailto:sales@tatvamoverseasinc.com"
+                       class="flex items-center gap-2.5 pl-6 group hover:opacity-75 transition-opacity">
+                        <div class="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0 group-hover:bg-slate-700 group-hover:border-slate-700 transition-colors">
+                            <i data-lucide="mail" class="w-3.5 h-3.5 text-slate-500 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <div class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold leading-none mb-0.5">Email</div>
+                            <div class="text-sm font-bold text-slate-700 leading-none">sales@tatvamoverseasinc.com</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Mobile: quick call link -->
+                <a href="tel:+919082834775" class="lg:hidden flex items-center gap-1.5 text-emerald-600 font-bold text-xs shrink-0">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i> Call Us
+                </a>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════ -->
+        <!-- BOTTOM NAV BAR: Dark — Navigation Links + CTA      -->
+        <!-- ═══════════════════════════════════════════════════ -->
+        <nav class="bg-slate-900 border-t border-slate-800" aria-label="Main Navigation">
+            <div class="container mx-auto px-6">
+                <div class="flex items-stretch h-12">
+
+                    <!-- Desktop Nav Links — uppercase, full-height, emerald underline -->
+                    <div class="hidden md:flex toi-nav-bar" translate="no">
+                        ${desktopLinks}
+                    </div>
+
+                    <!-- Right side: Language + Get Quote CTA -->
+                    <div class="hidden md:flex items-center gap-2 ml-auto">
+
+                        <!-- Language Globe -->
+                        <div class="relative" id="header-lang-wrapper">
+                            <button id="header-lang-btn" onclick="toggleHeaderTranslate(event)" type="button"
+                                class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white border border-slate-700 text-xs transition-all cursor-pointer"
+                                aria-label="Change Language" aria-expanded="false" aria-haspopup="true" translate="no">
+                                <span id="header-active-flag" class="text-sm leading-none" translate="no">${currentLang.flag}</span>
+                                <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+                            </button>
+                            <!-- Language Dropdown -->
+                            <div id="header-translate-panel" class="hidden absolute right-0 top-full mt-2 w-72 bg-slate-900/98 backdrop-blur-xl border border-slate-700/80 shadow-2xl rounded-2xl p-2 z-[100] ring-1 ring-black/50">
+                                <div class="px-3 py-2 border-b border-slate-800 flex items-center justify-between">
+                                    <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                                        <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400"></i> Select Language
+                                    </span>
+                                    <span class="text-[10px] text-emerald-400 font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">Global Exporter</span>
+                                </div>
+                                <div class="py-1 max-h-72 overflow-y-auto space-y-0.5">
+                                    ${desktopLangOptions}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Get Quote — spans full nav bar height -->
+                        <a href="contact.html" translate="no"
+                           class="self-stretch flex items-center gap-2 px-7 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm tracking-wide uppercase transition-all whitespace-nowrap border-l border-emerald-700">
+                            Get Quote
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+
+                    <!-- Mobile: Globe + Hamburger -->
+                    <div class="flex items-center gap-2 md:hidden w-full justify-end">
+                        <button id="header-lang-btn-mobile" onclick="toggleHeaderTranslate(event)" type="button"
+                            class="flex items-center gap-1 text-slate-400 hover:text-white p-2 rounded-lg bg-slate-800 border border-slate-700"
+                            aria-label="Change Language" translate="no">
+                            <span class="text-sm" translate="no">${currentLang.flag}</span>
+                            <i data-lucide="globe" class="w-4 h-4 text-emerald-400"></i>
+                        </button>
+                        <button id="mobile-menu-button" class="text-white p-2 focus:outline-none" aria-label="Open Menu" aria-expanded="false">
+                            <i data-lucide="menu" class="w-6 h-6"></i>
+                        </button>
+                    </div>
+
+                </div>
             </div>
         </nav>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700 p-4 space-y-4 absolute w-full left-0 z-50 shadow-2xl origin-top">
-            ${mobileLinks}
-            
-            <!-- Mobile Language Selector Section -->
-            <div class="border-t border-slate-700/80 pt-3">
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-700 absolute w-full left-0 z-50 shadow-2xl">
+            <div class="space-y-0.5 py-2">
+                ${mobileLinks}
+            </div>
+            <div class="border-t border-slate-800 px-4 py-3">
                 <div class="flex items-center justify-between mb-2">
-                    <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-                        <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400"></i> Select Language / اللغة
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 flex items-center gap-1.5">
+                        <i data-lucide="globe" class="w-3 h-3 text-emerald-400"></i> Language
                     </span>
-                    <span class="text-[10px] text-emerald-400 font-semibold">12 Export Regions</span>
                 </div>
-                <div class="grid grid-cols-2 gap-1.5 max-h-48 overflow-y-auto pr-1">
+                <div class="grid grid-cols-2 gap-1.5 max-h-36 overflow-y-auto">
                     ${mobileLangOptions}
                 </div>
             </div>
-
-            <a href="contact.html" class="block bg-emerald-600 text-white text-center py-3 rounded-lg font-bold shadow-lg hover:bg-emerald-700 transition-colors">Get Quote Now</a>
+            <div class="px-4 pb-4 pt-2">
+                <a href="contact.html" class="block bg-emerald-600 text-white text-center py-3 rounded-lg font-bold text-sm uppercase tracking-wide hover:bg-emerald-500 transition-colors" translate="no">
+                    Get Quote Now
+                </a>
+            </div>
         </div>
     `;
 
