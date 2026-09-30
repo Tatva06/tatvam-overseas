@@ -338,9 +338,12 @@ function renderHeader() {
         <!-- ═══════════════════════════════════════════════════ -->
         <!-- BOTTOM NAV BAR: Dark — Navigation Links + CTA      -->
         <!-- ═══════════════════════════════════════════════════ -->
-        <nav class="bg-slate-900 border-t border-slate-800 shadow-lg relative z-10" aria-label="Main Navigation">
-            <div class="container mx-auto px-0 md:px-6"> <!-- Full bleed on desktop for the slanted edge -->
-                <div class="flex items-stretch h-14 md:h-16 w-full"> <!-- Increased height to h-16 (64px) on desktop -->
+        <nav class="relative z-10" aria-label="Main Navigation" style="background: transparent; overflow: hidden;">
+            <!-- Full-width dark bg on mobile; diagonal-slanted bg on desktop -->
+            <div class="md:hidden absolute inset-0 bg-slate-900" style="box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3);"></div>
+            <div class="hidden md:block absolute inset-0 bg-slate-900"
+                 style="clip-path: polygon(480px 0%, 100% 0%, 100% 100%, 360px 100%); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3);"></div>
+            <div class="flex items-stretch h-14 md:h-16 w-full relative">
 
                     <!-- Mobile: Hamburger Menu (Left) -->
                     <div class="flex items-center md:hidden px-4">
@@ -372,7 +375,6 @@ function renderHeader() {
                     </div>
 
                 </div>
-            </div>
         </nav>
 
         <!-- Mobile Menu -->
