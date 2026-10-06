@@ -190,12 +190,6 @@ class SmartFloatingWidget {
         this.createWidgetDOM();
         this.loadQuickReplies();
         
-        // Listeners
-        const toggleBtn = document.getElementById('chat-toggle');
-        if (toggleBtn) {
-            toggleBtn.addEventListener('click', () => this.toggleMenu());
-        }
-        
         const chatForm = document.getElementById('chat-form');
         if (chatForm) {
             chatForm.addEventListener('submit', (e) => {
@@ -255,67 +249,29 @@ class SmartFloatingWidget {
         `;
         container.appendChild(chatWindow);
         
-        // Menu Options Container
-        const menuOptions = document.createElement('div');
-        menuOptions.id = 'chat-options';
-        menuOptions.className = 'hidden flex-col gap-3 transition-all duration-300 origin-bottom-right scale-0 opacity-0 mb-2';
-        menuOptions.innerHTML = `
-            <!-- Live Chat Assistant Button -->
-            <button id="btn-open-chat" class="flex items-center gap-3 bg-white text-slate-800 p-3 rounded-full shadow-xl hover:bg-slate-50 border border-slate-100 group transition-all">
-                <span class="text-xs font-bold mr-1">AI Assistant</span>
-                <div class="w-8 h-8 bg-emerald-600 rounded-full flex items-center justify-center text-white relative">
-                    <i data-lucide="message-square" class="w-4 h-4"></i>
-                    <span id="chat-badge" class="hidden absolute -top-1 -right-1 bg-red-500 text-white text-[8px] font-bold w-4 h-4 rounded-full flex items-center justify-center">1</span>
-                </div>
-            </button>
-
-            <!-- WhatsApp -->
-            <a href="https://wa.me/919082834775" target="_blank" class="flex items-center gap-3 bg-white text-slate-800 p-3 rounded-full shadow-xl hover:bg-slate-50 border border-slate-100 transition-all">
-                <span class="text-xs font-bold mr-1">WhatsApp</span>
-                <div class="w-8 h-8 bg-[#25D366] rounded-full flex items-center justify-center text-white"><i data-lucide="message-circle" class="w-4 h-4"></i></div>
-            </a>
-        `;
-        container.appendChild(menuOptions);
-        
-        // Toggle Button
+        // Single AI Assistant Toggle Button (opens chat directly)
         const toggleBtn = document.createElement('button');
         toggleBtn.id = 'chat-toggle';
-        toggleBtn.className = 'bg-emerald-600 text-white p-4 rounded-full shadow-2xl hover:scale-105 transition-transform flex items-center justify-center border-4 border-white ring-2 ring-emerald-100 group';
-        toggleBtn.setAttribute('aria-label', 'Open quick options');
-        toggleBtn.innerHTML = `<i data-lucide="plus" class="w-6 h-6 transition-transform group-hover:rotate-90"></i>`;
+        toggleBtn.className = 'bg-emerald-600 text-white rounded-full shadow-2xl hover:scale-105 transition-transform flex items-center gap-2.5 px-5 py-3.5 border-2 border-white ring-2 ring-emerald-100';
+        toggleBtn.setAttribute('aria-label', 'Open AI Assistant');
+        toggleBtn.innerHTML = `
+            <i data-lucide="message-square" class="w-5 h-5 shrink-0"></i>
+            <span class="text-sm font-bold tracking-wide relative">
+                AI Assistant
+                <span id="chat-badge" class="hidden absolute -top-2.5 -right-3 bg-red-500 text-white text-[8px] font-bold w-4 h-4 rounded-full flex items-center justify-center">1</span>
+            </span>
+        `;
         container.appendChild(toggleBtn);
         
         document.body.appendChild(container);
         
-        // Internal Button Listeners
-        document.getElementById('btn-open-chat').addEventListener('click', () => this.toggleChat());
+        // Button listeners — toggle button directly opens chat
+        toggleBtn.addEventListener('click', () => this.toggleChat());
         document.getElementById('chat-close-btn').addEventListener('click', () => this.toggleChat(false));
         
         if (typeof lucide !== 'undefined') lucide.createIcons();
     }
     
-    toggleMenu(show) {
-        this.menuOpen = show !== undefined ? show : !this.menuOpen;
-        const options = document.getElementById('chat-options');
-        const toggle = document.getElementById('chat-toggle');
-        
-        if (this.menuOpen) {
-            options.classList.remove('hidden', 'scale-0', 'opacity-0');
-            options.classList.add('flex', 'scale-100', 'opacity-100');
-            toggle.innerHTML = `<i data-lucide="x" class="w-6 h-6 transition-transform group-hover:rotate-90"></i>`;
-            toggle.classList.replace('bg-emerald-600', 'bg-slate-800');
-        } else {
-            options.classList.remove('scale-100', 'opacity-100');
-            options.classList.add('scale-0', 'opacity-0');
-            setTimeout(() => options.classList.add('hidden'), 200);
-            toggle.innerHTML = `<i data-lucide="plus" class="w-6 h-6 transition-transform group-hover:rotate-90"></i>`;
-            toggle.classList.replace('bg-slate-800', 'bg-emerald-600');
-            
-            // Auto close chat if open
-            if (this.chatOpen) this.toggleChat(false);
-        }
-        if (typeof lucide !== 'undefined') lucide.createIcons();
-    }
     
     toggleChat(show) {
         this.chatOpen = show !== undefined ? show : !this.chatOpen;

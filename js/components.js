@@ -94,37 +94,110 @@ function initHiddenGoogleTranslate() {
                 background-color: transparent !important;
                 box-shadow: none !important;
             }
-            /* ── Two-Tier Header Nav Styles ── */
-            .toi-nav-bar {
-                display: flex !important;
-                align-items: stretch !important;
+            /* ══ Two-Tier Header ══ */
+            .toi-top-bar {
+                background: #ffffff;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M0 30h60M30 0v60' stroke='%23e2e8f0' stroke-width='0.6'/%3E%3Ccircle cx='30' cy='30' r='1.2' fill='%23cbd5e1'/%3E%3Ccircle cx='0' cy='0' r='1.2' fill='%23cbd5e1'/%3E%3Ccircle cx='60' cy='0' r='1.2' fill='%23cbd5e1'/%3E%3Ccircle cx='0' cy='60' r='1.2' fill='%23cbd5e1'/%3E%3Ccircle cx='60' cy='60' r='1.2' fill='%23cbd5e1'/%3E%3C/svg%3E");
+                border-bottom: 1px solid #e2e8f0;
+                position: relative;
+                z-index: 20;
+            }
+            /* Desktop nav bar */
+            .toi-nav-desktop {
+                display: none;
+                position: relative;
+                background: transparent;
+                height: 40px;
+                overflow: hidden;
+                z-index: 10;
+            }
+            @media (min-width: 768px) {
+                .toi-nav-desktop { display: block; }
+                .toi-mobile-nav  { display: none !important; }
+            }
+            /* Full-width dark slate bar with diagonal left cut */
+            .toi-nav-slab {
+                position: absolute;
+                inset: 0;
+                background: #0f172a;
+                clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 0% 100%);
+                z-index: 0;
+            }
+            /* Nav links row on top of slab */
+            .toi-nav-links {
+                position: absolute;
+                top: 0; right: 0; bottom: 0; left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 0 1.5rem;
+                gap: 0;
+                z-index: 1;
             }
             .toi-nav-link {
                 display: flex !important;
                 align-items: center !important;
-                padding: 0 1.25rem !important;
-                color: #cbd5e1 !important;
-                font-size: 0.95rem !important;
-                font-weight: 600 !important;
-                letter-spacing: 0.04em !important;
+                height: 100% !important;
+                padding: 0 1.1rem !important;
+                color: #94a3b8 !important;
+                font-size: 0.72rem !important;
+                font-weight: 700 !important;
+                letter-spacing: 0.12em !important;
                 border-bottom: 3px solid transparent !important;
-                border-top: 3px solid transparent !important;
-                transition: color 0.18s, border-color 0.18s, background-color 0.15s !important;
+                transition: color 0.15s, border-color 0.15s !important;
                 text-decoration: none !important;
                 white-space: nowrap !important;
                 text-transform: uppercase !important;
             }
             .toi-nav-link:hover {
-                color: #f1f5f9 !important;
-                border-bottom-color: rgba(16, 185, 129, 0.55) !important;
-                background-color: rgba(255,255,255,0.04) !important;
+                color: #ffffff !important;
+                border-bottom-color: rgba(34,197,94,0.55) !important;
             }
             .toi-nav-link.active {
                 color: #ffffff !important;
-                font-weight: 700 !important;
-                border-bottom-color: #10b981 !important;
-                background-color: rgba(16, 185, 129, 0.07) !important;
+                font-weight: 800 !important;
+                border-bottom-color: #22c55e !important;
             }
+            /* WhatsApp pill button */
+            .toi-wa-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 7px;
+                padding: 8px 20px;
+                border-radius: 9999px;
+                border: 2px solid #16a34a;
+                color: #16a34a;
+                background: transparent;
+                font-weight: 700;
+                font-size: 0.82rem;
+                letter-spacing: 0.04em;
+                text-decoration: none;
+                transition: background 0.18s, color 0.18s;
+                white-space: nowrap;
+                cursor: pointer;
+            }
+            .toi-wa-btn:hover { background: #16a34a; color: #fff; }
+            .toi-wa-btn:hover svg path { fill: #fff; }
+            /* GET QUOTE diagonal button */
+            .toi-quote-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                padding: 10px 28px 10px 36px;
+                background: #16a34a;
+                color: #fff;
+                font-weight: 900;
+                font-size: 0.8rem;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                text-decoration: none;
+                clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+                transition: background 0.18s;
+                white-space: nowrap;
+                cursor: pointer;
+                line-height: 1;
+            }
+            .toi-quote-btn:hover { background: #15803d; }
         `;
         document.head.appendChild(style);
 
@@ -255,41 +328,36 @@ function renderHeader() {
 
     headerEl.innerHTML = `
         <!-- ═══════════════════════════════════════════════════ -->
-        <!-- TOP BAR: White — Logo + Company Name + Contact     -->
+        <!-- TOP BAR: White — Logo + Company Name + CTA Buttons -->
         <!-- ═══════════════════════════════════════════════════ -->
-        <div class="bg-white border-b border-slate-100 relative z-20">
-            <div class="container mx-auto px-6 py-3 flex items-center justify-between gap-4">
+        <div class="toi-top-bar">
+            <div class="container mx-auto px-6 py-3 flex items-center justify-between gap-6">
 
-                <!-- Brand: Original Logo + Name -->
-                <a href="index.html" translate="no" class="flex items-center gap-3.5 group shrink-0" aria-label="Tatvam Overseas Inc">
-                    <!-- Logo card: subtle border gives the red logo a clean frame -->
-                    <div class="bg-white rounded-lg border border-slate-150 shadow-sm p-1.5 shrink-0 group-hover:shadow-md transition-shadow">
+                <!-- Brand: Logo + Name -->
+                <a href="index.html" translate="no" class="flex items-center gap-3 group shrink-0" aria-label="Tatvam Overseas Inc">
+                    <div class="bg-white rounded-md border border-slate-200 shadow-sm p-1 shrink-0 group-hover:shadow-md transition-shadow">
                         <img src="assets/TATVAM LOGO.jpg" alt="TOI – Tatvam Overseas Inc Logo"
                              class="h-10 w-auto object-contain block" translate="no" loading="eager">
                     </div>
-                    <!-- Brand text -->
                     <div class="leading-tight" translate="no">
-                        <div class="text-[15px] font-black text-slate-800 tracking-widest leading-none" translate="no">TATVAM OVERSEAS INC</div>
-                        <div class="text-[9px] text-slate-400 tracking-[0.22em] uppercase mt-1 font-semibold flex items-center gap-1.5" translate="no">
-                            <span class="inline-block w-3 h-px bg-emerald-400"></span>
-                            Mumbai &nbsp;&middot;&nbsp; Est. 1992 &nbsp;&middot;&nbsp; ISO 9001:2015
-                            <span class="inline-block w-3 h-px bg-emerald-400"></span>
+                        <div class="text-[16px] font-black text-slate-900 tracking-widest leading-none">TATVAM OVERSEAS INC</div>
+                        <div class="text-[9.5px] text-slate-400 tracking-[0.2em] uppercase mt-0.5 font-semibold">
+                            MUMBAI &nbsp;&middot;&nbsp; EST. 1992 &nbsp;&middot;&nbsp; ISO 9001:2015
                         </div>
                     </div>
                 </a>
 
-                <!-- Desktop contact info & Language -->
-                <div class="hidden lg:flex items-center gap-8 shrink-0">
-                    
-                    <!-- Language Globe moved to white bar -->
-                    <div class="relative" id="header-lang-wrapper">
+                <!-- Desktop: Language + WhatsApp + GET QUOTE -->
+                <div class="hidden lg:flex items-center gap-0 shrink-0">
+
+                    <!-- Language selector (compact, before the buttons) -->
+                    <div class="relative mr-4" id="header-lang-wrapper">
                         <button id="header-lang-btn" onclick="toggleHeaderTranslate(event)" type="button"
-                            class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-600 hover:text-slate-900 border border-slate-200 text-sm font-bold transition-all cursor-pointer shadow-sm"
+                            class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 border border-slate-200 text-xs font-bold transition-all cursor-pointer"
                             aria-label="Change Language" aria-expanded="false" aria-haspopup="true" translate="no">
-                            <span id="header-active-flag" class="text-base leading-none" translate="no">${currentLang.flag}</span>
-                            <i data-lucide="globe" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                            <span id="header-active-flag" class="text-sm leading-none">${currentLang.flag}</span>
+                            <i data-lucide="chevron-down" class="w-3 h-3 shrink-0"></i>
                         </button>
-                        <!-- Language Dropdown -->
                         <div id="header-translate-panel" class="hidden absolute right-0 top-full mt-2 w-72 bg-slate-900/98 backdrop-blur-xl border border-slate-700/80 shadow-2xl rounded-2xl p-2 z-[100] ring-1 ring-black/50">
                             <div class="px-3 py-2 border-b border-slate-800 flex items-center justify-between">
                                 <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
@@ -297,100 +365,74 @@ function renderHeader() {
                                 </span>
                                 <span class="text-[10px] text-emerald-400 font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">Global Exporter</span>
                             </div>
-                            <div class="py-1 max-h-72 overflow-y-auto space-y-0.5">
-                                ${desktopLangOptions}
-                            </div>
+                            <div class="py-1 max-h-72 overflow-y-auto space-y-0.5">${desktopLangOptions}</div>
                         </div>
                     </div>
 
-                    <!-- Contact details -->
-                    <div class="flex items-center gap-6 pl-6 border-l border-slate-200">
-                        <a href="https://wa.me/919082834775" target="_blank" rel="noopener"
-                           class="flex items-center gap-2.5 group hover:opacity-80 transition-opacity">
-                            <div class="w-10 h-10 rounded-full bg-green-50 border border-green-100 flex items-center justify-center shrink-0 group-hover:bg-green-500 group-hover:border-green-500 transition-colors">
-                                <i data-lucide="message-circle" class="w-4 h-4 text-green-600 group-hover:text-white transition-colors"></i>
-                            </div>
-                            <div>
-                                <div class="text-[10px] text-slate-500 uppercase tracking-widest font-bold leading-none mb-1">WhatsApp</div>
-                                <div class="text-sm font-black text-slate-800 leading-none tracking-wide">+91 90828 34775</div>
-                            </div>
-                        </a>
-                        <a href="tel:+919082834775"
-                           class="flex items-center gap-2.5 group hover:opacity-80 transition-opacity">
-                            <div class="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 group-hover:bg-emerald-600 group-hover:border-emerald-600 transition-colors">
-                                <i data-lucide="phone-call" class="w-4 h-4 text-emerald-600 group-hover:text-white transition-colors"></i>
-                            </div>
-                            <div>
-                                <div class="text-[10px] text-slate-500 uppercase tracking-widest font-bold leading-none mb-1">Call Us</div>
-                                <div class="text-sm font-black text-slate-800 leading-none tracking-wide">+91 90828 34775</div>
-                            </div>
-                        </a>
-                    </div>
+                    <!-- WhatsApp: outlined pill button matching reference image -->
+                    <a href="https://wa.me/919082834775" target="_blank" rel="noopener"
+                       class="flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-emerald-500 hover:bg-emerald-50 text-emerald-600 font-bold text-sm tracking-wide transition-all group cursor-pointer shrink-0">
+                        <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        <span>WhatsApp</span>
+                    </a>
+
+                    <!-- GET QUOTE: solid green slanted parallelogram button -->
+                    <a href="contact.html" translate="no"
+                       class="flex items-center gap-2.5 pl-8 pr-7 py-[11px] bg-emerald-600 hover:bg-emerald-500 text-white font-black text-sm tracking-[0.12em] uppercase transition-all shrink-0 cursor-pointer ml-px"
+                       style="clip-path: polygon(22px 0%, 100% 0%, 100% 100%, 0% 100%); letter-spacing:0.1em;">
+                        GET QUOTE
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
                 </div>
 
-                <!-- Mobile: quick call link -->
-                <a href="https://wa.me/919082834775" target="_blank" class="lg:hidden flex items-center gap-1.5 text-green-600 font-bold text-sm shrink-0 bg-green-50 px-3 py-1.5 rounded-full border border-green-100">
-                    <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
-                </a>
+                <!-- Mobile CTAs -->
+                <div class="flex items-center gap-2 lg:hidden">
+                    <a href="https://wa.me/919082834775" target="_blank"
+                       class="flex items-center gap-1.5 text-emerald-600 font-bold text-sm bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> WA
+                    </a>
+                    <a href="contact.html" class="text-white font-bold text-sm bg-emerald-600 px-3.5 py-1.5 rounded-full">
+                        Quote
+                    </a>
+                </div>
             </div>
         </div>
 
-        <!-- ═══════════════════════════════════════════════════ -->
-        <!-- BOTTOM NAV BAR: Dark — Navigation Links + CTA      -->
-        <!-- ═══════════════════════════════════════════════════ -->
-        <nav class="relative z-10" aria-label="Main Navigation" style="background: transparent; overflow: hidden;">
-            <!-- Full-width dark bg on mobile; diagonal-slanted bg on desktop -->
-            <div class="md:hidden absolute inset-0 bg-slate-900" style="box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3);"></div>
-            <div class="hidden md:block absolute inset-0 bg-slate-900"
-                 style="clip-path: polygon(480px 0%, 100% 0%, 100% 100%, 360px 100%); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3);"></div>
-            <div class="flex items-stretch h-14 md:h-16 w-full relative">
-
-                    <!-- Mobile: Hamburger Menu (Left) -->
-                    <div class="flex items-center md:hidden px-4">
-                        <button id="mobile-menu-button" class="text-white p-2 focus:outline-none bg-slate-800 rounded border border-slate-700" aria-label="Open Menu" aria-expanded="false">
-                            <i data-lucide="menu" class="w-6 h-6"></i>
-                        </button>
-                    </div>
-
-                    <!-- Desktop Nav Links — pushed to the right via ml-auto -->
-                    <div class="hidden md:flex toi-nav-bar ml-auto pr-8" translate="no">
-                        ${desktopLinks}
-                    </div>
-
-                    <!-- Get Quote CTA (Slanted cut style) -->
-                    <div class="hidden md:flex items-stretch">
-                        <a href="contact.html" translate="no"
-                           class="self-stretch flex items-center gap-2.5 px-10 bg-emerald-600 hover:bg-emerald-500 text-white font-black text-[15px] tracking-[0.1em] uppercase transition-colors"
-                           style="clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%); margin-left: -20px;">
-                            Get Quote
-                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                    
-                    <!-- Mobile: Get Quote -->
-                    <div class="flex items-center md:hidden ml-auto">
-                         <a href="contact.html" translate="no" class="self-stretch flex items-center bg-emerald-600 text-white font-bold px-6 text-sm uppercase tracking-wider" style="clip-path: polygon(15px 0, 100% 0, 100% 100%, 0 100%);">
-                            Get Quote
-                         </a>
-                    </div>
-
-                </div>
+        <!-- ════════════ ROW 2: 40px dark nav, full-width diagonal cut ════════════ -->
+        <nav class="toi-nav-desktop" aria-label="Main Navigation">
+            <div class="toi-nav-slab"></div>
+            <div class="toi-nav-links" translate="no">
+                ${desktopLinks}
+                <span style="color:#334155; padding:0 14px 0 4px; display:flex; align-items:center; flex-shrink:0;" aria-hidden="true">
+                    <svg width="9" height="9" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg>
+                </span>
+            </div>
         </nav>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-700 absolute w-full left-0 z-50 shadow-2xl">
+        <!-- Mobile Nav Bar (visible only < 768px) -->
+        <nav class="toi-mobile-nav" style="background:#0f172a; border-bottom:1px solid #334155; z-index:10; position:relative;" aria-label="Mobile Navigation">
+            <div style="padding:10px 16px; display:flex; align-items:center;">
+                <button id="mobile-menu-button" style="background:none; border:none; color:#fff; cursor:pointer; display:flex; align-items:center; gap:8px; font-size:0.8rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase;" aria-label="Open Menu" aria-expanded="false">
+                    <i data-lucide="menu" style="width:20px;height:20px;"></i>
+                    <span style="color:#94a3b8;">Menu</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Slide-down Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 absolute w-full left-0 z-50 shadow-2xl">
             <div class="space-y-0.5 py-2">
                 ${mobileLinks}
             </div>
             <div class="border-t border-slate-800 px-4 py-3">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 flex items-center gap-1.5">
-                        <i data-lucide="globe" class="w-3 h-3 text-emerald-400"></i> Language
-                    </span>
-                </div>
-                <div class="grid grid-cols-2 gap-1.5 max-h-36 overflow-y-auto">
-                    ${mobileLangOptions}
-                </div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 flex items-center gap-1.5 mb-2">
+                    <i data-lucide="globe" class="w-3 h-3 text-emerald-400"></i> Language
+                </span>
+                <div class="grid grid-cols-2 gap-1.5 max-h-36 overflow-y-auto">${mobileLangOptions}</div>
             </div>
             <div class="px-4 pb-4 pt-2">
                 <a href="contact.html" class="block bg-emerald-600 text-white text-center py-3 rounded-lg font-bold text-sm uppercase tracking-wide hover:bg-emerald-500 transition-colors" translate="no">
@@ -406,16 +448,17 @@ function renderHeader() {
     // Re-create icons for new elements
     if (typeof lucide !== 'undefined') lucide.createIcons();
 
-    // Mobile menu toggle
-    const btn = document.getElementById('mobile-menu-button');
+    // Mobile menu toggle — bind to all .mobile-menu-btn + #mobile-menu-button
     const menu = document.getElementById('mobile-menu');
-    if (btn && menu) {
-        btn.addEventListener('click', () => {
-            const isOpen = !menu.classList.contains('hidden');
-            menu.classList.toggle('hidden');
-            btn.setAttribute('aria-expanded', String(!isOpen));
-        });
-    }
+    document.querySelectorAll('#mobile-menu-button, .mobile-menu-btn').forEach(btn => {
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                const isOpen = !menu.classList.contains('hidden');
+                menu.classList.toggle('hidden');
+                btn.setAttribute('aria-expanded', String(!isOpen));
+            });
+        }
+    });
 
     // Toggle translate panel (desktop & mobile fallback)
     window.toggleHeaderTranslate = function(e) {
@@ -477,10 +520,9 @@ function renderFooter() {
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 text-sm">
                 <!-- Company Info -->
                 <div class="space-y-6">
-                    <a href="index.html" class="flex items-center gap-3.5 group">
-                        <img src="assets/images/tatvam-logo.svg" alt="Tatvam Overseas Inc Logo" class="h-9 w-auto group-hover:scale-105 transition-transform shrink-0 drop-shadow">
+                    <a href="index.html" class="inline-block group">
                         <div class="flex flex-col leading-none">
-                            <span class="text-xl font-black text-white tracking-wider">TATVAM</span>
+                            <span class="text-xl font-black text-white tracking-wider group-hover:text-emerald-400 transition-colors">TATVAM</span>
                             <span class="text-[10px] font-extrabold text-emerald-400 tracking-[0.24em] uppercase mt-1">OVERSEAS INC</span>
                         </div>
                     </a>
