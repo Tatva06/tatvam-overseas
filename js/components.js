@@ -23,7 +23,10 @@ const SITE_CONFIG = {
 // GLOBAL EXPORT LANGUAGES CONFIG
 // ============================================================================
 const SUPPORTED_LANGUAGES = [
-    { code: 'en', flag: '🇬🇧', name: 'English', native: 'English', region: 'Global' },
+    { code: 'en-IN', flag: '🇮🇳', name: 'English (India)', native: 'English (IN)', region: 'India (Default)' },
+    { code: 'hi', flag: '🇮🇳', name: 'Hindi', native: 'हिन्दी', region: 'India' },
+    { code: 'gu', flag: '🇮🇳', name: 'Gujarati', native: 'ગુજરાતી', region: 'Gujarat / India' },
+    { code: 'en-GB', flag: '🇬🇧', name: 'English (UK)', native: 'English (UK)', region: 'United Kingdom / Global' },
     { code: 'ar', flag: '🇦🇪', name: 'Arabic', native: 'العربية', region: 'Middle East' },
     { code: 'de', flag: '🇩🇪', name: 'German', native: 'Deutsch', region: 'Germany / Europe' },
     { code: 'fr', flag: '🇫🇷', name: 'French', native: 'Français', region: 'France / Africa' },
@@ -237,17 +240,18 @@ function initHiddenGoogleTranslate() {
 
 window.selectSiteLanguage = function(langCode, langName, flag) {
     const domain = window.location.hostname;
+    const targetGoogleCode = langCode.startsWith('en') ? 'en' : langCode;
     
     // Set cookie
-    if (langCode === 'en') {
+    if (targetGoogleCode === 'en') {
         document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
         if (domain && domain !== 'localhost') {
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + domain + ";";
         }
     } else {
-        document.cookie = `googtrans=/en/${langCode}; path=/;`;
+        document.cookie = `googtrans=/en/${targetGoogleCode}; path=/;`;
         if (domain && domain !== 'localhost' && !domain.match(/^\d+\.\d+\.\d+\.\d+$/)) {
-            document.cookie = `googtrans=/en/${langCode}; path=/; domain=.${domain};`;
+            document.cookie = `googtrans=/en/${targetGoogleCode}; path=/; domain=.${domain};`;
         }
     }
 
@@ -262,7 +266,7 @@ window.selectSiteLanguage = function(langCode, langName, flag) {
     // Trigger translate combo if already in DOM
     const combo = document.querySelector('.goog-te-combo');
     if (combo) {
-        combo.value = langCode;
+        combo.value = targetGoogleCode;
         combo.dispatchEvent(new Event('change'));
         // Update label
         const flagEl = document.getElementById('header-active-flag');
