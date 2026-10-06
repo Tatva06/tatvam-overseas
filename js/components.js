@@ -13,10 +13,11 @@ const SITE_CONFIG = {
     address: '39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Kalbadevi, Mumbai - 400004',
     mapsUrl: 'https://maps.google.com/?q=39+41+Kamal+Building+Kumbharwada+Lane+Mumbai+400004',
     catalogUrl: 'assets/TatvamOverseasInc_Catalog_2025.pdf',
-    // Social media: add URLs here when pages are created
-    // linkedin: 'https://www.linkedin.com/company/YOUR-PAGE',
-    // facebook: 'https://www.facebook.com/YOUR-PAGE',
-    // instagram: 'https://www.instagram.com/YOUR-PAGE',
+    // Social Media Links (Update URLs here whenever ready):
+    linkedin: 'https://www.linkedin.com/company/tatvamoverseasinc',
+    facebook: 'https://www.facebook.com/tatvamoverseasinc',
+    instagram: 'https://www.instagram.com/tatvamoverseasinc',
+    twitter: 'https://twitter.com/tatvamoverseas'
 };
 
 // ============================================================================
