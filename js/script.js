@@ -246,6 +246,10 @@ class SmartFloatingWidget {
                     </button>
                 </form>
             </div>
+            <!-- AI Disclaimer -->
+            <div class="px-3 py-1.5 bg-slate-100 border-t border-slate-200 text-center shrink-0">
+                <p class="text-[9.5px] text-slate-500 font-medium">⚠️ AI Assistant can make mistakes. Please verify critical technical specs with our sales team.</p>
+            </div>
         `;
         container.appendChild(chatWindow);
         
@@ -288,7 +292,7 @@ class SmartFloatingWidget {
             
             if (this.messages.length === 0) {
                 setTimeout(() => {
-                    this.addBotMessage("👋 Hello! I'm your Tatvam Assistant. I can recommend grades, check stock guidelines, or help you contact sales. What are you looking for today?");
+                    this.addBotMessage("👋 Hello! I'm your Tatvam AI Assistant. I can recommend grades, check stock guidelines, or connect you with sales.\n\n⚠️ *Note: AI suggestions are for guidance — please confirm critical material specs with our engineering team!*");
                 }, 400);
             }
             // Scroll to bottom after opening
