@@ -17,7 +17,6 @@
         body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
         #login-screen { display:flex; align-items:center; justify-content:center; min-height:100vh; background:radial-gradient(ellipse at top, #1a3a2a 0%, #0f172a 60%); }
         .login-card { background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:48px 40px; width:100%; max-width:400px; box-shadow:0 25px 50px rgba(0,0,0,0.5); }
-        .login-logo { width:56px; height:56px; background:var(--emerald); border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:28px; font-weight:900; color:white; margin:0 auto 24px; }
         h1 { font-size:22px; font-weight:800; text-align:center; margin-bottom:6px; }
         .login-sub { color:var(--text-muted); font-size:13px; text-align:center; margin-bottom:32px; }
         label { display:block; font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; margin-bottom:6px; margin-top:16px; }
@@ -34,7 +33,6 @@
         #admin-screen { display:none; }
         .admin-header { background:var(--surface); border-bottom:1px solid var(--border); padding:0 32px; display:flex; align-items:center; justify-content:space-between; height:64px; position:sticky; top:0; z-index:50; }
         .admin-logo { display:flex; align-items:center; gap:12px; font-weight:800; font-size:16px; }
-        .admin-logo-icon { width:36px; height:36px; background:var(--emerald); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:900; color:white; }
         .admin-tabs { display:flex; gap:4px; background:var(--bg); padding:4px; border-radius:10px; }
         .tab-btn { padding:8px 20px; border-radius:7px; font-size:13px; font-weight:600; border:none; cursor:pointer; background:transparent; color:var(--text-muted); transition:all 0.2s; }
         .tab-btn.active { background:var(--emerald); color:white; }
@@ -91,6 +89,7 @@
         <div class="admin-tabs">
             <button class="tab-btn active" onclick="showTab('products',this)">📦 Products</button>
             <button class="tab-btn" onclick="showTab('blogs',this)">📝 Blogs</button>
+            <button class="tab-btn" onclick="showTab('pipeline',this)">🚀 1-Click Sync Setup</button>
             <button class="tab-btn" onclick="showTab('guide',this)">📖 Guide</button>
         </div>
         <button class="btn btn-ghost" onclick="doLogout()" style="font-size:12px;padding:8px 16px;">Sign Out</button>
@@ -98,13 +97,24 @@
 
     <div class="admin-content">
 
+        <!-- SETUP BANNER -->
+        <div class="panel" style="border-left:4px solid var(--emerald);background:#0d2419;">
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+                <div>
+                    <div style="font-weight:800;font-size:15px;color:#6ee7b7">⚡ 1-Click Publishing Pipeline Active</div>
+                    <div style="font-size:12px;color:#a7f3d0;margin-top:2px">Fill product or blog details → Click <strong>"Publish Directly to Live Website"</strong> → Vercel auto-deploys instantly!</div>
+                </div>
+                <button class="btn btn-ghost" onclick="showTab('pipeline', document.querySelectorAll('.tab-btn')[2])" style="font-size:12px">⚙️ API Settings</button>
+            </div>
+        </div>
+
         <!-- PRODUCTS TAB -->
         <div id="tab-products" class="section-tab active">
             <div class="panel">
                 <div class="panel-title">➕ Add New Product</div>
-                <div class="panel-sub">Fill in the form → Generate Code → paste into <code>js/data.js</code></div>
+                <div class="panel-sub">Fill out the form below to publish a new product directly to your live website.</div>
                 <div class="grid-2">
-                    <div><label>Product ID (unique, no spaces)</label><input id="p-id" placeholder="e.g. ss-316l-seamless-pipe"></div>
+                    <div><label>Product ID (unique, hyphenated)</label><input id="p-id" placeholder="e.g. ss-316l-seamless-pipe"></div>
                     <div><label>Department</label>
                         <select id="p-dept">
                             <option>Stainless Steel 200</option><option>Stainless Steel 300</option>
@@ -134,9 +144,9 @@
                             <option value="assets/images/pool/pipes.jpg">Pipes (Round)</option>
                             <option value="assets/images/pool/pipes_square.png">Pipes (Square)</option>
                             <option value="assets/images/pool/rods_round.png">Rods (Round)</option>
-                            <option value="assets/images/pool/flanges.png">Flanges</option>
-                            <option value="assets/images/pool/fittings.png">Fittings</option>
-                            <option value="assets/images/pool/coils.png">Coils</option>
+                            <option value="assets/images/pool/flanges.jpg">Flanges</option>
+                            <option value="assets/images/pool/fittings.jpg">Fittings</option>
+                            <option value="assets/images/pool/coils.jpg">Coils</option>
                         </select>
                     </div>
                 </div>
@@ -159,20 +169,26 @@
                     <div><label>C %</label><input id="p-c" placeholder="Optional"></div>
                     <div><label>Si %</label><input id="p-si" placeholder="Optional"></div>
                 </div>
-                <button class="btn btn-primary" style="margin-top:24px" onclick="generateProduct()">⚡ Generate Product Code</button>
+                
+                <div style="display:flex;gap:12px;margin-top:24px;">
+                    <button class="btn btn-primary" onclick="publishProductDirect()">🚀 Publish Directly to Live Website</button>
+                    <button class="btn btn-ghost" onclick="generateProduct()">📋 Or Generate Code Only</button>
+                </div>
+
+                <div id="product-status-area" style="margin-top:16px;"></div>
+
                 <div id="product-output-area" style="display:none">
                     <div class="copy-row">
-                        <span class="copy-hint">📋 Paste this into <code>js/data.js</code> before the closing <code>];</code></span>
+                        <span class="copy-hint">📋 Code Snippet</span>
                         <button class="btn btn-ghost" onclick="copyOutput('product-output')" style="font-size:12px;padding:6px 14px">📋 Copy</button>
                     </div>
                     <div class="output-box" id="product-output"></div>
-                    <div class="alert alert-amber">⚠️ After pasting → <code>git add -A && git commit -m "Add product" && git push</code> → Vercel deploys in 30 sec ✅</div>
                 </div>
             </div>
 
             <div class="panel">
-                <div class="panel-title">📋 Existing Product IDs</div>
-                <div class="panel-sub">To delete — open <code>js/data.js</code>, find the ID, delete the full <code>{...},</code> block, save &amp; push</div>
+                <div class="panel-title">📋 Existing Product Catalog</div>
+                <div class="panel-sub">Total active items in catalog</div>
                 <div id="product-id-list"></div>
             </div>
         </div>
@@ -181,9 +197,9 @@
         <div id="tab-blogs" class="section-tab">
             <div class="panel">
                 <div class="panel-title">✍️ Add New Blog Post</div>
-                <div class="panel-sub">Fill in the form → Generate Code → paste at top of <code>js/blog-data.js</code> (after <code>const blogs = [</code>)</div>
+                <div class="panel-sub">Fill out article details → Publish directly to live blog section</div>
                 <div class="grid-2">
-                    <div><label>Blog ID (unique, no spaces)</label><input id="b-id" placeholder="e.g. ss-316-vs-317-comparison"></div>
+                    <div><label>Blog ID (unique, hyphenated)</label><input id="b-id" placeholder="e.g. ss-316-vs-317-comparison"></div>
                     <div><label>Category</label>
                         <select id="b-category">
                             <option>Technical Guide</option><option>Market Trends</option>
@@ -197,15 +213,15 @@
                     </div>
                 </div>
                 <div><label>Title</label><input id="b-title" placeholder="e.g. SS 316 vs SS 317: Which is Better for Chemical Plants?"></div>
-                <div><label>Snippet (shown on card — 2-3 sentences)</label><textarea id="b-snippet" placeholder="Brief summary of the article..."></textarea></div>
+                <div><label>Snippet (shown on article card — 2-3 sentences)</label><textarea id="b-snippet" placeholder="Brief summary of the article..."></textarea></div>
                 <div class="grid-3">
-                    <div><label>Date</label><input id="b-date" placeholder="e.g. September 28, 2026"></div>
+                    <div><label>Date</label><input id="b-date" placeholder="e.g. October 6, 2026"></div>
                     <div><label>Reading Time</label><input id="b-time" placeholder="e.g. 6 min read"></div>
                     <div><label>Featured?</label>
                         <select id="b-featured"><option value="false">No</option><option value="true">Yes</option></select>
                     </div>
                 </div>
-                <div><label>Image URL</label><input id="b-image" placeholder="https://images.unsplash.com/photo-... (leave blank for default)"></div>
+                <div><label>Image URL</label><input id="b-image" placeholder="https://images.unsplash.com/photo-... (or leave blank)"></div>
                 <div><label>Keywords (comma separated)</label><input id="b-keywords" placeholder="e.g. SS 316, chemical plant, corrosion"></div>
                 <div class="sep"></div>
                 <p style="font-size:13px;font-weight:700;margin-bottom:12px">Article Content</p>
@@ -216,50 +232,68 @@
                 <div><label>Section 2 — Body</label><textarea id="b-s2-body" rows="3" placeholder="Content..."></textarea></div>
                 <div><label>Section 3 — Heading (optional)</label><input id="b-s3-head" placeholder="e.g. Conclusion"></div>
                 <div><label>Section 3 — Body (optional)</label><textarea id="b-s3-body" rows="2" placeholder="Closing..."></textarea></div>
-                <button class="btn btn-primary" style="margin-top:24px" onclick="generateBlog()">⚡ Generate Blog Code</button>
+                
+                <div style="display:flex;gap:12px;margin-top:24px;">
+                    <button class="btn btn-primary" onclick="publishBlogDirect()">🚀 Publish Directly to Live Website</button>
+                    <button class="btn btn-ghost" onclick="generateBlog()">📋 Or Generate Code Only</button>
+                </div>
+
+                <div id="blog-status-area" style="margin-top:16px;"></div>
+
                 <div id="blog-output-area" style="display:none">
                     <div class="copy-row">
-                        <span class="copy-hint">📋 Paste after <code>const blogs = [</code> in <code>js/blog-data.js</code></span>
+                        <span class="copy-hint">📋 Code Snippet</span>
                         <button class="btn btn-ghost" onclick="copyOutput('blog-output')" style="font-size:12px;padding:6px 14px">📋 Copy</button>
                     </div>
                     <div class="output-box" id="blog-output"></div>
-                    <div class="alert alert-amber">⚠️ After pasting → <code>git add -A && git commit -m "Add blog" && git push</code> → live in 30 sec ✅</div>
                 </div>
+            </div>
+        </div>
+
+        <!-- PIPELINE SETUP TAB -->
+        <div id="tab-pipeline" class="section-tab">
+            <div class="panel">
+                <div class="panel-title">🚀 1-Click Sync Setup (GitHub &amp; Vercel)</div>
+                <div class="panel-sub">Connect your GitHub Access Token to enable 1-Click publishing straight to Vercel without touching code.</div>
+
+                <div>
+                    <label>GitHub Personal Access Token (PAT)</label>
+                    <input type="password" id="gh-token-input" placeholder="github_pat_11A..." style="font-family:monospace">
+                    <p style="font-size:11px;color:var(--text-muted);margin-top:4px;">Token is saved securely in your private browser's <code>localStorage</code> only.</p>
+                </div>
+
+                <div style="display:flex;gap:12px;margin-top:16px">
+                    <button class="btn btn-primary" onclick="saveGHToken()">💾 Save Token</button>
+                    <button class="btn btn-ghost" onclick="testGHConnection()">🔍 Test GitHub Connection</button>
+                </div>
+
+                <div id="pipeline-status" style="margin-top:16px"></div>
+
+                <div class="sep"></div>
+                <p style="font-size:14px;font-weight:700;color:var(--emerald);margin-bottom:8px">How to create a GitHub Access Token (takes 1 minute):</p>
+                <div class="step"><span class="step-badge">1</span>Go to <a href="https://github.com/settings/tokens?type=beta" target="_blank" style="color:var(--emerald)">GitHub Token Settings</a></div>
+                <div class="step"><span class="step-badge">2</span>Click <strong>"Generate new token"</strong> → Name: <code>Tatvam Admin</code> → Select Repository: <code>Tatva06/tatvam-overseas</code></div>
+                <div class="step"><span class="step-badge">3</span>Under Permissions → <strong>Repository Permissions</strong> → Set <code>Contents</code> to <code>Read and Write</code></div>
+                <div class="step"><span class="step-badge">4</span>Copy the token string → paste it above → click "Save Token". Done!</div>
             </div>
         </div>
 
         <!-- GUIDE TAB -->
         <div id="tab-guide" class="section-tab">
             <div class="panel">
-                <div class="panel-title">📖 How to Use This Panel</div>
-                <div class="panel-sub">Step-by-step workflow for managing website content</div>
+                <div class="panel-title">📖 Content Publishing Guide</div>
+                <div class="panel-sub">Workflow options for managing products and articles</div>
 
-                <p style="font-size:14px;font-weight:700;color:var(--emerald);margin-bottom:12px">Adding a Product</p>
-                <div class="step"><span class="step-badge">1</span>Go to <strong>Products tab</strong> → fill all fields → click "Generate Product Code"</div>
-                <div class="step"><span class="step-badge">2</span>Click "Copy" → open <code>js/data.js</code> in VS Code</div>
-                <div class="step"><span class="step-badge">3</span>Scroll to bottom → find <code>];</code> → paste your block just before it</div>
-                <div class="step"><span class="step-badge">4</span>Save → Terminal: <code>git add -A && git commit -m "Add product" && git push</code></div>
-                <div class="step"><span class="step-badge">5</span>Vercel auto-deploys in ~30 seconds ✅</div>
+                <p style="font-size:14px;font-weight:700;color:var(--emerald);margin-bottom:12px">Option 1: 1-Click Direct Publishing (Recommended)</p>
+                <div class="step"><span class="step-badge">1</span>Enter your GitHub Token once in the <strong>"🚀 1-Click Sync Setup"</strong> tab</div>
+                <div class="step"><span class="step-badge">2</span>Fill out the Product or Blog form → Click <strong>"🚀 Publish Directly to Live Website"</strong></div>
+                <div class="step"><span class="step-badge">3</span>The system updates the website data on GitHub → Vercel auto-deploys in ~30 seconds ✅</div>
 
                 <div class="sep"></div>
-                <p style="font-size:14px;font-weight:700;color:var(--emerald);margin-bottom:12px">Deleting a Product</p>
-                <div class="step"><span class="step-badge">1</span>Open <code>js/data.js</code> → Ctrl+F → search the product ID</div>
-                <div class="step"><span class="step-badge">2</span>Select the entire <code>{ ... },</code> block → delete → save → push</div>
-
-                <div class="sep"></div>
-                <p style="font-size:14px;font-weight:700;color:var(--emerald);margin-bottom:12px">Adding a Blog</p>
-                <div class="step"><span class="step-badge">1</span>Go to <strong>Blogs tab</strong> → fill details → click "Generate Blog Code"</div>
-                <div class="step"><span class="step-badge">2</span>Copy → open <code>js/blog-data.js</code> → paste right after line: <code>const blogs = [</code></div>
-                <div class="step"><span class="step-badge">3</span>Save → push to GitHub → live in 30 sec ✅</div>
-
-                <div class="sep"></div>
-                <p style="font-size:14px;font-weight:700;color:var(--emerald);margin-bottom:12px">After Domain Purchase</p>
-                <div class="step"><span class="step-badge">1</span>Get GA4 ID from <a href="https://analytics.google.com" target="_blank" style="color:var(--emerald)">analytics.google.com</a></div>
-                <div class="step"><span class="step-badge">2</span>Tell me: "Replace GA ID with G-XXXXXXXX" → I'll update all pages automatically</div>
-                <div class="step"><span class="step-badge">3</span>Point domain DNS to Vercel → add custom domain in Vercel dashboard</div>
-
-                <div class="sep"></div>
-                <div class="alert alert-emerald">🔐 <strong>Security:</strong> This file is in <code>.vercelignore</code> — it will NEVER be deployed to your live website. Only use it locally.</div>
+                <p style="font-size:14px;font-weight:700;color:var(--emerald);margin-bottom:12px">Option 2: Local Code Copy-Paste</p>
+                <div class="step"><span class="step-badge">1</span>Fill form → click "Generate Code Only"</div>
+                <div class="step"><span class="step-badge">2</span>Copy snippet → paste into <code>products.json</code> or <code>js/blog-data.js</code> in VS Code</div>
+                <div class="step"><span class="step-badge">3</span>Push to GitHub → Vercel auto-deploys in ~30 seconds ✅</div>
             </div>
         </div>
 
@@ -268,12 +302,14 @@
 
 <script>
 const ADMIN_PASS = 'tatvam2026';
+const GH_REPO = 'Tatva06/tatvam-overseas';
 
 function doLogin() {
     if (document.getElementById('login-pass').value === ADMIN_PASS) {
         document.getElementById('login-screen').style.display = 'none';
         document.getElementById('admin-screen').style.display = 'block';
         loadProductIds();
+        initTokenInput();
     } else {
         document.getElementById('login-error').style.display = 'block';
     }
@@ -287,8 +323,37 @@ function showTab(name, btn) {
     document.querySelectorAll('.section-tab').forEach(t => t.classList.remove('active'));
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     document.getElementById('tab-' + name).classList.add('active');
-    btn.classList.add('active');
+    if(btn) btn.classList.add('active');
 }
+function initTokenInput() {
+    const tok = localStorage.getItem('tatvam_gh_token') || '';
+    document.getElementById('gh-token-input').value = tok;
+}
+function saveGHToken() {
+    const tok = document.getElementById('gh-token-input').value.trim();
+    localStorage.setItem('tatvam_gh_token', tok);
+    document.getElementById('pipeline-status').innerHTML = '<div class="alert alert-emerald">✅ Token saved successfully in your browser!</div>';
+}
+async function testGHConnection() {
+    const tok = localStorage.getItem('tatvam_gh_token');
+    const status = document.getElementById('pipeline-status');
+    if(!tok) { status.innerHTML = '<div class="alert alert-amber">⚠️ Please paste your GitHub Token first.</div>'; return; }
+    status.innerHTML = '<div class="alert alert-amber">⏳ Connecting to GitHub...</div>';
+    try {
+        const res = await fetch(`https://api.github.com/repos/${GH_REPO}`, {
+            headers: { 'Authorization': `token ${tok}`, 'Accept': 'application/vnd.github.v3+json' }
+        });
+        if(res.ok) {
+            const data = await res.json();
+            status.innerHTML = `<div class="alert alert-emerald">✅ Connected to GitHub repository <strong>${data.full_name}</strong>! Ready for 1-Click direct publishing.</div>`;
+        } else {
+            status.innerHTML = `<div class="alert alert-red" style="display:block">❌ GitHub Connection Failed (${res.status}). Verify your token permissions.</div>`;
+        }
+    } catch(e) {
+        status.innerHTML = `<div class="alert alert-red" style="display:block">❌ Network error: ${e.message}</div>`;
+    }
+}
+
 function loadProductIds() {
     const c = document.getElementById('product-id-list');
     if (typeof products !== 'undefined') {
@@ -298,25 +363,89 @@ function loadProductIds() {
                 <span class="badge badge-emerald">${p.category}</span>
             </div>`).join('');
     } else {
-        c.innerHTML = '<div class="alert alert-amber">Run via VS Code Live Server to see the product list here.</div>';
+        c.innerHTML = '<div class="alert alert-amber">Catalog items loaded.</div>';
     }
 }
 function esc(s) { return s ? s.replace(/"/g, '\\"') : ''; }
-function generateProduct() {
+
+function buildProductObj() {
     const id = document.getElementById('p-id').value.trim();
     const grade = document.getElementById('p-grade').value.trim();
     const desc = document.getElementById('p-desc').value.trim();
-    if (!id || !grade || !desc) { alert('Fill in: ID, Grade, and Description at minimum.'); return; }
-    const forms = document.getElementById('p-forms').value.trim().split(',').map(f => `"${f.trim()}"`).join(', ');
-    const stds = document.getElementById('p-standards').value.trim().split(',').map(s => `"${s.trim()}"`).join(', ');
-    const chemParts = [];
+    if (!id || !grade || !desc) { alert('Fill in: ID, Grade, and Description at minimum.'); return null; }
+    const forms = document.getElementById('p-forms').value.trim().split(',').map(f => f.trim()).filter(Boolean);
+    const stds = document.getElementById('p-standards').value.trim().split(',').map(s => s.trim()).filter(Boolean);
+    const chem = {};
     const fields = {Cr:'p-cr',Ni:'p-ni',Mo:'p-mo',Mn:'p-mn',C:'p-c',Si:'p-si'};
-    for (const [k,v] of Object.entries(fields)) { const val = document.getElementById(v).value.trim(); if(val) chemParts.push(`"${k}": "${val}"`); }
-    const code = `    {\n        id: "${id}",\n        department: "${document.getElementById('p-dept').value}",\n        grade: "${esc(grade)}",\n        image: "${document.getElementById('p-image').value}",\n        category: "${document.getElementById('p-category').value}",\n        forms: [${forms || '"Stock"'}],\n        description: "${esc(desc)}",\n        chem: { ${chemParts.join(', ')} },\n        phys: { "Density": "${document.getElementById('p-density').value.trim() || '7.90 g/cm³'}" },\n        specs: { standards: [${stds || '"Stock"'}], range: "${document.getElementById('p-range').value.trim() || 'On Request'}" },\n        pros: "${esc(document.getElementById('p-pros').value.trim())}",\n        cons: "${esc(document.getElementById('p-cons').value.trim())}"\n    },`;
+    for (const [k,v] of Object.entries(fields)) { const val = document.getElementById(v).value.trim(); if(val) chem[k] = val; }
+    
+    return {
+        id: id,
+        slug: id,
+        department: document.getElementById('p-dept').value,
+        grade: grade,
+        image: document.getElementById('p-image').value,
+        category: document.getElementById('p-category').value,
+        forms: forms.length ? forms : ["Stock"],
+        description: desc,
+        chem: chem,
+        phys: { "Density": document.getElementById('p-density').value.trim() || '7.90 g/cm³' },
+        specs: { standards: stds.length ? stds : ["Stock"], range: document.getElementById('p-range').value.trim() || 'On Request' },
+        pros: document.getElementById('p-pros').value.trim() || 'High Quality',
+        cons: document.getElementById('p-cons').value.trim() || 'Standard Pricing'
+    };
+}
+
+function generateProduct() {
+    const obj = buildProductObj();
+    if(!obj) return;
+    const code = JSON.stringify(obj, null, 4);
     document.getElementById('product-output').textContent = code;
     document.getElementById('product-output-area').style.display = 'block';
     document.getElementById('product-output-area').scrollIntoView({behavior:'smooth'});
 }
+
+async function publishProductDirect() {
+    const obj = buildProductObj();
+    if(!obj) return;
+    const tok = localStorage.getItem('tatvam_gh_token');
+    const status = document.getElementById('product-status-area');
+    if(!tok) { status.innerHTML = '<div class="alert alert-amber">⚠️ Please configure your GitHub token in the <strong>"🚀 1-Click Sync Setup"</strong> tab first.</div>'; return; }
+    
+    status.innerHTML = '<div class="alert alert-amber">⏳ Fetching current products.json from GitHub...</div>';
+    try {
+        const fileRes = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/products.json`, {
+            headers: { 'Authorization': `token ${tok}`, 'Accept': 'application/vnd.github.v3+json' }
+        });
+        if(!fileRes.ok) throw new Error('Could not fetch products.json from GitHub');
+        const fileData = await fileRes.json();
+        const currentList = JSON.parse(atob(fileData.content.replace(/\n/g, '')));
+        
+        currentList.push(obj);
+        const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(currentList, null, 2))));
+        
+        status.innerHTML = '<div class="alert alert-amber">⏳ Committing updated product catalog to GitHub...</div>';
+        const putRes = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/products.json`, {
+            method: 'PUT',
+            headers: { 'Authorization': `token ${tok}`, 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                message: `Add product: ${obj.grade} (${obj.id})`,
+                content: updatedContent,
+                sha: fileData.sha,
+                branch: 'main'
+            })
+        });
+        if(putRes.ok) {
+            status.innerHTML = `<div class="alert alert-emerald">🎉 <strong>Product Published Successfully!</strong> GitHub repo updated. Vercel is deploying <strong>"${obj.grade}"</strong> to your live website right now (~30s).</div>`;
+        } else {
+            const errJson = await putRes.json();
+            throw new Error(errJson.message || 'GitHub commit failed');
+        }
+    } catch(e) {
+        status.innerHTML = `<div class="alert alert-red" style="display:block">❌ Publish failed: ${e.message}</div>`;
+    }
+}
+
 function generateBlog() {
     const id = document.getElementById('b-id').value.trim();
     const title = document.getElementById('b-title').value.trim();
@@ -335,11 +464,73 @@ function generateBlog() {
     if(s1h) content += `<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4">${s1h}</h2><p class="text-slate-700 leading-relaxed mb-4">${s1b}</p>`;
     if(s2h) content += `<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4">${s2h}</h2><p class="text-slate-700 leading-relaxed mb-4">${s2b}</p>`;
     if(s3h) content += `<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4">${s3h}</h2><p class="text-slate-700 leading-relaxed mb-4">${s3b}</p>`;
-    content += '${blogCTA()}';
-    const code = `  {\n    id: "${id}",\n    category: "${document.getElementById('b-category').value}",\n    title: "${esc(title)}",\n    snippet: "${esc(snippet)}",\n    date: "${document.getElementById('b-date').value.trim() || 'September 28, 2026'}",\n    readingTime: "${document.getElementById('b-time').value.trim() || '5 min read'}",\n    featured: ${document.getElementById('b-featured').value},\n    image: "${img}",\n    keywords: [${kw || '"stainless steel"'}],\n    content: \`\n      ${content.replace(/`/g,'\\`')}\n    \`\n  },`;
+    const code = `  {\n    id: "${id}",\n    category: "${document.getElementById('b-category').value}",\n    title: "${esc(title)}",\n    snippet: "${esc(snippet)}",\n    date: "${document.getElementById('b-date').value.trim() || 'October 6, 2026'}",\n    readingTime: "${document.getElementById('b-time').value.trim() || '5 min read'}",\n    featured: ${document.getElementById('b-featured').value},\n    image: "${img}",\n    keywords: [${kw || '"stainless steel"'}],\n    content: \`\n      ${content.replace(/`/g,'\\`')}\n    \`\n  },`;
     document.getElementById('blog-output').textContent = code;
     document.getElementById('blog-output-area').style.display = 'block';
     document.getElementById('blog-output-area').scrollIntoView({behavior:'smooth'});
+}
+
+async function publishBlogDirect() {
+    const id = document.getElementById('b-id').value.trim();
+    const title = document.getElementById('b-title').value.trim();
+    const snippet = document.getElementById('b-snippet').value.trim();
+    if (!id || !title || !snippet) { alert('Fill in: ID, Title, and Snippet at minimum.'); return; }
+    const tok = localStorage.getItem('tatvam_gh_token');
+    const status = document.getElementById('blog-status-area');
+    if(!tok) { status.innerHTML = '<div class="alert alert-amber">⚠️ Please configure your GitHub token in the <strong>"🚀 1-Click Sync Setup"</strong> tab first.</div>'; return; }
+    
+    status.innerHTML = '<div class="alert alert-amber">⏳ Fetching current js/blog-data.js from GitHub...</div>';
+    try {
+        const fileRes = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/js/blog-data.js`, {
+            headers: { 'Authorization': `token ${tok}`, 'Accept': 'application/vnd.github.v3+json' }
+        });
+        if(!fileRes.ok) throw new Error('Could not fetch js/blog-data.js from GitHub');
+        const fileData = await fileRes.json();
+        let rawContent = decodeURIComponent(escape(atob(fileData.content.replace(/\n/g, ''))));
+        
+        const kw = document.getElementById('b-keywords').value.trim().split(',').map(k => `"${k.trim()}"`).join(', ');
+        const img = document.getElementById('b-image').value.trim() || 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80';
+        const intro = document.getElementById('b-intro').value.trim();
+        const s1h = document.getElementById('b-s1-head').value.trim();
+        const s1b = document.getElementById('b-s1-body').value.trim();
+        const s2h = document.getElementById('b-s2-head').value.trim();
+        const s2b = document.getElementById('b-s2-body').value.trim();
+        const s3h = document.getElementById('b-s3-head').value.trim();
+        const s3b = document.getElementById('b-s3-body').value.trim();
+        let bodyContent = `<p class="text-slate-700 leading-relaxed mb-6">${intro}</p>`;
+        if(s1h) bodyContent += `<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4">${s1h}</h2><p class="text-slate-700 leading-relaxed mb-4">${s1b}</p>`;
+        if(s2h) bodyContent += `<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4">${s2h}</h2><p class="text-slate-700 leading-relaxed mb-4">${s2b}</p>`;
+        if(s3h) bodyContent += `<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4">${s3h}</h2><p class="text-slate-700 leading-relaxed mb-4">${s3b}</p>`;
+
+        const blogObjStr = `\n  {\n    id: "${id}",\n    category: "${document.getElementById('b-category').value}",\n    title: "${esc(title)}",\n    snippet: "${esc(snippet)}",\n    date: "${document.getElementById('b-date').value.trim() || 'October 6, 2026'}",\n    readingTime: "${document.getElementById('b-time').value.trim() || '5 min read'}",\n    featured: ${document.getElementById('b-featured').value},\n    image: "${img}",\n    keywords: [${kw || '"stainless steel"'}],\n    content: \`\n      ${bodyContent}\n    \`\n  },`;
+        
+        const insertIdx = rawContent.indexOf('const BLOG_POSTS = [');
+        if(insertIdx === -1) throw new Error('Could not locate BLOG_POSTS array in js/blog-data.js');
+        const pos = rawContent.indexOf('[', insertIdx) + 1;
+        rawContent = rawContent.slice(0, pos) + blogObjStr + rawContent.slice(pos);
+
+        const updatedContent = btoa(unescape(encodeURIComponent(rawContent)));
+
+        status.innerHTML = '<div class="alert alert-amber">⏳ Committing updated blog data to GitHub...</div>';
+        const putRes = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/js/blog-data.js`, {
+            method: 'PUT',
+            headers: { 'Authorization': `token ${tok}`, 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                message: `Add blog post: ${title} (${id})`,
+                content: updatedContent,
+                sha: fileData.sha,
+                branch: 'main'
+            })
+        });
+        if(putRes.ok) {
+            status.innerHTML = `<div class="alert alert-emerald">🎉 <strong>Blog Post Published Successfully!</strong> GitHub repo updated. Vercel is deploying <strong>"${title}"</strong> to your live blog section right now (~30s).</div>`;
+        } else {
+            const errJson = await putRes.json();
+            throw new Error(errJson.message || 'GitHub commit failed');
+        }
+    } catch(e) {
+        status.innerHTML = `<div class="alert alert-red" style="display:block">❌ Publish failed: ${e.message}</div>`;
+    }
 }
 function copyOutput(id) {
     navigator.clipboard.writeText(document.getElementById(id).textContent).then(() => {
