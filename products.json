@@ -6417,5 +6417,645 @@
       "chemical",
       "pharmaceutical"
     ]
+  },
+  {
+    "id": "ss-202-pvd-gold-designer-sheet",
+    "slug": "ss-202-pvd-gold-designer-sheets",
+    "grade": "SS 202",
+    "subGrade": "J4",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "PVD Gold",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/pool/pvd_designer_sheets.jpg",
+    "metaTitle": "SS 202 PVD Gold Designer Sheets | Tatvam Overseas Inc Mumbai",
+    "metaDescription": "Buy SS 202 PVD Gold coloured designer sheets in Mumbai. Premium decorative stainless steel for interiors, lifts, hotels. Tatvam Overseas Inc.",
+    "keywords": [
+      "SS 202 gold sheets",
+      "PVD gold stainless steel",
+      "coloured stainless sheets",
+      "gold designer sheets Mumbai",
+      "202 gold colour sheets"
+    ],
+    "description": "Our hero product — SS 202 J4 sheets with Physical Vapour Deposition (PVD) Gold coating. Rich, lustrous gold colour with a mirror-bright base. Ideal for luxury interiors, hotel lobbies, elevator cabins, feature walls, and high-end furniture. The coating is scratch-resistant, non-toxic, and UV stable.",
+    "chem": {
+      "C": "≤0.15%",
+      "Si": "≤1.00%",
+      "Mn": "8.0–10.0%",
+      "P": "≤0.060%",
+      "S": "≤0.030%",
+      "Cr": "15.0–17.0%",
+      "Ni": "1.0–1.5%",
+      "Cu": "1.5–2.0%",
+      "N": "≤0.25%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength (0.2%)": "≥275 MPa",
+      "Tensile Strength": "515–690 MPa",
+      "Elongation": "≥40%",
+      "Hardness": "≤HRB 95",
+      "Surface Roughness (base)": "Ra ≤ 0.05 µm (8K Mirror base)",
+      "PVD Coating Thickness": "0.3–0.5 µm (TiN / ZrN)"
+    },
+    "specs": {
+      "standards": [
+        "IS 6911",
+        "Jindal J4",
+        "ASTM A240 (equivalent)"
+      ],
+      "thicknessRange": "0.40mm to 2.0mm",
+      "widthRange": "1000mm to 1250mm",
+      "lengthRange": "2440mm to 3048mm",
+      "finish": [
+        "PVD Gold Mirror",
+        "PVD Gold Hairline",
+        "PVD Gold Matte"
+      ],
+      "protective": "PVC protective film on coated surface",
+      "pvdProcess": "Physical Vapour Deposition (PVD) — vacuum coating"
+    },
+    "colorVariants": [
+      "Gold",
+      "Rose Gold",
+      "Bronze",
+      "Black",
+      "Champagne",
+      "Blue",
+      "Silver"
+    ],
+    "applications": [
+      "Elevator / Lift cabin panels",
+      "Hotel lobby cladding",
+      "Restaurant interiors",
+      "Feature walls & partitions",
+      "Luxury furniture & cabinets",
+      "Reception desks",
+      "Retail shopfitting",
+      "Decorative screens & grilles"
+    ],
+    "industries": [
+      "Luxury Hospitality",
+      "Interior Design",
+      "Architecture",
+      "Retail",
+      "Furniture Manufacturing"
+    ],
+    "pros": "Rich gold colour; scratch-resistant PVD coating; UV stable; hygienic and non-toxic; consistent colour batch-to-batch; easy to fabricate.",
+    "cons": "Higher price point vs plain sheets; colour matching required for large orders; avoid abrasive cleaners.",
+    "relatedGrades": [
+      "SS 202 PVD Rose Gold",
+      "SS 304 PVD Gold",
+      "SS 202 Mirror Sheet"
+    ],
+    "inStock": true,
+    "moq": "5 sheets (min)",
+    "tags": [
+      "202",
+      "PVD",
+      "gold",
+      "coloured",
+      "designer",
+      "decorative",
+      "sheets",
+      "luxury",
+      "hero product"
+    ]
+  },
+  {
+    "id": "ss-202-pvd-rose-gold-designer-sheet",
+    "slug": "ss-202-pvd-rose-gold-designer-sheets",
+    "grade": "SS 202",
+    "subGrade": "J4",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "PVD Rose Gold",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/pool/pvd_designer_sheets.jpg",
+    "metaTitle": "SS 202 PVD Rose Gold Designer Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 PVD Rose Gold coloured stainless sheets for luxury interiors and architectural applications. Ex-stock Mumbai. Tatvam Overseas Inc.",
+    "keywords": [
+      "SS 202 rose gold sheets",
+      "PVD rose gold stainless steel",
+      "rose gold designer sheets",
+      "202 rose gold colour sheets",
+      "coloured stainless Mumbai"
+    ],
+    "description": "SS 202 J4 sheets with PVD Rose Gold coating — a soft, warm blush-gold tone ideal for high-end interior fit-outs, luxury hospitality spaces, and decorative architectural panels. Available in mirror, hairline, and matte finishes.",
+    "chem": {
+      "C": "≤0.15%",
+      "Si": "≤1.00%",
+      "Mn": "8.0–10.0%",
+      "P": "≤0.060%",
+      "S": "≤0.030%",
+      "Cr": "15.0–17.0%",
+      "Ni": "1.0–1.5%",
+      "Cu": "1.5–2.0%",
+      "N": "≤0.25%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength (0.2%)": "≥275 MPa",
+      "Tensile Strength": "515–690 MPa",
+      "Elongation": "≥40%",
+      "Hardness": "≤HRB 95",
+      "PVD Coating Thickness": "0.3–0.5 µm (CrN / ZrCN)"
+    },
+    "specs": {
+      "standards": [
+        "IS 6911",
+        "Jindal J4",
+        "ASTM A240 (equivalent)"
+      ],
+      "thicknessRange": "0.40mm to 2.0mm",
+      "widthRange": "1000mm to 1250mm",
+      "lengthRange": "2440mm to 3048mm",
+      "finish": [
+        "PVD Rose Gold Mirror",
+        "PVD Rose Gold Hairline",
+        "PVD Rose Gold Matte"
+      ],
+      "protective": "PVC protective film on coated surface",
+      "pvdProcess": "Physical Vapour Deposition (PVD) — vacuum coating"
+    },
+    "colorVariants": [
+      "Rose Gold",
+      "Gold",
+      "Copper",
+      "Champagne"
+    ],
+    "applications": [
+      "Hotel room cladding",
+      "Spa & wellness interiors",
+      "Luxury residential kitchens",
+      "Jewellery display fixtures",
+      "Elevator panels",
+      "Decorative wall art panels"
+    ],
+    "industries": [
+      "Luxury Hospitality",
+      "Interior Design",
+      "Architecture",
+      "Jewellery Retail"
+    ],
+    "pros": "Trendy warm-pink gold tone; excellent scratch resistance; food-safe surface; easy to clean.",
+    "cons": "Premium pricing; strict colour-match process for large quantity orders.",
+    "relatedGrades": [
+      "SS 202 PVD Gold",
+      "SS 304 PVD Rose Gold",
+      "SS 202 Mirror Sheet"
+    ],
+    "inStock": true,
+    "moq": "5 sheets (min)",
+    "tags": [
+      "202",
+      "PVD",
+      "rose gold",
+      "coloured",
+      "designer",
+      "decorative",
+      "sheets",
+      "luxury",
+      "hero product"
+    ]
+  },
+  {
+    "id": "ss-202-pvd-black-designer-sheet",
+    "slug": "ss-202-pvd-black-designer-sheets",
+    "grade": "SS 202",
+    "subGrade": "J4",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "PVD Black",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/pool/pvd_designer_sheets.jpg",
+    "metaTitle": "SS 202 PVD Black Designer Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 PVD Black coloured stainless steel sheets for modern interiors and architectural cladding. Mumbai supplier.",
+    "keywords": [
+      "SS 202 black sheets",
+      "PVD black stainless steel",
+      "black mirror stainless sheet",
+      "202 black colour sheets"
+    ],
+    "description": "SS 202 J4 sheets with PVD Black (DLC / CrN) coating. Deep, rich matte or mirror-black finish. The go-to choice for contemporary architecture, commercial interiors, and luxury furniture.",
+    "chem": {
+      "C": "≤0.15%",
+      "Si": "≤1.00%",
+      "Mn": "8.0–10.0%",
+      "P": "≤0.060%",
+      "S": "≤0.030%",
+      "Cr": "15.0–17.0%",
+      "Ni": "1.0–1.5%",
+      "Cu": "1.5–2.0%",
+      "N": "≤0.25%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength (0.2%)": "≥275 MPa",
+      "Tensile Strength": "515–690 MPa",
+      "Elongation": "≥40%",
+      "Hardness": "≤HRB 95",
+      "PVD Coating Thickness": "0.3–0.5 µm (DLC / CrN)"
+    },
+    "specs": {
+      "standards": [
+        "IS 6911",
+        "Jindal J4"
+      ],
+      "thicknessRange": "0.40mm to 2.0mm",
+      "widthRange": "1000mm to 1250mm",
+      "lengthRange": "2440mm to 3048mm",
+      "finish": [
+        "PVD Black Mirror",
+        "PVD Black Hairline",
+        "PVD Black Matte"
+      ],
+      "protective": "PVC protective film on coated surface"
+    },
+    "applications": [
+      "Contemporary commercial interiors",
+      "Restaurant facades & interiors",
+      "Feature walls",
+      "Luxury furniture",
+      "Kitchen backsplash",
+      "Elevator cabins"
+    ],
+    "industries": [
+      "Interior Design",
+      "Architecture",
+      "Hospitality",
+      "Furniture Manufacturing"
+    ],
+    "pros": "Sleek contemporary look; hides fingerprints better than mirror; durable coating.",
+    "cons": "Scratches may be more visible on mirror-black variant; premium pricing.",
+    "relatedGrades": [
+      "SS 202 PVD Gold",
+      "SS 304 PVD Black",
+      "SS 202 Mirror Sheet"
+    ],
+    "inStock": true,
+    "moq": "5 sheets (min)",
+    "tags": [
+      "202",
+      "PVD",
+      "black",
+      "coloured",
+      "designer",
+      "decorative",
+      "sheets",
+      "modern"
+    ]
+  },
+  {
+    "id": "ss-202-pvd-bronze-designer-sheet",
+    "slug": "ss-202-pvd-bronze-designer-sheets",
+    "grade": "SS 202",
+    "subGrade": "J4",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "PVD Bronze",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/pool/pvd_designer_sheets.jpg",
+    "metaTitle": "SS 202 PVD Bronze & Champagne Designer Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 PVD Bronze and Champagne coloured stainless sheets. Warm tones for luxury hospitality and architectural cladding.",
+    "keywords": [
+      "SS 202 bronze sheets",
+      "PVD bronze stainless steel",
+      "champagne gold stainless",
+      "202 bronze colour sheets"
+    ],
+    "description": "SS 202 J4 sheets with PVD Bronze coating — a warm, antique-gold-brown tone that adds character to hotel lobbies, retail spaces, and heritage-inspired interiors. Also available in Champagne (pale gold) finish.",
+    "chem": {
+      "C": "≤0.15%",
+      "Si": "≤1.00%",
+      "Mn": "8.0–10.0%",
+      "P": "≤0.060%",
+      "S": "≤0.030%",
+      "Cr": "15.0–17.0%",
+      "Ni": "1.0–1.5%",
+      "Cu": "1.5–2.0%",
+      "N": "≤0.25%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength (0.2%)": "≥275 MPa",
+      "Tensile Strength": "515–690 MPa",
+      "Elongation": "≥40%",
+      "PVD Coating Thickness": "0.3–0.5 µm (TiAlN)"
+    },
+    "specs": {
+      "standards": [
+        "IS 6911",
+        "Jindal J4"
+      ],
+      "thicknessRange": "0.40mm to 2.0mm",
+      "widthRange": "1000mm to 1250mm",
+      "lengthRange": "2440mm to 3048mm",
+      "finish": [
+        "PVD Bronze Mirror",
+        "PVD Bronze Hairline",
+        "PVD Champagne Mirror",
+        "PVD Champagne Hairline"
+      ],
+      "protective": "PVC protective film on coated surface"
+    },
+    "applications": [
+      "Heritage hotel interiors",
+      "Restaurant feature walls",
+      "Decorative lift cabins",
+      "Bar & lounge cladding",
+      "Luxury retail fixtures"
+    ],
+    "industries": [
+      "Luxury Hospitality",
+      "Interior Design",
+      "Architecture"
+    ],
+    "pros": "Distinctive warm tones; durable PVD; sophisticated heritage aesthetic.",
+    "cons": "Niche colour — limited resale market; premium pricing.",
+    "relatedGrades": [
+      "SS 202 PVD Gold",
+      "SS 202 PVD Rose Gold",
+      "SS 304 PVD Bronze"
+    ],
+    "inStock": true,
+    "moq": "5 sheets (min)",
+    "tags": [
+      "202",
+      "PVD",
+      "bronze",
+      "champagne",
+      "coloured",
+      "designer",
+      "sheets"
+    ]
+  },
+  {
+    "id": "ss-202-matte-designer-sheet",
+    "slug": "ss-202-matte-finish-designer-sheets",
+    "grade": "SS 202",
+    "subGrade": "J4",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "Matte (No.4 / Satin)",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/pool/sheets_hairline.png",
+    "metaTitle": "SS 202 Matte Finish Sheets | Satin No.4 | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 matte finish (satin No.4) stainless sheets for modern interiors, kitchen furniture, and architectural cladding. Ex-stock Mumbai.",
+    "keywords": [
+      "SS 202 matte sheets",
+      "satin finish stainless steel",
+      "No.4 finish 202",
+      "matte stainless sheets Mumbai"
+    ],
+    "description": "SS 202 J4 sheets in a smooth matte / satin (No.4 / HL) finish. Low-reflectivity surface that resists fingerprints and scratches better than mirror. Widely used for modern kitchen cabinetry, commercial furniture, and interior architectural cladding.",
+    "chem": {
+      "C": "≤0.15%",
+      "Si": "≤1.00%",
+      "Mn": "8.0–10.0%",
+      "P": "≤0.060%",
+      "S": "≤0.030%",
+      "Cr": "15.0–17.0%",
+      "Ni": "1.0–1.5%",
+      "Cu": "1.5–2.0%",
+      "N": "≤0.25%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength (0.2%)": "≥275 MPa",
+      "Tensile Strength": "515–690 MPa",
+      "Elongation": "≥40%",
+      "Hardness": "≤HRB 95",
+      "Surface Roughness": "Ra 0.2–0.8 µm"
+    },
+    "specs": {
+      "standards": [
+        "IS 6911",
+        "Jindal J4",
+        "ASTM A240 (equivalent)"
+      ],
+      "thicknessRange": "0.40mm to 3.0mm",
+      "widthRange": "1000mm to 1500mm",
+      "lengthRange": "2500mm to 5000mm",
+      "finish": [
+        "No.4 Satin",
+        "Hairline (HL)",
+        "Matte 2D"
+      ]
+    },
+    "applications": [
+      "Kitchen cabinets & appliances",
+      "Office furniture panels",
+      "Hospital furniture",
+      "Commercial fit-outs",
+      "Elevator cab interiors",
+      "Architectural column cladding"
+    ],
+    "industries": [
+      "Interior Design",
+      "Furniture Manufacturing",
+      "Healthcare",
+      "Architecture"
+    ],
+    "pros": "Fingerprint-resistant; hides surface scratches; modern look; easy to maintain.",
+    "cons": "Less reflective than mirror — not for high-glamour applications.",
+    "relatedGrades": [
+      "SS 202 Mirror Sheet",
+      "SS 202 Hairline Sheet",
+      "SS 304 Matte"
+    ],
+    "inStock": true,
+    "moq": "200 kg",
+    "tags": [
+      "202",
+      "matte",
+      "satin",
+      "No.4",
+      "designer",
+      "sheets",
+      "interior"
+    ]
+  },
+  {
+    "id": "ss-202-etched-designer-sheet",
+    "slug": "ss-202-etched-pattern-designer-sheets",
+    "grade": "SS 202",
+    "subGrade": "J4",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "Etched / Pattern",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/pool/sheets_etched.png",
+    "metaTitle": "SS 202 Etched & Pattern Designer Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 chemically etched and pattern-embossed designer stainless sheets. Unique textures for architectural and decorative interiors. Mumbai.",
+    "keywords": [
+      "SS 202 etched sheets",
+      "pattern stainless steel sheets",
+      "designer etched sheets Mumbai",
+      "textured stainless sheets"
+    ],
+    "description": "SS 202 J4 sheets processed with chemical etching or mechanical embossing to create unique surface patterns — wood-grain, geometric, floral, brick, and custom motifs. Often combined with PVD colour coating for premium effect.",
+    "chem": {
+      "C": "≤0.15%",
+      "Si": "≤1.00%",
+      "Mn": "8.0–10.0%",
+      "P": "≤0.060%",
+      "S": "≤0.030%",
+      "Cr": "15.0–17.0%",
+      "Ni": "1.0–1.5%",
+      "Cu": "1.5–2.0%",
+      "N": "≤0.25%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength (0.2%)": "≥275 MPa",
+      "Tensile Strength": "515–690 MPa",
+      "Elongation": "≥40%"
+    },
+    "specs": {
+      "standards": [
+        "IS 6911",
+        "Jindal J4"
+      ],
+      "thicknessRange": "0.40mm to 2.0mm",
+      "widthRange": "1000mm to 1250mm",
+      "lengthRange": "2440mm to 3048mm",
+      "finish": [
+        "Etched (Chemical)",
+        "Embossed / Linen",
+        "Combination PVD + Etched"
+      ],
+      "patterns": [
+        "Linen",
+        "Brick",
+        "Wood Grain",
+        "Floral",
+        "Geometric",
+        "Custom (MOQ applies)"
+      ]
+    },
+    "applications": [
+      "Feature walls & partitions",
+      "Decorative lift cabins",
+      "Hotel lobby cladding",
+      "Restaurant facades",
+      "Retail shopfitting",
+      "Luxury furniture fronts"
+    ],
+    "industries": [
+      "Architecture",
+      "Interior Design",
+      "Luxury Hospitality",
+      "Retail"
+    ],
+    "pros": "Unique textures; hides fingerprints; can combine with PVD for colour-textured premium look.",
+    "cons": "Custom patterns require higher MOQ; lead time 2–4 weeks for custom designs.",
+    "relatedGrades": [
+      "SS 202 PVD Gold",
+      "SS 202 Hairline Sheet",
+      "SS 304 Etched"
+    ],
+    "inStock": true,
+    "moq": "200 kg (standard patterns); 500 kg (custom patterns)",
+    "tags": [
+      "202",
+      "etched",
+      "pattern",
+      "embossed",
+      "designer",
+      "decorative",
+      "sheets",
+      "textured"
+    ]
+  },
+  {
+    "id": "ss-202-mirror-matte-combo-sheet",
+    "slug": "ss-202-mirror-matte-combo-sheets",
+    "grade": "SS 202",
+    "subGrade": "J4",
+    "series": "200 Series",
+    "form": "Sheets",
+    "finish": "Mirror / Matte Combination",
+    "department": "Stainless Steel",
+    "category": "Flat Products",
+    "image": "assets/images/pool/sheets_mirror.png",
+    "metaTitle": "SS 202 Mirror & Matte Designer Sheets | Tatvam Overseas Inc",
+    "metaDescription": "SS 202 combination mirror and matte finish sheets. Both finishes on one panel for high-contrast decorative interiors. Mumbai supplier.",
+    "keywords": [
+      "SS 202 mirror matte sheets",
+      "combination finish stainless",
+      "two finish stainless sheet",
+      "mirror matte 202 sheets"
+    ],
+    "description": "SS 202 J4 sheets with dual surface treatment — mirror-polished (8K) on one face and matte/hairline on the reverse. Used when both faces of the sheet panel will be visible, providing design flexibility in a single product.",
+    "chem": {
+      "C": "≤0.15%",
+      "Si": "≤1.00%",
+      "Mn": "8.0–10.0%",
+      "P": "≤0.060%",
+      "S": "≤0.030%",
+      "Cr": "15.0–17.0%",
+      "Ni": "1.0–1.5%",
+      "Cu": "1.5–2.0%",
+      "N": "≤0.25%"
+    },
+    "phys": {
+      "Density": "7.80 g/cm³",
+      "Yield Strength (0.2%)": "≥275 MPa",
+      "Tensile Strength": "515–690 MPa",
+      "Elongation": "≥40%",
+      "Face 1 Roughness (Mirror)": "Ra ≤ 0.05 µm",
+      "Face 2 Roughness (Matte)": "Ra 0.2–0.8 µm"
+    },
+    "specs": {
+      "standards": [
+        "IS 6911",
+        "Jindal J4"
+      ],
+      "thicknessRange": "0.50mm to 2.0mm",
+      "widthRange": "1000mm to 1250mm",
+      "lengthRange": "2440mm to 3048mm",
+      "finish": [
+        "8K Mirror (Face 1) + No.4 Matte (Face 2)",
+        "8K Mirror (Face 1) + Hairline (Face 2)"
+      ],
+      "protective": "PVC film on mirror face"
+    },
+    "applications": [
+      "Partition walls (both sides visible)",
+      "Double-sided decorative panels",
+      "Screen dividers",
+      "Display fixtures",
+      "Retail shelving"
+    ],
+    "industries": [
+      "Interior Design",
+      "Architecture",
+      "Retail"
+    ],
+    "pros": "Two premium finishes in one sheet; reduces fabrication complexity; versatile.",
+    "cons": "Limited availability; slightly higher cost than single-finish sheets.",
+    "relatedGrades": [
+      "SS 202 Mirror Sheet",
+      "SS 202 Matte Sheet",
+      "SS 202 Hairline Sheet"
+    ],
+    "inStock": true,
+    "moq": "200 kg",
+    "tags": [
+      "202",
+      "mirror",
+      "matte",
+      "combination",
+      "designer",
+      "sheets",
+      "dual finish"
+    ]
   }
 ]
