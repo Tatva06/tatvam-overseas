@@ -201,7 +201,13 @@ function initHiddenGoogleTranslate() {
                 cursor: pointer;
                 line-height: 1;
             }
-            .toi-quote-btn:hover { background: #15803d; }
+            /* Desktop vs Mobile CTA visibility */
+            .toi-desktop-cta { display: flex !important; }
+            .toi-mobile-cta  { display: none !important; }
+            @media (max-width: 1023px) {
+                .toi-desktop-cta { display: none !important; }
+                .toi-mobile-cta  { display: flex !important; }
+            }
         `;
         document.head.appendChild(style);
 
@@ -353,7 +359,7 @@ function renderHeader() {
                 </a>
 
                 <!-- Desktop: Language + WhatsApp + GET QUOTE -->
-                <div class="hidden lg:flex items-center gap-0 shrink-0">
+                <div class="toi-desktop-cta items-center gap-0 shrink-0">
 
                     <!-- Language selector (compact, before the buttons) -->
                     <div class="relative mr-4" id="header-lang-wrapper">
@@ -395,7 +401,7 @@ function renderHeader() {
                 </div>
 
                 <!-- Mobile CTAs -->
-                <div class="flex items-center gap-2 lg:hidden">
+                <div class="toi-mobile-cta items-center gap-2">
                     <a href="https://wa.me/919082834775" target="_blank"
                        class="flex items-center gap-1.5 text-emerald-600 font-bold text-sm bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
                         <i data-lucide="message-circle" class="w-4 h-4"></i> WA

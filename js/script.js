@@ -628,28 +628,62 @@ function openProductModal(id) {
     
     // 3. Generate Specs & Chem HTML
     const chemRows = p.chem ? Object.entries(p.chem).map(([k,v]) => 
-        `<div class="flex justify-between border-b border-slate-100 py-1"><span class="font-bold text-slate-700">${k}</span><span>${v}</span></div>`
-    ).join('') : 'Contact for details';
+        `<div class="flex justify-between border-b border-slate-100 py-1 text-xs"><span class="font-bold text-slate-700">${k}</span><span class="text-slate-600 text-right">${v}</span></div>`
+    ).join('') : '<span class="text-xs text-slate-400">Contact for details</span>';
+
+    const physRows = p.phys ? Object.entries(p.phys).map(([k,v]) =>
+        `<div class="flex justify-between border-b border-slate-100 py-1 text-xs"><span class="font-bold text-slate-700">${k}</span><span class="text-slate-600 text-right">${v}</span></div>`
+    ).join('') : '';
+
+    const applicationsHtml = (p.applications && p.applications.length > 0) ? `
+        <div>
+            <h4 class="font-bold text-slate-900 mb-2 text-xs uppercase tracking-wider border-b border-slate-200 pb-1">Key Applications</h4>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+                ${p.applications.map(app => `<span class="bg-slate-100 text-slate-700 text-[11px] font-medium px-2 py-0.5 rounded border border-slate-200">${app}</span>`).join('')}
+            </div>
+        </div>
+    ` : '';
+
+    const industriesHtml = (p.industries && p.industries.length > 0) ? `
+        <div>
+            <h4 class="font-bold text-slate-900 mb-2 text-xs uppercase tracking-wider border-b border-slate-200 pb-1">Industries Served</h4>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+                ${p.industries.map(ind => `<span class="bg-emerald-50 text-emerald-800 text-[11px] font-semibold px-2 py-0.5 rounded border border-emerald-200">${ind}</span>`).join('')}
+            </div>
+        </div>
+    ` : '';
+
+    const highlightsHtml = (p.pros || p.cons) ? `
+        <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 space-y-1.5 text-xs">
+            ${p.pros ? `<div class="text-emerald-700"><span class="font-bold">✓ Advantages:</span> ${p.pros}</div>` : ''}
+            ${p.cons ? `<div class="text-slate-500"><span class="font-bold">ℹ Note:</span> ${p.cons}</div>` : ''}
+        </div>
+    ` : '';
 
     // 4. Modal HTML
     body.innerHTML = `
         <div class="grid md:grid-cols-2 gap-0 h-full">
-            <div class="p-6 bg-slate-50/50 flex flex-col">
-                <img src="${getProductImage(p)}" class="w-full h-56 object-cover rounded-lg shadow-md mb-4">
-                <h2 class="text-2xl font-black text-slate-900 mb-1">${p.grade}</h2>
-                <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-1 rounded mb-4 w-fit">${p.department}</span>
-                <p class="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">${p.description}</p>
-                <div class="flex gap-3 mt-auto">
-                    <a href="contact.html" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded text-center transition-colors text-sm shadow-md">Get Quote</a>
-                    <a href="https://wa.me/919082834775?text=Inquiry%20for%20${p.grade}" target="_blank" class="flex-1 bg-white border border-slate-300 text-slate-700 font-bold py-3 rounded text-center transition-colors text-sm flex items-center justify-center gap-2"><i data-lucide="message-circle" class="w-4 h-4 text-green-500"></i> WhatsApp</a>
+            <div class="p-6 bg-slate-50/50 flex flex-col border-r border-slate-100">
+                <div class="relative overflow-hidden rounded-lg shadow-md mb-4 bg-white border border-slate-200">
+                    <img src="${getProductImage(p)}" class="w-full h-64 object-cover" alt="${escapeHtml(p.grade)}">
+                    <span class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">${p.category || 'Product'}</span>
+                </div>
+                <h2 class="text-2xl font-black text-slate-900 mb-1 leading-tight">${p.grade}</h2>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded">${p.department}</span>
+                    ${p.forms ? p.forms.map(f => `<span class="inline-block bg-slate-100 text-slate-600 text-[11px] font-medium px-2 py-0.5 rounded border border-slate-200">${f}</span>`).join('') : ''}
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed mb-6">${p.description}</p>
+                ${highlightsHtml}
+                <div class="flex gap-3 mt-6 pt-4 border-t border-slate-200">
+                    <a href="contact.html" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded text-center transition-colors text-sm shadow-md">Get Instant Quote</a>
+                    <a href="https://wa.me/919082834775?text=Inquiry%20for%20${encodeURIComponent(p.grade)}" target="_blank" class="flex-1 bg-white border border-slate-300 text-slate-700 font-bold py-3 rounded text-center transition-colors text-sm flex items-center justify-center gap-2 hover:bg-slate-50"><i data-lucide="message-circle" class="w-4 h-4 text-green-500"></i> WhatsApp</a>
                 </div>
             </div>
 
-            <div class="p-6 overflow-y-auto max-h-[80vh] no-scrollbar">
-                
-
+            <div class="p-6 overflow-y-auto max-h-[85vh] no-scrollbar space-y-5">
                 <!-- Calculator CTA -->
-                <div class="bg-slate-900 text-white p-4 rounded-xl shadow-lg border border-slate-700 mb-6 flex items-center gap-4">
+                <div class="bg-slate-900 text-white p-4 rounded-xl shadow-lg border border-slate-700 flex items-center gap-4">
                     <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center shrink-0">
                         <i data-lucide="calculator" class="w-5 h-5 text-white"></i>
                     </div>
@@ -663,19 +697,31 @@ function openProductModal(id) {
                     </a>
                 </div>
 
-
                 <div class="space-y-4">
                     <div>
-                        <h4 class="font-bold text-slate-900 mb-2 text-xs uppercase tracking-wider border-b border-slate-200 pb-1">Standards & Range</h4>
-                        <div class="text-sm text-slate-600 grid grid-cols-2 gap-2">
-                            <div><span class="font-bold">Std:</span> ${p.specs?.standards?.join(", ") || '-'}</div>
-                            <div><span class="font-bold">Size:</span> ${p.specs?.range || '-'}</div>
+                        <h4 class="font-bold text-slate-900 mb-2 text-xs uppercase tracking-wider border-b border-slate-200 pb-1">Specifications & Dimensions</h4>
+                        <div class="text-xs text-slate-600 grid grid-cols-1 gap-1.5 bg-white p-3 rounded-lg border border-slate-200">
+                            ${p.specs?.standards ? `<div><span class="font-bold text-slate-800">Standards:</span> ${p.specs.standards.join(", ")}</div>` : ''}
+                            ${p.specs?.range ? `<div><span class="font-bold text-slate-800">Size / Range:</span> ${p.specs.range}</div>` : ''}
+                            ${p.specs?.thicknessRange ? `<div><span class="font-bold text-slate-800">Thickness:</span> ${p.specs.thicknessRange}</div>` : ''}
+                            ${p.specs?.finish ? `<div><span class="font-bold text-slate-800">Finish:</span> ${Array.isArray(p.specs.finish) ? p.specs.finish.join(", ") : p.specs.finish}</div>` : ''}
                         </div>
                     </div>
+
                     <div>
-                        <h4 class="font-bold text-slate-900 mb-2 text-xs uppercase tracking-wider border-b border-slate-200 pb-1">Chemical Composition</h4>
-                        <div class="text-sm space-y-1">${chemRows}</div>
+                        <h4 class="font-bold text-slate-900 mb-2 text-xs uppercase tracking-wider border-b border-slate-200 pb-1">Material Composition / Coating Specs</h4>
+                        <div class="space-y-1 bg-white p-3 rounded-lg border border-slate-200">${chemRows}</div>
                     </div>
+
+                    ${physRows ? `
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2 text-xs uppercase tracking-wider border-b border-slate-200 pb-1">Physical & Mechanical Properties</h4>
+                        <div class="space-y-1 bg-white p-3 rounded-lg border border-slate-200">${physRows}</div>
+                    </div>
+                    ` : ''}
+
+                    ${applicationsHtml}
+                    ${industriesHtml}
                 </div>
             </div>
         </div>
