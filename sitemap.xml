@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Website Pages -->
   <url>
     <loc>https://www.tatvamoverseasinc.com/</loc>
     <lastmod>2026-10-14</lastmod>
@@ -53,5 +54,75 @@
     <lastmod>2026-10-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+
+  <!-- Product Landing Pages -->
+  <url>
+    <loc>https://www.tatvamoverseasinc.com/products/ss-304-sheets-plates-supplier-mumbai.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tatvamoverseasinc.com/products/ss-316l-sheets-plates-supplier-mumbai.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tatvamoverseasinc.com/products/stainless-steel-pipes-tubes-supplier-mumbai.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tatvamoverseasinc.com/products/alloy-steel-p11-p22-ibr-pipes-mumbai.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tatvamoverseasinc.com/products/carbon-steel-a106-api-5l-pipes-mumbai.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tatvamoverseasinc.com/products/inconel-625-600-supplier-india.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tatvamoverseasinc.com/products/duplex-2205-supplier-india.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tatvamoverseasinc.com/products/ss-round-bars-angles-flats-supplier-mumbai.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Technical Engineering Blog Posts -->
+  <url>
+    <loc>https://www.tatvamoverseasinc.com/blog/ss-304-vs-ss-316l-which-to-choose.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.tatvamoverseasinc.com/blog/what-is-en-10204-3-1-mill-test-certificate.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.tatvamoverseasinc.com/blog/ibr-certified-boiler-pipes-p11-p22-guide.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

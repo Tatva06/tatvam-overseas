@@ -4,14 +4,15 @@
 // ============================================================================
 
 const SITE_CONFIG = {
-    phone: '+919082834775',
-    phoneDisplay: '+91 90828 34775',
+    phone: '+919930301181',
+    phoneDisplay: '+91 99303 01181',
     email: 'sales@tatvamoverseasinc.com',
     exportEmail: 'export@tatvamoverseasinc.com',
     accountsEmail: 'accounts@tatvamoverseasinc.com',
-    whatsapp: 'https://wa.me/919082834775',
-    address: '39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Kalbadevi, Mumbai - 400004',
-    mapsUrl: 'https://maps.google.com/?q=39+41+Kamal+Building+Kumbharwada+Lane+Mumbai+400004',
+    whatsapp: 'https://wa.me/919930301181',
+    address: '61, Jamnadas Building, Shop No. 5 & 6, 10th Khetwadi Back Road, Girgaon, Mumbai - 400004',
+    addressWarehouse: '39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Kalbadevi, Mumbai - 400004',
+    mapsUrl: 'https://maps.google.com/?q=61+Jamnadas+Building+10th+Khetwadi+Back+Road+Girgaon+Mumbai+400004',
     catalogUrl: 'assets/TatvamOverseasInc_Catalog_2025.pdf',
     // Social Media Links (Update URLs here whenever ready):
     linkedin: 'https://www.linkedin.com/company/tatvamoverseasinc',
@@ -292,23 +293,25 @@ function renderHeader() {
     headerEl.style.background = 'transparent';
 
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const isSubfolder = window.location.pathname.includes('/products/') || window.location.pathname.includes('/blog/');
+    const pfx = isSubfolder ? '../' : '';
     const currentLang = getSavedLanguage();
 
     const navLinks = [
-        { href: 'index.html', label: 'Home' },
-        { href: 'about.html', label: 'Our Firm' },
-        { href: 'products.html', label: 'Inventory' },
-        { href: 'blog.html', label: 'Knowledge' },
-        { href: 'contact.html', label: 'Contact' },
+        { href: pfx + 'index.html', label: 'Home', match: 'index.html' },
+        { href: pfx + 'about.html', label: 'Our Firm', match: 'about.html' },
+        { href: pfx + 'products.html', label: 'Inventory', match: 'products.html' },
+        { href: pfx + 'blog.html', label: 'Knowledge', match: 'blog.html' },
+        { href: pfx + 'contact.html', label: 'Contact', match: 'contact.html' },
     ];
 
     const desktopLinks = navLinks.map(l => `
-        <a href="${l.href}" class="toi-nav-link${currentPage === l.href ? ' active' : ''}" translate="no">${l.label}</a>
+        <a href="${l.href}" class="toi-nav-link${currentPage === l.match ? ' active' : ''}" translate="no">${l.label}</a>
     `).join('');
 
     const mobileLinks = navLinks.map(l => `
         <a href="${l.href}" translate="no"
-           class="block px-4 py-3 text-sm font-medium uppercase tracking-wide transition-colors border-l-2 ${currentPage === l.href ? 'text-white border-emerald-500 bg-slate-800/60 font-bold' : 'text-slate-300 border-transparent hover:text-white hover:border-emerald-400/50 hover:bg-slate-800/40'}">${l.label}</a>
+           class="block px-4 py-3 text-sm font-medium uppercase tracking-wide transition-colors border-l-2 ${currentPage === l.match ? 'text-white border-emerald-500 bg-slate-800/60 font-bold' : 'text-slate-300 border-transparent hover:text-white hover:border-emerald-400/50 hover:bg-slate-800/40'}">${l.label}</a>
     `).join('');
 
     const desktopLangOptions = SUPPORTED_LANGUAGES.map(l => {
@@ -345,9 +348,9 @@ function renderHeader() {
             <div class="container mx-auto px-6 py-3 flex items-center justify-between gap-6">
 
                 <!-- Brand: Logo + Name -->
-                <a href="index.html" translate="no" class="flex items-center gap-3 group shrink-0" aria-label="Tatvam Overseas Inc">
+                <a href="${pfx}index.html" translate="no" class="flex items-center gap-3 group shrink-0" aria-label="Tatvam Overseas Inc">
                     <div class="bg-white rounded-md border border-slate-200 shadow-sm p-1 shrink-0 group-hover:shadow-md transition-shadow">
-                        <img src="assets/TATVAM LOGO.jpg" alt="TOI – Tatvam Overseas Inc Logo"
+                        <img src="${pfx}assets/TATVAM LOGO.jpg" alt="TOI – Tatvam Overseas Inc Logo"
                              class="h-10 w-auto object-contain block" translate="no" loading="eager">
                     </div>
                     <div class="leading-tight" translate="no">
@@ -381,7 +384,7 @@ function renderHeader() {
                     </div>
 
                     <!-- WhatsApp: outlined pill button matching reference image -->
-                    <a href="https://wa.me/919082834775" target="_blank" rel="noopener"
+                    <a href="https://wa.me/919930301181" target="_blank" rel="noopener noreferrer"
                        class="flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-emerald-500 hover:bg-emerald-50 text-emerald-600 font-bold text-sm tracking-wide transition-all group cursor-pointer shrink-0">
                         <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
@@ -390,7 +393,7 @@ function renderHeader() {
                     </a>
 
                     <!-- GET QUOTE: solid green slanted parallelogram button -->
-                    <a href="contact.html" translate="no"
+                    <a href="${pfx}contact.html" translate="no"
                        class="flex items-center gap-2.5 pl-8 pr-7 py-[11px] bg-emerald-600 hover:bg-emerald-500 text-white font-black text-sm tracking-[0.12em] uppercase transition-all shrink-0 cursor-pointer ml-px"
                        style="clip-path: polygon(22px 0%, 100% 0%, 100% 100%, 0% 100%); letter-spacing:0.1em;">
                         GET QUOTE
@@ -402,11 +405,11 @@ function renderHeader() {
 
                 <!-- Mobile CTAs -->
                 <div class="toi-mobile-cta items-center gap-2">
-                    <a href="https://wa.me/919082834775" target="_blank"
+                    <a href="https://wa.me/919930301181" target="_blank" rel="noopener noreferrer"
                        class="flex items-center gap-1.5 text-emerald-600 font-bold text-sm bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
                         <i data-lucide="message-circle" class="w-4 h-4"></i> WA
                     </a>
-                    <a href="contact.html" class="text-white font-bold text-sm bg-emerald-600 px-3.5 py-1.5 rounded-full">
+                    <a href="${pfx}contact.html" class="text-white font-bold text-sm bg-emerald-600 px-3.5 py-1.5 rounded-full">
                         Quote
                     </a>
                 </div>
@@ -419,7 +422,7 @@ function renderHeader() {
             <div class="toi-nav-links" translate="no">
                 ${desktopLinks}
                 <span style="color:#334155; padding:0 14px 0 4px; display:flex; align-items:center; flex-shrink:0;" aria-hidden="true">
-                    <svg width="9" height="9" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg>
+                    <svg width="9" height="9" viewBox="0 0 100 100" fill="currentColor"><polygon points="50,0 100,50 50,100 0,50"/></svg>
                 </span>
             </div>
         </nav>
@@ -446,7 +449,7 @@ function renderHeader() {
                 <div class="grid grid-cols-2 gap-1.5 max-h-36 overflow-y-auto">${mobileLangOptions}</div>
             </div>
             <div class="px-4 pb-4 pt-2">
-                <a href="contact.html" class="block bg-emerald-600 text-white text-center py-3 rounded-lg font-bold text-sm uppercase tracking-wide hover:bg-emerald-500 transition-colors" translate="no">
+                <a href="${pfx}contact.html" class="block bg-emerald-600 text-white text-center py-3 rounded-lg font-bold text-sm uppercase tracking-wide hover:bg-emerald-500 transition-colors" translate="no">
                     Get Quote Now
                 </a>
             </div>
@@ -497,6 +500,8 @@ function renderFooter() {
     const footerEl = document.getElementById('site-footer');
     if (!footerEl) return;
 
+    const isSubfolder = window.location.pathname.includes('/products/') || window.location.pathname.includes('/blog/');
+    const pfx = isSubfolder ? '../' : '';
     const year = new Date().getFullYear();
 
     footerEl.innerHTML = `
@@ -531,7 +536,7 @@ function renderFooter() {
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 text-sm">
                 <!-- Company Info -->
                 <div class="space-y-6">
-                    <a href="index.html" class="inline-block group">
+                    <a href="${pfx}index.html" class="inline-block group">
                         <div class="flex flex-col leading-none">
                             <span class="text-xl font-black text-white tracking-wider group-hover:text-emerald-400 transition-colors">TATVAM</span>
                             <span class="text-[10px] font-extrabold text-emerald-400 tracking-[0.24em] uppercase mt-1">OVERSEAS INC</span>
@@ -551,13 +556,13 @@ function renderFooter() {
                 <div>
                     <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Top Products</h4>
                     <ul class="space-y-3">
-                        <li><a href="products.html" class="hover:text-emerald-400 transition-colors block">SS 304 / 304L Sheets</a></li>
-                        <li><a href="products.html" class="hover:text-emerald-400 transition-colors block">SS 316 / 316L Marine Plates</a></li>
-                        <li><a href="products.html" class="hover:text-emerald-400 transition-colors block">Alloy Steel P11/P22 Pipes</a></li>
-                        <li><a href="products.html" class="hover:text-emerald-400 transition-colors block">Inconel 625 Seamless Tubes</a></li>
-                        <li><a href="products.html" class="hover:text-emerald-400 transition-colors block">Duplex 2205 Flanges</a></li>
+                        <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">SS 304 / 304L Sheets</a></li>
+                        <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">SS 316 / 316L Marine Plates</a></li>
+                        <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Alloy Steel P11/P22 Pipes</a></li>
+                        <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Inconel 625 Seamless Tubes</a></li>
+                        <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Duplex 2205 Flanges</a></li>
                         <li>
-                            <a href="${SITE_CONFIG.catalogUrl}" target="_blank" class="text-emerald-500 font-bold hover:text-emerald-400 flex items-center gap-2 mt-4">
+                            <a href="${pfx}assets/TatvamOverseasInc_Catalog_2025.pdf" target="_blank" class="text-emerald-500 font-bold hover:text-emerald-400 flex items-center gap-2 mt-4">
                                 <i data-lucide="download" class="w-3 h-3"></i> Download Full Catalog (PDF)
                             </a>
                         </li>
@@ -568,26 +573,25 @@ function renderFooter() {
                 <div>
                     <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Our Firm</h4>
                     <ul class="space-y-3">
-                        <li><a href="about.html" class="hover:text-emerald-400 transition-colors block">About Tatvam Overseas Inc</a></li>
-                        <li><a href="products.html" class="hover:text-emerald-400 transition-colors block">Complete Inventory</a></li>
-                        <li><a href="mtc.html" class="hover:text-emerald-400 transition-colors block">Quality &amp; MTC Generator</a></li>
-                        <li><a href="blog.html" class="hover:text-emerald-400 transition-colors block">Technical Knowledge Hub</a></li>
-                        <li><a href="contact.html" class="hover:text-emerald-400 transition-colors block">Contact &amp; Locations</a></li>
-                        <li><a href="privacypolicy.html" class="hover:text-emerald-400 transition-colors block">Privacy Policy</a></li>
-                        <li><a href="terms.html" class="hover:text-emerald-400 transition-colors block">Terms &amp; Conditions</a></li>
+                        <li><a href="${pfx}about.html" class="hover:text-emerald-400 transition-colors block">About Tatvam Overseas Inc</a></li>
+                        <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Complete Inventory</a></li>
+                        <li><a href="${pfx}mtc.html" class="hover:text-emerald-400 transition-colors block">Quality &amp; MTC Generator</a></li>
+                        <li><a href="${pfx}blog.html" class="hover:text-emerald-400 transition-colors block">Technical Knowledge Hub</a></li>
+                        <li><a href="${pfx}contact.html" class="hover:text-emerald-400 transition-colors block">Contact &amp; Locations</a></li>
+                        <li><a href="${pfx}privacypolicy.html" class="hover:text-emerald-400 transition-colors block">Privacy Policy</a></li>
+                        <li><a href="${pfx}terms.html" class="hover:text-emerald-400 transition-colors block">Terms &amp; Conditions</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact -->
                 <div>
-                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Mumbai Headquarters</h4>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Mumbai Office &amp; Contact</h4>
                     <ul class="space-y-5">
                         <li class="flex items-start gap-3">
                             <i data-lucide="map-pin" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
                             <span class="text-xs leading-relaxed">
-                                39/41, Kamal Building,<br>
-                                1st Kumbharwada Lane,<br>
-                                Near Round Temple,<br>
+                                61, Jamnadas Building, Shop No. 5 &amp; 6,<br>
+                                10th Khetwadi Back Road, Girgaon,<br>
                                 Mumbai - 400004, Maharashtra
                             </span>
                         </li>
@@ -600,7 +604,7 @@ function renderFooter() {
                             <a href="mailto:${SITE_CONFIG.email}" class="text-xs hover:text-emerald-400 transition-colors">${SITE_CONFIG.email}</a>
                         </li>
                         <li class="pt-2">
-                            <a href="contact.html" class="block w-full py-3 border-2 border-emerald-600 text-emerald-400 text-center font-bold rounded-lg hover:bg-emerald-600 hover:text-white transition-all text-xs uppercase tracking-widest shadow-lg">
+                            <a href="${pfx}contact.html" class="block w-full py-3 border-2 border-emerald-600 text-emerald-400 text-center font-bold rounded-lg hover:bg-emerald-600 hover:text-white transition-all text-xs uppercase tracking-widest shadow-lg">
                                 Request Quote
                             </a>
                         </li>
@@ -612,12 +616,12 @@ function renderFooter() {
         <!-- Copyright -->
         <div class="bg-black py-5 border-t border-slate-800">
             <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-slate-600 uppercase tracking-wider">
-                <p>&copy; ${year} Tatvam Overseas Inc. All Rights Reserved. Designed with excellence by <strong>Tatvam Studios</strong>.</p>
+                <p>&copy; 2026 Tatvam Overseas Inc. All Rights Reserved.</p>
                 <div class="flex items-center gap-6">
-                    <a href="privacypolicy.html" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
-                    <a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
-                    <a href="https://wa.me/919082834775" target="_blank" rel="noopener" title="WhatsApp" class="hover:text-white transition-colors flex items-center gap-1"><i data-lucide="message-circle" class="w-3 h-3"></i> WhatsApp</a>
+                    <a href="${pfx}privacypolicy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="${pfx}terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+                    <a href="${pfx}sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
+                    <a href="https://wa.me/919930301181" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" class="hover:text-white transition-colors flex items-center gap-1"><i data-lucide="message-circle" class="w-3 h-3"></i> WhatsApp</a>
                 </div>
             </div>
         </div>

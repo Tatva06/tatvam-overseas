@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23059669' width='100' height='100' rx='15'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'>T</text></svg>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steel Weight Calculator | Tatvam Overseas Inc</title>
-    <meta name="description" content="Free online steel weight calculator for SS 304/316, Inconel, Alloy Steel. Calculate weight for sheets, plates, pipes, tubes, round bars and coils instantly.">
+    <title>Steel Weight Calculator for Sheets, Pipes, Bars</title>
+    <meta name="description" content="Calculate theoretical weight for stainless steel sheets, seamless pipes, and round bars. Accurate density formulas for SS 304, SS 316, and nickel alloys.">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.tatvamoverseasinc.com/calculator.html">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Tatvam Overseas Inc">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Steel Weight Calculator for Sheets, Pipes, Bars">
+    <meta property="og:description" content="Calculate theoretical weight for stainless steel sheets, seamless pipes, and round bars. Accurate density formulas for SS 304, SS 316, and nickel alloys.">
+    <meta property="og:url" content="https://www.tatvamoverseasinc.com/calculator.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Steel Weight Calculator",
+      "url": "https://www.tatvamoverseasinc.com/calculator.html",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All",
+      "description": "Calculate theoretical weight for stainless steel sheets, seamless pipes, and round bars instantly with accurate density formulas.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Tatvam Overseas Inc",
+        "url": "https://www.tatvamoverseasinc.com",
+        "telephone": "+919930301181",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "61, Jamnadas Building, Shop No. 5 & 6, 10th Khetwadi Back Road, Girgaon",
+          "addressLocality": "Mumbai",
+          "postalCode": "400004",
+          "addressCountry": "IN"
+        }
+      }
+    }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -204,7 +235,7 @@
                         <button onclick="copyResult()" class="w-full flex items-center justify-center gap-2 bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 rounded-xl transition-all text-sm">
                             <i data-lucide="clipboard-copy" class="w-4 h-4"></i> Copy Result
                         </button>
-                        <a id="wa-cta" href="https://wa.me/919082834775" target="_blank" class="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-xl transition-all text-sm">
+                        <a id="wa-cta" href="https://wa.me/919930301181" target="_blank" class="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-xl transition-all text-sm">
                             <i data-lucide="message-circle" class="w-4 h-4"></i> Send to WhatsApp
                         </a>
                         <a href="contact.html" class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-all text-sm">
@@ -222,7 +253,7 @@
                     <div class="bg-white rounded-xl border border-slate-100 p-4 flex items-center gap-3">
                         <i data-lucide="phone" class="w-4 h-4 text-emerald-600 shrink-0"></i>
                         <div><span class="text-xs text-slate-500 block">Need help?</span>
-                        <a href="tel:+919082834775" class="text-sm font-bold text-emerald-600">+91 90828 34775</a></div>
+                        <a href="tel:+919930301181" class="text-sm font-bold text-emerald-600">+91 99303 01181</a></div>
                     </div>
                 </div>
             </div>
@@ -391,7 +422,7 @@
         }
         const grade=GRADES.find(g=>g.id===currentGrade)?.label||'Steel';
         const msg=encodeURIComponent(`Hi Tatvam Overseas Inc,\n\nWeight Calculation Result:\nMaterial: ${grade} (${currentDensity} g/cm³)\nForm: ${FORM_LABELS[currentForm]}\nDimensions: ${dims||'—'}\nQty: ${qty||1} pcs\nEstimated Weight: ${calcKg.toFixed(3)} kg\n\nPlease send a quote.`);
-        document.getElementById('wa-cta').href=`https://wa.me/919082834775?text=${msg}`;
+        document.getElementById('wa-cta').href=`https://wa.me/919930301181?text=${msg}`;
         if(calcKg>0){const el=document.getElementById('result-val');el.parentElement.classList.remove('result-pulse');void el.parentElement.offsetWidth;el.parentElement.classList.add('result-pulse');}
     }
 
@@ -426,7 +457,7 @@
     function copyResult(){
         if(calcKg<=0){alert('Enter dimensions first.');return;}
         const grade=GRADES.find(g=>g.id===currentGrade)?.label||'Custom';
-        navigator.clipboard.writeText(`Tatvam Overseas Inc - Weight Calc\nMaterial: ${grade} (${currentDensity} g/cm³)\nForm: ${FORM_LABELS[currentForm]}\nResult: ${calcKg.toFixed(3)} kg | ${(calcKg/1000).toFixed(5)} MT | ${(calcKg*2.20462).toFixed(2)} lbs\nContact: sales@tatvamoverseasinc.com | +91 90828 34775`)
+        navigator.clipboard.writeText(`Tatvam Overseas Inc - Weight Calc\nMaterial: ${grade} (${currentDensity} g/cm³)\nForm: ${FORM_LABELS[currentForm]}\nResult: ${calcKg.toFixed(3)} kg | ${(calcKg/1000).toFixed(5)} MT | ${(calcKg*2.20462).toFixed(2)} lbs\nContact: sales@tatvamoverseasinc.com | +91 99303 01181`)
             .then(()=>alert('✅ Copied!')).catch(()=>alert('Copy failed.'));
     }
 
