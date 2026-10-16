@@ -223,7 +223,7 @@ class SmartFloatingWidget {
                     <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-emerald-600 font-bold">T</div>
                     <div>
                         <h4 class="font-bold text-xs leading-tight">Tatvam Assistant</h4>
-                        <p class="text-[9px] text-emerald-100">Typically responds within 2-4 business hours</p>
+                        <p class="text-[9px] text-emerald-100">Quote within 2-4 working hours (Mon-Sat, 9 AM-7 PM IST)</p>
                     </div>
                 </div>
                 <button id="chat-close-btn" class="text-white/80 hover:text-white">
@@ -472,7 +472,7 @@ class SmartFloatingWidget {
 
         // Pricing / quotes
         if (lower.includes('price') || lower.includes('cost') || lower.includes('rate') || lower.includes('quote') || lower.includes('quotation')) {
-            return `💰 **Get a Fast Quotation**:\nPrices fluctuate daily based on LME raw metal rates (nickel, molybdenum, chrome). To get an accurate quote within 2-4 business hours, please let me know:\n\n1. **Material Grade** (e.g., SS 316L)\n2. **Product Form** (e.g., Seamless Pipe)\n3. **Dimensions** (e.g., 2" NB, Sch 40)\n4. **Quantity** (e.g., 500 Meters)\n\nAlternatively, you can submit your RFQ sheet on our [Contact page](contact.html) or WhatsApp it to +91 99303 01181.`;
+            return `💰 **Get a Fast Quotation**:\nPrices fluctuate daily based on LME raw metal rates (nickel, molybdenum, chrome). To get an accurate quote within 2-4 working hours (Mon-Sat, 9 AM-7 PM IST), please let me know:\n\n1. **Material Grade** (e.g., SS 316L)\n2. **Product Form** (e.g., Seamless Pipe)\n3. **Dimensions** (e.g., 2" NB, Sch 40)\n4. **Quantity** (e.g., 500 Meters)\n\nAlternatively, you can submit your RFQ sheet on our [Contact page](contact.html) or WhatsApp it to +91 99303 01181.`;
         }
 
         // Stock availability
@@ -502,7 +502,8 @@ class SmartFloatingWidget {
 
         // General info
         if (lower.includes('about') || lower.includes('who are you') || lower.includes('firm') || lower.includes('history') || lower.includes('proprietor') || lower.includes('established') || lower.includes('iso')) {
-            return `🏢 **About Tatvam Overseas Inc**:\nEstablished in **1992** (formerly Nagmani Metal Corporation), we are an ISO 9001:2015 certified stockist and exporter of stainless steel and alloy piping systems.\n\nLed by Mr. Champalal Jain and family, we have been bridging the gap between top global steel mills and key industrial projects for over **34 years** with a clean reputation for quality.`;
+            const expYears = new Date().getFullYear() - 1992;
+            return `🏢 **About Tatvam Overseas Inc**:\nEstablished in **1992** (formerly Nagmani Metal Corporation), we are an ISO 9001:2015 certified stockist and exporter of stainless steel and alloy piping systems.\n\nLed by Mr. Champalal Jain and family, we have been bridging the gap between top global steel mills and key industrial projects for over **${expYears} years** with a clean reputation for quality.`;
         }
 
         // Thanks

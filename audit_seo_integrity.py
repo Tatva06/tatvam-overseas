@@ -22,6 +22,10 @@ FILES_TO_CHECK = [
     "products/inconel-625-600-supplier-india.html",
     "products/duplex-2205-supplier-india.html",
     "products/ss-round-bars-angles-flats-supplier-mumbai.html",
+    "products/decorative-stainless-steel-sheets-mumbai.html",
+    "products/stainless-steel.html",
+    "products/carbon-alloy-steel.html",
+    "products/nickel-alloys.html",
     "blog/ss-304-vs-ss-316l-which-to-choose.html",
     "blog/what-is-en-10204-3-1-mill-test-certificate.html",
     "blog/ibr-certified-boiler-pipes-p11-p22-guide.html"
@@ -148,6 +152,6 @@ for filepath in FILES_TO_CHECK:
 
 print("\n=== AUDIT SUMMARY ===")
 if all_passed:
-    print("🎯 ALL 21 HTML FILES PASSED 100% OF SEO, INTEGRITY, SCHEMA, AND BRANDING TESTS!")
+    print(f"🎯 ALL {len(FILES_TO_CHECK)} HTML FILES PASSED 100% OF SEO, INTEGRITY, SCHEMA, AND BRANDING TESTS!")
 else:
     print("⚠️ SOME CHECKS FAILED. PLEASE REVIEW ISSUES ABOVE.")

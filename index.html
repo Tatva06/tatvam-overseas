@@ -44,11 +44,15 @@
         content="Mumbai stockist of SS 304, 316L &amp; Inconel 625 with 700+ tons ready inventory. Mill Test Certificates EN 10204 3.1 provided. Exporting worldwide.">
     <meta name="twitter:image" content="https://www.tatvamoverseasinc.com/assets/images/tatvamoverseasinc-warehouse-stock.jpg">
 
-    <!-- Geo Tags -->
+    <!-- Search Console & Webmaster Verification (TODO: user to add verification codes) -->
+    <meta name="google-site-verification" content="TODO_SEARCH_CONSOLE_VERIFICATION_CODE">
+    <meta name="msvalidate.01" content="TODO_BING_WEBMASTER_VERIFICATION_CODE">
+
+    <!-- Geo Tags (Main Office: 10th Khetwadi, Girgaon, Mumbai) -->
     <meta name="geo.region" content="IN-MH">
     <meta name="geo.placename" content="Mumbai">
-    <meta name="geo.position" content="18.9389;72.8350">
-    <meta name="ICBM" content="18.9389, 72.8350">
+    <meta name="geo.position" content="18.9554;72.8185">
+    <meta name="ICBM" content="18.9554, 72.8185">
 
     <!-- Preconnect for faster font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,20 +76,30 @@
 
   gtag('config', 'G-2C5PC2BWQJ');
 </script>
+<script defer src="js/analytics.js"></script>
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     [
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": ["Organization", "LocalBusiness"],
       "name": "Tatvam Overseas Inc",
+      "foundingDate": "1992",
+      "taxID": "27AHIPJ6958M1ZK",
       "url": "https://www.tatvamoverseasinc.com/",
       "logo": "https://www.tatvamoverseasinc.com/assets/images/tatvam-logo.png",
       "image": "https://www.tatvamoverseasinc.com/assets/images/tatvamoverseasinc-warehouse-stock.jpg",
-      "telephone": "+919930301181",
+      "telephone": ["+919930301181", "+919869275149"],
       "email": "sales@tatvamoverseasinc.com",
       "description": "ISO 9001:2015 certified stockist and exporter of stainless steel, carbon steel, and high nickel alloys since 1992. Serving 15+ countries from Mumbai.",
+      "openingHours": "Mo-Sa 09:00-19:00",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "61, Jamnadas Building, Shop No. 5 & 6, 10th Khetwadi Back Road, Girgaon",
@@ -94,12 +108,43 @@
         "postalCode": "400004",
         "addressCountry": "IN"
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "09:00",
-        "closes": "19:00"
-      }
+      "location": [
+        {
+          "@type": "Place",
+          "name": "Tatvam Overseas Inc - Main Head Office",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "61, Jamnadas Building, Shop No. 5 & 6, 10th Khetwadi Back Road, Girgaon",
+            "addressLocality": "Mumbai",
+            "addressRegion": "Maharashtra",
+            "postalCode": "400004",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 18.9554,
+            "longitude": 72.8185
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Tatvam Overseas Inc - Central Stockyard & Warehouse",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Bhandari Street, Kalbadevi",
+            "addressLocality": "Mumbai",
+            "addressRegion": "Maharashtra",
+            "postalCode": "400004",
+            "addressCountry": "IN"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://www.indiamart.com/tatvam-overseas-inc/",
+        "https://www.justdial.com/TODO",
+        "https://www.linkedin.com/company/TODO",
+        "https://www.instagram.com/TODO"
+      ]
     },
     {
       "@context": "https://schema.org",
@@ -114,7 +159,7 @@
         { "@type": "Question", "name": "Do you provide Mill Test Certificates (MTC)?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, every order ships with EN 10204 3.1 Mill Test Certificates, fully traceable to the heat number." } },
         { "@type": "Question", "name": "What is the minimum order quantity?", "acceptedAnswer": { "@type": "Answer", "text": "Our minimum order quantity is 500 kg per grade/form for standard items. We can accommodate smaller quantities for spot stock at a premium." } },
         { "@type": "Question", "name": "Do you export stainless steel internationally?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, we export to 15+ countries including UAE, Saudi Arabia, Oman, Kenya, Nigeria, and Southeast Asia with complete export documentation." } },
-        { "@type": "Question", "name": "What is your typical quotation turnaround time?", "acceptedAnswer": { "@type": "Answer", "text": "We respond to all inquiries within 2-4 business hours during Mon-Sat, 9 AM to 7 PM IST." } }
+        { "@type": "Question", "name": "What is your typical quotation turnaround time?", "acceptedAnswer": { "@type": "Answer", "text": "Quote within 2-4 working hours (Mon-Sat, 9 AM-7 PM IST)." } }
       ]
     }
     ]
@@ -147,8 +192,7 @@
                     <div class="max-w-3xl space-y-6" data-aos="fade-up">
                         <div class="flex flex-wrap items-center gap-3">
                             <span
-                                class="bg-emerald-600 text-white px-3 py-1 text-xs font-bold uppercase tracking-widest rounded-sm shadow-lg">Est.
-                                1992 • 32+ Years</span>
+                                class="bg-emerald-600 text-white px-3 py-1 text-xs font-bold uppercase tracking-widest rounded-sm shadow-lg">Since 1992</span>
                             <span
                                 class="border-2 border-emerald-500 text-emerald-400 px-3 py-1 text-xs font-bold uppercase tracking-widest rounded-sm">ISO
                                 9001:2015 Certified</span>
@@ -274,10 +318,10 @@
                     <!-- Stainless Steel -->
                     <article
                         class="group relative overflow-hidden rounded-2xl shadow-lg border border-slate-100 cursor-pointer transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-                        onclick="window.location.href='products.html?dept=Stainless+Steel'" data-aos="fade-up" data-aos-delay="0"
+                        onclick="window.location.href='products/stainless-steel.html'" data-aos="fade-up" data-aos-delay="0"
                         aria-label="Stainless Steel Products">
                         <div class="h-64 bg-slate-200 relative overflow-hidden">
-                            <img src="assets/images/pool/sheets_prod.jpg"
+                            <img src="assets/images/pool/sheets_prod.webp"
                                 alt="Premium Stainless Steel Plates"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                 loading="eager" decoding="async">
@@ -309,17 +353,17 @@
                             </ul>
                             <span
                                 class="text-emerald-600 font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">Browse
-                                Catalog <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                                Hub <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
                         </div>
                     </article>
 
                     <!-- Carbon & Alloy Steel -->
                     <article
                         class="group relative overflow-hidden rounded-2xl shadow-lg border border-slate-100 cursor-pointer transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-                        onclick="window.location.href='products.html?dept=Carbon+Steel'" data-aos="fade-up" data-aos-delay="100"
+                        onclick="window.location.href='products/carbon-alloy-steel.html'" data-aos="fade-up" data-aos-delay="100"
                         aria-label="Carbon and Alloy Steel Products">
                         <div class="h-64 bg-slate-200 relative overflow-hidden">
-                            <img src="assets/images/pool/pipes.jpg"
+                            <img src="assets/images/pool/pipes.webp"
                                 alt="Alloy Steel P11 P22 Carbon Steel A106 IBR Boiler Pipes Mumbai"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                 loading="lazy" decoding="async">
@@ -351,18 +395,19 @@
                             </ul>
                             <span
                                 class="text-emerald-600 font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">Browse
-                                Catalog <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                                Hub <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
                         </div>
                     </article>
 
                     <!-- Nickel Alloys -->
                     <article
                         class="group relative overflow-hidden rounded-2xl shadow-lg border border-slate-100 cursor-pointer transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-                        onclick="window.location.href='products.html?dept=Nickel+Alloys'" data-aos="fade-up" data-aos-delay="200"
+                        onclick="window.location.href='products/nickel-alloys.html'" data-aos="fade-up" data-aos-delay="200"
                         aria-label="Nickel Super Alloys Products">
                         <div class="h-64 bg-slate-200 relative overflow-hidden">
-                            <img src="assets/images/pool/coils.jpg"
-                                alt="Advanced Quality Testing Equipment"
+                            <img src="assets/images/pool/nickel_alloy.webp"
+                                alt="High Nickel Super Alloys - Inconel 625, Monel 400, Hastelloy C-276 Stock"
+                                width="600" height="400"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                 loading="lazy" decoding="async">
                             <div
@@ -396,6 +441,16 @@
                                 Catalog <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
                         </div>
                     </article>
+                </div>
+
+                <!-- Dedicated Product Quick Links -->
+                <div class="mt-12 pt-8 border-t border-slate-100 flex flex-wrap items-center justify-center gap-3 text-xs" data-aos="fade-up">
+                    <span class="text-slate-400 font-bold uppercase tracking-wider text-[11px] mr-2">Featured Products:</span>
+                    <a href="products/ss-304-sheets-plates-supplier-mumbai.html" class="px-3 py-1.5 rounded-lg bg-slate-50 hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 font-semibold border border-slate-200 transition-colors">SS 304 Sheets (Mumbai)</a>
+                    <a href="products/ss-316l-sheets-plates-supplier-mumbai.html" class="px-3 py-1.5 rounded-lg bg-slate-50 hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 font-semibold border border-slate-200 transition-colors">SS 316L Sheets (Mumbai)</a>
+                    <a href="products/decorative-stainless-steel-sheets-mumbai.html" class="px-3 py-1.5 rounded-lg bg-slate-50 hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 font-semibold border border-slate-200 transition-colors">Decorative SS Sheets (PVD/Mirror)</a>
+                    <a href="products/inconel-625-600-supplier-india.html" class="px-3 py-1.5 rounded-lg bg-slate-50 hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 font-semibold border border-slate-200 transition-colors">Inconel 625 / 600</a>
+                    <a href="products/alloy-steel-p11-p22-ibr-pipes-mumbai.html" class="px-3 py-1.5 rounded-lg bg-slate-50 hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 font-semibold border border-slate-200 transition-colors">IBR Boiler Pipes P11/P22</a>
                 </div>
             </div>
         </section>
@@ -508,7 +563,7 @@
                     <span class="text-emerald-600 font-bold tracking-widest text-xs uppercase">Our Advantage</span>
                     <h2 id="why-heading" class="text-3xl md:text-4xl font-black text-slate-900 mt-2">Why Choose Tatvam
                         Overseas</h2>
-                    <p class="text-slate-500 mt-3 max-w-2xl mx-auto">Built over 32 years, our operational capabilities
+                    <p class="text-slate-500 mt-3 max-w-2xl mx-auto">Built over 34 years since 1992, our operational capabilities
                         are designed for mission-critical projects.</p>
                 </div>
 
@@ -601,11 +656,11 @@
                         <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Tons Ready Stock</div>
                     </div>
                     <div class="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-                        <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">150+</div>
-                        <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Product Grades</div>
+                        <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">170+</div>
+                        <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Products</div>
                     </div>
                     <div class="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-                        <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">32+</div>
+                        <div class="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200"><span class="company-years-exp">34</span>+</div>
                         <div class="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300">Years in Business</div>
                     </div>
                     <div class="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
@@ -662,6 +717,48 @@
                         </button>
                         <button onclick="resetWizard()" class="text-slate-400 hover:text-white text-sm">Reset</button>
                     </div>
+
+                    <!-- Static HTML Grade Selection Summary Fallback -->
+                    <div class="mt-8 pt-8 border-t border-slate-700/80">
+                        <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                            <i data-lucide="book-marked" class="w-5 h-5 text-emerald-400"></i> Quick Steel Grade Selection Matrix
+                        </h3>
+                        <p class="text-xs text-slate-400 mb-6 leading-relaxed">
+                            Essential metallurgical guidelines summarizing recommendations across common operating environments:
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-slate-300">
+                            <div class="bg-slate-900/70 p-4 rounded-xl border border-slate-700/80 space-y-1.5">
+                                <h4 class="font-bold text-emerald-400 text-sm">SS 304 / 304L (1.4301)</h4>
+                                <p class="text-slate-300">General fabrication, dairy &amp; food processing, kitchenware, architectural trims.</p>
+                                <span class="text-slate-400 block font-mono text-[11px]">ASTM A240 · 18% Cr / 8% Ni</span>
+                            </div>
+                            <div class="bg-slate-900/70 p-4 rounded-xl border border-slate-700/80 space-y-1.5">
+                                <h4 class="font-bold text-emerald-400 text-sm">SS 316 / 316L (1.4404)</h4>
+                                <p class="text-slate-300">Marine environments, pharmaceutical autoclaves, chemical process vessels.</p>
+                                <span class="text-slate-400 block font-mono text-[11px]">ASTM A240 · 2–3% Mo (Anti-Chloride Pitting)</span>
+                            </div>
+                            <div class="bg-slate-900/70 p-4 rounded-xl border border-slate-700/80 space-y-1.5">
+                                <h4 class="font-bold text-emerald-400 text-sm">Duplex 2205 (UNS S32205)</h4>
+                                <p class="text-slate-300">Offshore oil &amp; gas, chemical tankers, seawater piping. 2x yield strength of 304.</p>
+                                <span class="text-slate-400 block font-mono text-[11px]">ASTM A790/A240 · PREN 35+</span>
+                            </div>
+                            <div class="bg-slate-900/70 p-4 rounded-xl border border-slate-700/80 space-y-1.5">
+                                <h4 class="font-bold text-emerald-400 text-sm">Inconel 625 / 600</h4>
+                                <p class="text-slate-300">Aerospace exhaust systems, chemical incinerators, extreme heat up to 982°C.</p>
+                                <span class="text-slate-400 block font-mono text-[11px]">ASTM B443/B444 · Nickel-Chromium-Moly</span>
+                            </div>
+                            <div class="bg-slate-900/70 p-4 rounded-xl border border-slate-700/80 space-y-1.5">
+                                <h4 class="font-bold text-emerald-400 text-sm">Alloy Steel P11 / P22 (IBR)</h4>
+                                <p class="text-slate-300">Thermal power plants, high-pressure steam headers, superheaters up to 590°C.</p>
+                                <span class="text-slate-400 block font-mono text-[11px]">ASTM A335 · Form III-A Certified</span>
+                            </div>
+                            <div class="bg-slate-900/70 p-4 rounded-xl border border-slate-700/80 space-y-1.5">
+                                <h4 class="font-bold text-emerald-400 text-sm">Carbon Steel A106 Gr. B</h4>
+                                <p class="text-slate-300">High-temperature refinery piping, steam headers, API 5L line pipes.</p>
+                                <span class="text-slate-400 block font-mono text-[11px]">ASTM A106 / API 5L · Heavy Wall Seamless</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -676,9 +773,7 @@
                         <span class="text-emerald-600 font-bold tracking-widest text-xs uppercase">Global Reach</span>
                         <h2 id="export-heading" class="text-3xl md:text-4xl font-black text-slate-900 mt-2 mb-6">
                             Exporting to 15+ Countries</h2>
-                        <p class="text-slate-600 leading-relaxed mb-8">Our dedicated export division manages complete
-                            documentation, sea-worthy packaging, and international logistics — so you receive exactly
-                            what you ordered, safely and on time.</p>
+                        <p class="text-slate-600 leading-relaxed mb-8">We handle export orders end to end: documentation, packing and shipping — so you receive exactly what you ordered, safely and on time.</p>
 
                         <div class="grid grid-cols-2 gap-4 mb-8">
                             <div
@@ -798,7 +893,7 @@
                         </p>
                         <div class="grid grid-cols-3 gap-6 mb-8">
                             <div>
-                                <h4 class="text-4xl font-black text-emerald-600 mb-1">32+</h4>
+                                <h4 class="text-4xl font-black text-emerald-600 mb-1"><span class="company-years-exp">34</span>+</h4>
                                 <p class="text-xs font-bold uppercase text-slate-500 tracking-wide">Years in Business</p>
                             </div>
                             <div>
@@ -899,6 +994,7 @@
                     <div class="relative overflow-hidden rounded-2xl h-56 group shadow-md" data-aos="fade-up"
                         data-aos-delay="0">
                         <img src="assets/images/pool/sheets_blog.jpg" alt="Stainless steel sheets in warehouse"
+                            width="400" height="224"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             loading="lazy">
                         <div
@@ -911,6 +1007,7 @@
                     <div class="relative overflow-hidden rounded-2xl h-56 group shadow-md" data-aos="fade-up"
                         data-aos-delay="50">
                         <img src="assets/images/pool/coils.jpg" alt="Stainless steel coils in storage"
+                            width="400" height="224"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             loading="lazy">
                         <div
@@ -923,6 +1020,7 @@
                     <div class="relative overflow-hidden rounded-2xl h-56 group shadow-md" data-aos="fade-up"
                         data-aos-delay="100">
                         <img src="assets/images/pool/pipes.jpg" alt="Industrial steel pipes inventory"
+                            width="400" height="224"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             loading="lazy">
                         <div
@@ -935,6 +1033,7 @@
                     <div class="relative overflow-hidden rounded-2xl h-56 group shadow-md" data-aos="fade-up"
                         data-aos-delay="0">
                         <img src="assets/images/pool/plates.jpg" alt="Heavy steel plates stacked"
+                            width="400" height="224"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             loading="lazy">
                         <div
@@ -947,6 +1046,7 @@
                     <div class="relative overflow-hidden rounded-2xl h-56 group shadow-md" data-aos="fade-up"
                         data-aos-delay="50">
                         <img src="assets/images/pool/rods_round.png" alt="Steel rods and bars"
+                            width="400" height="224"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             loading="lazy">
                         <div
@@ -959,6 +1059,7 @@
                     <div class="relative overflow-hidden rounded-2xl h-56 group shadow-md" data-aos="fade-up"
                         data-aos-delay="100">
                         <img src="assets/images/pool/welding.jpg" alt="Steel welding and quality inspection"
+                            width="400" height="224"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             loading="lazy">
                         <div
@@ -990,9 +1091,9 @@
                         data-aos="fade-up" data-aos-delay="0">
                         <div class="w-12 h-12 bg-emerald-600/20 rounded-xl flex items-center justify-center mb-4"><i
                                 data-lucide="book-open" class="w-6 h-6 text-emerald-400"></i></div>
-                        <h3 class="font-bold text-white mb-2">Product Catalogue 2025</h3>
+                        <h3 class="font-bold text-white mb-2">Product Catalogue</h3>
                         <p class="text-slate-400 text-xs leading-relaxed mb-6 flex-grow">Full product catalog with 170+
-                            grades, dimensions, standards, and specifications.</p>
+                            products, dimensions, standards, and specifications.</p>
                         <a href="assets/TatvamOverseasInc_Catalog_2025.pdf" target="_blank" rel="noopener"
                             class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-lg text-sm transition-colors">
                             <i data-lucide="download" class="w-4 h-4"></i> Download PDF
@@ -1005,9 +1106,10 @@
                         <h3 class="font-bold text-white mb-2">Firm Profile</h3>
                         <p class="text-slate-400 text-xs leading-relaxed mb-6 flex-grow">Our heritage, capabilities,
                             certifications, and quality commitments in a concise format.</p>
-                        <a href="contact.html"
-                            class="flex items-center justify-center gap-2 bg-slate-700 hover:bg-slate-600 text-white font-bold py-2.5 rounded-lg text-sm transition-colors border border-slate-600">
-                            <i data-lucide="mail" class="w-4 h-4"></i> Request via Email
+                        <!-- TODO: /assets/TatvamOverseasInc_Firm_Profile.pdf file to be added -->
+                        <a href="/assets/TatvamOverseasInc_Firm_Profile.pdf" target="_blank" rel="noopener"
+                            class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-lg text-sm transition-colors">
+                            <i data-lucide="download" class="w-4 h-4"></i> Download PDF
                         </a>
                     </div>
 
@@ -1122,8 +1224,8 @@
                         9001:2015</span>
                     <span class="flex items-center gap-1.5"><i data-lucide="file-check" class="w-4 h-4"></i> MTC
                         Provided</span>
-                    <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> within 2-4 business hours</span>
-                    <span class="flex items-center gap-1.5"><i data-lucide="calendar" class="w-4 h-4"></i> 34+
+                    <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> Quote within 2-4 working hours (Mon-Sat, 9 AM-7 PM IST)</span>
+                    <span class="flex items-center gap-1.5"><i data-lucide="calendar" class="w-4 h-4"></i> <span class="company-years-exp">34</span>+
                         Years</span>
                 </div>
             </div>

@@ -4,6 +4,14 @@
 // ============================================================================
 
 const SITE_CONFIG = {
+    foundingYear: 1992,
+    get yearsInBusiness() {
+        return new Date().getFullYear() - this.foundingYear;
+    },
+    productCount: '170+ products',
+    responseTime: 'Quote within 2-4 working hours (Mon-Sat, 9 AM-7 PM IST)',
+    gstin: '27AHIPJ6958M1ZK',
+    iec: 'TODO', // TODO: IEC code to be provided by user
     phone: '+919930301181',
     phoneDisplay: '+91 99303 01181',
     email: 'sales@tatvamoverseasinc.com',
@@ -14,10 +22,12 @@ const SITE_CONFIG = {
     addressWarehouse: '39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Kalbadevi, Mumbai - 400004',
     mapsUrl: 'https://maps.google.com/?q=61+Jamnadas+Building+10th+Khetwadi+Back+Road+Girgaon+Mumbai+400004',
     catalogUrl: 'assets/TatvamOverseasInc_Catalog_2025.pdf',
-    // Social Media Links (Update URLs here whenever ready):
-    linkedin: 'https://www.linkedin.com/company/tatvamoverseasinc',
+    // Business Directory & Social Links
+    indiamart: 'https://www.indiamart.com/tatvam-overseas-inc/',
+    justdial: '#', // TODO: JustDial profile URL to be added
+    linkedin: '#', // TODO: LinkedIn company page URL to be added
+    instagram: '#', // TODO: Instagram profile URL to be added
     facebook: 'https://www.facebook.com/tatvamoverseasinc',
-    instagram: 'https://www.instagram.com/tatvamoverseasinc',
     twitter: 'https://twitter.com/tatvamoverseas'
 };
 
@@ -547,8 +557,20 @@ function renderFooter() {
                     </p>
                     <div class="pt-2 text-[11px] text-slate-500 space-y-1">
                         <div><strong class="text-slate-400">GSTIN:</strong> 27AHIPJ6958M1ZK</div>
-                        <div><strong class="text-slate-400">IEC:</strong> AHIPJ6958M (DGFT Govt of India)</div>
+                        <div><strong class="text-slate-400">IEC:</strong> TODO</div>
                         <div><strong class="text-slate-400">UDYAM:</strong> UDYAM-MH-19-0338145 (MSME Mfg)</div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-800">
+                        <span class="text-slate-400 font-bold text-[11px] uppercase tracking-wider block mb-2">Find us on</span>
+                        <div class="flex flex-wrap items-center gap-2 text-xs">
+                            <a href="https://www.indiamart.com/tatvam-overseas-inc/" target="_blank" rel="noopener" class="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">IndiaMART</a>
+                            <span class="text-slate-600">&bull;</span>
+                            <a href="#" target="_blank" rel="noopener" class="text-slate-400 hover:text-emerald-400 transition-colors" title="TODO: JustDial URL">JustDial (TODO)</a>
+                            <span class="text-slate-600">&bull;</span>
+                            <a href="#" target="_blank" rel="noopener" class="text-slate-400 hover:text-emerald-400 transition-colors" title="TODO: LinkedIn URL">LinkedIn (TODO)</a>
+                            <span class="text-slate-600">&bull;</span>
+                            <a href="#" target="_blank" rel="noopener" class="text-slate-400 hover:text-emerald-400 transition-colors" title="TODO: Instagram URL">Instagram (TODO)</a>
+                        </div>
                     </div>
                 </div>
 
@@ -558,6 +580,7 @@ function renderFooter() {
                     <ul class="space-y-3">
                         <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">SS 304 / 304L Sheets</a></li>
                         <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">SS 316 / 316L Marine Plates</a></li>
+                        <li><a href="${pfx}products/decorative-stainless-steel-sheets-mumbai.html" class="hover:text-emerald-400 transition-colors block">Decorative SS Sheets</a></li>
                         <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Alloy Steel P11/P22 Pipes</a></li>
                         <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Inconel 625 Seamless Tubes</a></li>
                         <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Duplex 2205 Flanges</a></li>
@@ -681,4 +704,11 @@ function renderFooter() {
 document.addEventListener('DOMContentLoaded', () => {
     renderHeader();
     renderFooter();
+
+    // Dynamically compute and populate years in business across the site (currentYear - 1992)
+    const computedYears = new Date().getFullYear() - 1992;
+    document.querySelectorAll('.company-years-exp').forEach(el => {
+        el.textContent = computedYears;
+    });
 });
+
