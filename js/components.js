@@ -8,18 +8,22 @@ const SITE_CONFIG = {
     get yearsInBusiness() {
         return new Date().getFullYear() - this.foundingYear;
     },
+    stockClaim: '700+ Tons Ready Stock',
     productCount: '170+ products',
     responseTime: 'Quote within 2-4 working hours (Mon-Sat, 9 AM-7 PM IST)',
     gstin: '27AHIPJ6958M1ZK',
-    iec: 'TODO', // TODO: IEC code to be provided by user
+    iec: 'AHIPJ6958M',
     phone: '+919930301181',
     phoneDisplay: '+91 99303 01181',
     email: 'sales@tatvamoverseasinc.com',
     exportEmail: 'export@tatvamoverseasinc.com',
     accountsEmail: 'accounts@tatvamoverseasinc.com',
     whatsapp: 'https://wa.me/919930301181',
-    address: '61, Jamnadas Building, Shop No. 5 & 6, 10th Khetwadi Back Road, Girgaon, Mumbai - 400004',
-    addressWarehouse: '39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Kalbadevi, Mumbai - 400004',
+    registeredOffice: '61, Jamnadas Building, Shop No. 5 & 6, 10th Khetwadi Back Road, Girgaon, Mumbai - 400004',
+    tradingOffice: '39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Bhandari Street, Kalbadevi, Mumbai - 400004',
+    warehouse: 'Kalamboli, Navi Mumbai', // TODO: full address to be provided
+    address: '39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Bhandari Street, Kalbadevi, Mumbai - 400004',
+    addressWarehouse: 'Kalamboli, Navi Mumbai',
     mapsUrl: 'https://maps.google.com/?q=61+Jamnadas+Building+10th+Khetwadi+Back+Road+Girgaon+Mumbai+400004',
     catalogUrl: 'assets/TatvamOverseasInc_Catalog_2025.pdf',
     // Business Directory & Social Links
@@ -557,19 +561,15 @@ function renderFooter() {
                     </p>
                     <div class="pt-2 text-[11px] text-slate-500 space-y-1">
                         <div><strong class="text-slate-400">GSTIN:</strong> 27AHIPJ6958M1ZK</div>
-                        <div><strong class="text-slate-400">IEC:</strong> TODO</div>
-                        <div><strong class="text-slate-400">UDYAM:</strong> UDYAM-MH-19-0338145 (MSME Mfg)</div>
+                        <div><strong class="text-slate-400">IEC:</strong> AHIPJ6958M</div>
+                        <div><strong class="text-slate-400">UDYAM:</strong> UDYAM-MH-19-0338145 (MSME)</div>
                     </div>
                     <div class="pt-3 border-t border-slate-800">
                         <span class="text-slate-400 font-bold text-[11px] uppercase tracking-wider block mb-2">Find us on</span>
                         <div class="flex flex-wrap items-center gap-2 text-xs">
                             <a href="https://www.indiamart.com/tatvam-overseas-inc/" target="_blank" rel="noopener" class="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">IndiaMART</a>
                             <span class="text-slate-600">&bull;</span>
-                            <a href="#" target="_blank" rel="noopener" class="text-slate-400 hover:text-emerald-400 transition-colors" title="TODO: JustDial URL">JustDial (TODO)</a>
-                            <span class="text-slate-600">&bull;</span>
-                            <a href="#" target="_blank" rel="noopener" class="text-slate-400 hover:text-emerald-400 transition-colors" title="TODO: LinkedIn URL">LinkedIn (TODO)</a>
-                            <span class="text-slate-600">&bull;</span>
-                            <a href="#" target="_blank" rel="noopener" class="text-slate-400 hover:text-emerald-400 transition-colors" title="TODO: Instagram URL">Instagram (TODO)</a>
+                            <a href="https://www.facebook.com/tatvamoverseasinc" target="_blank" rel="noopener" class="text-slate-400 hover:text-emerald-400 transition-colors">Facebook</a>
                         </div>
                     </div>
                 </div>
@@ -586,7 +586,7 @@ function renderFooter() {
                         <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Duplex 2205 Flanges</a></li>
                         <li>
                             <a href="${pfx}assets/TatvamOverseasInc_Catalog_2025.pdf" target="_blank" class="text-emerald-500 font-bold hover:text-emerald-400 flex items-center gap-2 mt-4">
-                                <i data-lucide="download" class="w-3 h-3"></i> Download Full Catalog (PDF)
+                                <i data-lucide="download" class="w-3 h-3"></i> Product Catalogue
                             </a>
                         </li>
                     </ul>
@@ -598,7 +598,7 @@ function renderFooter() {
                     <ul class="space-y-3">
                         <li><a href="${pfx}about.html" class="hover:text-emerald-400 transition-colors block">About Tatvam Overseas Inc</a></li>
                         <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Complete Inventory</a></li>
-                        <li><a href="${pfx}mtc.html" class="hover:text-emerald-400 transition-colors block">Quality &amp; MTC Generator</a></li>
+                        <li><a href="${pfx}mtc.html" class="hover:text-emerald-400 transition-colors block">Quality &amp; MTC</a></li>
                         <li><a href="${pfx}blog.html" class="hover:text-emerald-400 transition-colors block">Technical Knowledge Hub</a></li>
                         <li><a href="${pfx}contact.html" class="hover:text-emerald-400 transition-colors block">Contact &amp; Locations</a></li>
                         <li><a href="${pfx}privacypolicy.html" class="hover:text-emerald-400 transition-colors block">Privacy Policy</a></li>
@@ -608,15 +608,21 @@ function renderFooter() {
 
                 <!-- Contact -->
                 <div>
-                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Mumbai Office &amp; Contact</h4>
-                    <ul class="space-y-5">
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Mumbai Offices &amp; Contact</h4>
+                    <ul class="space-y-4">
                         <li class="flex items-start gap-3">
                             <i data-lucide="map-pin" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
-                            <span class="text-xs leading-relaxed">
-                                61, Jamnadas Building, Shop No. 5 &amp; 6,<br>
-                                10th Khetwadi Back Road, Girgaon,<br>
-                                Mumbai - 400004, Maharashtra
-                            </span>
+                            <div class="text-xs leading-relaxed">
+                                <strong class="text-slate-300 block">Trading Office:</strong>
+                                39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Bhandari Street, Kalbadevi, Mumbai 400004
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="building" class="w-5 h-5 text-slate-500 flex-shrink-0 mt-0.5"></i>
+                            <div class="text-xs leading-relaxed text-slate-400">
+                                <strong class="text-slate-300 block">Registered Office:</strong>
+                                61, Jamnadas Building, Shop 5 &amp; 6, 10th Khetwadi Back Road, Girgaon, Mumbai 400004
+                            </div>
                         </li>
                         <li class="flex items-center gap-3">
                             <i data-lucide="phone" class="w-5 h-5 text-emerald-500 flex-shrink-0"></i>

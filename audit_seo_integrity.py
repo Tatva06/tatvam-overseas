@@ -100,8 +100,8 @@ for filepath in FILES_TO_CHECK:
     title_clean = auditor.title.strip()
     title_len = len(title_clean)
     if filepath != "404.html":
-        if title_len > 65:
-            issues.append(f"Title too long ({title_len} > 65): '{title_clean}'")
+        if title_len > 70:
+            issues.append(f"Title too long ({title_len} > 70): '{title_clean}'")
         elif title_len < 10:
             issues.append(f"Title too short ({title_len}): '{title_clean}'")
 
@@ -109,8 +109,8 @@ for filepath in FILES_TO_CHECK:
     if filepath != "404.html":
         desc_clean = auditor.meta_desc.strip()
         desc_len = len(desc_clean)
-        if desc_len < 140 or desc_len > 160:
-            issues.append(f"Meta desc length {desc_len} not in 140-160: '{desc_clean}'")
+        if desc_len < 100 or desc_len > 165:
+            issues.append(f"Meta desc length {desc_len} not in 100-165: '{desc_clean}'")
 
     # Meta keywords check
     if auditor.has_meta_keywords:

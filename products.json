@@ -1067,7 +1067,6 @@
       "SS 304"
     ],
     "inStock": true,
-    "moq": "500 kg",
     "tags": [
       "202",
       "J1",
@@ -1142,7 +1141,6 @@
       "SS 304"
     ],
     "inStock": true,
-    "moq": "500 kg",
     "tags": [
       "202",
       "J2",
@@ -1213,7 +1211,6 @@
       "SS 430"
     ],
     "inStock": true,
-    "moq": "500 kg",
     "tags": [
       "202",
       "J3",
@@ -1292,7 +1289,6 @@
       "SS 202 J2"
     ],
     "inStock": true,
-    "moq": "500 kg",
     "tags": [
       "202",
       "J4",
@@ -1363,7 +1359,6 @@
       "SS 316 Mirror"
     ],
     "inStock": true,
-    "moq": "200 kg",
     "tags": [
       "202",
       "mirror",
@@ -1432,7 +1427,6 @@
       "SS 316 Hairline"
     ],
     "inStock": true,
-    "moq": "200 kg",
     "tags": [
       "202",
       "hairline",
@@ -1501,7 +1495,6 @@
       "SS 201 Coil"
     ],
     "inStock": true,
-    "moq": "1 Coil (~3 MT)",
     "tags": [
       "202",
       "coils",
@@ -1579,7 +1572,6 @@
       "SS 201 Pipes"
     ],
     "inStock": true,
-    "moq": "100 kg",
     "tags": [
       "202",
       "pipes",
@@ -1649,7 +1641,6 @@
       "SS 410 Bars"
     ],
     "inStock": true,
-    "moq": "100 kg",
     "tags": [
       "202",
       "round bar",
@@ -1717,7 +1708,6 @@
       "SS 304 Mirror"
     ],
     "inStock": true,
-    "moq": "200 kg",
     "tags": [
       "201",
       "decorative",
@@ -1786,7 +1776,6 @@
       "SS 304 Pipes"
     ],
     "inStock": true,
-    "moq": "100 kg",
     "tags": [
       "201",
       "pipes",
@@ -1866,7 +1855,6 @@
       "SS 321 Sheet"
     ],
     "inStock": true,
-    "moq": "500 kg",
     "tags": [
       "304",
       "HR",
@@ -1949,7 +1937,6 @@
       "SS 202 J4 Sheet"
     ],
     "inStock": true,
-    "moq": "200 kg",
     "tags": [
       "304",
       "2B",
@@ -2017,7 +2004,6 @@
       "SS 304 2B"
     ],
     "inStock": true,
-    "moq": "200 kg",
     "tags": [
       "304",
       "BA",
@@ -2087,7 +2073,6 @@
       "SS 202 Mirror"
     ],
     "inStock": true,
-    "moq": "100 kg",
     "tags": [
       "304",
       "mirror",
@@ -2155,7 +2140,6 @@
       "SS 202 Hairline"
     ],
     "inStock": true,
-    "moq": "100 kg",
     "tags": [
       "304",
       "hairline",
@@ -2227,7 +2211,6 @@
       "SS 316 PVD"
     ],
     "inStock": false,
-    "moq": "5 sheets (min)",
     "tags": [
       "304",
       "PVD",
@@ -2299,7 +2282,6 @@
       "SS 304H Plate"
     ],
     "inStock": true,
-    "moq": "1 MT",
     "tags": [
       "304",
       "plates",
@@ -2371,7 +2353,6 @@
       "SS 202 Coil"
     ],
     "inStock": true,
-    "moq": "1 Coil (~3 MT)",
     "tags": [
       "304",
       "coil",
@@ -2453,7 +2434,6 @@
       "SS 304 ERW Pipe"
     ],
     "inStock": true,
-    "moq": "100 kg",
     "tags": [
       "304",
       "seamless",
@@ -2532,7 +2512,6 @@
       "SS 202 Pipe"
     ],
     "inStock": true,
-    "moq": "100 kg",
     "tags": [
       "304",
       "ERW",
@@ -2609,7 +2588,6 @@
       "SS 304 Hex Bar"
     ],
     "inStock": true,
-    "moq": "100 kg",
     "tags": [
       "304",
       "round bar",
@@ -2675,7 +2653,6 @@
       "SS 316 Hex Bar"
     ],
     "inStock": true,
-    "moq": "50 kg",
     "tags": [
       "304",
       "hex bar",
@@ -2738,7 +2715,6 @@
       "SS 316 Flat Bar"
     ],
     "inStock": true,
-    "moq": "50 kg",
     "tags": [
       "304",
       "flat bar",
@@ -2801,7 +2777,6 @@
       "SS 304 Channel"
     ],
     "inStock": true,
-    "moq": "100 kg",
     "tags": [
       "304",
       "angle",
@@ -2871,7 +2846,6 @@
       "SS 308L Wire"
     ],
     "inStock": true,
-    "moq": "25 kg",
     "tags": [
       "304",
       "wire",
@@ -2943,7 +2917,6 @@
       "SS 304 Wire Mesh"
     ],
     "inStock": true,
-    "moq": "5 sheets",
     "tags": [
       "304",
       "perforated",
@@ -3010,7 +2983,6 @@
       "SS 310S"
     ],
     "inStock": false,
-    "moq": "500 kg",
     "tags": [
       "304H",
       "high temp",
@@ -3091,7 +3063,6 @@
       "SS 316Ti Sheet"
     ],
     "inStock": true,
-    "moq": "200 kg",
     "tags": [
       "316",
       "2B",
@@ -3158,7 +3129,6 @@
       "SS 316 Hairline"
     ],
     "inStock": true,
-    "moq": "100 kg",
     "tags": [
       "316",
       "mirror",
@@ -3233,7 +3203,6 @@
       "Duplex 2205 Pipe"
     ],
     "inStock": true,
-    "moq": "100 kg",
     "tags": [
       "316",
       "seamless",
@@ -3304,7 +3273,6 @@
       "Duplex 2205 Bar"
     ],
     "inStock": true,
-    "moq": "50 kg",
     "tags": [
       "316",
       "round bar",
@@ -3369,7 +3337,6 @@
       "SS 310S Pipe"
     ],
     "inStock": false,
-    "moq": "100 kg",
     "tags": [
       "321",
       "titanium stabilised",
@@ -3433,7 +3400,6 @@
       "SS 304H Pipe"
     ],
     "inStock": false,
-    "moq": "100 kg",
     "tags": [
       "347",
       "niobium stabilised",
@@ -3501,7 +3467,6 @@
       "SS 304H"
     ],
     "inStock": false,
-    "moq": "500 kg",
     "tags": [
       "310S",
       "high temperature",
@@ -3565,7 +3530,6 @@
       "Duplex 2205"
     ],
     "inStock": false,
-    "moq": "100 kg",
     "tags": [
       "904L",
       "super austenitic",
@@ -3629,7 +3593,6 @@
       "Duplex 2507"
     ],
     "inStock": false,
-    "moq": "100 kg",
     "tags": [
       "SMO 254",
       "6 moly",
@@ -3693,7 +3656,6 @@
       "SS 410"
     ],
     "inStock": true,
-    "moq": "500 kg",
     "tags": [
       "409",
       "409M",
@@ -3767,7 +3729,6 @@
       "SS 304 Mirror"
     ],
     "inStock": true,
-    "moq": "200 kg",
     "tags": [
       "430",
       "mirror",
@@ -3837,7 +3798,6 @@
       "SS 17-4PH"
     ],
     "inStock": true,
-    "moq": "50 kg",
     "tags": [
       "410",
       "martensitic",
@@ -3901,7 +3861,6 @@
       "D2 Tool Steel"
     ],
     "inStock": true,
-    "moq": "50 kg",
     "tags": [
       "420",
       "cutlery",
@@ -3978,7 +3937,6 @@
       "SS 420"
     ],
     "inStock": false,
-    "moq": "50 kg",
     "tags": [
       "17-4PH",
       "precipitation hardening",
@@ -4058,7 +4016,6 @@
       "SS 317L Pipe"
     ],
     "inStock": true,
-    "moq": "100 kg",
     "tags": [
       "duplex",
       "2205",
@@ -4124,7 +4081,6 @@
       "Super Duplex 2507 Plate"
     ],
     "inStock": true,
-    "moq": "500 kg",
     "tags": [
       "duplex",
       "2205",
@@ -4189,7 +4145,6 @@
       "Super Duplex 2507 Bar"
     ],
     "inStock": true,
-    "moq": "50 kg",
     "tags": [
       "duplex",
       "2205",
@@ -4261,7 +4216,6 @@
       "SMO 254"
     ],
     "inStock": false,
-    "moq": "100 kg",
     "tags": [
       "super duplex",
       "2507",
@@ -4334,7 +4288,6 @@
       "CS A234 WPB Elbow"
     ],
     "inStock": true,
-    "moq": "10 pieces",
     "tags": [
       "304",
       "elbow",
@@ -4403,7 +4356,6 @@
       "CS A234 Tee"
     ],
     "inStock": true,
-    "moq": "10 pieces",
     "tags": [
       "304",
       "tee",
@@ -4476,7 +4428,6 @@
       "Duplex 2205 Elbow"
     ],
     "inStock": true,
-    "moq": "5 pieces",
     "tags": [
       "316",
       "elbow",
@@ -4552,7 +4503,6 @@
       "Duplex 2205 Flange"
     ],
     "inStock": true,
-    "moq": "1 piece",
     "tags": [
       "304",
       "weld neck",
@@ -4622,7 +4572,6 @@
       "SS 316 SORF"
     ],
     "inStock": true,
-    "moq": "1 piece",
     "tags": [
       "304",
       "slip-on",
@@ -4693,7 +4642,6 @@
       "CS A105 Blind Flange"
     ],
     "inStock": true,
-    "moq": "1 piece",
     "tags": [
       "304",
       "blind",
@@ -4765,7 +4713,6 @@
       "Duplex 2205 Flange"
     ],
     "inStock": true,
-    "moq": "1 piece",
     "tags": [
       "316",
       "weld neck",
@@ -4836,7 +4783,6 @@
       "SS 304 Stud Bolts"
     ],
     "inStock": true,
-    "moq": "25 pieces",
     "tags": [
       "304",
       "A2",
@@ -4905,7 +4851,6 @@
       "Duplex Bolts"
     ],
     "inStock": true,
-    "moq": "25 pieces",
     "tags": [
       "316",
       "A4",
@@ -4968,7 +4913,6 @@
       "B7 Alloy Steel Stud Bolts"
     ],
     "inStock": true,
-    "moq": "10 sets",
     "tags": [
       "304",
       "stud bolt",
@@ -5033,7 +4977,6 @@
       "SS 304 Woven Mesh"
     ],
     "inStock": true,
-    "moq": "5 sq.m.",
     "tags": [
       "304",
       "welded mesh",
@@ -5098,13 +5041,12 @@
       "Architecture"
     ],
     "pros": "Precise filtration; wide mesh count range; food and pharma safe.",
-    "cons": "Fine mesh requires careful handling; custom weaves have MOQ.",
+    "cons": "Fine mesh requires careful handling; custom weaves require mill lead time.",
     "relatedGrades": [
       "SS 316 Woven Mesh",
       "SS 304 Perforated Sheet"
     ],
     "inStock": true,
-    "moq": "5 sq.m.",
     "tags": [
       "304",
       "woven mesh",
@@ -5176,7 +5118,6 @@
       "Duplex 2205"
     ],
     "inStock": false,
-    "moq": "500 kg",
     "tags": [
       "317L",
       "high moly",
@@ -5238,7 +5179,6 @@
       "Duplex 2205 Pipe"
     ],
     "inStock": false,
-    "moq": "100 kg",
     "tags": [
       "317L",
       "pipe",
@@ -5298,7 +5238,6 @@
       "Duplex 2205 Bar"
     ],
     "inStock": false,
-    "moq": "50 kg",
     "tags": [
       "317L",
       "bar",
@@ -5364,7 +5303,6 @@
       "SS 310S Plate"
     ],
     "inStock": false,
-    "moq": "500 kg",
     "tags": [
       "321",
       "plate",
@@ -5425,7 +5363,6 @@
       "SS 316 Bar"
     ],
     "inStock": false,
-    "moq": "50 kg",
     "tags": [
       "321",
       "round bar",
@@ -5488,7 +5425,6 @@
       "SS 347 Pipe"
     ],
     "inStock": false,
-    "moq": "50 kg",
     "tags": [
       "310S",
       "furnace",
@@ -5550,7 +5486,6 @@
       "SS 347 Bar"
     ],
     "inStock": false,
-    "moq": "50 kg",
     "tags": [
       "310S",
       "bar",
@@ -5619,7 +5554,6 @@
       "SS 409 Sheets"
     ],
     "inStock": true,
-    "moq": "1 Coil (~3 MT)",
     "tags": [
       "430",
       "ferritic",
@@ -5685,7 +5619,6 @@
       "SS 304 Hairline"
     ],
     "inStock": true,
-    "moq": "200 kg",
     "tags": [
       "430",
       "hairline",
@@ -5756,7 +5689,6 @@
       "SS 410"
     ],
     "inStock": true,
-    "moq": "50 kg",
     "tags": [
       "431",
       "martensitic",
@@ -5819,7 +5751,6 @@
       "SS 321 Pipe"
     ],
     "inStock": false,
-    "moq": "50 kg",
     "tags": [
       "446",
       "ferritic",
@@ -5891,7 +5822,6 @@
       "SS 431 Bar"
     ],
     "inStock": false,
-    "moq": "50 kg",
     "tags": [
       "15-5PH",
       "XM-12",
@@ -5957,7 +5887,6 @@
       "SS 316 Plate"
     ],
     "inStock": false,
-    "moq": "500 kg",
     "tags": [
       "lean duplex",
       "S32304",
@@ -6019,7 +5948,6 @@
       "SS 316 Pipe"
     ],
     "inStock": false,
-    "moq": "100 kg",
     "tags": [
       "lean duplex",
       "S32304",
@@ -6092,7 +6020,6 @@
       "Duplex 2205 Pipe"
     ],
     "inStock": false,
-    "moq": "100 kg",
     "tags": [
       "S32760",
       "Zeron 100",
@@ -6158,7 +6085,6 @@
       "Duplex 2205 Bar"
     ],
     "inStock": false,
-    "moq": "50 kg",
     "tags": [
       "S32760",
       "Zeron 100",
@@ -6225,7 +6151,6 @@
       "SS 304 Elbow"
     ],
     "inStock": true,
-    "moq": "5 pieces",
     "tags": [
       "304",
       "reducer",
@@ -6290,7 +6215,6 @@
       "SS 316 End Cap"
     ],
     "inStock": true,
-    "moq": "10 pieces",
     "tags": [
       "304",
       "end cap",
@@ -6356,7 +6280,6 @@
       "Duplex 2205 Reducer"
     ],
     "inStock": true,
-    "moq": "5 pieces",
     "tags": [
       "316",
       "reducer",
@@ -6425,7 +6348,6 @@
       "SS 316 SW Flange"
     ],
     "inStock": true,
-    "moq": "1 piece",
     "tags": [
       "304",
       "socket weld",
@@ -6495,7 +6417,6 @@
       "Duplex 2205 Flange"
     ],
     "inStock": true,
-    "moq": "1 piece",
     "tags": [
       "316",
       "blind",
@@ -6569,7 +6490,6 @@
       "Super Duplex 2507 Flange"
     ],
     "inStock": false,
-    "moq": "1 piece",
     "tags": [
       "duplex",
       "2205",
@@ -6637,7 +6557,6 @@
       "SS 304 Hex Bolts"
     ],
     "inStock": true,
-    "moq": "25 pieces",
     "tags": [
       "304",
       "A2",
@@ -6700,7 +6619,6 @@
       "Inconel 625 Bolts"
     ],
     "inStock": true,
-    "moq": "10 sets",
     "tags": [
       "316",
       "A4",
@@ -6761,7 +6679,6 @@
       "SS 304 Stud Bolts"
     ],
     "inStock": true,
-    "moq": "10 pieces",
     "tags": [
       "304",
       "threaded rod",
@@ -6826,7 +6743,6 @@
       "Monel 400 U-Bolts"
     ],
     "inStock": true,
-    "moq": "10 pieces",
     "tags": [
       "304",
       "U-bolt",
@@ -6890,7 +6806,6 @@
       "SS 316 Woven Mesh"
     ],
     "inStock": false,
-    "moq": "5 sq.m.",
     "tags": [
       "316",
       "welded mesh",
@@ -6960,7 +6875,6 @@
       "SS 304 Welded Mesh"
     ],
     "inStock": true,
-    "moq": "5 sheets",
     "tags": [
       "304",
       "expanded metal",
@@ -7029,7 +6943,6 @@
       "SS 316 Welded Mesh"
     ],
     "inStock": false,
-    "moq": "5 sheets",
     "tags": [
       "316",
       "perforated",
@@ -7102,14 +7015,13 @@
       "Chemical",
       "Automotive"
     ],
-    "pros": "No minimum order on cut pieces; complex shapes possible; fast turnaround.",
+    "pros": "Custom cut pieces; complex shapes possible; fast turnaround.",
     "cons": "Cut edge needs deburring/grinding for aesthetic applications.",
     "relatedGrades": [
       "SS 304 Plate",
       "SS 316 Plate"
     ],
     "inStock": true,
-    "moq": "1 piece",
     "tags": [
       "laser cut",
       "custom cut",
@@ -7130,7 +7042,7 @@
     "finish": "2B / Polished",
     "department": "Stainless Steel",
     "category": "Custom Fabrication",
-    "image": "assets/images/pool/circles.jpg",
+    "image": "assets/images/pool/ss-circles-discs.webp",
     "metaTitle": "Stainless Steel Circles | Tatvam Overseas Inc",
     "metaDescription": "SS 202, 304, 316 circles and rings for cookware and vessel manufacture. Mumbai stockist.",
     "keywords": [
@@ -7180,7 +7092,6 @@
       "SS 304 Sheets"
     ],
     "inStock": true,
-    "moq": "10 pieces",
     "tags": [
       "circles",
       "rings",
@@ -7246,7 +7157,6 @@
       "SS 430 Coil"
     ],
     "inStock": true,
-    "moq": "10 kg",
     "tags": [
       "cut to length",
       "slitting",
@@ -7327,7 +7237,6 @@
       "SS 304 PVD Gold"
     ],
     "inStock": true,
-    "moq": "5 sheets",
     "tags": [
       "elevator",
       "lift cabin",
@@ -7407,7 +7316,6 @@
       "Duplex 2205 Plate"
     ],
     "inStock": false,
-    "moq": "1 unit",
     "tags": [
       "tank",
       "vessel",
@@ -7511,7 +7419,6 @@
       "SS 202 Mirror Sheet"
     ],
     "inStock": true,
-    "moq": "5 sheets (min)",
     "tags": [
       "202",
       "PVD",
@@ -7609,7 +7516,6 @@
       "SS 202 Mirror Sheet"
     ],
     "inStock": true,
-    "moq": "5 sheets (min)",
     "tags": [
       "202",
       "PVD",
@@ -7698,7 +7604,6 @@
       "SS 202 Mirror Sheet"
     ],
     "inStock": true,
-    "moq": "5 sheets (min)",
     "tags": [
       "202",
       "PVD",
@@ -7784,7 +7689,6 @@
       "SS 304 PVD Bronze"
     ],
     "inStock": true,
-    "moq": "5 sheets (min)",
     "tags": [
       "202",
       "PVD",
@@ -7871,7 +7775,6 @@
       "SS 304 Matte"
     ],
     "inStock": true,
-    "moq": "200 kg",
     "tags": [
       "202",
       "matte",
@@ -7938,7 +7841,7 @@
         "Wood Grain",
         "Floral",
         "Geometric",
-        "Custom (MOQ applies)"
+        "Custom (on inquiry)"
       ]
     },
     "applications": [
@@ -7956,14 +7859,13 @@
       "Retail"
     ],
     "pros": "Unique textures; hides fingerprints; can combine with PVD for colour-textured premium look.",
-    "cons": "Custom patterns require higher MOQ; lead time 2\u20134 weeks for custom designs.",
+    "cons": "Custom patterns require mill setup; lead time 2-4 weeks for custom designs.",
     "relatedGrades": [
       "SS 202 PVD Gold",
       "SS 202 Hairline Sheet",
       "SS 304 Etched"
     ],
     "inStock": true,
-    "moq": "200 kg (standard patterns); 500 kg (custom patterns)",
     "tags": [
       "202",
       "etched",
@@ -8048,7 +7950,6 @@
       "SS 202 Hairline Sheet"
     ],
     "inStock": true,
-    "moq": "200 kg",
     "tags": [
       "202",
       "mirror",

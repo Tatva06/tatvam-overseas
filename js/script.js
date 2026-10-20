@@ -40,13 +40,13 @@ const IMAGES = {
         "assets/images/pool/tubes.jpg"
     ],
     bars: [
-        "assets/images/pool/rods.jpg"
+        "assets/images/pool/bars.jpg"
     ],
     coils: [
         "assets/images/pool/coils.jpg"
     ],
     circles: [
-        "assets/images/pool/circles.jpg"
+        "assets/images/pool/ss-circles-discs.webp"
     ],
     plates: [
         "assets/images/pool/plates.jpg"
@@ -55,10 +55,16 @@ const IMAGES = {
         "assets/images/pool/sheets_prod.jpg"
     ],
     fittings: [
-        "assets/images/pool/pipes.jpg"
+        "assets/images/pool/fittings.jpg"
+    ],
+    flanges: [
+        "assets/images/pool/flanges.jpg"
+    ],
+    nickel: [
+        "assets/images/pool/nickel_alloy.jpg"
     ],
     general: [
-        "assets/images/pool/warehouse.jpg"
+        "assets/images/pool/sheets_prod.jpg"
     ]
 };
 
@@ -68,17 +74,19 @@ function getProductImage(product) {
     }
 
     const category = (product.category || "").toLowerCase();
+    const grade = (product.grade || "").toLowerCase();
 
+    if (category.includes('nickel') || grade.includes('inconel') || grade.includes('monel') || grade.includes('hastelloy')) return IMAGES.nickel[0];
+    if (category.includes('flange')) return IMAGES.flanges[0];
+    if (category.includes('fitting') || category.includes('fastener')) return IMAGES.fittings[0];
+    if (category.includes('circle') || category.includes('ring') || category.includes('disc')) return IMAGES.circles[0];
     if (category.includes('pipe')) return IMAGES.pipes[0];
-    if (category.includes('tube') && category.includes('instrument')) return IMAGES.tubes[0];
     if (category.includes('tube')) return IMAGES.tubes[0];
     if (category.includes('coil') || category.includes('slitting')) return IMAGES.coils[0];
-    if (category.includes('circle') || category.includes('ring')) return IMAGES.circles[0];
     if (category.includes('plate')) return IMAGES.plates[0];
     if (category.includes('sheet') || category.includes('specialty')) return IMAGES.sheets[0];
     if (category.includes('flat') || category.includes('patti')) return IMAGES.flats[0];
     if (category.includes('bar') || category.includes('rod') || category.includes('wire')) return IMAGES.bars[0];
-    if (category.includes('fitting') || category.includes('flange') || category.includes('fastener')) return IMAGES.fittings[0];
 
     return IMAGES.general[0];
 }
@@ -477,22 +485,22 @@ class SmartFloatingWidget {
 
         // Stock availability
         if (lower.includes('stock') || lower.includes('availab') || lower.includes('ready') || lower.includes('warehouse')) {
-            return `🏢 **Ready Stock in Mumbai**:\nWe maintain over **700+ tons** of traceable inventory at our Mumbai warehouse facilities, ready for immediate dispatch.\n\n• **Processing**: Custom cutting, shearing, slitting, and mirror-polishing available.\n• **Dispatch**: Same-day local dispatch in Mumbai. 2-5 days across India.\n\nWhat size/grade and quantity do you need to check?`;
+            return `🏢 **Ready Stock in Mumbai**:\nWe maintain over **700+ tons** of traceable inventory at our Mumbai warehouse facilities.\n\n• **Processing**: Custom cutting, shearing, slitting, and mirror-polishing arranged on request.\n• **Dispatch**: Pan-India delivery through trusted transport partners. Dispatch time depends on destination, shipping mode and working days.\n\nWhat size/grade and quantity do you need to check?`;
         }
 
         // Delivery / shipping
         if (lower.includes('delivery') || lower.includes('ship') || lower.includes('transit') || lower.includes('lead time') || lower.includes('time')) {
-            return `📦 **Delivery & Logistics Timelines**:\n• **Mumbai / Thane**: Same day or next business day.\n• **Maharashtra**: 1–2 business days.\n• **Pan-India**: 3–6 business days via trusted transport (TCI, VRL, etc.).\n• **Global Exports**: 15–30 days depending on port destination. We support CIF, FOB, CFR, and Ex-Works terms.`;
+            return `📦 **Delivery & Logistics Timelines**:\n• **Pan-India Delivery**: Reliable transport partners across India.\n• **Maharashtra / Mumbai Region**: Regular transit routes.\n• **Global Exports**: End-to-end documentation, seaworthy packing, and shipping worldwide under CIF, FOB, CFR terms.`;
         }
 
         // MTC / Certification / Third Party Inspection
         if (lower.includes('certificate') || lower.includes('mtc') || lower.includes('tc') || lower.includes('test') || lower.includes('tpi') || lower.includes('inspect') || lower.includes('trace')) {
-            return `✅ **100% Traceability & Certifications**:\n• All materials are supplied with original **Mill Test Certificates (MTC)** matching EN 10204 3.1.\n• We perform regular PMI (Positive Material Identification) tests before dispatch.\n• We gladly support **Third Party Inspection (TPI)** by agencies like SGS, Bureau Veritas, TUV, DNV, Lloyds, or IRS.\n• Need to verify an MTC? Visit our [MTC Verification page](mtc.html) to check authenticity!`;
+            return `✅ **MTC & Certification Traceability**:\n• Material is supplied with EN 10204 3.1 Mill Test Certificates showing heat number and chemical analysis.\n• PMI and dimensional checks arranged before dispatch as required.\n• Third-party inspection can be arranged by the agency of your choice (TUV, DNV, SGS, Bureau Veritas, Lloyd's) as per your QAP.\n• Need to verify an MTC? Visit our [MTC Verification page](mtc.html)!`;
         }
 
         // Contact info / WhatsApp / address
         if (lower.includes('phone') || lower.includes('number') || lower.includes('whatsapp') || lower.includes('call') || lower.includes('contact') || lower.includes('address') || lower.includes('location') || lower.includes('office') || lower.includes('email') || lower.includes('write')) {
-            return `📞 **Contact Our Sales Desk**:\n\n• **Main Phone / WhatsApp**: [+91 99303 01181](tel:+919930301181)\n• **Mr. Kamlesh Jain**: [+91 98195 90580](tel:+919819590580)\n• **Mr. Kapil Jain**: [+91 99303 01181](tel:+919930301181)\n• **Mr. Tatva Jain**: [+91 90828 34775](tel:+919082834775)\n\n• **Main Office**: 61, Jamnadas Building, Shop No. 5 & 6, 10th Khetwadi Back Road, Girgaon, Mumbai - 400004.\n• **Stock Hub / Warehouse**: 39/41, Kamal Building, 1st Kumbharwada Lane, Kalbadevi, Mumbai - 400004.\n• **Email**: sales@tatvamoverseasinc.com\n\n*Click any phone number above to call, or message us on WhatsApp!*`;
+            return `📞 **Contact Our Sales Desk**:\n\n• **Main Phone / WhatsApp**: [+91 99303 01181](tel:+919930301181)\n• **Mr. Kamlesh Jain**: [+91 98195 90580](tel:+919819590580)\n• **Mr. Kapil Jain**: [+91 99303 01181](tel:+919930301181)\n• **Mr. Tatva Jain**: [+91 90828 34775](tel:+919082834775)\n\n• **Trading Office**: 39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Bhandari Street, Kalbadevi, Mumbai - 400004.\n• **Registered Office**: 61, Jamnadas Building, Shop No. 5 & 6, 10th Khetwadi Back Road, Girgaon, Mumbai - 400004.\n• **Email**: sales@tatvamoverseasinc.com\n\n*Click any phone number above to call, or message us on WhatsApp!*`;
         }
 
         // Calculator
@@ -503,7 +511,7 @@ class SmartFloatingWidget {
         // General info
         if (lower.includes('about') || lower.includes('who are you') || lower.includes('firm') || lower.includes('history') || lower.includes('proprietor') || lower.includes('established') || lower.includes('iso')) {
             const expYears = new Date().getFullYear() - 1992;
-            return `🏢 **About Tatvam Overseas Inc**:\nEstablished in **1992** (formerly Nagmani Metal Corporation), we are an ISO 9001:2015 certified stockist and exporter of stainless steel and alloy piping systems.\n\nLed by Mr. Champalal Jain and family, we have been bridging the gap between top global steel mills and key industrial projects for over **${expYears} years** with a clean reputation for quality.`;
+            return `🏢 **About Tatvam Overseas Inc**:\nEstablished in **1992** (formerly Nagmani Metal), we are a stockist, dealer & supplier of stainless steel and alloy piping systems.\n\nSupplying industry since 1992 for over **${expYears} years** with statutory registrations and Mill Test Certificates.`;
         }
 
         // Thanks
@@ -677,7 +685,7 @@ function openProductModal(id) {
                 <p class="text-sm text-slate-600 leading-relaxed mb-6">${p.description}</p>
                 ${highlightsHtml}
                 <div class="flex gap-3 mt-6 pt-4 border-t border-slate-200">
-                    <a href="contact.html" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded text-center transition-colors text-sm shadow-md">Get Instant Quote</a>
+                    <a href="contact.html" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded text-center transition-colors text-sm shadow-md">Request Quote</a>
                     <a href="https://wa.me/919930301181?text=Inquiry%20for%20${encodeURIComponent(p.grade)}" target="_blank" rel="noopener noreferrer" class="flex-1 bg-white border border-slate-300 text-slate-700 font-bold py-3 rounded text-center transition-colors text-sm flex items-center justify-center gap-2 hover:bg-slate-50"><i data-lucide="message-circle" class="w-4 h-4 text-green-500"></i> WhatsApp</a>
                 </div>
             </div>
