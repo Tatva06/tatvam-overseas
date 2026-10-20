@@ -26,13 +26,8 @@ const SITE_CONFIG = {
     addressWarehouse: 'Kalamboli, Navi Mumbai',
     mapsUrl: 'https://maps.google.com/?q=61+Jamnadas+Building+10th+Khetwadi+Back+Road+Girgaon+Mumbai+400004',
     catalogUrl: 'assets/TatvamOverseasInc_Catalog_2025.pdf',
-    // Business Directory & Social Links
-    indiamart: 'https://www.indiamart.com/tatvam-overseas-inc/',
-    justdial: '#', // TODO: JustDial profile URL to be added
-    linkedin: '#', // TODO: LinkedIn company page URL to be added
-    instagram: '#', // TODO: Instagram profile URL to be added
-    facebook: 'https://www.facebook.com/tatvamoverseasinc',
-    twitter: 'https://twitter.com/tatvamoverseas'
+    // Business Directory Links
+    indiamart: 'https://www.indiamart.com/tatvam-overseas-inc/'
 };
 
 // ============================================================================
@@ -568,8 +563,6 @@ function renderFooter() {
                         <span class="text-slate-400 font-bold text-[11px] uppercase tracking-wider block mb-2">Find us on</span>
                         <div class="flex flex-wrap items-center gap-2 text-xs">
                             <a href="https://www.indiamart.com/tatvam-overseas-inc/" target="_blank" rel="noopener" class="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">IndiaMART</a>
-                            <span class="text-slate-600">&bull;</span>
-                            <a href="https://www.facebook.com/tatvamoverseasinc" target="_blank" rel="noopener" class="text-slate-400 hover:text-emerald-400 transition-colors">Facebook</a>
                         </div>
                     </div>
                 </div>
