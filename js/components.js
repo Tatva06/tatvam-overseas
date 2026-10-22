@@ -307,20 +307,21 @@ function renderHeader() {
     const currentLang = getSavedLanguage();
 
     const navLinks = [
-        { href: pfx + 'index.html', label: 'Home', match: 'index.html' },
-        { href: pfx + 'about.html', label: 'Our Firm', match: 'about.html' },
-        { href: pfx + 'products.html', label: 'Inventory', match: 'products.html' },
-        { href: pfx + 'blog.html', label: 'Knowledge', match: 'blog.html' },
-        { href: pfx + 'contact.html', label: 'Contact', match: 'contact.html' },
+        { href: '/', label: 'Home', match: '/' },
+        { href: '/about', label: 'Our Firm', match: '/about' },
+        { href: '/products', label: 'Inventory', match: '/products' },
+        { href: '/blog', label: 'Knowledge', match: '/blog' },
+        { href: '/contact', label: 'Contact', match: '/contact' },
     ];
 
+    const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
     const desktopLinks = navLinks.map(l => `
-        <a href="${l.href}" class="toi-nav-link${currentPage === l.match ? ' active' : ''}" translate="no">${l.label}</a>
+        <a href="${l.href}" class="toi-nav-link${currentPath === l.match ? ' active' : ''}" translate="no">${l.label}</a>
     `).join('');
 
     const mobileLinks = navLinks.map(l => `
         <a href="${l.href}" translate="no"
-           class="block px-4 py-3 text-sm font-medium uppercase tracking-wide transition-colors border-l-2 ${currentPage === l.match ? 'text-white border-emerald-500 bg-slate-800/60 font-bold' : 'text-slate-300 border-transparent hover:text-white hover:border-emerald-400/50 hover:bg-slate-800/40'}">${l.label}</a>
+           class="block px-4 py-3 text-sm font-medium uppercase tracking-wide transition-colors border-l-2 ${currentPath === l.match ? 'text-white border-emerald-500 bg-slate-800/60 font-bold' : 'text-slate-300 border-transparent hover:text-white hover:border-emerald-400/50 hover:bg-slate-800/40'}">${l.label}</a>
     `).join('');
 
     const desktopLangOptions = SUPPORTED_LANGUAGES.map(l => {
@@ -349,7 +350,8 @@ function renderHeader() {
         `;
     }).join('');
 
-    headerEl.innerHTML = `
+    if (!headerEl.querySelector('.toi-top-bar')) {
+        headerEl.innerHTML = `
         <!-- ═══════════════════════════════════════════════════ -->
         <!-- TOP BAR: White — Logo + Company Name + CTA Buttons -->
         <!-- ═══════════════════════════════════════════════════ -->
@@ -357,10 +359,10 @@ function renderHeader() {
             <div class="container mx-auto px-6 py-3 flex items-center justify-between gap-6">
 
                 <!-- Brand: Logo + Name -->
-                <a href="${pfx}index.html" translate="no" class="flex items-center gap-3 group shrink-0" aria-label="Tatvam Overseas Inc">
+                <a href="/" translate="no" class="flex items-center gap-3 group shrink-0" aria-label="Tatvam Overseas Inc">
                     <div class="bg-white rounded-md border border-slate-200 shadow-sm p-1 shrink-0 group-hover:shadow-md transition-shadow">
-                        <img src="${pfx}assets/TATVAM LOGO.jpg" alt="TOI – Tatvam Overseas Inc Logo"
-                             class="h-10 w-auto object-contain block" translate="no" loading="eager">
+                        <img src="/assets/TATVAM LOGO.jpg" alt="TOI – Tatvam Overseas Inc Logo"
+                             class="h-10 w-auto object-contain block" translate="no" loading="eager" width="120" height="40">
                     </div>
                     <div class="leading-tight" translate="no">
                         <div class="text-[16px] font-black text-slate-900 tracking-widest leading-none">TATVAM OVERSEAS INC</div>
@@ -402,7 +404,7 @@ function renderHeader() {
                     </a>
 
                     <!-- GET QUOTE: solid green slanted parallelogram button -->
-                    <a href="${pfx}contact.html" translate="no"
+                    <a href="/contact" translate="no"
                        class="flex items-center gap-2.5 pl-8 pr-7 py-[11px] bg-emerald-600 hover:bg-emerald-500 text-white font-black text-sm tracking-[0.12em] uppercase transition-all shrink-0 cursor-pointer ml-px"
                        style="clip-path: polygon(22px 0%, 100% 0%, 100% 100%, 0% 100%); letter-spacing:0.1em;">
                         GET QUOTE
@@ -418,7 +420,7 @@ function renderHeader() {
                        class="flex items-center gap-1.5 text-emerald-600 font-bold text-sm bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
                         <i data-lucide="message-circle" class="w-4 h-4"></i> WA
                     </a>
-                    <a href="${pfx}contact.html" class="text-white font-bold text-sm bg-emerald-600 px-3.5 py-1.5 rounded-full">
+                    <a href="/contact" class="text-white font-bold text-sm bg-emerald-600 px-3.5 py-1.5 rounded-full">
                         Quote
                     </a>
                 </div>
@@ -458,12 +460,13 @@ function renderHeader() {
                 <div class="grid grid-cols-2 gap-1.5 max-h-36 overflow-y-auto">${mobileLangOptions}</div>
             </div>
             <div class="px-4 pb-4 pt-2">
-                <a href="${pfx}contact.html" class="block bg-emerald-600 text-white text-center py-3 rounded-lg font-bold text-sm uppercase tracking-wide hover:bg-emerald-500 transition-colors" translate="no">
+                <a href="/contact" class="block bg-emerald-600 text-white text-center py-3 rounded-lg font-bold text-sm uppercase tracking-wide hover:bg-emerald-500 transition-colors" translate="no">
                     Get Quote Now
                 </a>
             </div>
         </div>
     `;
+    }
 
     // Initialize hidden Google Translate engine in background
     initHiddenGoogleTranslate();
@@ -509,11 +512,8 @@ function renderFooter() {
     const footerEl = document.getElementById('site-footer');
     if (!footerEl) return;
 
-    const isSubfolder = window.location.pathname.includes('/products/') || window.location.pathname.includes('/blog/');
-    const pfx = isSubfolder ? '../' : '';
-    const year = new Date().getFullYear();
-
-    footerEl.innerHTML = `
+    if (!footerEl.querySelector('#newsletter-form')) {
+        footerEl.innerHTML = `
         <!-- Newsletter Section -->
         <div class="bg-slate-950 border-b border-slate-800 py-10">
             <div class="container mx-auto px-6">
@@ -530,8 +530,8 @@ function renderFooter() {
                         <input type="hidden" name="subject" value="Newsletter Subscription - Tatvam Overseas Inc">
                         <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
                         <input type="email" name="email" placeholder="Enter your work email address" required
-                               class="flex-1 bg-slate-800 text-white px-5 py-3 rounded-lg outline-none border border-slate-700 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/50 text-sm transition-all"
-                               aria-label="Email address for newsletter">
+                                class="flex-1 bg-slate-800 text-white px-5 py-3 rounded-lg outline-none border border-slate-700 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/50 text-sm transition-all"
+                                aria-label="Email address for newsletter">
                         <button type="submit" class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-3 rounded-lg font-bold text-sm transition-all shadow-lg hover:shadow-xl whitespace-nowrap">
                             Subscribe Now
                         </button>
@@ -545,7 +545,7 @@ function renderFooter() {
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 text-sm">
                 <!-- Company Info -->
                 <div class="space-y-6">
-                    <a href="${pfx}index.html" class="inline-block group">
+                    <a href="/" class="inline-block group">
                         <div class="flex flex-col leading-none">
                             <span class="text-xl font-black text-white tracking-wider group-hover:text-emerald-400 transition-colors">TATVAM</span>
                             <span class="text-[10px] font-extrabold text-emerald-400 tracking-[0.24em] uppercase mt-1">OVERSEAS INC</span>
@@ -571,14 +571,14 @@ function renderFooter() {
                 <div>
                     <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Top Products</h4>
                     <ul class="space-y-3">
-                        <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">SS 304 / 304L Sheets</a></li>
-                        <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">SS 316 / 316L Marine Plates</a></li>
-                        <li><a href="${pfx}products/decorative-stainless-steel-sheets-mumbai.html" class="hover:text-emerald-400 transition-colors block">Decorative SS Sheets</a></li>
-                        <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Alloy Steel P11/P22 Pipes</a></li>
-                        <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Inconel 625 Seamless Tubes</a></li>
-                        <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Duplex 2205 Flanges</a></li>
+                        <li><a href="/products" class="hover:text-emerald-400 transition-colors block">SS 304 / 304L Sheets</a></li>
+                        <li><a href="/products" class="hover:text-emerald-400 transition-colors block">SS 316 / 316L Marine Plates</a></li>
+                        <li><a href="/products/decorative-stainless-steel-sheets-mumbai" class="hover:text-emerald-400 transition-colors block">Decorative SS Sheets</a></li>
+                        <li><a href="/products" class="hover:text-emerald-400 transition-colors block">Alloy Steel P11/P22 Pipes</a></li>
+                        <li><a href="/products" class="hover:text-emerald-400 transition-colors block">Inconel 625 Seamless Tubes</a></li>
+                        <li><a href="/products" class="hover:text-emerald-400 transition-colors block">Duplex 2205 Flanges</a></li>
                         <li>
-                            <a href="${pfx}assets/TatvamOverseasInc_Catalog_2025.pdf" target="_blank" class="text-emerald-500 font-bold hover:text-emerald-400 flex items-center gap-2 mt-4">
+                            <a href="/assets/TatvamOverseasInc_Catalog_2025.pdf" target="_blank" class="text-emerald-500 font-bold hover:text-emerald-400 flex items-center gap-2 mt-4">
                                 <i data-lucide="download" class="w-3 h-3"></i> Product Catalogue
                             </a>
                         </li>
@@ -589,13 +589,13 @@ function renderFooter() {
                 <div>
                     <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Our Firm</h4>
                     <ul class="space-y-3">
-                        <li><a href="${pfx}about.html" class="hover:text-emerald-400 transition-colors block">About Tatvam Overseas Inc</a></li>
-                        <li><a href="${pfx}products.html" class="hover:text-emerald-400 transition-colors block">Complete Inventory</a></li>
-                        <li><a href="${pfx}mtc.html" class="hover:text-emerald-400 transition-colors block">Quality &amp; MTC</a></li>
-                        <li><a href="${pfx}blog.html" class="hover:text-emerald-400 transition-colors block">Technical Knowledge Hub</a></li>
-                        <li><a href="${pfx}contact.html" class="hover:text-emerald-400 transition-colors block">Contact &amp; Locations</a></li>
-                        <li><a href="${pfx}privacypolicy.html" class="hover:text-emerald-400 transition-colors block">Privacy Policy</a></li>
-                        <li><a href="${pfx}terms.html" class="hover:text-emerald-400 transition-colors block">Terms &amp; Conditions</a></li>
+                        <li><a href="/about" class="hover:text-emerald-400 transition-colors block">About Tatvam Overseas Inc</a></li>
+                        <li><a href="/products" class="hover:text-emerald-400 transition-colors block">Complete Inventory</a></li>
+                        <li><a href="/mtc" class="hover:text-emerald-400 transition-colors block">Quality &amp; MTC</a></li>
+                        <li><a href="/blog" class="hover:text-emerald-400 transition-colors block">Technical Knowledge Hub</a></li>
+                        <li><a href="/contact" class="hover:text-emerald-400 transition-colors block">Contact &amp; Locations</a></li>
+                        <li><a href="/privacypolicy" class="hover:text-emerald-400 transition-colors block">Privacy Policy</a></li>
+                        <li><a href="/terms" class="hover:text-emerald-400 transition-colors block">Terms &amp; Conditions</a></li>
                     </ul>
                 </div>
 
@@ -626,7 +626,7 @@ function renderFooter() {
                             <a href="mailto:${SITE_CONFIG.email}" class="text-xs hover:text-emerald-400 transition-colors">${SITE_CONFIG.email}</a>
                         </li>
                         <li class="pt-2">
-                            <a href="${pfx}contact.html" class="block w-full py-3 border-2 border-emerald-600 text-emerald-400 text-center font-bold rounded-lg hover:bg-emerald-600 hover:text-white transition-all text-xs uppercase tracking-widest shadow-lg">
+                            <a href="/contact" class="block w-full py-3 border-2 border-emerald-600 text-emerald-400 text-center font-bold rounded-lg hover:bg-emerald-600 hover:text-white transition-all text-xs uppercase tracking-widest shadow-lg">
                                 Request Quote
                             </a>
                         </li>
@@ -640,14 +640,15 @@ function renderFooter() {
             <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-slate-600 uppercase tracking-wider">
                 <p>&copy; 2026 Tatvam Overseas Inc. All Rights Reserved.</p>
                 <div class="flex items-center gap-6">
-                    <a href="${pfx}privacypolicy.html" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="${pfx}terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
-                    <a href="${pfx}sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
+                    <a href="/privacypolicy" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="/terms" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+                    <a href="/sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
                     <a href="https://wa.me/919930301181" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" class="hover:text-white transition-colors flex items-center gap-1"><i data-lucide="message-circle" class="w-3 h-3"></i> WhatsApp</a>
                 </div>
             </div>
         </div>
     `;
+    }
 
     // Newsletter form handler
     const nlForm = document.getElementById('newsletter-form');

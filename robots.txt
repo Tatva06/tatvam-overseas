@@ -5,7 +5,10 @@ User-agent: Bingbot
 Allow: /
 
 User-agent: *
+Disallow: /admin
 Disallow: /admin.html
+Disallow: /404
+Disallow: /404.html
 Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /package.json

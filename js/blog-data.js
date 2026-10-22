@@ -84,25 +84,23 @@ const blogs = [
     title: "SS 202 vs SS 304: Differences, Uses and Which Grade to Buy",
     date: "Oct 21, 2026",
     category: "Technical Guide",
-    featured: true,
-    image: "assets/images/pool/sheets_prod.jpg",
-    coverImage: "assets/images/pool/sheets_prod.jpg",
+    featured: false,
+    image: "assets/images/pool/sheets_prod.webp",
+    coverImage: "assets/images/pool/sheets_prod.webp",
     readingTime: "6 min read",
     author: "Tatvam Overseas Inc Technical Team",
-    lastUpdated: "2026-10-21",
-    seoTitle: "SS 202 vs SS 304: Differences, Uses and Which Grade to Buy | Tatvam Overseas",
+    lastUpdated: "2026-10-22",
+    seoTitle: "SS 202 vs SS 304: Differences & Uses | Tatvam Overseas",
     seoDescription: "Compare SS 202 and SS 304 stainless steel: composition, corrosion resistance, uses and how to verify the grade you receive. A practical guide for buyers.",
     keywords: ["SS 202 vs 304", "SS 202 difference SS 304", "which stainless steel grade to buy", "200 series vs 300 series", "SS 202 food grade"],
     tags: ["SS 202", "SS 304", "Grade Comparison", "Technical Guide"],
-    snippet: "Compare SS 202 and SS 304 stainless steel: composition, corrosion resistance, uses and how to verify the grade you receive. A practical guide for buyers.",
+    snippet: "SS 304 contains roughly 8 to 10.5% nickel and offers better corrosion resistance and formability. SS 202 replaces part of the nickel with manganese and nitrogen, so it usually costs less but resists corrosion less well. Choose 202 for dry indoor uses such as utensils and interior panels, and 304 for food processing, outdoor or humid environments.",
     relatedIds: ["ss-304-vs-316", "stainless-steel-sheet-finishes-2b-ba-no4-8k-mirror"],
     content: (function() {
       return `
       <p class="lead text-lg text-slate-700 font-medium leading-relaxed mb-6">
-        Compare SS 202 and SS 304 stainless steel: composition, corrosion resistance, uses and how to verify the grade you receive. A practical guide for buyers.
+        SS 304 contains roughly 8 to 10.5% nickel and offers better corrosion resistance and formability. SS 202 replaces part of the nickel with manganese and nitrogen, so it usually costs less but resists corrosion less well. Choose 202 for dry indoor uses such as utensils and interior panels, and 304 for food processing, outdoor or humid environments.
       </p>
-      <h2 class="text-2xl font-black text-slate-900 mt-6 mb-3">Chemical Composition: Nickel vs Manganese</h2>
-      <p class="mb-4 text-slate-700 leading-relaxed">Grade 304 contains 18-20% Chromium and 8-10.5% Nickel. Grade 202 conserves nickel by replacing part of it with 7.5-10% Manganese and Nitrogen, reducing raw material cost while maintaining an austenitic structure for indoor dry use.</p>
       `;
     })()
   },
@@ -116,16 +114,16 @@ const blogs = [
     date: "Oct 21, 2026",
     category: "Technical Guide",
     featured: false,
-    image: "assets/images/pool/sheets_mirror.png",
-    coverImage: "assets/images/pool/sheets_mirror.png",
+    image: "assets/images/pool/sheets_mirror.webp",
+    coverImage: "assets/images/pool/sheets_mirror.webp",
     readingTime: "6 min read",
     author: "Tatvam Overseas Inc Technical Team",
-    lastUpdated: "2026-10-21",
-    seoTitle: "Stainless Steel Sheet Finishes: 2B, BA, No.4 & 8K Mirror Explained | Tatvam Overseas",
-    seoDescription: "Understand stainless steel sheet finishes from 2B and BA to No.4 brushed and 8K mirror. Compare production methods, reflectivity, fabrication suitability, and selection criteria.",
+    lastUpdated: "2026-10-22",
+    seoTitle: "SS Sheet Finishes: 2B, BA, No.4, 8K | Tatvam Overseas",
+    seoDescription: "Understand stainless steel sheet finishes from 2B and BA to No.4 and 8K mirror. Compare production, reflectivity, fabrication suitability, and selection.",
     keywords: ["stainless steel finishes", "2B vs BA finish", "No.4 brushed stainless", "8K mirror stainless", "sheet surface finishes"],
     tags: ["Surface Finishes", "2B", "BA", "No.4", "8K Mirror", "Technical Guide"],
-    snippet: "Stainless steel sheet finishes range from rough hot-rolled No.1 to mirror-like 8K. Compare production methods, reflectivity, fabrication suitability, and practical tips.",
+    snippet: "Quick answer: Stainless steel sheet finishes range from rough hot-rolled No.1 to mirror-like 8K. 2B is the smooth, general-purpose cold-rolled finish. BA is brighter and more reflective. No.4 is a brushed satin finish that hides scratches, and 8K is a polished mirror finish. Pick the finish by look, cleaning needs and how the sheet will be formed or fabricated.",
     relatedIds: ["ss-202-vs-ss-304-difference-uses-which-to-buy", "ss-304-vs-316"],
     content: (function() {
       return `
@@ -476,7 +474,7 @@ const blogs = [
     keywords: ["stainless steel surface finishes", "2B vs BA finish", "mirror finish stainless", "hairline finish", "PVD coating stainless", "No 4 finish"],
     tags: ["Surface Finish", "2B", "Mirror", "Hairline", "PVD", "Aesthetics"],
     snippet: "The finish on stainless steel affects far more than appearance — it impacts hygiene, cleanability, corrosion resistance, and application suitability. This guide covers every major finish from industrial 2B to luxury PVD Gold, with Ra values and applications.",
-    relatedIds: ["pvd-coating", "buffing-polishing", "ss-304-vs-316"],
+    relatedIds: ["pvd-coating", "stainless-steel-sheet-finishes-2b-ba-no4-8k-mirror", "ss-304-vs-316"],
     content: `
       <h2 class="text-2xl font-black text-slate-900 mt-6 mb-3">Why Surface Finish Matters Beyond Aesthetics</h2>
       <p class="mb-4 text-slate-700 leading-relaxed">The surface finish of stainless steel is not just cosmetic. The <strong>Ra (Roughness Average)</strong> value of a surface directly affects bacterial adhesion in food/pharma applications, corrosion resistance (smoother = fewer sites for chloride attack), and ease of cleaning. Getting the finish right is as important as choosing the right grade.</p>
@@ -722,7 +720,7 @@ const blogs = [
     keywords: ["duplex 2205 stainless steel", "S31803 duplex", "duplex vs 316", "duplex yield strength", "offshore stainless steel"],
     tags: ["Duplex 2205", "Offshore", "High Strength", "PREN", "Chemical"],
     snippet: "Duplex 2205 has a dual ferritic-austenitic microstructure that gives it 450 MPa yield strength — double that of SS 316 — combined with a PREN of 35. It allows thinner walls in pressure vessels, reducing weight and material cost. Here's when to specify it.",
-    relatedIds: ["ss-304-vs-316", "pitting-corrosion", "duplex-welding"],
+    relatedIds: ["ss-304-vs-316", "pitting-corrosion", "welding-316l"],
     content: `
       <h2 class="text-2xl font-black text-slate-900 mt-6 mb-3">What Makes Duplex Different?</h2>
       <p class="mb-4 text-slate-700 leading-relaxed">Duplex stainless steel has a microstructure of approximately <strong>50% ferrite + 50% austenite</strong>. This hybrid structure is the source of its exceptional properties: the ferrite provides high strength, the austenite provides ductility and corrosion resistance.</p>
@@ -785,7 +783,7 @@ const blogs = [
     keywords: ["mill test certificate", "MTC stainless steel", "heat number verification", "material traceability", "ASTM A240 certificate"],
     tags: ["MTC", "Quality", "Traceability", "Heat Number", "Certification"],
     snippet: "Never accept steel without an MTC. The Mill Test Certificate is the legal document that proves what you received is what you ordered. Learn to read Chemical Composition, verify Heat Numbers, and spot fraudulent or mismatched certificates.",
-    relatedIds: ["avoid-cheating", "jindal-vs-imported", "food-grade-certification"],
+    relatedIds: ["avoid-cheating", "jindal-vs-imported", "avoid-cheating"],
     content: `
       <h2 class="text-2xl font-black text-slate-900 mt-6 mb-3">Why the MTC is Non-Negotiable</h2>
       <p class="mb-4 text-slate-700 leading-relaxed">A Mill Test Certificate (also called Material Test Report — MTR) is the legal traceability document that links the steel in your hands to the mill that produced it. Without it, you have no proof of grade, chemistry, or mechanical properties. For export, pharmaceutical, or pressure vessel applications, accepting steel without an MTC is not just risky — it can void insurance, approvals, and warranties.</p>
@@ -854,7 +852,7 @@ const blogs = [
     keywords: ["stainless steel buying tips", "steel fraud", "under gauge stainless", "fake 304", "MTC verification", "steel buying guide India"],
     tags: ["Market", "Buying Tips", "Fraud Prevention", "Quality", "MTC"],
     snippet: "Buying SS 304 and getting SS 202. Ordering 1mm and getting 0.85mm. Fake mill stamping on imported coils. The Indian steel market has real fraud risks. Here are 7 actionable red flags that every procurement professional must know.",
-    relatedIds: ["understanding-mtc", "jindal-vs-imported", "hidden-cost-undergauge"],
+    relatedIds: ["understanding-mtc", "jindal-vs-imported", "understanding-mtc"],
     content: `
       <h2 class="text-2xl font-black text-slate-900 mt-6 mb-3">The Real Risks in the Indian Market</h2>
       <p class="mb-4 text-slate-700 leading-relaxed">India's stainless steel market is large, competitive, and unfortunately, prone to quality adulteration. From large infrastructure projects to small fabrication shops, procurement teams routinely encounter grade substitution, under-gauge material, and fake certification. Here are 7 red flags to protect yourself.</p>
@@ -955,7 +953,7 @@ const blogs = [
     keywords: ["welding stainless steel", "316L welding guide", "ER316L filler wire", "sensitisation stainless", "weld decay", "pickling passivation"],
     tags: ["Welding", "SS 316L", "Fabrication", "Sensitisation", "Technical Guide"],
     snippet: "Welding stainless steel incorrectly causes 'weld decay' — intergranular corrosion that destroys the weld zone. Here's how to use ER316L filler wire, maintain correct interpass temperatures, and pickle the weld to restore the passive layer.",
-    relatedIds: ["corrosion-types", "duplex-welding", "pitting-corrosion"],
+    relatedIds: ["corrosion-types", "welding-316l", "pitting-corrosion"],
     content: `
       <h2 class="text-2xl font-black text-slate-900 mt-6 mb-3">Understanding Sensitisation (Weld Decay)</h2>
       <p class="mb-4 text-slate-700 leading-relaxed">When stainless steel is held in the temperature range of <strong>425–800°C</strong> (which happens in the Heat Affected Zone during welding), chromium carbides (Cr₂₃C₆) precipitate at grain boundaries. This depletes chromium from the adjacent zone below the critical 10.5% threshold, leaving a narrow band without corrosion protection. This is called <strong>sensitisation</strong> or "weld decay," and it's the most common cause of corrosion failure in welded SS structures.</p>
@@ -1025,7 +1023,7 @@ const blogs = [
     keywords: ["PVD coating stainless steel", "gold stainless steel sheet", "black stainless steel", "rose gold steel", "PVD vs paint", "coloured stainless steel"],
     tags: ["PVD", "Gold Finish", "Black Steel", "Aesthetics", "Interior Design"],
     snippet: "PVD (Physical Vapour Deposition) is how we get luxurious Gold, Rose Gold, and Black stainless steel — without paint, without plating, without peeling. The ceramic-hard TiN coating is more scratch-resistant than the steel underneath.",
-    relatedIds: ["surface-finishes", "buffing-polishing", "ss-304-vs-316"],
+    relatedIds: ["surface-finishes", "stainless-steel-sheet-finishes-2b-ba-no4-8k-mirror", "ss-304-vs-316"],
     content: `
       <h2 class="text-2xl font-black text-slate-900 mt-6 mb-3">What is PVD?</h2>
       <p class="mb-4 text-slate-700 leading-relaxed">Physical Vapour Deposition (PVD) is a vacuum coating process where target material (Titanium, Zirconium, or Chromium) is vaporised by an electron beam or magnetron sputtering and deposited atom-by-atom onto the stainless steel surface. The result is a <strong>0.3–0.5 µm thin ceramic film</strong> (typically TiN for gold, TiAlN for rose gold, ZrN for champagne, TiC for black) that is chemically bonded to the substrate.</p>
@@ -1156,7 +1154,7 @@ const blogs = [
     keywords: ["stainless steel weight calculator", "SS weight formula", "steel sheet weight", "pipe weight calculation", "bar weight calculator"],
     tags: ["Weight Calculator", "Formula", "Utility", "Sheets", "Pipes", "Bars"],
     snippet: "Accurate weight calculation is essential for logistics, costing, and procurement. Here are the exact formulas for sheets/plates, round pipes, round bars, and flat bars — with the correct density values for every stainless steel grade.",
-    relatedIds: ["sheet-vs-plate", "pipe-vs-tube", "hidden-cost-undergauge"],
+    relatedIds: ["sheet-vs-plate", "pipe-vs-tube", "understanding-mtc"],
     content: `
       <h2 class="text-2xl font-black text-slate-900 mt-6 mb-3">Density by Grade</h2>
       <div class="overflow-x-auto mb-6 rounded-xl border border-slate-200 shadow-sm">
@@ -1332,7 +1330,7 @@ const blogs = [
     keywords: ["food grade stainless steel", "food safe stainless steel", "HACCP stainless steel", "SS 304 food grade", "316 pharmaceutical grade"],
     tags: ["Food Grade", "HACCP", "Pharmaceutical", "SS 304", "SS 316", "Industry Focus"],
     snippet: "There is no single 'Food Grade Certificate' — it's determined by grade, surface finish, and application. SS 304 is the standard for most food equipment; SS 316L is required for salty, acidic, or pharmaceutical service. SS 202 should NOT be used for wet food contact.",
-    relatedIds: ["ss-304-vs-316", "surface-finishes", "pharmaceutical-standards"],
+    relatedIds: ["ss-304-vs-316", "surface-finishes", "ss-304-vs-316"],
     content: `
       <h2 class="text-2xl font-black text-slate-900 mt-6 mb-3">What "Food Grade" Actually Means</h2>
       <p class="mb-4 text-slate-700 leading-relaxed">"Food Grade" is not a single certification — it is a combination of <strong>grade, surface finish, and fabrication quality</strong> that meets regulatory standards (HACCP, FDA 21 CFR, EU 1935/2004). The material must not migrate harmful substances to food, must be cleanable, and must not harbour bacteria in surface crevices.</p>
@@ -1389,7 +1387,7 @@ const blogs = [
     keywords: ["laser cutting stainless steel", "plasma cutting vs laser", "fiber laser cutter", "stainless steel cutting method", "CNC cutting steel"],
     tags: ["Fabrication", "Laser Cutting", "Plasma", "CNC", "Cutting"],
     snippet: "Fiber laser cutting gives pristine edges with tight tolerances, but becomes uneconomical above 25mm. Plasma cutting handles thick plates cheaply but leaves a rougher edge. Here's exactly when to use each method.",
-    relatedIds: ["welding-316l", "surface-protection", "custom-fabrication"],
+    relatedIds: ["welding-316l", "sheet-vs-plate", "welding-316l"],
     content: `
       <h2 class="text-2xl font-black text-slate-900 mt-6 mb-3">Technology Overview</h2>
       <div class="overflow-x-auto mb-6 rounded-xl border border-slate-200 shadow-sm">
