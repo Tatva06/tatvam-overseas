@@ -1820,3 +1820,18 @@ const blogs = [
 
 // Attach related posts HTML function to each blog's rendered modal content
 // (called dynamically by script.js openBlogModal)
+
+// ============================================================================
+// PLANNED EDITORIAL TOPICS (TODO STUBS - DO NOT PUBLISH)
+// ============================================================================
+// TODO: "SS circle sizes and uses for utensils"
+//   - Slug: ss-circle-sizes-uses-utensils
+//   - Focus: Deep-draw circle blank sizes, grade selection (202 vs 304), thickness charts, and manufacturing considerations for cookware and kitchenware.
+//
+// TODO: "SS patta vs patti: sizes and uses"
+//   - Slug: ss-patta-vs-patti-sizes-uses
+//   - Focus: Trade terminology differences across Indian regional markets, slit edge vs sheared edge tolerances, and architectural vs fabrication uses.
+//
+// TODO: "Jindal J1 vs J4"
+//   - Slug: jindal-j1-vs-j4-stainless-steel-difference
+//   - Focus: Chemistry differences (copper and nickel contents), drawing behavior, test kit identification, and verifying genuine MTCs.

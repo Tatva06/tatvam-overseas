@@ -571,12 +571,14 @@ function renderFooter() {
                 <div>
                     <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs border-l-2 border-emerald-500 pl-3">Top Products</h4>
                     <ul class="space-y-3">
-                        <li><a href="/products" class="hover:text-emerald-400 transition-colors block">SS 304 / 304L Sheets</a></li>
-                        <li><a href="/products" class="hover:text-emerald-400 transition-colors block">SS 316 / 316L Marine Plates</a></li>
+                        <li><a href="/products/ss-304-sheets-plates-supplier-mumbai" class="hover:text-emerald-400 transition-colors block">SS 304 / 304L Sheets</a></li>
+                        <li><a href="/products/ss-202-sheets-jindal-j1-j4-supplier-mumbai" class="hover:text-emerald-400 transition-colors block">SS 202 Sheets (Jindal J1/J4)</a></li>
+                        <li><a href="/products/ss-circles-discs-supplier-mumbai" class="hover:text-emerald-400 transition-colors block">SS Circles &amp; Discs</a></li>
+                        <li><a href="/products/ss-patta-patti-flats-strips-supplier-mumbai" class="hover:text-emerald-400 transition-colors block">SS Patta / Patti (Flats)</a></li>
                         <li><a href="/products/decorative-stainless-steel-sheets-mumbai" class="hover:text-emerald-400 transition-colors block">Decorative SS Sheets</a></li>
-                        <li><a href="/products" class="hover:text-emerald-400 transition-colors block">Alloy Steel P11/P22 Pipes</a></li>
-                        <li><a href="/products" class="hover:text-emerald-400 transition-colors block">Inconel 625 Seamless Tubes</a></li>
-                        <li><a href="/products" class="hover:text-emerald-400 transition-colors block">Duplex 2205 Flanges</a></li>
+                        <li><a href="/products/ss-316l-sheets-plates-supplier-mumbai" class="hover:text-emerald-400 transition-colors block">SS 316 / 316L Marine Plates</a></li>
+                        <li><a href="/products/alloy-steel-p11-p22-ibr-pipes-mumbai" class="hover:text-emerald-400 transition-colors block">Alloy Steel P11/P22 Pipes</a></li>
+                        <li><a href="/products/inconel-625-600-supplier-india" class="hover:text-emerald-400 transition-colors block">Inconel 625 Seamless Tubes</a></li>
                         <li>
                             <a href="/assets/TatvamOverseasInc_Catalog_2025.pdf" target="_blank" class="text-emerald-500 font-bold hover:text-emerald-400 flex items-center gap-2 mt-4">
                                 <i data-lucide="download" class="w-3 h-3"></i> Product Catalogue
