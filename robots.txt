@@ -1,9 +1,21 @@
+# Standard Search Engine Crawlers
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
+# AI Search & Answer Engine Crawlers (ChatGPT Search, Claude Search, Perplexity)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Default Rules
 User-agent: *
 Disallow: /admin
 Disallow: /admin.html

@@ -1,0 +1,109 @@
+# Tatvam Overseas Inc — Full Product & Technical Specifications
+
+Company: Tatvam Overseas Inc
+Website: https://www.tatvamoverseasinc.com/
+Established: 1992 (originally founded as Nagmani Metal)
+Certification: ISO 9001:2015
+Locations:
+  - Registered Office: 61, Jamnadas Building, Shop 5 & 6, 10th Khetwadi Back Road, Girgaon, Mumbai 400004, India
+  - Trading Office: 39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Bhandari Street, Kalbadevi, Mumbai 400004, India
+  - Warehouse Stockyard: Kalamboli, Navi Mumbai, India
+Phone: +91 99303 01181 / +91 98195 90580
+Email: sales@tatvamoverseasinc.com
+WhatsApp: +91 99303 01181 (https://wa.me/919930301181)
+Business Registrations:
+  - GSTIN: 27AHIPJ6958M1ZK
+  - IEC: AHIPJ6958M
+  - UDYAM: UDYAM-MH-19-0338145 (MSME Registered)
+
+---
+
+## 1. Stainless Steel Sheets, Plates, and Coils
+Governing Standards: ASTM A240 / ASME SA240, EN 10088-2, IS 6911
+
+### Available Grades:
+1. **SS 304 / 304L (UNS S30400 / S30403)**
+   - Chemical Composition: Cr 18.0-20.0%, Ni 8.0-10.5%, C <= 0.08% (304) or <= 0.030% (304L), Mn <= 2.0%, Si <= 0.75%, P <= 0.045%, S <= 0.030%
+   - Thickness Range: 0.5 mm to 50 mm
+   - Standard Sizes: 1000x2000 mm, 1250x2500 mm, 1500x3000 mm, 1500x6000 mm, 2000x6000 mm, custom cut lengths
+   - Finishes: 2B (Cold rolled, smooth), No. 1 (Hot rolled, annealed & pickled), No. 4 (Brushed / Satin), BA (Bright Annealed), 8K Mirror
+   - Key Applications: Food processing, dairy, chemical storage, pharmaceuticals, architectural cladding, kitchen equipment
+
+2. **SS 316 / 316L (UNS S31600 / S31603)**
+   - Chemical Composition: Cr 16.0-18.0%, Ni 10.0-14.0%, Mo 2.0-3.0%, C <= 0.030% (316L), N <= 0.10%
+   - Corrosion Resistance: High resistance to pitting and crevice corrosion in chloride environments (PREN ~23-25)
+   - Key Applications: Marine hardware, coastal architectural structures, offshore oil & gas, pharmaceuticals, chemical reactor vessels
+
+3. **SS 202 (Jindal J1 / J4 Austenitic Series)**
+   - Grade Variants: Jindal J1 (high manganese, low nickel ~1.0-1.5%), Jindal J4 (high drawability)
+   - Mechanical Properties: High tensile strength, non-magnetic in annealed condition
+   - Finishes: 2B, No. 4 with PVC coating, 8K Mirror
+   - Key Applications: Architectural gates, railings, fabrication, restaurant furniture, domestic appliances
+
+4. **Decorative Stainless Steel Sheets (PVD Titanium Coated)**
+   - Base Metal: SS 304 / SS 202
+   - Colors: Gold, Rose Gold, Champagne, Black Titanium, Copper, Bronze, Blue
+   - Textures: 8K Super Mirror, Hairline, Cross-hairline, Vibration, Bead Blasted, Stamped Water Ripple
+   - Thickness: 0.8 mm, 1.0 mm, 1.2 mm, 1.5 mm
+   - Sizes: 1220x2440 mm (4x8 ft), 1220x3050 mm (4x10 ft)
+
+---
+
+## 2. Stainless Steel Circles, Discs, and Flats (Patta / Patti)
+
+### SS Circles & Discs:
+- Grades: SS 202, SS 304, SS 304L, SS 316L
+- Diameters: 50 mm to 1200 mm
+- Thickness: 0.5 mm to 12 mm
+- Processing: Circle cutting, cold stamping, edge trimming, deburring
+- Uses: Cooking utensils, deep drawing, tank end bottoms, flange blanks
+
+### SS Patta / Patti (Flats & Strips):
+- Grades: SS 202, SS 304, SS 316L
+- Widths: 12 mm to 150 mm
+- Thickness: 1.5 mm to 16 mm
+- Edges: Slit edge, sheared edge, mill edge, flat bar with rounded/square edges
+
+---
+
+## 3. Pipes and Tubes
+
+### Stainless Steel Pipes & Tubes:
+- Specification: ASTM A312, ASTM A358, ASTM A213, ASTM A269
+- Grades: TP304, TP304L, TP316, TP316L, TP321, TP310S
+- Execution: Seamless (Cold Drawn) and Welded (ERW / EFW)
+- Size Range: 1/8" NB to 24" NB (Schedule 5S, 10S, 40S, 80S, 160S, XXS)
+
+### Carbon Steel Pipes:
+- Specification: ASTM A106 Grade B, ASTM A53 Grade B, API 5L Grade B / X42 / X52
+- Features: Heavy wall seamless line pipes for high-temperature and high-pressure steam/fluid transport
+
+### Alloy Steel IBR Boiler Pipes:
+- Specification: ASTM A335 Grade P11, P22, P9, P91
+- Certification: Indian Boiler Regulations (IBR) Form III-A approved mill test certificate
+- Application: Power plants, boilers, superheaters, petrochemical refining
+
+---
+
+## 4. Nickel Alloys & Special Steels
+
+1. **Inconel 625 (UNS N06625 / W.Nr. 2.4856)**: High strength, excellent fatigue resistance, oxidation resistance up to 980°C.
+2. **Inconel 600 (UNS N06600 / W.Nr. 2.4816)**: Standard material for chemical and nuclear applications with resistance to chloride-ion stress-corrosion cracking.
+3. **Duplex 2205 (UNS S32205 / S31803 / W.Nr. 1.4462)**: PREN >= 34, twice the mechanical yield strength of standard austenitic stainless steel, high resistance to stress corrosion cracking.
+4. **Super Duplex 2507 (UNS S32750)**: PREN >= 42, designed for highly aggressive chloride duty.
+5. **Monel 400 (UNS N04400)** & **Hastelloy C-276 (UNS N10276)**: Severe service corrosion resistance in hydrochloric, sulfuric, and hydrofluoric acids.
+
+---
+
+## 5. Quality Assurance, Inspection & Documentation
+- **EN 10204 3.1 Certification**: Every dispatch accompanied by mill test certificate stating original melt heat number, ladle chemical analysis, tensile strength, yield strength, elongation, and hardness.
+- **Third-Party Inspection (TPI)**: Welcomed and arranged with agencies including Bureau Veritas (BV), DNV, TUV, Lloyd's Register, SGS.
+- **Positive Material Identification (PMI)**: Handheld XRF spectro testing available before dispatch.
+- **Traceability Guarantee**: Stencilled, stamped, or vibro-etched heat numbers on every pipe, sheet, and cut piece.
+
+---
+
+## 6. How to Buy / Contact
+- **RFQ / Quotation**: Send inquiries to `sales@tatvamoverseasinc.com` or via website at `https://www.tatvamoverseasinc.com/contact`
+- **Instant WhatsApp Desk**: +91 99303 01181 (Mon-Sat, 9 AM - 7 PM IST)
+- **Response Time**: Quotations provided within 2 to 4 working hours.
