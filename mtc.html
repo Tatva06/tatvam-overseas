@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Read an EN 10204 3.1 MTC | Tatvam Overseas Inc</title>
@@ -14,7 +18,11 @@
     <meta property="og:description" content="Learn how to read an EN 10204 3.1 Mill Test Certificate (MTC). Understand heat numbers, chemical analysis, mechanical properties, and testing reports.">
     <meta property="og:url" content="https://www.tatvamoverseasinc.com/mtc">
     <meta property="og:image" content="https://www.tatvamoverseasinc.com/assets/images/pool/lab.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Read an EN 10204 3.1 MTC | Tatvam Overseas Inc">
     <meta name="twitter:image" content="https://www.tatvamoverseasinc.com/assets/images/pool/lab.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
     <script defer src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="css/style.css"/>
@@ -48,32 +56,7 @@
 </head>
 <body class="bg-slate-50 font-sans flex flex-col min-h-screen text-slate-800">
 
-    <header class="sticky top-0 z-50 bg-slate-900 shadow-xl">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/" class="flex items-center gap-3.5 group">
-                <img src="assets/images/tatvam-logo.svg" alt="Tatvam Overseas Inc Logo" class="h-9 w-auto group-hover:scale-105 transition-transform shrink-0 drop-shadow">
-                <div class="flex flex-col leading-none">
-                    <span class="text-xl font-black text-white tracking-wider">TATVAM</span>
-                    <span class="text-[10px] font-extrabold text-emerald-400 tracking-[0.24em] uppercase mt-1">OVERSEAS INC</span>
-                </div>
-            </a>
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-                <a href="/" class="hover:text-white transition-colors">Home</a>
-                <a href="/about" class="hover:text-white transition-colors">Our Firm</a>
-                <a href="/products" class="hover:text-white transition-colors">Inventory</a>
-                <a href="/blog" class="hover:text-white transition-colors">Knowledge</a>
-                <a href="/contact" class="bg-white text-emerald-800 px-5 py-2 rounded-full font-bold hover:bg-emerald-50 transition-colors">Get Quote</a>
-            </div>
-            <button id="mobile-menu-button" class="md:hidden text-white" aria-label="Toggle mobile menu"><i data-lucide="menu"></i></button>
-        </nav>
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700 p-4 space-y-4 absolute w-full left-0 z-50 shadow-xl">
-            <a href="/" class="block text-white font-bold pl-3">Home</a>
-            <a href="/about" class="block text-slate-300 px-3">Our Firm</a>
-            <a href="/products" class="block text-slate-300 px-3">Inventory</a>
-            <a href="/blog" class="block text-slate-300 px-3">Knowledge</a>
-            <a href="/contact" class="block bg-emerald-600 text-white text-center py-3 rounded-lg font-bold">Get Quote</a>
-        </div>
-    </header>
+    <header id="site-header" class="sticky top-0 z-50 transition-all duration-300" role="banner"></header>
 
     <main class="flex-grow py-10 px-6">
         <div class="max-w-5xl mx-auto">
@@ -298,7 +281,7 @@
         </div>
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 font-sans border-t-4 border-emerald-600">
+    <footer id="site-footer" class="bg-slate-900 text-slate-400 font-sans border-t-4 border-emerald-600">
         <!-- WhatsApp Updates Section (Replaces Newsletter) -->
         <div class="bg-slate-950 border-b border-slate-800 py-8">
             <div class="container mx-auto px-6">
@@ -421,19 +404,10 @@
         </div>
     </footer>
 
+    <script defer src="js/components.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const yr = document.getElementById('current-year');
-            if (yr) yr.textContent = new Date().getFullYear();
             if (typeof lucide !== 'undefined') lucide.createIcons();
-            
-            const btn = document.getElementById('mobile-menu-button');
-            const menu = document.getElementById('mobile-menu');
-            if (btn && menu) {
-                btn.addEventListener('click', () => {
-                    menu.classList.toggle('hidden');
-                });
-            }
         });
     </script>
 </body>

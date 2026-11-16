@@ -43,35 +43,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
 
-    <!-- Header -->
-    <header class="sticky top-0 z-50 bg-slate-900 shadow-xl transition-all duration-300">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Main Navigation">
-            <a href="/" class="text-2xl font-black text-white flex items-center gap-2 group">
-                <div class="w-8 h-8 bg-emerald-600 rounded flex items-center justify-center text-white font-bold group-hover:rotate-12 transition-transform shrink-0">T</div>
-                <span class="whitespace-nowrap">TATVAM <span class="text-emerald-500">OVERSEAS INC</span></span>
-            </a>
-            
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-                <a href="/" class="nav-link hover:text-white transition-colors pb-1 border-b-2 border-transparent hover:border-emerald-500/50">Home</a>
-                <a href="/about" class="nav-link hover:text-white transition-colors pb-1 border-b-2 border-transparent hover:border-emerald-500/50">Our Firm</a>
-                <a href="/products" class="nav-link hover:text-white transition-colors pb-1 border-b-2 border-transparent hover:border-emerald-500/50">Inventory</a>
-                <a href="/blog" class="nav-link hover:text-white transition-colors pb-1 border-b-2 border-transparent hover:border-emerald-500/50">Knowledge</a>
-                <a href="/contact" class="nav-link-btn bg-white text-emerald-900 px-5 py-2 rounded-full font-bold hover:bg-emerald-50 transition-all shadow-lg transform hover:-translate-y-0.5">Get Quote</a>
-            </div>
-            
-            <button id="mobile-menu-button" class="md:hidden text-white p-2 focus:outline-none" aria-label="Open Menu">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
-        </nav>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700 p-4 space-y-4 absolute w-full left-0 z-50 shadow-2xl origin-top animate-fade">
-            <a href="/" class="mobile-link block text-slate-300 hover:text-white hover:bg-slate-700 px-3 py-2 rounded transition-colors">Home</a>
-            <a href="/about" class="mobile-link block text-slate-300 hover:text-white hover:bg-slate-700 px-3 py-2 rounded transition-colors">Our Firm</a>
-            <a href="/products" class="mobile-link block text-slate-300 hover:text-white hover:bg-slate-700 px-3 py-2 rounded transition-colors">Inventory</a>
-            <a href="/blog" class="mobile-link block text-slate-300 hover:text-white hover:bg-slate-700 px-3 py-2 rounded transition-colors">Knowledge</a>
-            <a href="/contact" class="block bg-emerald-600 text-white text-center py-3 rounded-lg font-bold shadow-lg hover:bg-emerald-700 transition-colors">Get Quote Now</a>
-        </div>
-    </header>
+    <header id="site-header" class="sticky top-0 z-50 transition-all duration-300" role="banner"></header>
 
     <!-- Main Content -->
     <main class="py-16 bg-white">
@@ -299,7 +271,7 @@
     </main>
 
     <!-- Footer -->
-     <footer class="bg-slate-900 text-slate-400 font-sans border-t-4 border-emerald-600">
+    <footer id="site-footer" class="bg-slate-900 text-slate-400 font-sans border-t-4 border-emerald-600">
         <!-- Newsletter Section -->
         <div class="bg-slate-950 border-b border-slate-800 py-10">
             <div class="container mx-auto px-6">
@@ -423,26 +395,20 @@ document.addEventListener('DOMContentLoaded', () => {
         <!-- Copyright -->
         <div class="bg-black py-5 border-t border-slate-800">
             <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-slate-600 uppercase tracking-wider">
-                <p>&copy; <span class="copyright-year">2025</span> Tatvam Overseas Inc. All Rights Reserved. Designed with excellence by <strong>Tatvam Studios</strong>.</p>
+                <p>&copy; <span class="copyright-year">2026</span> Tatvam Overseas Inc. All Rights Reserved.</p>
                 <div class="flex gap-6">
                     <a href="/privacypolicy" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="/terms" class="hover:text-white transition-colors">Terms & Conditions</a>
-                    <a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
+                    <a href="/terms" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+                    <a href="/sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script defer src="js/components.js"></script>
     <script>
-        // Dynamic year
-        document.getElementById('year').textContent = new Date().getFullYear();
-        
-        // Initialize Lucide icons
-        lucide.createIcons();
-        
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') lucide.createIcons();
         });
     </script>
 </body>
