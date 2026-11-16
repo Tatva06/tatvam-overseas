@@ -25,7 +25,7 @@ const SITE_CONFIG = {
     address: '39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Bhandari Street, Kalbadevi, Mumbai - 400004',
     addressWarehouse: 'Kalamboli, Navi Mumbai',
     mapsUrl: 'https://maps.google.com/?q=61+Jamnadas+Building+10th+Khetwadi+Back+Road+Girgaon+Mumbai+400004',
-    catalogUrl: 'assets/TatvamOverseasInc_Catalog_2025.pdf',
+    catalogUrl: 'assets/TatvamOverseasInc_Catalog_2026.pdf',
     // Business Directory Links
     indiamart: 'https://www.indiamart.com/tatvam-overseas-inc/'
 };
@@ -580,7 +580,7 @@ function renderFooter() {
                         <li><a href="/products/alloy-steel-p11-p22-ibr-pipes-mumbai" class="hover:text-emerald-400 transition-colors block">Alloy Steel P11/P22 Pipes</a></li>
                         <li><a href="/products/inconel-625-600-supplier-india" class="hover:text-emerald-400 transition-colors block">Inconel 625 Seamless Tubes</a></li>
                         <li>
-                            <a href="/assets/TatvamOverseasInc_Catalog_2025.pdf" target="_blank" class="text-emerald-500 font-bold hover:text-emerald-400 flex items-center gap-2 mt-4">
+                            <a href="/assets/TatvamOverseasInc_Catalog_2026.pdf" target="_blank" class="text-emerald-500 font-bold hover:text-emerald-400 flex items-center gap-2 mt-4">
                                 <i data-lucide="download" class="w-3 h-3"></i> Product Catalogue
                             </a>
                         </li>
