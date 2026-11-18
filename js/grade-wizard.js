@@ -345,10 +345,10 @@ function showRecommendations() {
             </div>
             <p class="text-slate-300 text-sm mb-4">${rec.reason}</p>
             <div class="flex gap-2">
-                <a href="products.html" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white text-center py-2 rounded-lg font-bold text-sm transition-colors">
+                <a href="/products" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white text-center py-2 rounded-lg font-bold text-sm transition-colors">
                     View in Inventory
                 </a>
-                <a href="contact.html" class="flex-1 bg-slate-700 hover:bg-slate-600 text-white text-center py-2 rounded-lg font-bold text-sm transition-colors">
+                <a href="/contact" class="flex-1 bg-slate-700 hover:bg-slate-600 text-white text-center py-2 rounded-lg font-bold text-sm transition-colors">
                     Get Quote
                 </a>
             </div>

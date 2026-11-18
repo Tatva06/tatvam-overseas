@@ -33,9 +33,9 @@ function blogCTA() {
       <h3 class="text-2xl font-black mb-2">Looking for Stainless Steel Products?</h3>
       <p class="text-slate-300 mb-6 text-sm max-w-md mx-auto">Get competitive quotes with full Mill Test Certificates from Tatvam Overseas Inc — Mumbai's trusted stockist since 1992.</p>
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <a href="contact.html" class="bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-7 py-3 rounded-xl transition-all shadow-lg hover:shadow-emerald-500/30 text-sm">Request a Quote</a>
-        <a href="products.html" class="bg-white/10 hover:bg-white/20 text-white font-bold px-7 py-3 rounded-xl transition-all border border-white/20 text-sm">Explore Products</a>
-        <a href="contact.html" class="bg-transparent hover:bg-white/10 text-emerald-300 font-bold px-7 py-3 rounded-xl transition-all border border-emerald-600 text-sm">Contact Sales</a>
+        <a href="/contact" class="bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-7 py-3 rounded-xl transition-all shadow-lg hover:shadow-emerald-500/30 text-sm">Request a Quote</a>
+        <a href="/products" class="bg-white/10 hover:bg-white/20 text-white font-bold px-7 py-3 rounded-xl transition-all border border-white/20 text-sm">Explore Products</a>
+        <a href="/contact" class="bg-transparent hover:bg-white/10 text-emerald-300 font-bold px-7 py-3 rounded-xl transition-all border border-emerald-600 text-sm">Contact Sales</a>
       </div>
     </div>`;
 }
@@ -829,7 +829,7 @@ const blogs = [
           <li>Verify the <strong>Heat Number</strong> is physically stamped on every piece.</li>
           <li>Cross-check Ni% for 304 (must be 8–10.5%) — this is the easiest fraud to catch.</li>
           <li>For critical applications, use <strong>XRF (PMI gun)</strong> to verify chemistry in field.</li>
-          <li>Tatvam Overseas Inc maintains an <a href="mtc.html" class="text-emerald-600 underline">online MTC verification portal</a> for all supplied material.</li>
+          <li>Tatvam Overseas Inc maintains an <a href="/mtc" class="text-emerald-600 underline">online MTC verification portal</a> for all supplied material.</li>
         </ul>
       </div>`
   },

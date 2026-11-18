@@ -480,7 +480,7 @@ class SmartFloatingWidget {
 
         // Pricing / quotes
         if (lower.includes('price') || lower.includes('cost') || lower.includes('rate') || lower.includes('quote') || lower.includes('quotation')) {
-            return `💰 **Get a Fast Quotation**:\nPrices fluctuate daily based on LME raw metal rates (nickel, molybdenum, chrome). To get an accurate quote within 2-4 working hours (Mon-Sat, 9 AM-7 PM IST), please let me know:\n\n1. **Material Grade** (e.g., SS 316L)\n2. **Product Form** (e.g., Seamless Pipe)\n3. **Dimensions** (e.g., 2" NB, Sch 40)\n4. **Quantity** (e.g., 500 Meters)\n\nAlternatively, you can submit your RFQ sheet on our [Contact page](contact.html) or WhatsApp it to +91 99303 01181.`;
+            return `💰 **Get a Fast Quotation**:\nPrices fluctuate daily based on LME raw metal rates (nickel, molybdenum, chrome). To get an accurate quote within 2-4 working hours (Mon-Sat, 9 AM-7 PM IST), please let me know:\n\n1. **Material Grade** (e.g., SS 316L)\n2. **Product Form** (e.g., Seamless Pipe)\n3. **Dimensions** (e.g., 2" NB, Sch 40)\n4. **Quantity** (e.g., 500 Meters)\n\nAlternatively, you can submit your RFQ sheet on our [Contact page](/contact) or WhatsApp it to +91 99303 01181.`;
         }
 
         // Stock availability
@@ -495,7 +495,7 @@ class SmartFloatingWidget {
 
         // MTC / Certification / Third Party Inspection
         if (lower.includes('certificate') || lower.includes('mtc') || lower.includes('tc') || lower.includes('test') || lower.includes('tpi') || lower.includes('inspect') || lower.includes('trace')) {
-            return `✅ **MTC & Certification Traceability**:\n• Material is supplied with EN 10204 3.1 Mill Test Certificates showing heat number and chemical analysis.\n• PMI and dimensional checks arranged before dispatch as required.\n• Third-party inspection can be arranged by the agency of your choice (TUV, DNV, SGS, Bureau Veritas, Lloyd's) as per your QAP.\n• Need to verify an MTC? Visit our [MTC Verification page](mtc.html)!`;
+            return `✅ **MTC & Certification Traceability**:\n• Material is supplied with EN 10204 3.1 Mill Test Certificates showing heat number and chemical analysis.\n• PMI and dimensional checks arranged before dispatch as required.\n• Third-party inspection can be arranged by the agency of your choice (TUV, DNV, SGS, Bureau Veritas, Lloyd's) as per your QAP.\n• Need to verify an MTC? Visit our [MTC Verification page](/mtc)!`;
         }
 
         // Contact info / WhatsApp / address
@@ -505,7 +505,7 @@ class SmartFloatingWidget {
 
         // Calculator
         if (lower.includes('calc') || lower.includes('weight') || lower.includes('formula') || lower.includes('density') || lower.includes('thick')) {
-            return `🧮 **Weight Calculator**:\nYou can calculate the weight of sheets, plates, seamless pipes, and round bars instantly!\n\nSimply go to our [Inventory Page](products.html), click on any product card, and use the **Smart Calculator** tab. It uses exact material densities (e.g. 7.93 for SS 304, 8.44 for Inconel) to give you accurate weights.`;
+            return `🧮 **Weight Calculator**:\nYou can calculate the weight of sheets, plates, seamless pipes, and round bars instantly!\n\nSimply go to our [Inventory Page](/products), click on any product card, and use the **Smart Calculator** tab. It uses exact material densities (e.g. 7.93 for SS 304, 8.44 for Inconel) to give you accurate weights.`;
         }
 
         // General info
@@ -531,7 +531,7 @@ class SmartFloatingWidget {
                 this.sendMessage('Do you have this in stock?');
                 break;
             case 'callback':
-                window.location.href = 'contact.html';
+                window.location.href = '/contact';
                 break;
             case 'email':
                 window.location.href = 'mailto:sales@tatvamoverseasinc.com';
@@ -685,7 +685,7 @@ function openProductModal(id) {
                 <p class="text-sm text-slate-600 leading-relaxed mb-6">${p.description}</p>
                 ${highlightsHtml}
                 <div class="flex gap-3 mt-6 pt-4 border-t border-slate-200">
-                    <a href="contact.html" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded text-center transition-colors text-sm shadow-md">Request Quote</a>
+                    <a href="/contact" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded text-center transition-colors text-sm shadow-md">Request Quote</a>
                     <a href="https://wa.me/919930301181?text=Inquiry%20for%20${encodeURIComponent(p.grade)}" target="_blank" rel="noopener noreferrer" class="flex-1 bg-white border border-slate-300 text-slate-700 font-bold py-3 rounded text-center transition-colors text-sm flex items-center justify-center gap-2 hover:bg-slate-50"><i data-lucide="message-circle" class="w-4 h-4 text-green-500"></i> WhatsApp</a>
                 </div>
             </div>
@@ -700,7 +700,7 @@ function openProductModal(id) {
                         <div class="font-bold text-sm text-white">Weight Calculator</div>
                         <div class="text-xs text-slate-400">Calculate exact weight for this material grade</div>
                     </div>
-                    <a href="calculator.html" target="_blank"
+                    <a href="/calculator" target="_blank"
                        class="shrink-0 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2 rounded-lg text-xs transition-all flex items-center gap-1.5 whitespace-nowrap">
                         <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Open Tool
                     </a>
@@ -1050,7 +1050,7 @@ function openBlogModal(id) {
                 <div class="absolute bottom-0 left-0 w-full p-6 md:p-12 text-white">
                     <nav class="flex text-[10px] md:text-xs font-bold uppercase tracking-wider text-emerald-400 mb-4" aria-label="Breadcrumb">
                         <ol class="inline-flex items-center space-x-1 md:space-x-2">
-                            <li class="inline-flex items-center"><a href="blog.html" class="hover:text-white transition-colors flex items-center gap-1"><i data-lucide="home" class="w-3 h-3"></i> Knowledge Base</a></li>
+                            <li class="inline-flex items-center"><a href="/blog" class="hover:text-white transition-colors flex items-center gap-1"><i data-lucide="home" class="w-3 h-3"></i> Knowledge Base</a></li>
                             <li><span class="mx-1 text-slate-500">/</span></li>
                             <li><span class="hover:text-white transition-colors cursor-pointer" onclick="closeModal(); filterBlogs('${post.category}')">${escapeHtml(post.category)}</span></li>
                         </ol>
