@@ -1,0 +1,596 @@
+#!/usr/bin/env python3
+"""
+Update Core Product Pages:
+1. /products/ss-304-sheets-plates-supplier-mumbai.html
+2. /products/ss-202-sheets-jindal-j1-j4-supplier-mumbai.html
+3. /products/decorative-stainless-steel-sheets-mumbai.html
+
+Tasks 1 & 2 requirements:
+- Title, H1, meta description, og:title, twitter:title matching & <= 60 / <= 155 chars
+- Full specification table, standard sizes (4x8, 5x10 ft), thickness, verifiable weight calculation
+- Price section explaining price drivers per kg + WhatsApp quote button
+- 5-6 question buyer FAQ
+- Internal links mesh (202 <-> 304 <-> designer <-> 202 vs 304 blog <-> calculator <-> homepage)
+- Designer sheets: PVD colors, 8K mirror, hairline, etched, embossed (only stocked, TODO for photos)
+- Valid Schema: Product (NO fake review/rating), BreadcrumbList, FAQPage
+- Catalog updated to 2026
+"""
+
+import os
+import re
+
+def update_ss304():
+    path = "products/ss-304-sheets-plates-supplier-mumbai.html"
+    
+    html = """<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS 304 Sheet Price &amp; Dealer in Mumbai | Tatvam Overseas</title>
+    <meta name="description" content="SS 304 sheet price, dealer &amp; stockist in Mumbai. Cold &amp; hot rolled ASTM A240 304/304L sheets, 2B, No.4, 8K mirror finishes. EN 10204 3.1 MTC. Get quote.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.tatvamoverseasinc.com/products/ss-304-sheets-plates-supplier-mumbai">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Tatvam Overseas Inc">
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="SS 304 Sheet Price &amp; Dealer in Mumbai | Tatvam Overseas">
+    <meta property="og:description" content="SS 304 sheet price, dealer &amp; stockist in Mumbai. Cold &amp; hot rolled ASTM A240 304/304L sheets, 2B, No.4, 8K mirror finishes. EN 10204 3.1 MTC. Get quote.">
+    <meta property="og:url" content="https://www.tatvamoverseasinc.com/products/ss-304-sheets-plates-supplier-mumbai">
+    <meta property="og:image" content="https://www.tatvamoverseasinc.com/assets/images/pool/sheets_prod.webp">
+    <meta property="og:image:alt" content="Stainless Steel 304 and 304L Sheets and Plates in Mumbai Warehouse">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SS 304 Sheet Price &amp; Dealer in Mumbai | Tatvam Overseas">
+    <meta name="twitter:description" content="SS 304 sheet price, dealer &amp; stockist in Mumbai. Cold &amp; hot rolled ASTM A240 304/304L sheets, 2B, No.4, 8K mirror finishes. EN 10204 3.1 MTC. Get quote.">
+    <meta name="twitter:image" content="https://www.tatvamoverseasinc.com/assets/images/pool/sheets_prod.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons & Styling -->
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C5PC2BWQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2C5PC2BWQJ');
+    </script>
+    <script defer src="../js/analytics.js"></script>
+
+    <!-- Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "SS 304 / 304L Stainless Steel Sheets & Plates",
+      "description": "Prime ASTM A240 SS 304 and 304L cold rolled and hot rolled sheets, plates, and coils in Mumbai with 2B, BA, No.4, and 8K mirror finishes.",
+      "image": "https://www.tatvamoverseasinc.com/assets/images/pool/sheets_prod.webp",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tatvam Overseas Inc"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tatvamoverseasinc.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://www.tatvamoverseasinc.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Stainless Steel",
+          "item": "https://www.tatvamoverseasinc.com/products/stainless-steel"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "SS 304 Sheet Price & Dealer in Mumbai",
+          "item": "https://www.tatvamoverseasinc.com/products/ss-304-sheets-plates-supplier-mumbai"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the SS 304 sheet price per kg in Mumbai today?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SS 304 sheet price per kg fluctuates daily based on London Metal Exchange (LME) nickel and chromium alloy surcharges, currency exchange rates, mill base prices (such as Jindal Stainless), sheet thickness, and surface finish. Contact our Mumbai sales desk via WhatsApp at +91 99303 01181 for real-time rates based on your required quantity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between SS 304 and SS 202 sheets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SS 304 contains 18-20% chromium and 8-10.5% nickel, providing superior atmospheric and chemical corrosion resistance for food equipment, vessels, and outdoor use. SS 202 replaces most nickel with manganese and nitrogen (1-2% nickel), making it more economical for indoor decorative panels, utensils, and dry furniture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is SS 304 stainless steel rust-proof?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SS 304 forms a self-healing chromium oxide passive film that prevents rust in normal atmospheric, freshwater, and mild chemical environments. However, in aggressive coastal marine air or high-chloride environments, SS 316L (with 2-3% molybdenum) is recommended to prevent pitting corrosion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which surface finish is best for kitchens, elevators, or architectural cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For commercial kitchens and food equipment, 2B (mill finish) and No.4 hairline (brushed satin) are industry standards due to easy sanitization. For elevator cabins and architectural cladding, No.4 hairline, 8K mirror, and PVD titanium color coated sheets are preferred for aesthetics and scratch concealment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your Minimum Order Quantity (MOQ) for SS 304 sheets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We cater to both retail fabricators needing single sheets (from ready warehouse stock) and wholesale project buyers requiring multi-tonnage consignments or full container loads (FCL) for export."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide Mill Test Certificates (MTC) and export packaging?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every consignment is dispatched with an EN 10204 3.1 Mill Test Certificate detailing exact heat numbers, chemical spectral composition, and mechanical properties. Export shipments are packed in seaworthy wooden pallets or crates with moisture-proof HDPE wrapping and steel strapping."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col font-sans">
+    <header id="site-header" class="sticky top-0 z-50"></header>
+
+    <!-- Breadcrumb Bar -->
+    <div class="bg-slate-900 border-b border-slate-800 text-slate-400 text-xs py-3">
+        <div class="container mx-auto px-6 flex items-center gap-2">
+            <a href="/" class="hover:text-emerald-400 transition-colors">Home</a>
+            <span>/</span>
+            <a href="/products" class="hover:text-emerald-400 transition-colors">Products</a>
+            <span>/</span>
+            <a href="/products/stainless-steel" class="hover:text-emerald-400 transition-colors">Stainless Steel</a>
+            <span>/</span>
+            <span class="text-white font-semibold truncate">SS 304 Sheet Price &amp; Dealer in Mumbai</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-slate-900 text-white py-12 relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <span class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-4">
+                        <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> EN 10204 3.1 Certified Stock
+                    </span>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-4">SS 304 Sheet Price &amp; Dealer in Mumbai | Tatvam Overseas</h1>
+                    <p class="text-slate-300 text-base mb-6 leading-relaxed">
+                        Stockist, dealer, and exporter of prime ASTM A240 Stainless Steel 304 &amp; 304L sheets, plates, and coils in Mumbai. Competitive wholesale SS 304 sheet price per kg, custom shearing, ready stock in 2B, No.4, and 8K mirror finishes with full EN 10204 3.1 MTC documentation.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/contact" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-emerald-900/30 text-sm">
+                            <i data-lucide="mail" class="w-4 h-4"></i> Request Quote
+                        </a>
+                        <a href="https://wa.me/919930301181?text=Hello%20Tatvam%20Overseas%2C%20please%20share%20today%27s%20SS%20304%20sheet%20price%20rate%20per%20kg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-700/60 hover:bg-emerald-700 text-white border border-emerald-500/40 font-bold px-6 py-3 rounded-xl transition-all text-sm">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp for Today's Rate
+                        </a>
+                        <a href="/calculator" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold px-5 py-3 rounded-xl transition-all text-sm">
+                            <i data-lucide="calculator" class="w-4 h-4 text-emerald-400"></i> SS Sheet Weight Calculator
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700">
+                        <img src="../assets/images/pool/sheets_prod.webp" alt="Stainless Steel 304 sheets cold rolled on pallets in Mumbai warehouse" width="600" height="400" loading="lazy" class="w-full h-80 object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-900/80 to-transparent p-5">
+                            <div class="flex items-center justify-between text-xs text-slate-300">
+                                <span><strong>Delivery:</strong> Pan-India &amp; Global Export</span>
+                                <span><strong>Certification:</strong> EN 10204 3.1 MTC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-12 max-w-6xl">
+        <div class="grid lg:grid-cols-[2fr_1fr] gap-10 items-start">
+            
+            <!-- Left: Content & Specs -->
+            <div class="space-y-10">
+
+                <!-- Direct Answer GEO Box -->
+                <section class="bg-emerald-50/70 border-2 border-emerald-500/30 rounded-2xl p-6 shadow-sm">
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                            <i data-lucide="check-circle" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs uppercase font-extrabold tracking-wider text-emerald-800 block mb-1">Direct Answer</span>
+                            <p class="text-slate-800 text-sm md:text-base leading-relaxed font-medium">
+                                Tatvam Overseas Inc is a leading stockist, dealer, and exporter of Stainless Steel 304 / 304L sheets and plates based in Mumbai, India. We supply prime ASTM A240 certified stock from 0.5 mm to 50.0 mm thickness in standard 4x8 ft and 5x10 ft dimensions, offering daily wholesale SS 304 sheet prices per kg, custom CNC shearing, and dispatch across India and 15+ export markets with EN 10204 3.1 MTC.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Overview -->
+                <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
+                        <i data-lucide="file-text" class="w-5 h-5 text-emerald-600"></i> SS 304 Sheets &amp; Plates: Overview, Metallurgy &amp; Applications
+                    </h2>
+                    <div class="text-slate-600 text-sm md:text-base leading-relaxed space-y-4">
+                        <p>Tatvam Overseas Inc operates as an independent stockist and dealer of Stainless Steel 304 and 304L sheets, plates, shim coils, and slit strips from Mumbai's central steel marketplace. Sourced from leading domestic mills including Jindal Stainless as well as certified international producers, our inventory spans cold-rolled thin gauges from 0.5 mm up to heavy hot-rolled industrial plates of 50 mm as part of our <a href="/products/stainless-steel" class="text-emerald-600 font-semibold hover:underline">Stainless Steel Product Range</a>.</p>
+                        <p>Grade 304 (UNS S30400 / EN 1.4301) is the quintessential 18/8 austenitic stainless steel, alloying 18% chromium with 8% nickel to deliver exceptional deep-drawing capability, ductile weldability, and resistance to atmospheric oxidation. Grade 304L (UNS S30403 / EN 1.4307) provides an ultra-low carbon chemistry (C &le; 0.030%) preventing intergranular chromium carbide precipitation during welding, making it the premier choice for pressure vessels, brewery tanks, and pharmaceutical fabrication without subsequent post-weld annealing.</p>
+                        <p>When engineering for marine or severe coastal exposures where chlorides provoke pitting, compare SS 304 with molybdenum-alloyed SS 316L in our guide: <a href="/blog/ss-304-vs-ss-316l-which-to-choose" class="text-emerald-600 font-semibold hover:underline">SS 304 vs SS 316L Comparison Guide</a>.</p>
+                        <p>If you are evaluating cost-sensitive dry interior applications, review our technical breakdown: <a href="/blog/ss-202-vs-ss-304-difference-uses-which-to-buy" class="text-emerald-600 font-semibold hover:underline">SS 202 vs SS 304 Differences &amp; Buying Guide</a>. We also supply ready stock of <a href="/products/ss-202-sheets-jindal-j1-j4-supplier-mumbai" class="text-emerald-600 font-semibold hover:underline">SS 202 Sheets (Jindal J1, J4)</a>, luxury architectural <a href="/products/decorative-stainless-steel-sheets-mumbai" class="text-emerald-600 font-semibold hover:underline">Designer SS Sheets (PVD, Mirror, Etched)</a>, circular deep-drawing blanks in <a href="/products/ss-circles-discs-supplier-mumbai" class="text-emerald-600 font-semibold hover:underline">SS Circles &amp; Discs</a>, and flat strips via <a href="/products/ss-patta-patti-flats-strips-supplier-mumbai" class="text-emerald-600 font-semibold hover:underline">SS Patta / Patti (Flat Bars &amp; Strips)</a>.</p>
+                    </div>
+                </section>
+
+                <!-- Technical Specs Table -->
+                <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
+                        <i data-lucide="table" class="w-5 h-5 text-emerald-600"></i> SS 304 Sheet &amp; Plate Specifications and Standards
+                    </h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse border border-slate-100 rounded-lg overflow-hidden">
+                            <tbody>
+                                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                                    <td class="py-3 px-4 font-bold text-slate-800 text-sm w-1/3 bg-slate-50/50">Grades Available</td>
+                                    <td class="py-3 px-4 text-slate-600 text-sm">AISI 304 (UNS S30400 / 1.4301), AISI 304L (UNS S30403 / 1.4307), Dual Certified 304/304L</td>
+                                </tr>
+                                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                                    <td class="py-3 px-4 font-bold text-slate-800 text-sm w-1/3 bg-slate-50/50">Standards &amp; Specs</td>
+                                    <td class="py-3 px-4 text-slate-600 text-sm">ASTM A240 / ASME SA240, EN 10088-2, ISO 15156, JIS G4304 / G4305</td>
+                                </tr>
+                                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                                    <td class="py-3 px-4 font-bold text-slate-800 text-sm w-1/3 bg-slate-50/50">Chemical Composition</td>
+                                    <td class="py-3 px-4 text-slate-600 text-sm">Cr: 18.00–20.00%, Ni: 8.00–10.50%, C: &le;0.080% (304) / &le;0.030% (304L), Mn: &le;2.00%, Si: &le;0.75%, P: &le;0.045%, S: &le;0.030%</td>
+                                </tr>
+                                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                                    <td class="py-3 px-4 font-bold text-slate-800 text-sm w-1/3 bg-slate-50/50">Thickness Range</td>
+                                    <td class="py-3 px-4 text-slate-600 text-sm">0.5 mm to 50.0 mm (Cold Rolled: 0.5–3.0 mm; Hot Rolled: 3.0–50.0 mm)</td>
+                                </tr>
+                                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                                    <td class="py-3 px-4 font-bold text-slate-800 text-sm w-1/3 bg-slate-50/50">Standard Sheet Sizes</td>
+                                    <td class="py-3 px-4 text-slate-600 text-sm">
+                                        4 ft &times; 8 ft (1219 &times; 2438 mm), 5 ft &times; 10 ft (1500 &times; 3000 mm), 1000 &times; 2000 mm, 1250 &times; 2500 mm, 2000 &times; 6000 mm; custom cut-to-length slit coils
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                                    <td class="py-3 px-4 font-bold text-slate-800 text-sm w-1/3 bg-slate-50/50">Surface Finishes</td>
+                                    <td class="py-3 px-4 text-slate-600 text-sm">2B Cold Rolled, BA (Bright Annealed), No.4 Hairline (Laser PE Film), 8K Mirror, No.1 Hot Rolled Pickled</td>
+                                </tr>
+                                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                                    <td class="py-3 px-4 font-bold text-slate-800 text-sm w-1/3 bg-slate-50/50">Testing &amp; MTC</td>
+                                    <td class="py-3 px-4 text-slate-600 text-sm">EN 10204 3.1 Mill Test Certificate, PMI spectrometry, Third-Party Inspection (TPI: SGS, TUV, BV) on request</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Weight per Sheet Reference Table -->
+                <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-2 pb-2 border-b border-slate-100 flex items-center gap-2">
+                        <i data-lucide="scale" class="w-5 h-5 text-emerald-600"></i> SS 304 Weight per Sheet Reference Chart (Density 7.93 g/cm&sup3;)
+                    </h2>
+                    <p class="text-xs text-slate-500 mb-4">
+                        Theoretical weight calculated using: <code>Weight (kg) = Length (mm) &times; Width (mm) &times; Thickness (mm) &times; 7.93 / 1,000,000</code>. Calculate any dimension on our <a href="/calculator" class="text-emerald-600 font-bold hover:underline">Interactive Steel Weight Calculator</a>.
+                    </p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs md:text-sm border-collapse border border-slate-200 rounded-lg overflow-hidden">
+                            <thead class="bg-slate-100 text-slate-800 uppercase font-bold text-[11px]">
+                                <tr>
+                                    <th class="py-2.5 px-3 border border-slate-200">Thickness (mm)</th>
+                                    <th class="py-2.5 px-3 border border-slate-200">Approx Gauge</th>
+                                    <th class="py-2.5 px-3 border border-slate-200">Weight: 4 &times; 8 ft (1219 &times; 2438 mm)</th>
+                                    <th class="py-2.5 px-3 border border-slate-200">Weight: 5 &times; 10 ft (1500 &times; 3000 mm)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                <tr class="hover:bg-slate-50"><td class="py-2 px-3 font-semibold">0.50 mm</td><td class="py-2 px-3 text-slate-500">26 Gauge</td><td class="py-2 px-3">~11.78 kg</td><td class="py-2 px-3">~17.84 kg</td></tr>
+                                <tr class="hover:bg-slate-50"><td class="py-2 px-3 font-semibold">0.80 mm</td><td class="py-2 px-3 text-slate-500">22 Gauge</td><td class="py-2 px-3">~18.85 kg</td><td class="py-2 px-3">~28.55 kg</td></tr>
+                                <tr class="hover:bg-slate-50"><td class="py-2 px-3 font-semibold">1.00 mm</td><td class="py-2 px-3 text-slate-500">20 Gauge</td><td class="py-2 px-3">~23.57 kg</td><td class="py-2 px-3">~35.69 kg</td></tr>
+                                <tr class="hover:bg-slate-50"><td class="py-2 px-3 font-semibold">1.20 mm</td><td class="py-2 px-3 text-slate-500">18 Gauge</td><td class="py-2 px-3">~28.28 kg</td><td class="py-2 px-3">~42.82 kg</td></tr>
+                                <tr class="hover:bg-slate-50"><td class="py-2 px-3 font-semibold">1.50 mm</td><td class="py-2 px-3 text-slate-500">16 Gauge</td><td class="py-2 px-3">~35.35 kg</td><td class="py-2 px-3">~53.53 kg</td></tr>
+                                <tr class="hover:bg-slate-50"><td class="py-2 px-3 font-semibold">2.00 mm</td><td class="py-2 px-3 text-slate-500">14 Gauge</td><td class="py-2 px-3">~47.14 kg</td><td class="py-2 px-3">~71.37 kg</td></tr>
+                                <tr class="hover:bg-slate-50"><td class="py-2 px-3 font-semibold">3.00 mm</td><td class="py-2 px-3 text-slate-500">11 Gauge</td><td class="py-2 px-3">~70.71 kg</td><td class="py-2 px-3">~107.06 kg</td></tr>
+                                <tr class="hover:bg-slate-50"><td class="py-2 px-3 font-semibold">4.00 mm</td><td class="py-2 px-3 text-slate-500">8 Gauge</td><td class="py-2 px-3">~94.28 kg</td><td class="py-2 px-3">~142.74 kg</td></tr>
+                                <tr class="hover:bg-slate-50"><td class="py-2 px-3 font-semibold">5.00 mm</td><td class="py-2 px-3 text-slate-500">3/16 inch</td><td class="py-2 px-3">~117.85 kg</td><td class="py-2 px-3">~178.43 kg</td></tr>
+                                <tr class="hover:bg-slate-50"><td class="py-2 px-3 font-semibold">6.00 mm</td><td class="py-2 px-3 text-slate-500">1/4 inch</td><td class="py-2 px-3">~141.42 kg</td><td class="py-2 px-3">~214.11 kg</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- TODO(owner): Confirm specific mill coil weights and packaging bundles with stockyard -->
+                    <p class="text-[11px] text-slate-400 mt-2 italic">*Values reflect theoretical weights; actual weights vary within ASTM tolerance limits (&plusmn;2% to &plusmn;5%).</p>
+                </section>
+
+                <!-- Pricing Drivers & Live Rate -->
+                <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white rounded-2xl p-8 shadow-xl border border-slate-700">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6 pb-6 border-b border-slate-700">
+                        <div>
+                            <span class="text-emerald-400 text-xs font-bold uppercase tracking-widest block mb-1">Pricing Transparency</span>
+                            <h2 class="text-2xl font-black">SS 304 Sheet Price per Kg in Mumbai: What Drives Daily Rates?</h2>
+                        </div>
+                        <a href="https://wa.me/919930301181?text=Hello%20Tatvam%20Overseas%2C%20please%20share%20today%27s%20SS%20304%20sheet%20price%20rate%20per%20kg" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl transition-all shadow-lg text-sm">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> Get Today's Rate on WhatsApp
+                        </a>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        Stainless steel 304 pricing is calculated on a per-kilogram or per-sheet basis and is updated daily in the Mumbai market according to fundamental technical and commercial drivers:
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-4 text-xs md:text-sm text-slate-300">
+                        <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+                            <strong class="text-emerald-400 block mb-1">1. LME Nickel &amp; Chrome Index</strong>
+                            Monthly alloy surcharges fluctuate directly with London Metal Exchange (LME) raw metal indices and currency exchange rates.
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+                            <strong class="text-emerald-400 block mb-1">2. Sheet Thickness &amp; Gauge</strong>
+                            Thinner cold-rolled gauges (0.5 mm - 1.2 mm) carry higher conversion rolling costs per ton than heavier hot-rolled plates.
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+                            <strong class="text-emerald-400 block mb-1">3. Surface Finish &amp; Coating</strong>
+                            Standard 2B mill finish is most economical; No.4 hairline brushed with laser PE film, 8K mirror, and PVD titanium colors carry processing premiums.
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+                            <strong class="text-emerald-400 block mb-1">4. Order Tonnage &amp; Mill Make</strong>
+                            Volume container loads and wholesale bundles benefit from direct distributor tier rates compared to single-sheet custom shearing orders.
+                        </div>
+                    </div>
+                    <!-- TODO(owner): Add indicative baseline price band once confirmed by management -->
+                </section>
+
+                <!-- Commercial & Quality Terms -->
+                <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6 pb-2 border-b border-slate-100 flex items-center gap-2">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-emerald-600"></i> Quality Assurance, Delivery &amp; Payment Terms
+                    </h2>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="border border-slate-100 rounded-xl p-5 bg-slate-50/50">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-3">
+                                <i data-lucide="award" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-base mb-1">EN 10204 3.1 Traceability</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">Every sheet links to heat numbers and chemical analysis documented in our <a href="/mtc" class="text-emerald-600 font-semibold hover:underline">EN 10204 3.1 Mill Test Certificates</a>.</p>
+                        </div>
+                        <div class="border border-slate-100 rounded-xl p-5 bg-slate-50/50">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-3">
+                                <i data-lucide="package" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-base mb-1">Seaworthy Export Packing</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">Eye-to-sky / eye-to-wall pallets, wooden crates, laser PVC protective films, and waterproof wrapping for domestic &amp; export transit.</p>
+                        </div>
+                        <div class="border border-slate-100 rounded-xl p-5 bg-slate-50/50">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-3">
+                                <i data-lucide="truck" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-base mb-1">Fast Logistics &amp; Dispatch</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">Immediate warehouse pickup in Mumbai; pan-India transport network and FOB JNPT / CIF export dispatch.</p>
+                        </div>
+                        <div class="border border-slate-100 rounded-xl p-5 bg-slate-50/50">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-3">
+                                <i data-lucide="credit-card" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-base mb-1">Transparent Payment Terms</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">RTGS/NEFT for domestic orders, bank wire transfer (T/T) and Letter of Credit (LC) for international buyers as per formal proforma.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Visible FAQs Section matching FAQPage Schema -->
+                <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6 pb-2 border-b border-slate-100 flex items-center gap-2">
+                        <i data-lucide="help-circle" class="w-5 h-5 text-emerald-600"></i> Frequently Asked Questions About SS 304 Sheets &amp; Plates
+                    </h2>
+                    <div class="space-y-3">
+                        <div class="border border-slate-200 rounded-xl overflow-hidden">
+                            <details class="group" open>
+                                <summary class="flex justify-between items-center p-4 bg-slate-50 font-bold text-slate-800 text-sm md:text-base cursor-pointer hover:bg-slate-100 transition-colors list-none">
+                                    <span>What is the SS 304 sheet price per kg in Mumbai today?</span>
+                                    <span class="text-emerald-600 text-xl font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                                </summary>
+                                <div class="p-4 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                                    SS 304 sheet price per kg fluctuates daily based on London Metal Exchange (LME) nickel and chromium alloy surcharges, currency exchange rates, mill base prices (such as Jindal Stainless), sheet thickness, and surface finish. Contact our Mumbai sales desk via WhatsApp at +91 99303 01181 for real-time rates based on your required quantity.
+                                </div>
+                            </details>
+                        </div>
+                        <div class="border border-slate-200 rounded-xl overflow-hidden">
+                            <details class="group">
+                                <summary class="flex justify-between items-center p-4 bg-slate-50 font-bold text-slate-800 text-sm md:text-base cursor-pointer hover:bg-slate-100 transition-colors list-none">
+                                    <span>What is the difference between SS 304 and SS 202 sheets?</span>
+                                    <span class="text-emerald-600 text-xl font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                                </summary>
+                                <div class="p-4 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                                    SS 304 contains 18-20% chromium and 8-10.5% nickel, providing superior atmospheric and chemical corrosion resistance for food equipment, vessels, and outdoor use. SS 202 replaces most nickel with manganese and nitrogen (1-2% nickel), making it more economical for indoor decorative panels, utensils, and dry furniture. Read our detailed <a href="/blog/ss-202-vs-ss-304-difference-uses-which-to-buy" class="text-emerald-600 font-bold hover:underline">SS 202 vs SS 304 Buying Guide</a>.
+                                </div>
+                            </details>
+                        </div>
+                        <div class="border border-slate-200 rounded-xl overflow-hidden">
+                            <details class="group">
+                                <summary class="flex justify-between items-center p-4 bg-slate-50 font-bold text-slate-800 text-sm md:text-base cursor-pointer hover:bg-slate-100 transition-colors list-none">
+                                    <span>Is SS 304 stainless steel rust-proof?</span>
+                                    <span class="text-emerald-600 text-xl font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                                </summary>
+                                <div class="p-4 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                                    SS 304 forms a self-healing chromium oxide passive film that prevents rust in normal atmospheric, freshwater, and mild chemical environments. However, in aggressive coastal marine air or high-chloride environments, SS 316L (with 2-3% molybdenum) is recommended to prevent pitting corrosion. See our <a href="/blog/ss-304-vs-ss-316l-which-to-choose" class="text-emerald-600 font-bold hover:underline">SS 304 vs SS 316L Comparison</a>.
+                                </div>
+                            </details>
+                        </div>
+                        <div class="border border-slate-200 rounded-xl overflow-hidden">
+                            <details class="group">
+                                <summary class="flex justify-between items-center p-4 bg-slate-50 font-bold text-slate-800 text-sm md:text-base cursor-pointer hover:bg-slate-100 transition-colors list-none">
+                                    <span>Which surface finish is best for kitchens, elevators, or architectural cladding?</span>
+                                    <span class="text-emerald-600 text-xl font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                                </summary>
+                                <div class="p-4 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                                    For commercial kitchens and food equipment, 2B (mill finish) and No.4 hairline (brushed satin) are industry standards due to easy sanitization. For elevator cabins and architectural cladding, No.4 hairline, 8K mirror, and PVD titanium color coated sheets are preferred for aesthetics and scratch concealment. Explore our <a href="/blog/stainless-steel-sheet-finishes-2b-ba-no4-8k-mirror" class="text-emerald-600 font-bold hover:underline">SS Finishes Guide</a> and <a href="/products/decorative-stainless-steel-sheets-mumbai" class="text-emerald-600 font-bold hover:underline">Designer SS Sheets</a>.
+                                </div>
+                            </details>
+                        </div>
+                        <div class="border border-slate-200 rounded-xl overflow-hidden">
+                            <details class="group">
+                                <summary class="flex justify-between items-center p-4 bg-slate-50 font-bold text-slate-800 text-sm md:text-base cursor-pointer hover:bg-slate-100 transition-colors list-none">
+                                    <span>What is your Minimum Order Quantity (MOQ) for SS 304 sheets?</span>
+                                    <span class="text-emerald-600 text-xl font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                                </summary>
+                                <div class="p-4 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                                    We cater to both retail fabricators needing single sheets (from ready warehouse stock) and wholesale project buyers requiring multi-tonnage consignments or full container loads (FCL) for export.
+                                </div>
+                            </details>
+                        </div>
+                        <div class="border border-slate-200 rounded-xl overflow-hidden">
+                            <details class="group">
+                                <summary class="flex justify-between items-center p-4 bg-slate-50 font-bold text-slate-800 text-sm md:text-base cursor-pointer hover:bg-slate-100 transition-colors list-none">
+                                    <span>Do you provide Mill Test Certificates (MTC) and export packaging?</span>
+                                    <span class="text-emerald-600 text-xl font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                                </summary>
+                                <div class="p-4 bg-white text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                                    Yes. Every consignment is dispatched with an EN 10204 3.1 Mill Test Certificate detailing exact heat numbers, chemical spectral composition, and mechanical properties. Export shipments are packed in seaworthy wooden pallets or crates with moisture-proof HDPE wrapping and steel strapping.
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Sidebar: Quick Inquiries & Tools -->
+            <div class="space-y-6 sticky top-24">
+                
+                <!-- RFQ Box -->
+                <div class="bg-slate-900 text-white rounded-2xl p-6 shadow-xl border border-slate-800">
+                    <span class="text-emerald-400 text-xs font-bold uppercase tracking-widest block mb-2">Fast Quote Response</span>
+                    <h3 class="text-xl font-bold mb-3">Get SS 304 Rate</h3>
+                    <p class="text-slate-400 text-xs mb-6 leading-relaxed">
+                        Share required thickness, sheet dimensions, finish, and quantity. Quotation provided within 2-4 working hours.
+                    </p>
+                    <div class="space-y-3">
+                        <a href="/contact" class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-all text-sm">
+                            <i data-lucide="mail" class="w-4 h-4"></i> Request Quote
+                        </a>
+                        <a href="https://wa.me/919930301181?text=Hello%20Tatvam%20Overseas%2C%20please%20share%20today%27s%20SS%20304%20sheet%20price%20rate%20per%20kg" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-xl transition-all text-sm">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Sales
+                        </a>
+                        <a href="tel:+919930301181" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold py-3 rounded-xl transition-all text-sm border border-slate-700">
+                            <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i> +91 99303 01181
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Engineering Tools Card -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-4">
+                    <h4 class="font-bold text-slate-900 text-base flex items-center gap-2">
+                        <i data-lucide="wrench" class="w-4 h-4 text-emerald-600"></i> Related Products &amp; Tools
+                    </h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Quick access to complementary stainless steel lines, theoretical weight calculations, and technical guides.
+                    </p>
+                    <div class="space-y-2">
+                        <a href="/products/ss-202-sheets-jindal-j1-j4-supplier-mumbai" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 transition-colors text-xs font-bold text-slate-700 border border-slate-100">
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="layers" class="w-4 h-4 text-emerald-600"></i> SS 202 Sheets (Jindal J1/J4)
+                            </span>
+                            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="/products/decorative-stainless-steel-sheets-mumbai" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 transition-colors text-xs font-bold text-slate-700 border border-slate-100">
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="sparkles" class="w-4 h-4 text-emerald-600"></i> Designer SS Sheets (PVD/Mirror)
+                            </span>
+                            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="/calculator" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 transition-colors text-xs font-bold text-slate-700 border border-slate-100">
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="calculator" class="w-4 h-4 text-emerald-600"></i> SS Sheet Weight Calculator
+                            </span>
+                            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="/blog/ss-202-vs-ss-304-difference-uses-which-to-buy" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 transition-colors text-xs font-bold text-slate-700 border border-slate-100">
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="book-open" class="w-4 h-4 text-emerald-600"></i> SS 202 vs SS 304 Guide
+                            </span>
+                            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="/blog/ss-304-vs-ss-316l-which-to-choose" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 transition-colors text-xs font-bold text-slate-700 border border-slate-100">
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="file-text" class="w-4 h-4 text-emerald-600"></i> SS 304 vs SS 316L Guide
+                            </span>
+                            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="/mtc" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 transition-colors text-xs font-bold text-slate-700 border border-slate-100">
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="file-check" class="w-4 h-4 text-emerald-600"></i> How to Read an MTC
+                            </span>
+                            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="../assets/TatvamOverseasInc_Catalog_2026.pdf" target="_blank" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 transition-colors text-xs font-bold text-slate-700 border border-slate-100">
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="download" class="w-4 h-4 text-emerald-600"></i> 2026 Product Catalog (PDF)
+                            </span>
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="site-footer" class="bg-slate-900 text-slate-400 font-sans border-t-4 border-emerald-600"></footer>
+    <script src="../js/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
+"""
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print("Updated SS 304 page successfully.")
+
+if __name__ == "__main__":
+    update_ss304()

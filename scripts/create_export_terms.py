@@ -1,0 +1,338 @@
+#!/usr/bin/env python3
+"""
+Create /export-terms (export-terms.html)
+"""
+
+def create_export_terms():
+    html = """<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export Terms &amp; Packaging | Tatvam Overseas Inc, Mumbai</title>
+    <meta name="description" content="International export terms for stainless steel and alloys from India. Incoterms (CIF, FOB, CFR), seaworthy export packing, MTC 3.1 and TPI inspection.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.tatvamoverseasinc.com/export-terms">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Tatvam Overseas Inc">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Export Terms &amp; Packaging | Tatvam Overseas Inc, Mumbai">
+    <meta property="og:description" content="International export terms for stainless steel and alloys from India. Incoterms (CIF, FOB, CFR), seaworthy export packing, MTC 3.1 and TPI inspection.">
+    <meta property="og:url" content="https://www.tatvamoverseasinc.com/export-terms">
+    <meta property="og:image" content="https://www.tatvamoverseasinc.com/assets/images/tatvamoverseasinc-warehouse-stock.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Export Terms &amp; Packaging | Tatvam Overseas Inc, Mumbai">
+    <meta name="twitter:description" content="International export terms for stainless steel and alloys from India. Incoterms (CIF, FOB, CFR), seaworthy export packing, MTC 3.1 and TPI inspection.">
+    <meta name="twitter:image" content="https://www.tatvamoverseasinc.com/assets/images/tatvamoverseasinc-warehouse-stock.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons & Styling -->
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C5PC2BWQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2C5PC2BWQJ');
+    </script>
+    <script defer src="js/analytics.js"></script>
+
+    <!-- Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Export Terms, Packing & Shipping Logistics",
+      "description": "Comprehensive international export terms, Incoterms, seaworthy packaging standards, documentation, and transit times from Tatvam Overseas Inc, Mumbai.",
+      "url": "https://www.tatvamoverseasinc.com/export-terms",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Tatvam Overseas Inc",
+        "url": "https://www.tatvamoverseasinc.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tatvam Overseas Inc",
+        "url": "https://www.tatvamoverseasinc.com/"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tatvamoverseasinc.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Export Terms &amp; Logistics",
+          "item": "https://www.tatvamoverseasinc.com/export-terms"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col font-sans">
+    <header id="site-header" class="sticky top-0 z-50"></header>
+
+    <!-- Breadcrumb Bar -->
+    <div class="bg-slate-900 border-b border-slate-800 text-slate-400 text-xs py-3">
+        <div class="container mx-auto px-6 flex items-center gap-2">
+            <a href="/" class="hover:text-emerald-400 transition-colors">Home</a>
+            <span>/</span>
+            <span class="text-white font-semibold truncate">Export Terms &amp; Packaging</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 text-white py-16 relative overflow-hidden border-b border-emerald-900/40">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl">
+                <span class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-4">
+                    <i data-lucide="globe" class="w-3.5 h-3.5"></i> Global Export Capabilities
+                </span>
+                <h1 class="text-3xl md:text-5xl font-black leading-tight mb-4">
+                    International Export Terms, Packing &amp; Documentation
+                </h1>
+                <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-8">
+                    Tatvam Overseas Inc exports prime stainless steel sheets, coils, seamless pipes, and nickel alloys to 15+ countries worldwide. Discover our standard Incoterms, seaworthy packaging specifications, third-party inspection protocols, and logistics from Nhava Sheva (JNPT) Port, Mumbai.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="/contact" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-emerald-900/30 text-sm">
+                        <i data-lucide="mail" class="w-4 h-4"></i> Request Export Quote
+                    </a>
+                    <a href="https://wa.me/919930301181?text=Hello%20Tatvam%20Overseas%2C%20I%20have%20an%20export%20inquiry%20for%20stainless%20steel%20materials" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-700/60 hover:bg-emerald-700 text-white border border-emerald-500/40 font-bold px-6 py-3 rounded-xl transition-all text-sm">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Export Desk
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-12 max-w-5xl space-y-12">
+        
+        <!-- Section 1: Incoterms Handled -->
+        <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 pb-2 border-b border-slate-100 flex items-center gap-2">
+                <i data-lucide="ship" class="w-6 h-6 text-emerald-600"></i> 1. Standard Incoterms Handled
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-600">
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100 space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="w-8 h-8 rounded-lg bg-emerald-600 text-white font-bold flex items-center justify-center text-xs">CIF</span>
+                        <h3 class="font-bold text-slate-900 text-base">Cost, Insurance &amp; Freight (Destination Port)</h3>
+                    </div>
+                    <p class="leading-relaxed text-xs md:text-sm">
+                        Our most popular export term. We handle factory dispatch, customs clearance in Mumbai, ocean freight, and marine cargo insurance up to your designated destination port (e.g. CIF Jebel Ali, CIF Dammam, CIF Mombasa).
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100 space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="w-8 h-8 rounded-lg bg-emerald-600 text-white font-bold flex items-center justify-center text-xs">FOB</span>
+                        <h3 class="font-bold text-slate-900 text-base">Free on Board (Nhava Sheva / JNPT Port)</h3>
+                    </div>
+                    <p class="leading-relaxed text-xs md:text-sm">
+                        Ideal for international buyers with nominated freight forwarders. We clear export customs and load packed consignments on board the vessel at Jawaharlal Nehru Port (JNPT) / Nhava Sheva, Mumbai.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100 space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="w-8 h-8 rounded-lg bg-emerald-600 text-white font-bold flex items-center justify-center text-xs">CFR</span>
+                        <h3 class="font-bold text-slate-900 text-base">Cost &amp; Freight (Port of Discharge)</h3>
+                    </div>
+                    <p class="leading-relaxed text-xs md:text-sm">
+                        We cover export customs formalities and ocean freight to your destination port, while marine cargo insurance is managed under your company's global policy.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100 space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="w-8 h-8 rounded-lg bg-emerald-600 text-white font-bold flex items-center justify-center text-xs">EXW</span>
+                        <h3 class="font-bold text-slate-900 text-base">Ex-Works (Mumbai / Kalamboli Warehouse)</h3>
+                    </div>
+                    <p class="leading-relaxed text-xs md:text-sm">
+                        Material is prepared, bundled, and made available for customer pickup with full inspection documentation at our Mumbai warehouse or stockyard.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Export Packaging Standards -->
+        <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 pb-2 border-b border-slate-100 flex items-center gap-2">
+                <i data-lucide="package" class="w-6 h-6 text-emerald-600"></i> 2. Seaworthy Export Packaging Specifications
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Steel materials are susceptible to sea-spray corrosion, transit abrasion, and handling shock during containerized and breakbulk voyages. We enforce rigorous packaging standards tailored to each product form:
+            </p>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-xs md:text-sm">
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100 space-y-2">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+                        <i data-lucide="layers" class="w-4 h-4"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">Sheets &amp; Plates</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Packed on heavy-duty eye-to-sky or eye-to-wall wooden pallets, interleaved with kraft paper, sealed with waterproof HDPE film wrapping, and strapped with high-tensile steel bands.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100 space-y-2">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">Decorative &amp; PVD Sheets</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Protected with 70–100 micron double-layer fiber-laser safe PE film, cushioned with foam layers, and packed inside fully enclosed seaworthy wooden crates to prevent scratches.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100 space-y-2">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+                        <i data-lucide="circle" class="w-4 h-4"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">Seamless Pipes &amp; Tubes</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Fitted with plastic end caps to protect bevels and threads, hexagonal steel-strapped bundles with lifting slings, and external waterproof plastic wrapping.
+                    </p>
+                </div>
+            </div>
+            <!-- TODO(owner): Confirm specific Fumigation certificate partner name and wooden pallet heat-treatment vendor -->
+        </section>
+
+        <!-- Section 3: Shipping Routes & Transit Times -->
+        <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 pb-2 border-b border-slate-100 flex items-center gap-2">
+                <i data-lucide="compass" class="w-6 h-6 text-emerald-600"></i> 3. Ocean Shipping Transit Times from Nhava Sheva (JNPT)
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Our strategic proximity to Nhava Sheva Port (JNPT) in Mumbai allows us to offer swift container stuffing, prompt customs clearance, and direct sailings:
+            </p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs md:text-sm border-collapse border border-slate-200 rounded-lg overflow-hidden">
+                    <thead class="bg-slate-100 text-slate-800 uppercase font-bold text-[11px]">
+                        <tr>
+                            <th class="py-3 px-4 border border-slate-200">Destination Region</th>
+                            <th class="py-3 px-4 border border-slate-200">Key Discharge Ports</th>
+                            <th class="py-3 px-4 border border-slate-200">Ocean Transit Time</th>
+                            <th class="py-3 px-4 border border-slate-200">Dedicated Guide</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-3 px-4 font-semibold text-slate-900">United Arab Emirates (UAE)</td>
+                            <td class="py-3 px-4 text-slate-600">Jebel Ali (Dubai), Khalifa (Abu Dhabi)</td>
+                            <td class="py-3 px-4 text-emerald-700 font-bold">3 – 5 Days</td>
+                            <td class="py-3 px-4"><a href="/export/uae" class="text-emerald-600 font-bold hover:underline">UAE Exporter Guide &rarr;</a></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-3 px-4 font-semibold text-slate-900">Saudi Arabia (KSA)</td>
+                            <td class="py-3 px-4 text-slate-600">Dammam, Jeddah Islamic Port, Jubail</td>
+                            <td class="py-3 px-4 text-emerald-700 font-bold">4 – 7 Days</td>
+                            <td class="py-3 px-4"><a href="/export/saudi-arabia" class="text-emerald-600 font-bold hover:underline">Saudi Arabia Guide &rarr;</a></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-3 px-4 font-semibold text-slate-900">East Africa</td>
+                            <td class="py-3 px-4 text-slate-600">Mombasa (Kenya), Dar es Salaam (Tanzania)</td>
+                            <td class="py-3 px-4 text-emerald-700 font-bold">7 – 10 Days</td>
+                            <td class="py-3 px-4"><a href="/export/kenya" class="text-emerald-600 font-bold hover:underline">Kenya Exporter Guide &rarr;</a></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-3 px-4 font-semibold text-slate-900">West Africa</td>
+                            <td class="py-3 px-4 text-slate-600">Lagos (Apapa, Tin Can), Tema (Ghana)</td>
+                            <td class="py-3 px-4 text-emerald-700 font-bold">25 – 30 Days</td>
+                            <td class="py-3 px-4"><a href="/export/nigeria" class="text-emerald-600 font-bold hover:underline">Nigeria Exporter Guide &rarr;</a></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-3 px-4 font-semibold text-slate-900">Southeast Asia</td>
+                            <td class="py-3 px-4 text-slate-600">Cat Lai (Ho Chi Minh), Hai Phong, Port Klang</td>
+                            <td class="py-3 px-4 text-emerald-700 font-bold">10 – 14 Days</td>
+                            <td class="py-3 px-4"><a href="/export/vietnam" class="text-emerald-600 font-bold hover:underline">Vietnam Exporter Guide &rarr;</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 4: Export Documentation & Inspection -->
+        <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 pb-2 border-b border-slate-100 flex items-center gap-2">
+                <i data-lucide="file-check-2" class="w-6 h-6 text-emerald-600"></i> 4. Export Documentation &amp; Third-Party Inspection (TPI)
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6 text-xs md:text-sm text-slate-600">
+                <div class="space-y-3">
+                    <h3 class="font-bold text-slate-900 text-base">Standard Export Documentation</h3>
+                    <ul class="list-disc pl-5 space-y-1.5">
+                        <li><strong>Commercial Invoice &amp; Packing List:</strong> Itemized with heat numbers, net/gross weights, and HS codes.</li>
+                        <li><strong>Bill of Lading (B/L):</strong> Clean on Board ocean B/L issued by premier shipping lines.</li>
+                        <li><strong>EN 10204 3.1 MTC:</strong> Certified chemical composition and mechanical tensile test reports.</li>
+                        <li><strong>Certificate of Origin (COO):</strong> Issued by Chamber of Commerce; preferential trade agreements (e.g. AIFTA, SAFTA) provided where applicable.</li>
+                        <li><strong>Fumigation Certificate:</strong> ISPM 15 certified wooden pallet treatment certificate.</li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="font-bold text-slate-900 text-base">Third-Party Inspection (TPI) Agencies</h3>
+                    <p class="leading-relaxed">
+                        We welcome client-appointed inspection agencies at our Mumbai warehouse prior to packing and stuffing. Frequent TPI agencies we coordinate with include:
+                    </p>
+                    <div class="grid grid-cols-2 gap-2 text-xs font-bold text-slate-700">
+                        <div class="p-2.5 bg-slate-50 rounded-lg border border-slate-200 text-center">SGS India</div>
+                        <div class="p-2.5 bg-slate-50 rounded-lg border border-slate-200 text-center">TÜV SÜD / Rheinland</div>
+                        <div class="p-2.5 bg-slate-50 rounded-lg border border-slate-200 text-center">Bureau Veritas (BV)</div>
+                        <div class="p-2.5 bg-slate-50 rounded-lg border border-slate-200 text-center">Lloyd's Register / DNV</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 text-center shadow-xl border border-slate-700">
+            <h2 class="text-2xl md:text-3xl font-black mb-3">Planning an International Steel Order?</h2>
+            <p class="text-slate-300 text-sm max-w-xl mx-auto mb-6 leading-relaxed">
+                Send your material schedule, required Incoterms, and destination port. Our export desk will prepare a competitive proforma quote within 2-4 working hours.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/contact" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg text-sm">
+                    Open Structured RFQ Form
+                </a>
+                <a href="https://wa.me/919930301181?text=Hello%20Tatvam%20Overseas%2C%20I%20have%20an%20export%20inquiry%20for%20stainless%20steel%20materials" target="_blank" rel="noopener noreferrer" class="bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-8 rounded-xl transition-all text-sm border border-slate-600">
+                    Chat with Export Sales on WhatsApp
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="site-footer" class="bg-slate-900 text-slate-400 font-sans border-t-4 border-emerald-600"></footer>
+    <script src="js/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
+"""
+    with open("export-terms.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    print("export-terms.html created successfully.")
+
+if __name__ == "__main__":
+    create_export_terms()
