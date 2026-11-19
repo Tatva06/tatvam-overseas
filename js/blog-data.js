@@ -18,6 +18,8 @@ const CATEGORY_COLORS = {
   "Maintenance":        { bg: "bg-cyan-100",    text: "text-cyan-700",    dot: "bg-cyan-500"    },
   "Utility":            { bg: "bg-lime-100",    text: "text-lime-700",    dot: "bg-lime-500"    },
   "Architecture":       { bg: "bg-rose-100",    text: "text-rose-700",    dot: "bg-rose-500"    },
+  "Buying Guide":      { bg: "bg-amber-100",   text: "text-amber-700",   dot: "bg-amber-500"   },
+  "Product Guide":      { bg: "bg-rose-100",    text: "text-rose-700",    dot: "bg-rose-500"    },
   "default":            { bg: "bg-emerald-100", text: "text-emerald-700", dot: "bg-emerald-500" }
 };
 
@@ -76,6 +78,94 @@ function relatedPostsHTML(ids) {
 }
 
 const blogs = [
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // SS Sheet Price per kg in India: 304 vs 202 Factors
+  // ══════════════════════════════════════════════════════════════════════════
+  {
+    id: "ss-sheet-price-per-kg-india-304-202-factors",
+    title: "SS Sheet Price per kg in India: What Decides the Rate (304 vs 202)",
+    date: "Nov 19, 2026",
+    category: "Buying Guide",
+    featured: false,
+    image: "assets/images/pool/sheets_prod.webp",
+    coverImage: "assets/images/pool/sheets_prod.webp",
+    readingTime: "5 min read",
+    author: "Tatvam Overseas Inc Technical Team",
+    lastUpdated: "2026-11-19",
+    seoTitle: "SS Sheet Price per kg in India: 304 vs 202 Factors",
+    seoDescription: "Why SS 304 and SS 202 sheet prices differ and change. Learn the factors behind the rate per kg and how to compare quotes fairly. Get today\'s rate.",
+    keywords: ["ss 304 sheet price", "ss 202 sheet price", "ss sheet price per kg", "stainless steel sheet rate india"],
+    tags: ["SS 304", "SS 202", "Pricing", "Buying Guide"],
+    snippet: "There is no single fixed rate for SS sheets in India. The price per kg depends on grade, mill, finish, thickness, quantity and market timing. This guide explains all the factors and how to compare quotes properly.",
+    relatedIds: ["ss-202-vs-ss-304-difference-uses-which-to-buy", "ss-sheet-weight-formula-chart-304-202"],
+    content: (function() {
+      return `
+      <p class="lead text-lg text-slate-700 font-medium leading-relaxed mb-6">
+        There is no single fixed rate for SS sheets in India. The price per kg depends on grade, mill, finish, thickness, quantity and market timing. This guide explains all the factors and how to compare quotes properly.
+      </p>
+      `;
+    })()
+  },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // Designer Stainless Steel Sheets: PVD, Mirror, Etched Guide
+  // ══════════════════════════════════════════════════════════════════════════
+  {
+    id: "designer-stainless-steel-sheets-pvd-mirror-etched-guide",
+    title: "Designer Stainless Steel Sheets: PVD Colours, Mirror, Hairline and Etched Finishes",
+    date: "Nov 19, 2026",
+    category: "Product Guide",
+    featured: false,
+    image: "assets/images/pool/pvd_designer_sheets.webp",
+    coverImage: "assets/images/pool/pvd_designer_sheets.webp",
+    readingTime: "5 min read",
+    author: "Tatvam Overseas Inc Technical Team",
+    lastUpdated: "2026-11-19",
+    seoTitle: "Designer Stainless Steel Sheets: PVD, Mirror, Etched",
+    seoDescription: "Guide to designer stainless steel sheets: PVD colours, mirror, hairline, etched and embossed finishes, best grades and tips for buyers in India.",
+    keywords: ["designer stainless steel sheet", "PVD stainless steel", "mirror finish ss sheet", "etched stainless steel", "decorative ss sheet"],
+    tags: ["Designer Sheets", "PVD", "Mirror", "Etched", "Product Guide"],
+    snippet: "Designer stainless steel sheets are used wherever steel needs to look as good as it performs. This guide covers PVD colours, mirror, hairline, etched and embossed finishes, plus which grade to choose and tips for ordering.",
+    relatedIds: ["stainless-steel-sheet-finishes-2b-ba-no4-8k-mirror", "ss-sheet-price-per-kg-india-304-202-factors"],
+    content: (function() {
+      return `
+      <p class="lead text-lg text-slate-700 font-medium leading-relaxed mb-6">
+        Designer stainless steel sheets are used wherever steel needs to look as good as it performs. This guide covers PVD colours, mirror, hairline, etched and embossed finishes, plus which grade to choose and tips for ordering.
+      </p>
+      `;
+    })()
+  },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // SS Sheet Weight Calculator: Formula & Chart (304, 202)
+  // ══════════════════════════════════════════════════════════════════════════
+  {
+    id: "ss-sheet-weight-formula-chart-304-202",
+    title: "SS Sheet Weight Calculation: Formula, Density and Chart for SS 304 and SS 202",
+    date: "Nov 19, 2026",
+    category: "Technical Guide",
+    featured: false,
+    image: "assets/images/pool/sheets_2b.webp",
+    coverImage: "assets/images/pool/sheets_2b.webp",
+    readingTime: "5 min read",
+    author: "Tatvam Overseas Inc Technical Team",
+    lastUpdated: "2026-11-19",
+    seoTitle: "SS Sheet Weight Calculator: Formula & Chart (304, 202)",
+    seoDescription: "Calculate stainless steel sheet weight with a simple formula. Includes density for SS 304 and 202 and a weight chart for 4x8 ft sheets.",
+    keywords: ["ss sheet weight calculator", "stainless steel sheet weight formula", "ss 304 sheet weight", "ss 202 sheet weight", "steel weight chart"],
+    tags: ["Weight Calculator", "SS 304", "SS 202", "Technical Guide", "Formula"],
+    snippet: "Weight (kg) = Length (m) × Width (m) × Thickness (mm) × Density. SS 304 density is 7.93 g/cm³ and SS 202 is 7.80 g/cm³. Includes a weight chart for 4×8 ft sheets.",
+    relatedIds: ["ss-sheet-price-per-kg-india-304-202-factors", "ss-202-vs-ss-304-difference-uses-which-to-buy"],
+    content: (function() {
+      return `
+      <p class="lead text-lg text-slate-700 font-medium leading-relaxed mb-6">
+        Weight (kg) = Length (m) × Width (m) × Thickness (mm) × Density. SS 304 density is 7.93 g/cm³ and SS 202 is 7.80 g/cm³. See a weight chart for 4×8 ft sheets and avoid common calculation mistakes.
+      </p>
+      `;
+    })()
+  },
+
   // ══════════════════════════════════════════════════════════════════════════
   // SS 202 vs SS 304: Differences, Uses and Which Grade to Buy
   // ══════════════════════════════════════════════════════════════════════════
