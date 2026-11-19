@@ -171,7 +171,7 @@ const blogs = [
   // ══════════════════════════════════════════════════════════════════════════
   {
     id: "ss-202-vs-ss-304-difference-uses-which-to-buy",
-    title: "SS 202 vs SS 304: Differences, Uses and Which Grade to Buy",
+    title: "SS 202 vs SS 304: Difference, Price & Which to Buy",
     date: "Oct 21, 2026",
     category: "Technical Guide",
     featured: false,
@@ -180,8 +180,8 @@ const blogs = [
     readingTime: "6 min read",
     author: "Tatvam Overseas Inc Technical Team",
     lastUpdated: "2026-10-22",
-    seoTitle: "SS 202 vs SS 304: Differences & Uses | Tatvam Overseas",
-    seoDescription: "Compare SS 202 and SS 304 stainless steel: composition, corrosion resistance, uses and how to verify the grade you receive. A practical guide for buyers.",
+    seoTitle: "SS 202 vs SS 304: Difference, Price & Which to Buy",
+    seoDescription: "SS 202 vs SS 304: composition, nickel %, corrosion resistance, price gap and best uses. Learn how to choose and how to verify the grade you receive.",
     keywords: ["SS 202 vs 304", "SS 202 difference SS 304", "which stainless steel grade to buy", "200 series vs 300 series", "SS 202 food grade"],
     tags: ["SS 202", "SS 304", "Grade Comparison", "Technical Guide"],
     snippet: "SS 304 contains roughly 8 to 10.5% nickel and offers better corrosion resistance and formability. SS 202 replaces part of the nickel with manganese and nitrogen, so it usually costs less but resists corrosion less well. Choose 202 for dry indoor uses such as utensils and interior panels, and 304 for food processing, outdoor or humid environments.",

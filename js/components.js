@@ -22,7 +22,7 @@ const SITE_CONFIG = {
     registeredOffice: '61, Jamnadas Building, Shop No. 5 & 6, 10th Khetwadi Back Road, Girgaon, Mumbai - 400004',
     tradingOffice: '39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Bhandari Street, Kalbadevi, Mumbai - 400004',
     warehouse: 'Kalamboli, Navi Mumbai', // TODO: full address to be provided
-    address: '39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Bhandari Street, Kalbadevi, Mumbai - 400004',
+    address: '61, Jamnadas Building, Shop No. 5 & 6, 10th Khetwadi Back Road, Girgaon, Mumbai - 400004',
     addressWarehouse: 'Kalamboli, Navi Mumbai',
     mapsUrl: 'https://maps.google.com/?q=61+Jamnadas+Building+10th+Khetwadi+Back+Road+Girgaon+Mumbai+400004',
     catalogUrl: 'assets/TatvamOverseasInc_Catalog_2026.pdf',
@@ -552,7 +552,7 @@ function renderFooter() {
                         </div>
                     </a>
                     <p class="leading-relaxed text-xs text-slate-400">
-                        ISO 9001:2015 certified stockist and exporter of stainless steel, carbon steel, and high nickel alloys. Serving global industries since 1992 with complete traceability and MTC certification.
+                        Tatvam Overseas Inc is a Mumbai-based stockist and exporter of stainless steel sheets (SS 304, SS 202, designer sheets), pipes and nickel alloys, supplied with EN 10204 3.1 mill test certificates.
                     </p>
                     <div class="pt-2 text-[11px] text-slate-500 space-y-1">
                         <div><strong class="text-slate-400">GSTIN:</strong> 27AHIPJ6958M1ZK</div>
@@ -608,15 +608,15 @@ function renderFooter() {
                         <li class="flex items-start gap-3">
                             <i data-lucide="map-pin" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
                             <div class="text-xs leading-relaxed">
-                                <strong class="text-slate-300 block">Trading Office:</strong>
-                                39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Bhandari Street, Kalbadevi, Mumbai 400004
+                                <strong class="text-slate-300 block">Main &amp; Registered Office:</strong>
+                                61, Jamnadas Building, Shop 5 &amp; 6, 10th Khetwadi Back Road, Girgaon, Mumbai 400004
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="building" class="w-5 h-5 text-slate-500 flex-shrink-0 mt-0.5"></i>
                             <div class="text-xs leading-relaxed text-slate-400">
-                                <strong class="text-slate-300 block">Registered Office:</strong>
-                                61, Jamnadas Building, Shop 5 &amp; 6, 10th Khetwadi Back Road, Girgaon, Mumbai 400004
+                                <strong class="text-slate-300 block">Trading Office (Kalbadevi):</strong>
+                                39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Bhandari Street, Kalbadevi, Mumbai 400004
                             </div>
                         </li>
                         <li class="flex items-center gap-3">
