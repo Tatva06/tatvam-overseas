@@ -8,7 +8,7 @@ const SITE_CONFIG = {
     get yearsInBusiness() {
         return new Date().getFullYear() - this.foundingYear;
     },
-    stockClaim: '700+ Tons Ready Stock',
+    stockClaim: 'Approx. 700 Tons Ready Stock',
     productCount: '170+ products',
     responseTime: 'Quote within 2-4 working hours (Mon-Sat, 9 AM-7 PM IST)',
     gstin: '27AHIPJ6958M1ZK',

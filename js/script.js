@@ -485,7 +485,7 @@ class SmartFloatingWidget {
 
         // Stock availability
         if (lower.includes('stock') || lower.includes('availab') || lower.includes('ready') || lower.includes('warehouse')) {
-            return `🏢 **Ready Stock in Mumbai**:\nWe maintain over **700+ tons** of traceable inventory at our Mumbai warehouse facilities.\n\n• **Processing**: Custom cutting, shearing, slitting, and mirror-polishing arranged on request.\n• **Dispatch**: Pan-India delivery through trusted transport partners. Dispatch time depends on destination, shipping mode and working days.\n\nWhat size/grade and quantity do you need to check?`;
+            return `🏢 **Ready Stock in Mumbai**:\nWe maintain approx. **700 tons** of traceable inventory at our Mumbai warehouse facilities.\n\n• **Processing**: Custom cutting, shearing, slitting, and mirror-polishing arranged on request.\n• **Dispatch**: Pan-India delivery through trusted transport partners. Dispatch time depends on destination, shipping mode and working days.\n\nWhat size/grade and quantity do you need to check?`;
         }
 
         // Delivery / shipping
