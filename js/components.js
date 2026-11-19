@@ -19,10 +19,10 @@ const SITE_CONFIG = {
     exportEmail: 'export@tatvamoverseasinc.com',
     accountsEmail: 'accounts@tatvamoverseasinc.com',
     whatsapp: 'https://wa.me/919930301181',
-    registeredOffice: '61, Jamnadas Building, Shop No. 5 & 6, 10th Khetwadi Back Road, Girgaon, Mumbai - 400004',
+    registeredOffice: 'SH-5,6, Jamnadas Building, 10th Khetwadi Back Road, Girgaon, Mumbai, Maharashtra 400004',
     tradingOffice: '39/41, Kamal Building, 1st Kumbharwada Lane, Near Round Temple, Bhandari Street, Kalbadevi, Mumbai - 400004',
     warehouse: 'Kalamboli, Navi Mumbai', // TODO: full address to be provided
-    address: '61, Jamnadas Building, Shop No. 5 & 6, 10th Khetwadi Back Road, Girgaon, Mumbai - 400004',
+    address: 'SH-5,6, Jamnadas Building, 10th Khetwadi Back Road, Girgaon, Mumbai, Maharashtra 400004',
     addressWarehouse: 'Kalamboli, Navi Mumbai',
     mapsUrl: 'https://maps.google.com/?q=61+Jamnadas+Building+10th+Khetwadi+Back+Road+Girgaon+Mumbai+400004',
     catalogUrl: 'assets/TatvamOverseasInc_Catalog_2026.pdf',
@@ -609,7 +609,7 @@ function renderFooter() {
                             <i data-lucide="map-pin" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
                             <div class="text-xs leading-relaxed">
                                 <strong class="text-slate-300 block">Main &amp; Registered Office:</strong>
-                                61, Jamnadas Building, Shop 5 &amp; 6, 10th Khetwadi Back Road, Girgaon, Mumbai 400004
+                                ${SITE_CONFIG.address} <!-- TODO(owner): paste the exact address as shown on Google (starts "SH-5,6, Jamna...") -->
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
