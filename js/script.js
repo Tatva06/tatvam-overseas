@@ -495,7 +495,7 @@ class SmartFloatingWidget {
 
         // MTC / Certification / Third Party Inspection
         if (lower.includes('certificate') || lower.includes('mtc') || lower.includes('tc') || lower.includes('test') || lower.includes('tpi') || lower.includes('inspect') || lower.includes('trace')) {
-            return `✅ **MTC & Certification Traceability**:\n• Material is supplied with EN 10204 3.1 Mill Test Certificates showing heat number and chemical analysis.\n• PMI and dimensional checks arranged before dispatch as required.\n• Third-party inspection can be arranged by the agency of your choice (TUV, DNV, SGS, Bureau Veritas, Lloyd's) as per your QAP.\n• Need to verify an MTC? Visit our [MTC Verification page](/mtc)!`;
+            return `✅ **MTC & Certification Traceability**:\n• Material is supplied with EN 10204 3.1 Mill Test Certificates showing heat number and chemical analysis.\n• PMI and dimensional checks arranged before dispatch as required.\n• PMI testing and third-party inspection can be arranged on request.\n• Need to verify an MTC? Visit our [MTC Verification page](/mtc)!`;
         }
 
         // Contact info / WhatsApp / address
