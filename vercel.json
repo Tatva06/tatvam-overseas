@@ -3,6 +3,31 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/blog/terms(\\.html)?",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/blog/privacypolicy(\\.html)?",
+      "destination": "/privacypolicy",
+      "permanent": true
+    },
+    {
+      "source": "/blog/products(\\.html)?",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/blog/blog(\\.html)?",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/(about|contact|calculator|mtc|products|terms|privacypolicy|blog)(\\.html)?",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true

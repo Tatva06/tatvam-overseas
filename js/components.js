@@ -25,7 +25,7 @@ const SITE_CONFIG = {
     address: 'SH-5,6, Jamnadas Building, 10th Khetwadi Back Road, Girgaon, Mumbai, Maharashtra 400004',
     addressWarehouse: 'Kalamboli, Navi Mumbai',
     mapsUrl: 'https://maps.google.com/?q=61+Jamnadas+Building+10th+Khetwadi+Back+Road+Girgaon+Mumbai+400004',
-    catalogUrl: 'assets/TatvamOverseasInc_Catalog_2026.pdf',
+    catalogUrl: '/assets/TatvamOverseasInc_Catalog_2026.pdf',
     // Business Directory Links
     indiamart: 'https://www.indiamart.com/tatvam-overseas-inc/'
 };
