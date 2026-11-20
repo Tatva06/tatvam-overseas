@@ -5,6 +5,9 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+User-agent: msnbot
+Allow: /
+
 # AI Search & Answer Engine Crawlers (ChatGPT Search, Claude Search, Perplexity)
 User-agent: OAI-SearchBot
 Allow: /
