@@ -579,6 +579,7 @@ function renderFooter() {
                         <li><a href="/products/ss-316l-sheets-plates-supplier-mumbai" class="hover:text-emerald-400 transition-colors block">SS 316 / 316L Marine Plates</a></li>
                         <li><a href="/products/alloy-steel-p11-p22-ibr-pipes-mumbai" class="hover:text-emerald-400 transition-colors block">Alloy Steel P11/P22 Pipes</a></li>
                         <li><a href="/products/inconel-625-600-supplier-india" class="hover:text-emerald-400 transition-colors block">Inconel 625 Seamless Tubes</a></li>
+                        <li><a href="/products/duplex-2205-supplier-india" class="hover:text-emerald-400 transition-colors block">Duplex 2205 Plates &amp; Pipes</a></li>
                         <li>
                             <a href="/assets/TatvamOverseasInc_Catalog_2026.pdf" target="_blank" class="text-emerald-500 font-bold hover:text-emerald-400 flex items-center gap-2 mt-4">
                                 <i data-lucide="download" class="w-3 h-3"></i> Product Catalogue
