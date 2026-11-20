@@ -1,0 +1,1104 @@
+import os
+
+def generate_circles_page():
+    html = """<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SS Circles &amp; Discs (202, 304) Mumbai | Tatvam Overseas Inc</title>
+    <meta name="description" content="Stainless steel circles and discs in SS 202 and 304 for utensils, cookware and fabrication. Supplier in Mumbai. WhatsApp or call for quote.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.tatvamoverseasinc.com/products/ss-circles-discs-supplier-mumbai">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Tatvam Overseas Inc">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SS Circles &amp; Discs (202, 304) Mumbai | Tatvam Overseas Inc">
+    <meta property="og:description" content="Stainless steel circles and discs in SS 202 and 304 for utensils, cookware and fabrication. Supplier in Mumbai. WhatsApp or call for quote.">
+    <meta property="og:url" content="https://www.tatvamoverseasinc.com/products/ss-circles-discs-supplier-mumbai">
+    <meta property="og:image" content="https://www.tatvamoverseasinc.com/assets/images/pool/ss-circles-discs.webp">
+    <meta property="og:image:alt" content="Stainless steel circle blanks and round discs ready for utensil spinning in Mumbai">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SS Circles &amp; Discs (202, 304) Mumbai | Tatvam Overseas Inc">
+    <meta name="twitter:description" content="Stainless steel circles and discs in SS 202 and 304 for utensils, cookware and fabrication. Supplier in Mumbai. WhatsApp or call for quote.">
+    <meta name="twitter:image" content="https://www.tatvamoverseasinc.com/assets/images/pool/ss-circles-discs.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons & Styling -->
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C5PC2BWQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2C5PC2BWQJ');
+    </script>
+    <script defer src="/js/analytics.js"></script>
+
+    <!-- Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Stainless Steel Circles & Discs (SS 202, SS 304)",
+      "description": "Stainless steel circles and circular blank discs in SS 202 and SS 304 for cookware, utensils, spinning, pressure cookers and deep drawing from Mumbai stockist Tatvam Overseas Inc.",
+      "image": "https://www.tatvamoverseasinc.com/assets/images/pool/ss-circles-discs.webp",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tatvam Overseas Inc"
+      },
+      "category": "Stainless Steel Circles & Discs",
+      "material": "Stainless Steel SS 202, SS 304",
+      "url": "https://www.tatvamoverseasinc.com/products/ss-circles-discs-supplier-mumbai"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tatvamoverseasinc.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.tatvamoverseasinc.com/products" },
+        { "@type": "ListItem", "position": 3, "name": "Stainless Steel", "item": "https://www.tatvamoverseasinc.com/products/stainless-steel" },
+        { "@type": "ListItem", "position": 4, "name": "SS Circles & Discs Supplier Mumbai", "item": "https://www.tatvamoverseasinc.com/products/ss-circles-discs-supplier-mumbai" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What sizes of stainless steel circles can I order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Custom sizes cut to your requirement. Send grade, size, thickness and quantity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which stainless steel grade is best for utensil and cookware circles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SS 304 resists corrosion better and suits food contact and wet cooking applications, including pressure cookers and pots. SS 202 is more economical and suits dry indoor use, serving plates, and storage containers. Both grades are widely used for utensils and kitchenware."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is the weight of an SS circle calculated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Circle weight is calculated with the formula: Circle weight (kg) = 0.7854 x [Diameter in metres]^2 x [Thickness in mm] x density (7.93 g/cm3 for SS 304 and 7.80 g/cm3 for SS 202)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are mill test certificates supplied with SS circles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mill test certificates supplied with each lot. Chemical composition is shown on the mill test certificate supplied with each lot. PMI testing and third-party inspection can be arranged on request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What factors influence the price of stainless steel circles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Circle pricing depends on the alloy grade, raw material nickel and chromium market rates, diameter, sheet thickness gauge, cutting requirements, and overall order quantity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I request a quote for SS circles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Click our WhatsApp button naming SS circles or submit our contact form with your required grade, diameter, thickness, and quantity for an immediate response."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col font-sans">
+    <header id="site-header" class="sticky top-0 z-50"></header>
+
+    <!-- Breadcrumb Bar -->
+    <div class="bg-slate-900 border-b border-slate-800 text-slate-400 text-xs py-3">
+        <div class="container mx-auto px-6 flex items-center gap-2">
+            <a href="/" class="hover:text-emerald-400 transition-colors">Home</a>
+            <span>/</span>
+            <a href="/products" class="hover:text-emerald-400 transition-colors">Products</a>
+            <span>/</span>
+            <a href="/products/stainless-steel" class="hover:text-emerald-400 transition-colors">Stainless Steel</a>
+            <span>/</span>
+            <span class="text-white font-semibold truncate">SS Circles &amp; Discs (202, 304) Mumbai</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-slate-900 text-white py-12 relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <span class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-4">
+                        <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Authorized Stockist | Direct Mill Supply
+                    </span>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-4">Stainless Steel Circles &amp; Discs (SS 202, SS 304) Supplier in Mumbai</h1>
+                    <p class="text-slate-300 text-base mb-6 leading-relaxed">
+                        Direct mill stockist and supplier of precision-sheared stainless steel circles, blank discs, and rings in SS 202 and SS 304. Custom diameters and thicknesses cut to your exact requirements for utensils, cookware, spinning, pressure vessels, and industrial fabrication in Mumbai. Mill test certificate supplied with each lot.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/contact" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-emerald-900/30 text-sm">
+                            <i data-lucide="mail" class="w-4 h-4"></i> Request Quote
+                        </a>
+                        <a href="https://wa.me/919930301181?text=Hi%20Tatvam%20Overseas%2C%20I%20would%20like%20a%20quote%20for%20SS%20circles." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-700/60 hover:bg-emerald-700 text-white border border-emerald-500/40 font-bold px-6 py-3 rounded-xl transition-all text-sm">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp SS Circles
+                        </a>
+                        <a href="/calculator" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold px-5 py-3 rounded-xl transition-all text-sm">
+                            <i data-lucide="calculator" class="w-4 h-4 text-emerald-400"></i> SS Weight Calculator
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700">
+                        <img src="/assets/images/pool/ss-circles-discs.webp" alt="Stainless steel circle blanks and round discs ready for utensil spinning in Mumbai" width="600" height="400" loading="lazy" class="w-full h-80 object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-900/80 to-transparent p-5">
+                            <div class="flex items-center justify-between text-xs text-slate-300">
+                                <span><strong>Stock:</strong> SS 202 &amp; SS 304</span>
+                                <span><strong>Cutting:</strong> Sheared to Requirement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-12 max-w-6xl">
+        <div class="space-y-12">
+
+            <!-- Warehouse Highlights -->
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:border-emerald-500 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                        <i data-lucide="scissors" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-1">Custom Diameter &amp; Thickness</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Custom sizes cut to your requirement. Send grade, size, thickness and quantity.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:border-emerald-500 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                        <i data-lucide="file-check" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-1">EN 10204 3.1 Traceability</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Mill test certificates supplied with each lot. PMI testing and third-party inspection can be arranged on request.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:border-emerald-500 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                        <i data-lucide="sparkles" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-1">Cookware &amp; Spinning Ready</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Smooth sheared edges without heavy burrs, ideal for deep drawing, hydroforming, and utensil spinning.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:border-emerald-500 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                        <i data-lucide="truck" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-1">Dispatch from Mumbai</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Prompt dispatches across India and international seaworthy container packing via Nhava Sheva (JNPT) port.</p>
+                </div>
+            </section>
+
+            <!-- Technical Specification Table -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <div class="border-b border-slate-200 pb-4 mb-6">
+                    <h2 class="text-2xl font-black text-slate-900 mb-2">SS Circles Technical Specifications</h2>
+                    <p class="text-slate-600 text-sm">Key dimensions, material grades, surface finishes, and documentation parameters for stainless steel circles supplied by Tatvam Overseas Inc.</p>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-sm">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200 text-slate-700">
+                                <th class="py-3 px-4 font-bold uppercase tracking-wider text-xs">Parameter</th>
+                                <th class="py-3 px-4 font-bold uppercase tracking-wider text-xs">Standard Range &amp; Options</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-slate-700">
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Material Grades</td>
+                                <td class="py-3.5 px-4">Stainless Steel 202 (Jindal J1, J4 series) and SS 304 / 304L (ASTM A240)</td>
+                            </tr>
+                            <tr class="bg-slate-50/50">
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Diameter Range</td>
+                                <td class="py-3.5 px-4">Custom sizes cut to your requirement. Send grade, size, thickness and quantity.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Thickness Range</td>
+                                <td class="py-3.5 px-4">Custom sizes cut to your requirement. Send grade, size, thickness and quantity.</td>
+                            </tr>
+                            <tr class="bg-slate-50/50">
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Surface Finish</td>
+                                <td class="py-3.5 px-4">2B Cold Rolled, Bright Annealed (BA), No.4 Hairline (with PVC protective film on request)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Cutting Methods</td>
+                                <td class="py-3.5 px-4">Rotary circle shearing, CNC laser cutting, and plasma circle blanking</td>
+                            </tr>
+                            <tr class="bg-slate-50/50">
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Chemical Composition</td>
+                                <td class="py-3.5 px-4">Chemical composition is shown on the mill test certificate supplied with each lot.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Testing &amp; Inspection</td>
+                                <td class="py-3.5 px-4">Mill test certificates supplied with each lot. PMI testing and third-party inspection can be arranged on request.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-100 text-xs text-emerald-800 leading-relaxed">
+                    <strong>Ordering Note:</strong> Custom sizes cut to your requirement. Send grade, size, thickness and quantity for a direct quote within 2–4 working hours.
+                </div>
+            </section>
+
+            <!-- Grade Comparison -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h2 class="text-2xl font-black text-slate-900 mb-4">SS 202 vs SS 304 Circles: Grade Selection Guide</h2>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                    Choosing between SS 202 and SS 304 circles depends primarily on the end-use environment, corrosion exposure, and target cost per unit. Both grades are widely utilized across Indian cookware and deep-drawing manufacturing.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-slate-900">SS 202 Circles (Jindal J1 / J4)</h3>
+                            <span class="text-xs bg-slate-200 text-slate-800 px-2 py-0.5 rounded font-bold">Economy Grade</span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-700 leading-relaxed mb-4">
+                            <li><strong>Best For:</strong> Utensils, serving dishes, spice boxes, storage containers, dry kitchenware.</li>
+                            <li><strong>Formability:</strong> Excellent ductility in J1 grade for multi-stage deep drawing and spinning.</li>
+                            <li><strong>Corrosion Resistance:</strong> Adequate for indoor, non-saline, and dry environments.</li>
+                            <li><strong>Density:</strong> 7.80 g/cm³ (lighter weight per blank).</li>
+                        </ul>
+                        <p class="text-xs text-slate-500 italic">Chemical composition is shown on the mill test certificate supplied with each lot.</p>
+                    </div>
+
+                    <div class="border border-emerald-200 rounded-xl p-5 bg-emerald-50/40">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-slate-900">SS 304 / 304L Circles (ASTM A240)</h3>
+                            <span class="text-xs bg-emerald-600 text-white px-2 py-0.5 rounded font-bold">Food-Grade Standard</span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-700 leading-relaxed mb-4">
+                            <li><strong>Best For:</strong> Pressure cookers, milk cans, commercial kitchenware, chemical tanks, tank dished ends.</li>
+                            <li><strong>Formability:</strong> Superior drawability with high work-hardening resistance.</li>
+                            <li><strong>Corrosion Resistance:</strong> High resistance to food acids, boiling liquids, and wet cleaning agents.</li>
+                            <li><strong>Density:</strong> 7.93 g/cm³ (standard austenitic density).</li>
+                        </ul>
+                        <p class="text-xs text-slate-500 italic">Chemical composition is shown on the mill test certificate supplied with each lot.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Formula & Calculation Box -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h2 class="text-2xl font-black text-slate-900 mb-3">SS Circle Weight Calculation Formula &amp; Chart</h2>
+                <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                    Calculate theoretical circle weight precisely before ordering to estimate your scrap ratio and material costs per blank:
+                </p>
+                <div class="bg-slate-900 text-white rounded-xl p-5 font-mono text-sm leading-relaxed mb-6 border border-slate-800">
+                    <p class="text-emerald-400 font-bold mb-2">// Formula:</p>
+                    <p>Circle Weight (kg) = 0.7854 &times; [Diameter in metres]&sup2; &times; [Thickness in mm] &times; Density</p>
+                    <p class="text-slate-400 text-xs mt-3">Where:</p>
+                    <p class="text-slate-300 text-xs">&bull; SS 304 Density = 7.93 g/cm&sup3; (0.00793 kg/cm&sup3;)</p>
+                    <p class="text-slate-300 text-xs">&bull; SS 202 Density = 7.80 g/cm&sup3; (0.00780 kg/cm&sup3;)</p>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-xs">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200 text-slate-700">
+                                <th class="py-2.5 px-3 font-bold">Diameter (mm)</th>
+                                <th class="py-2.5 px-3 font-bold">Thickness (mm)</th>
+                                <th class="py-2.5 px-3 font-bold">SS 304 Weight (kg)</th>
+                                <th class="py-2.5 px-3 font-bold">SS 202 Weight (kg)</th>
+                                <th class="py-2.5 px-3 font-bold">Typical Application</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-slate-700 font-mono">
+                            <tr>
+                                <td class="py-2.5 px-3 font-bold text-slate-900">200 mm</td>
+                                <td class="py-2.5 px-3">0.8 mm</td>
+                                <td class="py-2.5 px-3">~ 0.20 kg</td>
+                                <td class="py-2.5 px-3">~ 0.20 kg</td>
+                                <td class="py-2.5 px-3 font-sans">Plates, Thali, Bowls</td>
+                            </tr>
+                            <tr class="bg-slate-50/50">
+                                <td class="py-2.5 px-3 font-bold text-slate-900">300 mm</td>
+                                <td class="py-2.5 px-3">1.0 mm</td>
+                                <td class="py-2.5 px-3">~ 0.56 kg</td>
+                                <td class="py-2.5 px-3">~ 0.55 kg</td>
+                                <td class="py-2.5 px-3 font-sans">Saucepans, Cookware Bodies</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2.5 px-3 font-bold text-slate-900">400 mm</td>
+                                <td class="py-2.5 px-3">1.2 mm</td>
+                                <td class="py-2.5 px-3">~ 1.19 kg</td>
+                                <td class="py-2.5 px-3">~ 1.18 kg</td>
+                                <td class="py-2.5 px-3 font-sans">Pressure Cooker Blanks</td>
+                            </tr>
+                            <tr class="bg-slate-50/50">
+                                <td class="py-2.5 px-3 font-bold text-slate-900">500 mm</td>
+                                <td class="py-2.5 px-3">1.5 mm</td>
+                                <td class="py-2.5 px-3">~ 2.33 kg</td>
+                                <td class="py-2.5 px-3">~ 2.30 kg</td>
+                                <td class="py-2.5 px-3 font-sans">Commercial Milk Cans, Vats</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2.5 px-3 font-bold text-slate-900">600 mm</td>
+                                <td class="py-2.5 px-3">2.0 mm</td>
+                                <td class="py-2.5 px-3">~ 4.48 kg</td>
+                                <td class="py-2.5 px-3">~ 4.41 kg</td>
+                                <td class="py-2.5 px-3 font-sans">Industrial Tank Ends, Endcaps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Key Manufacturing Applications -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h2 class="text-2xl font-black text-slate-900 mb-6">Key Manufacturing Applications</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                            <i data-lucide="utensils" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Utensils &amp; Kitchenware</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Dinner thalis, katoris, glasses, serving trays, and canisters manufactured by spinning and stamping.</p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                            <i data-lucide="gauge" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Pressure Cookers &amp; Pots</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Deep-drawn cooker bodies and sandwich bottom cookware lids requiring prime ASTM A240 grade 304 blanks.</p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                            <i data-lucide="cylinder" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Industrial Tank Ends</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Dished ends, torispherical heads, inspection hatches, and vessel covers for storage tanks and process silos.</p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                            <i data-lucide="disc" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Flange Blanks &amp; Blind Rings</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Round circle blanks machined into pipe flanges, spacers, and blind plates across Mumbai engineering workshops.</p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                            <i data-lucide="fan" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Fan Blades &amp; Impellers</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Air handling fan hubs, mixer agitators, and centrifugal pump impellers cut from balanced circle stock.</p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                            <i data-lucide="filter" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Filtration Discs &amp; Screens</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Perforated circle blanks, strainer plates, and chemical reactor sieve discs cut to precise diameters.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Factors -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h2 class="text-2xl font-black text-slate-900 mb-3">Factors Influencing Stainless Steel Circle Prices</h2>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                    Stainless steel circle rates in Mumbai are determined by market variables that reflect raw material costs and processing:
+                </p>
+                <div class="grid sm:grid-cols-2 gap-4 text-xs">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Raw Material Index &amp; Grade Surcharges</h4>
+                        <p class="text-slate-600 leading-relaxed">Global nickel, chromium, and manganese rates directly impact base coil costs. SS 304 carries a premium over SS 202 due to higher nickel content.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Sheet Thickness Gauge</h4>
+                        <p class="text-slate-600 leading-relaxed">Thin gauges (0.5 mm to 0.8 mm) involve higher rolling and processing passes, whereas thicker gauges (> 3.0 mm) carry lower per-kg rolling premiums.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Cutting Method &amp; Scrap Ratio</h4>
+                        <p class="text-slate-600 leading-relaxed">Rotary shearing provides the lowest cost per blank for standard sizes. Complex diameters or tight-tolerance cuts may utilize CNC laser cutting.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Dispatch Volume &amp; Packaging</h4>
+                        <p class="text-slate-600 leading-relaxed">Full-pallet and truckload orders receive bulk wholesale pricing. Export seaworthy wooden box packing is provided on request.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How to Order -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h2 class="text-2xl font-black text-slate-900 mb-4">How to Order SS Circles from Tatvam Overseas Inc</h2>
+                <div class="grid sm:grid-cols-4 gap-4 text-xs">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center mx-auto mb-2 text-sm">1</div>
+                        <h4 class="font-bold text-slate-900 mb-1">Specify Dimensions</h4>
+                        <p class="text-slate-600">Provide required grade (202 or 304), circle diameter in mm, and thickness gauge.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center mx-auto mb-2 text-sm">2</div>
+                        <h4 class="font-bold text-slate-900 mb-1">Get Fast Quote</h4>
+                        <p class="text-slate-600">Receive current wholesale pricing per kg or per piece within 2–4 working hours.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center mx-auto mb-2 text-sm">3</div>
+                        <h4 class="font-bold text-slate-900 mb-1">Precision Cutting</h4>
+                        <p class="text-slate-600">Blanks are rotary-sheared or laser-cut with clean edges and dimensional checks.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center mx-auto mb-2 text-sm">4</div>
+                        <h4 class="font-bold text-slate-900 mb-1">Dispatch &amp; MTC</h4>
+                        <p class="text-slate-600">Material is dispatched with EN 10204 3.1 Mill Test Certificate across India or for export.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Frequently Asked Questions -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h2 class="text-2xl font-black text-slate-900 mb-6">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <h3 class="text-slate-900 font-bold text-base mb-2">What sizes of stainless steel circles can I order?</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Custom sizes cut to your requirement. Send grade, size, thickness and quantity.
+                        </p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <h3 class="text-slate-900 font-bold text-base mb-2">Which stainless steel grade is best for utensil and cookware circles?</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            SS 304 resists corrosion better and suits food contact and wet cooking applications, including pressure cookers and pots. SS 202 is more economical and suits dry indoor use, serving plates, and storage containers. Both grades are widely used for utensils and kitchenware.
+                        </p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <h3 class="text-slate-900 font-bold text-base mb-2">How is the weight of an SS circle calculated?</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Circle weight is calculated with the formula: Circle weight (kg) = 0.7854 x [Diameter in metres]^2 x [Thickness in mm] x density (7.93 g/cm3 for SS 304 and 7.80 g/cm3 for SS 202).
+                        </p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <h3 class="text-slate-900 font-bold text-base mb-2">Are mill test certificates supplied with SS circles?</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Mill test certificates supplied with each lot. Chemical composition is shown on the mill test certificate supplied with each lot. PMI testing and third-party inspection can be arranged on request.
+                        </p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <h3 class="text-slate-900 font-bold text-base mb-2">What factors influence the price of stainless steel circles?</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Circle pricing depends on the alloy grade, raw material nickel and chromium market rates, diameter, sheet thickness gauge, cutting requirements, and overall order quantity.
+                        </p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <h3 class="text-slate-900 font-bold text-base mb-2">How do I request a quote for SS circles?</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Click our WhatsApp button naming SS circles or submit our contact form with your required grade, diameter, thickness, and quantity for an immediate response.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom CTA Section -->
+            <section class="bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 text-white border border-slate-800 rounded-2xl p-8 sm:p-10 text-center sm:text-left sm:flex sm:items-center sm:justify-between shadow-xl">
+                <div class="mb-6 sm:mb-0 max-w-xl">
+                    <h2 class="text-2xl sm:text-3xl font-black mb-2">Need Custom Cut Stainless Steel Circles?</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Contact our Mumbai sales desk for prompt pricing, cutting schedules, and dispatch coordination for cookware and industrial manufacturing.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="https://wa.me/919930301181?text=Hi%20Tatvam%20Overseas%2C%20I%20would%20like%20a%20quote%20for%20SS%20circles." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition-all shadow-lg shadow-emerald-900/30 text-sm">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp SS Circles
+                    </a>
+                    <a href="/contact" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold border border-slate-700 transition-all text-sm">
+                        <i data-lucide="phone" class="w-4 h-4"></i> Contact Us
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="/js/components.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>"""
+    with open("products/ss-circles-discs-supplier-mumbai.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    print("Rewritten products/ss-circles-discs-supplier-mumbai.html with light brand palette.")
+
+def generate_patta_page():
+    html = """<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SS Patta, Patti &amp; Flats (202, 304) | Tatvam Overseas Inc</title>
+    <meta name="description" content="SS patta and patti (flat strips and bars) in SS 202 and 304. Custom sizes cut to requirement in Mumbai. WhatsApp or call for wholesale quote.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.tatvamoverseasinc.com/products/ss-patta-patti-flats-strips-supplier-mumbai">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Tatvam Overseas Inc">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SS Patta, Patti &amp; Flats (202, 304) | Tatvam Overseas Inc">
+    <meta property="og:description" content="SS patta and patti (flat strips and bars) in SS 202 and 304. Custom sizes cut to requirement in Mumbai. WhatsApp or call for wholesale quote.">
+    <meta property="og:url" content="https://www.tatvamoverseasinc.com/products/ss-patta-patti-flats-strips-supplier-mumbai">
+    <meta property="og:image" content="https://www.tatvamoverseasinc.com/assets/images/pool/ss-patta-patti.webp">
+    <meta property="og:image:alt" content="Stainless steel flat strips, patta and patti in Mumbai warehouse">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SS Patta, Patti &amp; Flats (202, 304) | Tatvam Overseas Inc">
+    <meta name="twitter:description" content="SS patta and patti (flat strips and bars) in SS 202 and 304. Custom sizes cut to requirement in Mumbai. WhatsApp or call for wholesale quote.">
+    <meta name="twitter:image" content="https://www.tatvamoverseasinc.com/assets/images/pool/ss-patta-patti.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons & Styling -->
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C5PC2BWQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2C5PC2BWQJ');
+    </script>
+    <script defer src="/js/analytics.js"></script>
+
+    <!-- Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Stainless Steel Patta, Patti & Flat Strips (SS 202, SS 304)",
+      "description": "Stainless steel patta, patti, and flat strips in SS 202 and SS 304 for gates, railings, frames and fabrication from Mumbai stockist Tatvam Overseas Inc.",
+      "image": "https://www.tatvamoverseasinc.com/assets/images/pool/ss-patta-patti.webp",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tatvam Overseas Inc"
+      },
+      "category": "Stainless Steel Patta & Patti",
+      "material": "Stainless Steel SS 202, SS 304",
+      "url": "https://www.tatvamoverseasinc.com/products/ss-patta-patti-flats-strips-supplier-mumbai"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tatvamoverseasinc.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.tatvamoverseasinc.com/products" },
+        { "@type": "ListItem", "position": 3, "name": "Stainless Steel", "item": "https://www.tatvamoverseasinc.com/products/stainless-steel" },
+        { "@type": "ListItem", "position": 4, "name": "SS Patta, Patti & Flats Supplier Mumbai", "item": "https://www.tatvamoverseasinc.com/products/ss-patta-patti-flats-strips-supplier-mumbai" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What sizes of SS patta and patti can I order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Custom sizes cut to your requirement. Send grade, size, thickness and quantity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between SS patta and SS patti?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the Indian metal trade, patta and patti both refer to flat strips and flat bars. Patti often refers to narrower cut strips or flat bars used in gates, grills and architectural trims, while patta describes wider slit strips, sheet cuts or continuous strips."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I choose SS 202 patta versus SS 304 flat bars?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SS 202 patta is cost-effective for indoor interior decoration, dry indoor furniture frames, and budget gates where humidity is low. SS 304 flat bars are recommended for exterior railings, wet environments, industrial framework, and coastal installations where long-term rust prevention is essential."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is the weight per metre of SS flat bar calculated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Weight per linear metre is calculated using: Flat bar weight per metre (kg) = width(mm) x thickness(mm) x density / 1000. For SS 304, use density 7.93; for SS 202, use density 7.80."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide mill test certificates with SS patta and flat strips?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mill test certificates supplied with each lot. Chemical composition is shown on the mill test certificate supplied with each lot. PMI testing and third-party inspection can be arranged on request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What factors determine the price of stainless steel patta and patti?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pricing is influenced by alloy grade, raw material nickel and chromium rates, strip width, thickness, cut lengths, and total dispatch volume."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col font-sans">
+    <header id="site-header" class="sticky top-0 z-50"></header>
+
+    <!-- Breadcrumb Bar -->
+    <div class="bg-slate-900 border-b border-slate-800 text-slate-400 text-xs py-3">
+        <div class="container mx-auto px-6 flex items-center gap-2">
+            <a href="/" class="hover:text-emerald-400 transition-colors">Home</a>
+            <span>/</span>
+            <a href="/products" class="hover:text-emerald-400 transition-colors">Products</a>
+            <span>/</span>
+            <a href="/products/stainless-steel" class="hover:text-emerald-400 transition-colors">Stainless Steel</a>
+            <span>/</span>
+            <span class="text-white font-semibold truncate">SS Patta, Patti &amp; Flats (202, 304) Mumbai</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-slate-900 text-white py-12 relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <span class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-4">
+                        <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Direct Mill Stockist &amp; Supplier
+                    </span>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-4">Stainless Steel Patta, Patti &amp; Flat Strips (SS 202, SS 304) Supplier in Mumbai</h1>
+                    <p class="text-slate-300 text-base mb-6 leading-relaxed">
+                        Authorized stockist and supplier of stainless steel patta, patti, slit flat strips, and sheared flat bars in Mumbai. Custom sizes cut to requirement in SS 202 (Jindal J1, J4) and SS 304 for gates, architectural railings, brackets, and fabrication. Mill test certificate supplied with each lot.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/contact" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-emerald-900/30 text-sm">
+                            <i data-lucide="mail" class="w-4 h-4"></i> Request Quote
+                        </a>
+                        <a href="https://wa.me/919930301181?text=Hi%20Tatvam%20Overseas%2C%20I%20would%20like%20a%20quote%20for%20SS%20patta." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-700/60 hover:bg-emerald-700 text-white border border-emerald-500/40 font-bold px-6 py-3 rounded-xl transition-all text-sm">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp SS Patta
+                        </a>
+                        <a href="/calculator" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold px-5 py-3 rounded-xl transition-all text-sm">
+                            <i data-lucide="calculator" class="w-4 h-4 text-emerald-400"></i> SS Weight Calculator
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700">
+                        <img src="/assets/images/pool/ss-patta-patti.webp" alt="Stainless steel flat strips, patta and patti in Mumbai warehouse" width="600" height="400" loading="lazy" class="w-full h-80 object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-900/80 to-transparent p-5">
+                            <div class="flex items-center justify-between text-xs text-slate-300">
+                                <span><strong>Stock:</strong> SS 202 &amp; SS 304</span>
+                                <span><strong>Cutting:</strong> Slit / Sheared to Order</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-12 max-w-6xl">
+        <div class="space-y-12">
+
+            <!-- Warehouse Highlights -->
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:border-emerald-500 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                        <i data-lucide="ruler" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-1">Custom Widths &amp; Lengths</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Custom sizes cut to your requirement. Send grade, size, thickness and quantity.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:border-emerald-500 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                        <i data-lucide="file-check" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-1">EN 10204 3.1 Traceability</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Mill test certificates supplied with each lot. PMI testing and third-party inspection can be arranged on request.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:border-emerald-500 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                        <i data-lucide="layers" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-1">Clean Sheared &amp; Slit Edges</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Deburred, straight slit edges ready for welding, punching, architectural grill framing, and bending.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:border-emerald-500 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                        <i data-lucide="truck" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-1">Ready Stock &amp; Prompt Dispatch</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Immediate dispatch across Mumbai, Pan-India transport, and sea container export packing.</p>
+                </div>
+            </section>
+
+            <!-- Technical Specification Table -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <div class="border-b border-slate-200 pb-4 mb-6">
+                    <h2 class="text-2xl font-black text-slate-900 mb-2">SS Patta &amp; Patti Technical Specifications</h2>
+                    <p class="text-slate-600 text-sm">Key dimensions, material grades, surface finishes, and documentation parameters for stainless steel patta, patti, and flat strips supplied by Tatvam Overseas Inc.</p>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-sm">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200 text-slate-700">
+                                <th class="py-3 px-4 font-bold uppercase tracking-wider text-xs">Parameter</th>
+                                <th class="py-3 px-4 font-bold uppercase tracking-wider text-xs">Specification &amp; Options</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-slate-700">
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Available Grades</td>
+                                <td class="py-3.5 px-4">Stainless Steel 202 (Jindal J1, J4 series) and SS 304 / 304L (ASTM A240)</td>
+                            </tr>
+                            <tr class="bg-slate-50/50">
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Width Range</td>
+                                <td class="py-3.5 px-4">Custom sizes cut to your requirement. Send grade, size, thickness and quantity.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Thickness Range</td>
+                                <td class="py-3.5 px-4">Custom sizes cut to your requirement. Send grade, size, thickness and quantity.</td>
+                            </tr>
+                            <tr class="bg-slate-50/50">
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Surface Finish</td>
+                                <td class="py-3.5 px-4">2B Cold Rolled, No.4 Hairline (with protective PVC film), and Bright Finish</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Edge Finish</td>
+                                <td class="py-3.5 px-4">Slit edge, sheared edge, and deburred flat strip options</td>
+                            </tr>
+                            <tr class="bg-slate-50/50">
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Chemical Composition</td>
+                                <td class="py-3.5 px-4">Chemical composition is shown on the mill test certificate supplied with each lot.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Testing &amp; Inspection</td>
+                                <td class="py-3.5 px-4">Mill test certificates supplied with each lot. PMI testing and third-party inspection can be arranged on request.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-100 text-xs text-emerald-800 leading-relaxed">
+                    <strong>Ordering Note:</strong> Custom sizes cut to your requirement. Send grade, size, thickness and quantity for a direct quote within 2–4 working hours.
+                </div>
+            </section>
+
+            <!-- Grade Selection Guide -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h2 class="text-2xl font-black text-slate-900 mb-4">SS 202 vs SS 304 Patta: Choosing the Right Grade</h2>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                    Understanding the metallurgical and cost differences ensures you select the optimal grade for fabrication, structural integrity, and corrosion durability.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-slate-900">SS 202 Patta &amp; Patti (Jindal J1 / J4)</h3>
+                            <span class="text-xs bg-slate-200 text-slate-800 px-2 py-0.5 rounded font-bold">Economy Grade</span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-700 leading-relaxed mb-4">
+                            <li><strong>Best For:</strong> Indoor architectural railings, furniture frames, interior partition screens, decorative grills, gate infill patti.</li>
+                            <li><strong>Formability:</strong> Good bending and punching characteristics.</li>
+                            <li><strong>Corrosion Resistance:</strong> Engineered for dry indoor environments.</li>
+                            <li><strong>Density:</strong> 7.80 g/cm³ (economical weight calculation).</li>
+                        </ul>
+                        <p class="text-xs text-slate-500 italic">Chemical composition is shown on the mill test certificate supplied with each lot.</p>
+                    </div>
+
+                    <div class="border border-emerald-200 rounded-xl p-5 bg-emerald-50/40">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-slate-900">SS 304 Flat Strips &amp; Bars (ASTM A240)</h3>
+                            <span class="text-xs bg-emerald-600 text-white px-2 py-0.5 rounded font-bold">Industrial Grade</span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-700 leading-relaxed mb-4">
+                            <li><strong>Best For:</strong> Exterior balconies, coastal structures, food and dairy processing frames, industrial brackets, chemical plant trims.</li>
+                            <li><strong>Weldability:</strong> Superior weldability without post-weld corrosion susceptibility.</li>
+                            <li><strong>Corrosion Resistance:</strong> Resistant to weathering, moisture, and industrial atmospheres.</li>
+                            <li><strong>Density:</strong> 7.93 g/cm³ (standard austenitic density).</li>
+                        </ul>
+                        <p class="text-xs text-slate-500 italic">Chemical composition is shown on the mill test certificate supplied with each lot.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Weight Calculation Formula -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h2 class="text-2xl font-black text-slate-900 mb-3">SS Flat Bar &amp; Patta Weight Calculation Formula</h2>
+                <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                    Estimate material tonnage accurately using this standard formula for stainless steel flat strips and bars:
+                </p>
+                <div class="bg-slate-900 text-white rounded-xl p-5 font-mono text-sm leading-relaxed mb-6 border border-slate-800">
+                    <p class="text-emerald-400 font-bold mb-2">// Formula:</p>
+                    <p>Weight per Metre (kg/m) = [Width (mm)] &times; [Thickness (mm)] &times; Density / 1000</p>
+                    <p class="text-slate-400 text-xs mt-3">Where:</p>
+                    <p class="text-slate-300 text-xs">&bull; SS 304 Density = 7.93 g/cm&sup3;</p>
+                    <p class="text-slate-300 text-xs">&bull; SS 202 Density = 7.80 g/cm&sup3;</p>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-xs">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200 text-slate-700">
+                                <th class="py-2.5 px-3 font-bold">Width (mm)</th>
+                                <th class="py-2.5 px-3 font-bold">Thickness (mm)</th>
+                                <th class="py-2.5 px-3 font-bold">SS 304 Weight (kg/m)</th>
+                                <th class="py-2.5 px-3 font-bold">SS 202 Weight (kg/m)</th>
+                                <th class="py-2.5 px-3 font-bold">Common Application</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-slate-700 font-mono">
+                            <tr>
+                                <td class="py-2.5 px-3 font-bold text-slate-900">25 mm</td>
+                                <td class="py-2.5 px-3">3.0 mm</td>
+                                <td class="py-2.5 px-3">~ 0.59 kg/m</td>
+                                <td class="py-2.5 px-3">~ 0.58 kg/m</td>
+                                <td class="py-2.5 px-3 font-sans">Window Grills, Furniture Brackets</td>
+                            </tr>
+                            <tr class="bg-slate-50/50">
+                                <td class="py-2.5 px-3 font-bold text-slate-900">30 mm</td>
+                                <td class="py-2.5 px-3">4.0 mm</td>
+                                <td class="py-2.5 px-3">~ 0.95 kg/m</td>
+                                <td class="py-2.5 px-3">~ 0.94 kg/m</td>
+                                <td class="py-2.5 px-3 font-sans">Gate Flats, Balustrade Uprights</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2.5 px-3 font-bold text-slate-900">40 mm</td>
+                                <td class="py-2.5 px-3">5.0 mm</td>
+                                <td class="py-2.5 px-3">~ 1.59 kg/m</td>
+                                <td class="py-2.5 px-3">~ 1.56 kg/m</td>
+                                <td class="py-2.5 px-3 font-sans">Structural Supports, Machinery Base</td>
+                            </tr>
+                            <tr class="bg-slate-50/50">
+                                <td class="py-2.5 px-3 font-bold text-slate-900">50 mm</td>
+                                <td class="py-2.5 px-3">6.0 mm</td>
+                                <td class="py-2.5 px-3">~ 2.38 kg/m</td>
+                                <td class="py-2.5 px-3">~ 2.34 kg/m</td>
+                                <td class="py-2.5 px-3 font-sans">Industrial Clamps, Mounting Brackets</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Key Applications -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h2 class="text-2xl font-black text-slate-900 mb-6">Key Applications for SS Patta &amp; Patti</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                            <i data-lucide="shield" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Gates &amp; Security Grills</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Slit edge patti and flat bars welded into residential and commercial entrance gates, safety grills, and window frames.</p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                            <i data-lucide="layout" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Architectural Railings &amp; Trims</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Baluster uprights, glass handrail base plates, wall skirtings, and decorative column cladding borders.</p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                            <i data-lucide="armchair" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Stainless Steel Furniture</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Dining table frameworks, hospital trolleys, display racks, and showcase partition framing.</p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                            <i data-lucide="wrench" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Machinery Brackets &amp; Clamps</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Heavy-duty mounting lugs, pipe clamp straps, cable tray supports, and electrical earthing patti.</p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                            <i data-lucide="truck" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Bus Body &amp; Auto Trim</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Commercial vehicle floor beading, side protection strips, and coach body reinforcement ribs.</p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                            <i data-lucide="box" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Kitchen &amp; Storage Racks</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Commercial kitchen shelving, perforated storage baskets, and heavy vessel racking support flats.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Factors -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h2 class="text-2xl font-black text-slate-900 mb-3">Pricing Factors for Stainless Steel Patta &amp; Flat Bars</h2>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                    Commercial prices in Mumbai vary based on alloy formulation, raw material market fluctuations, and order specifics:
+                </p>
+                <div class="grid sm:grid-cols-2 gap-4 text-xs">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Grade Surcharges (202 vs 304)</h4>
+                        <p class="text-slate-600 leading-relaxed">SS 202 offers an economical cost profile for indoor decorative work. SS 304 carries a premium matching international nickel and chromium index revisions.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Slitting Width &amp; Thickness Tolerances</h4>
+                        <p class="text-slate-600 leading-relaxed">Custom narrow-width slitting (< 20 mm) involves specialized coil slitter tooling, whereas standard widths enjoy faster turnaround and lower processing fees.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Order Volume &amp; Bundling</h4>
+                        <p class="text-slate-600 leading-relaxed">Wholesale tonnage orders receive volume discounts with secure steel-strapped bundles and plastic wrapping for safe transit.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Certification &amp; Inspection</h4>
+                        <p class="text-slate-600 leading-relaxed">Mill test certificates supplied with each lot. Third-party inspection and PMI testing arranged on request.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Frequently Asked Questions -->
+            <section class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h2 class="text-2xl font-black text-slate-900 mb-6">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <h3 class="text-slate-900 font-bold text-base mb-2">What sizes of SS patta and patti can I order?</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Custom sizes cut to your requirement. Send grade, size, thickness and quantity.
+                        </p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <h3 class="text-slate-900 font-bold text-base mb-2">What is the difference between SS patta and SS patti?</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            In the Indian metal trade, patta and patti both refer to flat strips and flat bars. Patti often refers to narrower cut strips or flat bars used in gates, grills and architectural trims, while patta describes wider slit strips, sheet cuts or continuous strips.
+                        </p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <h3 class="text-slate-900 font-bold text-base mb-2">When should I choose SS 202 patta versus SS 304 flat bars?</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            SS 202 patta is cost-effective for indoor interior decoration, dry indoor furniture frames, and budget gates where humidity is low. SS 304 flat bars are recommended for exterior railings, wet environments, industrial framework, and coastal installations where long-term rust prevention is essential.
+                        </p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <h3 class="text-slate-900 font-bold text-base mb-2">How is the weight per metre of SS flat bar calculated?</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Weight per linear metre is calculated using: Flat bar weight per metre (kg) = width(mm) x thickness(mm) x density / 1000. For SS 304, use density 7.93; for SS 202, use density 7.80.
+                        </p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <h3 class="text-slate-900 font-bold text-base mb-2">Do you provide mill test certificates with SS patta and flat strips?</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Mill test certificates supplied with each lot. Chemical composition is shown on the mill test certificate supplied with each lot. PMI testing and third-party inspection can be arranged on request.
+                        </p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                        <h3 class="text-slate-900 font-bold text-base mb-2">What factors determine the price of stainless steel patta and patti?</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Pricing is influenced by alloy grade, raw material nickel and chromium rates, strip width, thickness, cut lengths, and total dispatch volume.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom CTA Section -->
+            <section class="bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 text-white border border-slate-800 rounded-2xl p-8 sm:p-10 text-center sm:text-left sm:flex sm:items-center sm:justify-between shadow-xl">
+                <div class="mb-6 sm:mb-0 max-w-xl">
+                    <h2 class="text-2xl sm:text-3xl font-black mb-2">Need Custom Slit SS Patta or Flat Bars?</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Speak directly with our Mumbai sales desk for prompt pricing, cutting schedules, and international dispatch coordination.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="https://wa.me/919930301181?text=Hi%20Tatvam%20Overseas%2C%20I%20would%20like%20a%20quote%20for%20SS%20patta." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition-all shadow-lg shadow-emerald-900/30 text-sm">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Inquiry
+                    </a>
+                    <a href="/contact" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold border border-slate-700 transition-all text-sm">
+                        <i data-lucide="phone" class="w-4 h-4"></i> Contact Us
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="/js/components.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>"""
+    with open("products/ss-patta-patti-flats-strips-supplier-mumbai.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    print("Rewritten products/ss-patta-patti-flats-strips-supplier-mumbai.html with light brand palette.")
+
+generate_circles_page()
+generate_patta_page()
